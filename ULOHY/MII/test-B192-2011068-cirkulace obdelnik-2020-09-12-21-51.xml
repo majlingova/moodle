@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068</text>
+    </category>
+    <info format="html">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "B192-2011068".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 6/cirkulace obdelnik</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 139505  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 6 čtyřúhelník</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\oint_C\&nbsp; (x^2+y^2)\ dy,$$&nbsp; kde&nbsp; \(C\) tvoří kladně orientovaný obvod obdélníku,$$\mbox{ jehož strany leží na přímkách } \begin{array}{ll}x=0,&amp;x=2,\\y=0,&amp;y=4\end{array}$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>16</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139507  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 7 čtyřúhelník</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\oint_C\&nbsp; y^2\ dx + x\ dy,$$&nbsp; kde&nbsp; \(C\) tvoří kladně orientovaný obvod čtverce,$$\mbox{ jehož strany leží na přímkách } \begin{array}{ll}x=-2,&amp;x=2,\\y=-2,&amp;y=2\end{array}$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>16</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139514  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 8 čtyřúhelník</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\oint_C\ (1+xy)e^{xy}\ dx + x^2(1 + e^{xy})\ dy,$$ $$\mbox{ kde } C \mbox{ tvoří kladně orientovaný obvod obdélníku } ABCD,\ \begin{array}{ll}A=[0,\ 0]&amp;B=[2,\ 0]\\C=[2,\ 1]&amp;D=[0,\ 1]\end{array}$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>4</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139518  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 9 čtyřúhelník</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\oint_C\&nbsp; xy^2\ dx+(x^2+y^2)\ dy,$$&nbsp; kde&nbsp; \(C\) tvoří kladně orientovaný obvod obdélníku,$$\mbox{ jehož strany leží na přímkách } \begin{array}{ll}x=1,&amp;x=4,\\y=2,&amp;y=3\end{array}$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>-45/2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

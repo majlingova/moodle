@@ -1,0 +1,1351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "Matematika I".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I/OM</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I/OM/Lineární algebra</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I/OM/Lineární algebra/Determinanty</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 200976  -->
+  <question type="formulas">
+    <name>
+      <text>determinant 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete determinant matice \(A\). $$A = \left(\begin{array}{rr}{a11}&amp;{a12}\\{a21}&amp;{a22}\end{array}\right)$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11={-10:10};a12={-10:10};
+a21={-10:10};a22={-10:10};</text>
+</varsrandom>
+<varsglobal><text>detA=a11*a22-a12*a21</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>detA</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[\(\det A = \){_0}<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200977  -->
+  <question type="formulas">
+    <name>
+      <text>determinant 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete determinant matice \(A\). $$A = \left(\begin{array}{rrr}{a11}&amp;{a12}&amp;{a13}\\{a21}&amp;{a22}&amp;{a23}\\{a31}&amp;{a32}&amp;{a33}\end{array}\right)$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11={-10:10};a12={-10:10};a13={-10:10};
+a21={-10:10};a22={-10:10};a23={-10:10};
+a31={-10:10};a32={-10:10};a33={-10:10};</text>
+</varsrandom>
+<varsglobal><text>detA=a11*a22*a33 + a21*a32*a13+a31*a12*a23-a13*a22*a31-a23*a32*a11-a33*a12*a21;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>detA</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[\(\det A = \){_0}<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200978  -->
+  <question type="formulas">
+    <name>
+      <text>determinant 3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete determinant matice \(A\). $$A = \left(\begin{array}{rrrr}{a11}&amp;{a12}&amp;{a13}&amp;{a14}\\{a21}&amp;{a22}&amp;{a23}&amp;{a24}\\{a31}&amp;{a32}&amp;{a33}&amp;{a34}\\{a41}&amp;{a42}&amp;{a43}&amp;{a44}\end{array}\right)$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11={-10:10};a12={-10:10};a13={-10:10};a14={-10:10};
+a21={-10:10};a22={-10:10};a23={-10:10};a24={-10:10};
+a31={-10:10};a32={-10:10};a33={-10:10};a34={-10:10};
+q={-10:10};</text>
+</varsrandom>
+<varsglobal><text>a41=0; a42=0; a43=q; a44=0;
+
+detA= -q*(a11*a22*a34 + a21*a32*a14+a31*a12*a24-a14*a22*a31-a24*a32*a11-a34*a12*a21);
+#detA3= a11*a22*a33 + a21*a32*a13+a31*a12*a23-a13*a22*a31-a23*a32*a11-a33*a12*a21;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>detA</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[\(\det A = \){_0}<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200979  -->
+  <question type="formulas">
+    <name>
+      <text>determinant 4</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete determinant matice \(A\). $$A = \left(\begin{array}{rrrr}{a11}&amp;{a12}&amp;{a13}&amp;{a14}\\{a21}&amp;{a22}&amp;{a23}&amp;{a24}\\{a31}&amp;{a32}&amp;{a33}&amp;{a34}\\{a41}&amp;{a42}&amp;{a43}&amp;{a44}\end{array}\right)$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11={-10:10};a12={-10:10};a13={-10:10};a14={-10:10};
+a21={-10:10};a22={-10:10};a23={-10:10};a24={-10:10};
+a41={-10:10};a42={-10:10};a43={-10:10};a44={-10:10};
+q={-10:10};</text>
+</varsrandom>
+<varsglobal><text>a31=0; a32=0; a33=q; a34=0;
+detA= q*(a11*a22*a44 + a21*a42*a14+a41*a12*a24-a14*a22*a41-a24*a42*a11-a44*a12*a21);
+#detA3= a11*a22*a33 + a21*a32*a13+a31*a12*a23-a13*a22*a31-a23*a32*a11-a33*a12*a21;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>detA</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[\(\det A = \){_0}<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200980  -->
+  <question type="formulas">
+    <name>
+      <text>determinant 5 (nula)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete determinant matice \(A\). $$A = \left(\begin{array}{rrrr}{a11}&amp;{a12}&amp;{a13}&amp;{a14}\\{a21}&amp;{a22}&amp;{a23}&amp;{a24}\\{a31}&amp;{a32}&amp;{a33}&amp;{a34}\\{a41}&amp;{a42}&amp;{a43}&amp;{a44}\end{array}\right)$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11={-10:10};a12={-10:10};a13={-10:10};a14={-10:10};
+a21={-10:10};a22={-10:10};a23={-10:10};a24={-10:10};
+a41={-10:10};a42={-10:10};a43={-10:10};a44={-10:10};
+q={-10:10};</text>
+</varsrandom>
+<varsglobal><text>a31=a11+2*a21-a41; 
+a32=a12+2*a22-a42; 
+a33=a13+2*a23-a43;  
+a34=a14+2*a24-a44; 
+detA=0;
+#detA4= q*(a11*a22*a44 + a21*a42*a14+a41*a12*a24-a14*a22*a41-a24*a42*a11-a44*a12*a21);
+#detA3= a11*a22*a33 + a21*a32*a13+a31*a12*a23-a13*a22*a31-a23*a32*a11-a33*a12*a21;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>detA</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[\(\det A = \){_0}<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200981  -->
+  <question type="formulas">
+    <name>
+      <text>determinant 6 (trojuhelnikova)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete determinant matice \(A\). $$A = \left(\begin{array}{rrrr}{a11}&amp;{a12}&amp;{a13}&amp;{a14}\\{a21}&amp;{a22}&amp;{a23}&amp;{a24}\\{a31}&amp;{a32}&amp;{a33}&amp;{a34}\\{a41}&amp;{a42}&amp;{a43}&amp;{a44}\end{array}\right)$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11={-10:10};a12={-10:10};a13={-10:10};a14={-10:10};
+a22={-10:10};a23={-10:10};a24={-10:10};
+a33={-10:10};a34={-10:10};
+a44={-10:10};</text>
+</varsrandom>
+<varsglobal><text>a21=0; a31=0; a32=0; a41=0; a42=0; a43=0;
+
+
+detA=a11*a22*a33*a44;
+
+#detA3= a11*a22*a33 + a21*a32*a13+a31*a12*a23-a13*a22*a31-a23*a32*a11-a33*a12*a21;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>detA</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[\(\det A = \){_0}<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200982  -->
+  <question type="formulas">
+    <name>
+      <text>determinant 7 (trojuhelnikova)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete determinant matice \(A\). $$A = \left(\begin{array}{rrrr}{a11}&amp;{a12}&amp;{a13}&amp;{a14}\\{a21}&amp;{a22}&amp;{a23}&amp;{a24}\\{a31}&amp;{a32}&amp;{a33}&amp;{a34}\\{a41}&amp;{a42}&amp;{a43}&amp;{a44}\end{array}\right)$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11={-10:10};a21={-10:10};a31={-10:10};a41={-10:10};
+a22={-10:10};a32={-10:10};a42={-10:10};
+a33={-10:10};a43={-10:10};
+a44={-10:10};</text>
+</varsrandom>
+<varsglobal><text>a12=0; a13=0; a23=0; a14=0; a24=0; a34=0;
+
+
+detA=a11*a22*a33*a44;
+
+#detA3= a11*a22*a33 + a21*a32*a13+a31*a12*a23-a13*a22*a31-a23*a32*a11-a33*a12*a21;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>detA</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[\(\det A = \){_0}<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200983  -->
+  <question type="formulas">
+    <name>
+      <text>determinant-vlastnosti</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Určete determinanty následujících matic:<br> 1. Matice \(\displaystyle A=\left(\begin{array}{rrr}{a11}&amp;{a12}&amp;{a13}\\{a21}&amp;{a22}&amp;{a23}\\{a31}&amp;{a32}&amp;{a33}\end{array}\right)\){#detA}<br> 2. Matice \(A_1\), která vznikne z matice \(A\)
+tak, <br>že ke druhému řádku \(A\) přičtěte (-2) násobek prvního řádku \(A\),<br>ke třetímu řádku \(A\)přičtěte (-4) násobek prvního řádku \(A\).<br> Uveďte matici \(A_1\) a její determinant.{#1}<br> 3. matice \(A_2\), která vznikne z matice \(A_1\) tak, že ke
+třetímu řádku \(A_1\) přičtěte takový násobek druhého řádku \(A_1\), aby ve třetím řádku \(A_2\) byl nenulový pouze prvek na hlavní diagonále. Uveďte matici \(A_2\) a její determinant.{#2}]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>3.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>a11=1; a12=1;a13=2;
+a21=2;a22=-1;a23=2;
+a31=4;a32=1;a33=4;
+#A=[[1,1,2],[2,-1,2],[4,1,4]]; 
+
+detA=a11*a22*a33+a21*a32*a13+a31*a12*a23-a13*a22*a31-a23*a32*a11-a33*a12*a21;
+a1=0;b1=-3;c1=-2;
+a2=0;b2=-3;c2=-4;
+c3=-2;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#detA</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>detA</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(\det A=\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>10</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[a11, a12,a13, a1,b1,c1,a2,b2,c2, detA]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(A_1=\left(\begin{array}{c}\\\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_3}<br> </td>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_6}<br> </td>
+                            <td>{_7}<br> </td>
+                            <td>{_8}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table><br>
+\(\det A_1 = \){_9}]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>10</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[a11, a12,a13, a1,b1,c1,0,0,c3, detA]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(A_2=\left(\begin{array}{c}\\\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_3}<br> </td>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_6}<br> </td>
+                            <td>{_7}<br> </td>
+                            <td>{_8}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table><br> \(\det A_2 = \){_9}]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200984  -->
+  <question type="formulas">
+    <name>
+      <text>determinant-vlastnosti 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Určete determinanty následujících matic:<br> 1. Matice \(\displaystyle A=\left(\begin{array}{rrr}{a11}&amp;{a12}&amp;{a13}\\{a21}&amp;{a22}&amp;{a23}\\{a31}&amp;{a32}&amp;{a33}\end{array}\right)\){#detA}<br> 2. Matice \(A_1\), která vznikne z matice \(A\)
+tak, <br>že k&nbsp;(-2) násobku druhého řádku \(A\) přičtěte 7 násobek prvního řádku \(A\),<br>k 2 násobku třetího řádku \(A\) přičtěte (-1) násobek prvního řádku \(A\).<br> Uveďte matici \(A_1\) a její determinant.{#1}<br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>2.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>a11=2; a12=3;a13=1;
+a21=7;a22=-1;a23=1;
+a31=1;a32=2;a33=1;
+
+detA=a11*a22*a33+a21*a32*a13+a31*a12*a23-a13*a22*a31-a23*a32*a11-a33*a12*a21;
+a1=0;b1=23;c1=5;
+a2=0;b2=1;c2=1;
+detA1 = -4*detA;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#detA</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>detA</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(\det A=\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>10</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[a11, a12,a13, a1,b1,c1,a2,b2,c2, detA1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(A_1=\left(\begin{array}{c}\\\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_3}<br> </td>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_6}<br> </td>
+                            <td>{_7}<br> </td>
+                            <td>{_8}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table><br>
+\(\det A_1 = \){_9}]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200985  -->
+  <question type="formulas">
+    <name>
+      <text>determinant-vlastnosti 3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Určete determinanty následujících matic:<br> 1. Matice \(\displaystyle A=\left(\begin{array}{rrr}{a11}&amp;{a12}&amp;{a13}\\{a21}&amp;{a22}&amp;{a23}\\{a31}&amp;{a32}&amp;{a33}\end{array}\right)\){#detA}<br> 2. Matice \(A_1\), která vznikne z matice \(A\)
+tak, <br>že k&nbsp;({a11}) násobku druhého řádku \(A\) přičtěte&nbsp; ({stra21} ) násobek prvního řádku \(A\),<br>k&nbsp;({a11}) násobku třetího řádku \(A\) přičtěte ({stra31} ) násobek prvního řádku \(A\).<br> Uveďte 2. a 3. řádek matice \(A_1\)&nbsp; a její determinant.{#1}<br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>2.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11={-10:-1,1:10}; a12={-10:-1,1:10}; a13={-10:-1,1:10};
+a21={-10:-1,1:10}; a22={-10:-1,1:10}; a23={-10:-1,1:10};
+a31={-10:-1,1:10}; a32={-10:-1,1:10}; a33={-10:-1,1:10};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[detA=a11*a22*a33+a21*a32*a13+a31*a12*a23-a13*a22*a31-a23*a32*a11-a33*a12*a21;
+a1=0;  b1=a11*a22-a12*a21;   c1=a11*a23-a13*a21;
+a2=0;  b2=a11*a32-a12*a31;   c2=a11*a33-a13*a31;
+detA1 = a11*a11*detA;
+#zna21= a21<0 ? 0 : 1;
+#minusa21=pick(zna21," ","-");
+#stra21=join(" ", minusa21, str(-a21));
+stra21= str(-a21);
+
+#zna31= a31<0 ? 0 : 1;
+#minusa31=pick(zna31," ","-");
+#stra31=join(" ", minusa31, str(-1*a31));
+stra31=str(-1*a31);]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#detA</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>detA</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(\det A=\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>7</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[a1,b1,c1,a2,b2,c2,detA1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(A_1=\left(\begin{array}{c}\\\\\\\\\end{array}\right.\)
+            </td>
+            <td halign="right" width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{a11}<br> </td>
+                            <td>{a12}<br> </td>
+                            <td>{a13}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_3}<br> </td>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table><br> \(\det A_1 = \){_6}]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

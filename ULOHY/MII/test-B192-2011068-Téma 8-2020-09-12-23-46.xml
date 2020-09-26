@@ -1,0 +1,2984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068</text>
+    </category>
+    <info format="html">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "B192-2011068".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 8/plošný-sklalární-valec</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 141963  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 11 (válec, parametrizovaný poloměr)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část&nbsp; válcové plochy }&nbsp; x^2+y^2={a2} ,\ 0\leq z\leq {b},\ x\geq 0,\ y\geq 0.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \( xy,\ D_{xy}\). <br></p><p>2. Navrhněte parametrizaci plochy \(P\), pro válcovou plochu například&nbsp;&nbsp; \(\displaystyle P(u,v) = \left[{a}\cos u,\ {a}\sin u,\ v\right]\) a určete množinu \(B =\{[u,v]\in\mathbb E_2:\ \dots \leq u\leq \dots, \ \dots\leq v\leq \dots \}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\).<br></p><p>4. Vyjádřete \(f(P(u,v))\) a&nbsp; \( {\rm d} p = \|\vec n\| {\rm d} u {\rm d}v\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{B} \ f(P(u,v))\ \|\vec n\| \ {\rm d} u {\rm d}v$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:5}; b={1:6}</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a2=a*a;
+f="x";
+V = a2*b]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 141993  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 12 (válec, parametrizovaný poloměr)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část&nbsp; rotační válcové plochy }&nbsp; x^2+y^2={a2} ,\ {b}\leq z\leq {bc},\ x\leq 0.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \( xy,\ D_{xy}\). <br></p><p>2. Navrhněte parametrizaci plochy \(P\), pro válcovou plochu například&nbsp;&nbsp; \(\displaystyle P(u,v) = \left[{a}\cos u,\ {a}\sin u,\ v\right]\) a určete množinu \(B =\{[u,v]\in\mathbb E_2:\ \dots \leq u\leq \dots, \ \dots\leq v\leq \dots \}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\).<br></p><p>4. Vyjádřete \(f(P(u,v))\) a&nbsp; \( {\rm d} p = \|\vec n\| {\rm d} u {\rm d}v\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{B} \ f(P(u,v))\ \|\vec n\| \ {\rm d} u {\rm d}v$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:4}; b={1:3} ; c={1:3};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a2=a*a; bc=b+c;
+f="xy^2z^3";
+V = -a2*a2*(pow(b+c,4)-pow(b,4))/6]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 141996  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 13 (válec, parametrizovaný poloměr)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část&nbsp; rotační válcové plochy }&nbsp; x^2+z^2={a2} ,\ {b}\leq y\leq {bc},\ x\geq 0,\ z\geq 0.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \( xz,\ D_{xz}\). <br></p><p>2. Navrhněte parametrizaci plochy \(P\), pro válcovou plochu například&nbsp;&nbsp; \(\displaystyle P(u,v) = \left[{a}\cos u,\ v,\ {a}\sin u\right]\) a určete množinu \(B =\{[u,v]\in\mathbb E_2:\ \dots \leq u\leq \dots, \ \dots\leq v\leq \dots \}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\).<br></p><p>4. Vyjádřete \(f(P(u,v))\) a&nbsp; \( {\rm d} p = \|\vec n\| {\rm d} u {\rm d}v\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{B} \ f(P(u,v))\ \|\vec n\| \ {\rm d} u {\rm d}v$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:4}; b={1:3} ; c={1:3};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a2=a*a; bc=b+c;
+f="xz";
+V = a2*a*c/2]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 8/plošný-skalární-koule</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 142010  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 14 (osmina kulové, parametrizovaný poloměr)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část&nbsp; kulové plochy }&nbsp; x^2+y^2 +z^2={a2}&nbsp; \mbox{ v prvním oktantu}.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \( xy,\ D_{xy}\). <br></p><p>2. Navrhněte parametrizaci plochy \(P\), pro část kulové plochy například&nbsp;&nbsp; \(\displaystyle P(u,v) = \left[{a}\cos u\cos v,\ {a}\cos u\sin v,\ {a}\sin v\right]\) a určete množinu \(B =\{[u,v]\in\mathbb E_2:\ \dots \leq u\leq \dots, \ \dots\leq v\leq \dots \}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\).<br></p><p>4. Vyjádřete \(f(P(u,v))\) a&nbsp; \( {\rm d} p = \|\vec n\| {\rm d} u {\rm d}v\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{B} \ f(P(u,v))\ \|\vec n\| \ {\rm d} u {\rm d}v$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:6}</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a2=a*a;
+f="y";
+V = a2*a*pi()/4]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 142013  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 15 (čtvrtina kulové, parametrizovaný poloměr)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část&nbsp; kulové plochy }&nbsp; x^2+y^2 +z^2={a2} ,\ y\geq 0,\ z\geq 0.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \( xy,\ D_{xy}\). <br></p><p>2. Navrhněte parametrizaci plochy \(P\), pro část kulové plochy například&nbsp;&nbsp; \(\displaystyle P(u,v) = \left[{a}\cos u\cos v,\ {a}\cos u\sin v,\ {a}\sin v\right]\) a určete množinu \(B =\{[u,v]\in\mathbb E_2:\ \dots \leq u\leq \dots, \ \dots\leq v\leq \dots \}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\).<br></p><p>4. Vyjádřete \(f(P(u,v))\) a&nbsp; \( {\rm d} p = \|\vec n\| {\rm d} u {\rm d}v\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{B} \ f(P(u,v))\ \|\vec n\| \ {\rm d} u {\rm d}v$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:6}</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a2=a*a;
+f="xyz";
+V = 0]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 142016  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 16 (polovina kulové, parametrizovaný poloměr)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část&nbsp; kulové plochy }&nbsp; x^2+y^2 +z^2={a2} ,\ z\geq 0.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \( xy,\ D_{xy}\). <br></p><p>2. Navrhněte parametrizaci plochy \(P\), pro část kulové plochy například&nbsp;&nbsp; \(\displaystyle P(u,v) = \left[{a}\cos u\cos v,\ {a}\cos u\sin v,\ {a}\sin v\right]\) a určete množinu \(B =\{[u,v]\in\mathbb E_2:\ \dots \leq u\leq \dots, \ \dots\leq v\leq \dots \}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\).<br></p><p>4. Vyjádřete \(f(P(u,v))\) a&nbsp; \( {\rm d} p = \|\vec n\| {\rm d} u {\rm d}v\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{B} \ f(P(u,v))\ \|\vec n\| \ {\rm d} u {\rm d}v$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:6}</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a2=a*a;
+f="z";
+V = a2*a*pi()]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 142071  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 17 (osmina elipsoid, parametrizovaný)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část&nbsp; povrchu rotačního elipsoidu }&nbsp; \frac{x^2}{{a2}}+\frac{y^2}{{a2}} +\frac{z^2}{{b2}}=1 \mbox{ v 1. oktantu}.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \( xy,\ D_{xy}\). <br></p><p>2. Navrhněte parametrizaci plochy \(P\), pro část povrchu elipsoidu například&nbsp;&nbsp; \(\displaystyle P(u,v) = \left[{a}\cos u\cos v,\ {a}\cos u\sin v,\ {b}\sin v\right]\) a určete množinu \(B =\{[u,v]\in\mathbb E_2:\ \dots \leq u\leq \dots, \ \dots\leq v\leq \dots \}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\).<br></p><p>4. Vyjádřete \(f(P(u,v))\) a&nbsp; \( {\rm d} p = \|\vec n\| {\rm d} u {\rm d}v\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{B} \ f(P(u,v))\ \|\vec n\| \ {\rm d} u {\rm d}v$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:4}; q={1:3};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a2=a*a; b=a+q; b2 = b*b;
+f="z";
+V = pi()*a*b*(a2 + a*b+b2)/(6*(a+b))]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 8/plošný-sklalární-rovina</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 141938  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 1 (explicitní, rovina)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část roviny } {sigma} .$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \(xy,\ D_{xy}\). Zapište množinu \(D_{xy}\) jako elementární obor integrace pro dvojný integrál.<br></p><p>2. Navrhněte parametrizaci plochy \(P\). Plochu lze vyjádřit explicitně \(z = g(x,y)\), proto je vhodné zvolit \(P(x,y) = [x,\ y,\ g(x,y)],\ [x,y]\in D_{xy}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\). Při parametrizaci plochy podle bodu 2. lze normálový vektor určit: \(\displaystyle \vec n = \pm \left(\frac{\partial g}{\partial x},\ \frac{\partial g}{\partial y},\ -1\right)\).<br></p><p>4. Vyjádřete integrovanou funkci pomocí zvolené parametrizace a \( {\rm d} p = \|\vec n\| {\rm d} x {\rm d}y\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{D_{xy}} \ f(P(x,y))\ \|\vec n\| \ {\rm d} x {\rm d}y$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[f="(x+y)";
+sigma="x+y+4z=4 \\mbox{ v prvním oktantu}";
+V = 16*sqrt(2)]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 141960  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 10 (rovina, parametrizovaná)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část roviny } {a}x+{b}z={c},\ y\leq {d}, \mbox{ v prvním oktantu} .$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \( xz,\ D_{xz}\). <br></p><p>2. Navrhněte parametrizaci plochy \(P\), například&nbsp;&nbsp; \(\displaystyle P(x,y) = \left[x,\ y,\ {cb}-{ab}x\right]\) a určete množinu \(B =\{[x,y]\in\mathbb E_2:\ \dots\leq x\leq\dots, \ \dots\leq y\leq \dots \}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\).<br></p><p>4. Vyjádřete&nbsp; \( {\rm d} p = \|\vec n\| {\rm d} x {\rm d}y\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{B} \ {f}\ \|\vec n\| \ {\rm d} x {\rm d}y$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}; b={2:6}; c={1:7};d={1:8};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ab=a/b; cb=c/b;
+f="x";
+V = sqrt(a*a+b*b)*c*c*d/(2*a*a*b)]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 141939  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 2 (explicitní, rovina)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část roviny } {sigma} .$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \(xy,\ D_{xy}\). Zapište množinu \(D_{xy}\) jako elementární obor integrace pro dvojný integrál.<br></p><p>2. Navrhněte parametrizaci plochy \(P\). Plochu lze vyjádřit explicitně \(z = g(x,y)\), proto je vhodné zvolit \(P(x,y) = [x,\ y,\ g(x,y)],\ [x,y]\in D_{xy}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\). Při parametrizaci plochy podle bodu 2. lze normálový vektor určit: \(\displaystyle \vec n = \pm \left(\frac{\partial g}{\partial x},\ \frac{\partial g}{\partial y},\ -1\right)\).<br></p><p>4. Vyjádřete integrovanou funkci pomocí zvolené parametrizace a \( {\rm d} p = \|\vec n\| {\rm d} x {\rm d}y\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{D_{xy}} \ f(P(x,y))\ \|\vec n\| \ {\rm d} x {\rm d}y$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[f="(x+y+z)";
+sigma="x+2y+3z=6 \\mbox{ v prvním oktantu}";
+V = 11*sqrt(14)]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 141940  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 3 (explicitní, rovina)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část roviny } {sigma} .$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \(xy,\ D_{xy}\). Zapište množinu \(D_{xy}\) jako elementární obor integrace pro dvojný integrál.<br></p><p>2. Navrhněte parametrizaci plochy \(P\). Plochu lze vyjádřit explicitně \(z = g(x,y)\), proto je vhodné zvolit \(P(x,y) = [x,\ y,\ g(x,y)],\ [x,y]\in D_{xy}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\). Při parametrizaci plochy podle bodu 2. lze normálový vektor určit: \(\displaystyle \vec n = \pm \left(\frac{\partial g}{\partial x},\ \frac{\partial g}{\partial y},\ -1\right)\).<br></p><p>4. Vyjádřete integrovanou funkci pomocí zvolené parametrizace a \( {\rm d} p = \|\vec n\| {\rm d} x {\rm d}y\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{D_{xy}} \ f(P(x,y))\ \|\vec n\| \ {\rm d} x {\rm d}y$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[f="z";
+sigma="x+y+z=1 \\mbox{ v prvním oktantu}";
+V = sqrt(3)/6]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 141957  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 9 (rovina, parametricka)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část roviny } {a}x +{b}y = {c},\ z\leq {d},\ \mbox{ v prvním oktantu}.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \( xy,\ D_{xy}\). <br></p><p>2. Navrhněte parametrizaci plochy \(P\), například&nbsp;&nbsp; \(\displaystyle P(x,z) = \left[x,\ {cb}-{ab}x,\ z\right]\) a určete množinu \(B =\{[x,z]\in\mathbb E_2:\ \dots\leq x\leq\dots, \ \dots\leq z\leq\dots \}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\).<br></p><p>4. Vyjádřete&nbsp; \( {\rm d} p = \|\vec n\| {\rm d} x {\rm d}z\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{B} \ {f}\ \|\vec n\| \ {\rm d} x {\rm d}z$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5};b={2:5};c={1:5};d={1:5};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[cb = c/b; ab=a/b;
+f="z^2";
+V = sqrt(a*a+b*b)*c*d*d*d/(a*b*3)]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 8/plošný-skalární-explicitní</text>
+    </category>
+    <info format="html">
+      <text>Výpočet</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 141941  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 4 (explicitní, paraboloid)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Tento příklad vyžaduje je komplikovanější výpočet dvojného integrálu.</b><br></p><p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část plochy } {sigma} .$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \(xy,\ D_{xy}\). Zapište množinu \(D_{xy}\).<br></p><p>2. Navrhněte parametrizaci plochy \(P\). Plochu lze vyjádřit explicitně \(z = g(x,y)\), proto je vhodné zvolit \(P(x,y) = [x,\ y,\ g(x,y)],\ [x,y]\in D_{xy}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\). Při parametrizaci plochy podle bodu 2. lze normálový vektor určit: \(\displaystyle \vec n = \pm \left(\frac{\partial g}{\partial x},\ \frac{\partial g}{\partial y},\ -1\right)\).<br></p><p>4. Vyjádřete integrovanou funkci pomocí zvolené parametrizace a \( {\rm d} p = \|\vec n\| {\rm d} x {\rm d}y\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{D_{xy}} \ f(P(x,y))\ \|\vec n\| \ {\rm d} x {\rm d}y$$</p><p>6. Množina \(D_{xy}\) je kruh, proto je pro výpočet dvojného integrálu vhodné volit&nbsp; polární souřadnice.<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[f="\\sqrt{x^2+y^2}";
+sigma="\\mbox{rotačního paraboloidu }  z=x^2+y^2 \\mbox{ omezeného rovinou } z=1";
+V = pi()*(9*sqrt(5) -0.5*log(2+sqrt(5)))/16]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 141942  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 5 (explicitní, paraboloid)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část plochy } {sigma} .$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \(xy,\ D_{xy}\). Zapište množinu \(D_{xy}\).<br></p><p>2. Navrhněte parametrizaci plochy \(P\). Plochu lze vyjádřit explicitně \(z = g(x,y)\), proto je vhodné zvolit \(P(x,y) = [x,\ y,\ g(x,y)],\ [x,y]\in D_{xy}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\). Při parametrizaci plochy podle bodu 2. lze normálový vektor určit: \(\displaystyle \vec n = \pm \left(\frac{\partial g}{\partial x},\ \frac{\partial g}{\partial y},\ -1\right)\).<br></p><p>4. Vyjádřete integrovanou funkci pomocí zvolené parametrizace a \( {\rm d} p = \|\vec n\| {\rm d} x {\rm d}y\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{D_{xy}} \ f(P(x,y))\ \|\vec n\| \ {\rm d} x {\rm d}y$$</p><p>6. Množina \(D_{xy}\) je kruh, proto je pro výpočet dvojného integrálu vhodné volit&nbsp; polární souřadnice.<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[f="\\sqrt{1+4z}";
+sigma="\\mbox{rotačního paraboloidu }  z=x^2+y^2 \\mbox{ omezeného rovinou } z=4";
+V = pi()*36]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 141943  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 6 (explicitní, kužel)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část }&nbsp; {sigma} .$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \(xy,\ D_{xy}\). Zapište množinu \(D_{xy}\).<br></p><p>2. Navrhněte parametrizaci plochy \(P\). Plochu lze vyjádřit explicitně \(z = g(x,y)\), proto je vhodné zvolit \(P(x,y) = [x,\ y,\ g(x,y)],\ [x,y]\in D_{xy}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\). Při parametrizaci plochy podle bodu 2. lze normálový vektor určit: \(\displaystyle \vec n = \pm \left(\frac{\partial g}{\partial x},\ \frac{\partial g}{\partial y},\ -1\right)\).<br></p><p>4. Vyjádřete integrovanou funkci pomocí zvolené parametrizace a \( {\rm d} p = \|\vec n\| {\rm d} x {\rm d}y\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{D_{xy}} \ f(P(x,y))\ \|\vec n\| \ {\rm d} x {\rm d}y$$</p><p>6. Množina \(D_{xy}\) je kruh, proto je pro výpočet dvojného integrálu vhodné volit&nbsp; polární souřadnice.<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[f="xy";
+sigma="\\mbox{kuželové plochy }  z^2=x^2+y^2 \\mbox{ mezi rovinami } z=0,\ z=9";
+V = 0]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 141944  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 7 (explicitní, kužel)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část }&nbsp; {sigma} .$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \(xy,\ D_{xy}\). Zapište množinu \(D_{xy}\).<br></p><p>2. Navrhněte parametrizaci plochy \(P\). Plochu lze vyjádřit explicitně \(z = g(x,y)\), proto je vhodné zvolit \(P(x,y) = [x,\ y,\ g(x,y)],\ [x,y]\in D_{xy}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\). Při parametrizaci plochy podle bodu 2. lze normálový vektor určit: \(\displaystyle \vec n = \pm \left(\frac{\partial g}{\partial x},\ \frac{\partial g}{\partial y},\ -1\right)\).<br></p><p>4. Vyjádřete integrovanou funkci pomocí zvolené parametrizace a \( {\rm d} p = \|\vec n\| {\rm d} x {\rm d}y\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{D_{xy}} \ f(P(x,y))\ \|\vec n\| \ {\rm d} x {\rm d}y$$</p><p>6. Množina \(D_{xy}\) je mezikruží, proto je pro výpočet dvojného integrálu vhodné volit&nbsp; polární souřadnice.<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[f="z";
+sigma="\\mbox{kuželové plochy }  z^2=x^2+y^2 \\mbox{ pro } 1\\leq z\\leq 2";
+V = 14*pi()*sqrt(2)/3]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 141955  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 8 (explicitní, kužel parametrický)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část kuželové plochy&nbsp; }&nbsp; {{a2}} z^2={{b2}} x^2 + {{b2}} y^2 \mbox{ pro } -{{b}} \leq z\leq 0.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \(xy,\ D_{xy}\). Zapište množinu \(D_{xy}\).<br></p><p>2. Navrhněte parametrizaci plochy \(P\). Plochu lze vyjádřit explicitně \(z = g(x,y)\), proto je vhodné zvolit \(P(x,y) = [x,\ y,\ g(x,y)],\ [x,y]\in D_{xy}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\). Při parametrizaci plochy podle bodu 2. lze normálový vektor určit: \(\displaystyle \vec n = \pm \left(\frac{\partial g}{\partial x},\ \frac{\partial g}{\partial y},\ -1\right)\).<br></p><p>4. Vyjádřete integrovanou funkci pomocí zvolené parametrizace a \( {\rm d} p = \|\vec n\| {\rm d} x {\rm d}y\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{D_{xy}} \ f(P(x,y))\ \|\vec n\| \ {\rm d} x {\rm d}y$$</p><p>6. Množina \(D_{xy}\) je kruh, proto je pro výpočet dvojného integrálu vhodné volit&nbsp; polární souřadnice.<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:4}; b={2:4}</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a2=a*a;b2=b*b;
+f="\\sqrt{x^2 + y^2}";
+#sigma="\\mbox{ }  {{a2}} z^2={{b2}} x^2 + {{b2}} y^2 \\mbox{ pro } -{{b}}\\leq z\\leq 0";
+V = 2*pi()*a2*sqrt(a2+b2)/3]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 8/plošný-skalární-průnik</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 142109  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 18 (část kulové vně válce, parametrizované)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část kulové plochy } x^2+y^2+z^2 = {b2}, z\geq 0,$$ $$\mbox{ vně rotační válcové plochy } x^2 +y^2 = {a2}.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \(xy,\ D_{xy}\). Zapište množinu \(D_{xy}= \{[x,y]\in\mathbb E_2: \dots \leq x^2 + y^2\leq \dots \}\).<br></p><p>2. Plochu lze vyjádřit explicitně \(z = \sqrt{{{b2}}-x^2-y^2}\), proto je možné zvolit \(P(x,y) = [x,\ y,\ \sqrt{{{b2}}-x^2-y^2}],\ [x,y]\in D_{xy}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\). Při zvolené \(P\) podle bodu 2. lze normálový vektor určit: \(\displaystyle \vec n = \pm \left(\frac{\partial z}{\partial x},\ \frac{\partial z}{\partial y},\ -1\right)\).<br></p><p>4. Vyjádřete integrovanou funkci pomocí zvolené \(P\) a \( {\rm d} p = \|\vec n\| {\rm d} x {\rm d}y\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{D_{xy}} \ f(P(x,y))\ \|\vec n\| \ {\rm d} x {\rm d}y$$</p><p>6. Množina \(D_{xy}\) je mezikruží, proto je pro výpočet dvojného integrálu vhodné volit&nbsp; polární souřadnice.<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:4};q={1:3};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a2=a*a; b=a+q; b2=b*b;
+f="\\frac{z}{x^2+y^2}";
+V = pi()*2*b*log(b/a)]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 142110  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 19 (část parabolické uvnitř válce, parametrizované)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ ({c}x^2 + {d}y^2)\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část&nbsp; plochy rotačního paraboloidu } x^2+y^2= {a}z $$ $$\mbox{ uvnitř rotační válcové plochy } x^2 +y^2 = {b}.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \(xy,\ D_{xy}\). Zapište množinu \(D_{xy}= \{[x,y]\in\mathbb E_2: 0 \leq x^2 + y^2\leq \dots \}\).<br></p><p>2. Plochu lze vyjádřit explicitně \(\displaystyle z = \frac{x^2}{{a}}+\frac{y^2}{{a}}\), proto je možné zvolit \(P(x,y) = [x,\ y,\ \frac{x^2}{{a}}+\frac{y^2}{{a}}],\ [x,y]\in D_{xy}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\). Při zvolené \(P\) podle bodu 2. lze normálový vektor určit: \(\displaystyle \vec n = \pm \left(\frac{\partial z}{\partial x},\ \frac{\partial z}{\partial y},\ -1\right)\).<br></p><p>4. Vyjádřete integrovanou funkci pomocí zvolené \(P\) a \( {\rm d} p = \|\vec n\| {\rm d} x {\rm d}y\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ ({c}x^2 + {d}y^2)\ {\rm d}p = \iint_{D_{xy}} \ f(P(x,y))\ \|\vec n\| \ {\rm d} x {\rm d}y$$</p><p>6. Množina \(D_{xy}\) je kruh, proto je pro výpočet dvojného integrálu vhodné volit&nbsp; polární souřadnice.<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:4};b={1:4}; c={2:5}; d={2:5};</text>
+</varsrandom>
+<varsglobal><text>a2=a*a; cd=c+d;
+A24B = a2 + 4*b; OA24B = sqrt(A24B); A24B2 = A24B*A24B;
+V = pi()*cd*(3*A24B2*OA24B - 5*a2*A24B*OA24B +2*a*a2*a2)/(16*15*a);</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 142112  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 20 (část parabolické uvnitř válce)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část&nbsp; plochy rotačního paraboloidu } x^2+y^2= z $$ $$\mbox{ uvnitř rotační válcové plochy } x^2 +y^2 = 2x.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \(xy,\ D_{xy}\). Zapište množinu \(D_{xy}\).<br></p><p>2. Plochu lze vyjádřit explicitně \(\displaystyle z = x^2+y^2\), proto je možné zvolit \(P(x,y) = [x,\ y,\ x^2+y^2],\ [x,y]\in D_{xy}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\). Při zvolené \(P\) podle bodu 2. lze normálový vektor určit: \(\displaystyle \vec n = \pm \left(\frac{\partial z}{\partial x},\ \frac{\partial z}{\partial y},\ -1\right)\).<br></p><p>4. Vyjádřete integrovanou funkci pomocí zvolené \(P\) a \( {\rm d} p = \|\vec n\| {\rm d} x {\rm d}y\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{D_{xy}} \ f(P(x,y))\ \|\vec n\| \ {\rm d} x {\rm d}y$$</p><p>6. Množina \(D_{xy}\) je kruh, proto je pro výpočet dvojného integrálu vhodné volit&nbsp; polární souřadnice. Střed kruhu není v bodě [0, 0]. <br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[f="\\frac{1}{\\sqrt{1+4z}}";
+V = pi()]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 142113  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 21 (explicitní, kužel uvnitř válce)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část }&nbsp; {sigma}$$ $${dal}.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \(xy,\ D_{xy}\). Zapište množinu \(D_{xy}\).<br></p><p>2. Navrhněte parametrizaci plochy \(P\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\). <br></p><p>4. Vyjádřete integrovanou funkci pomocí zvolené parametrizace a \( {\rm d} p = \|\vec n\| {\rm d} x {\rm d}y\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{D_{xy}} \ f(P(x,y))\ \|\vec n\| \ {\rm d} x {\rm d}y$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[f="\\frac{x^2-y^2}{z^3}";
+sigma="\\mbox{kuželové plochy }  z^2=x^2+y^2,\\ z\\geq 0,";
+dal ="\\mbox{ uvnitř rotační válcové plochy } x^2+2x+y^2=0";
+V = 4*sqrt(2)/3]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 8</text>
+    </category>
+    <info format="html">
+      <text>Plošný integrál</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 204487  -->
+  <question type="formulas">
+    <name>
+      <text>plošný (upr. MII_A 13.6.19)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<b>a)</b> Načrtněte plochu
+\(\sigma=\{[x,y,z]\in\mathbb E_{3}: z={x^{2}+y^{2}}, \, z \leq 1 \}\). <br><p>
+Navrhněte vhodnou parametrizaci \(P(u,v)\) plochy \(\sigma\,\) a určete \(\displaystyle\left\|\frac{\partial P}{\partial u}\times \frac{\partial P}{\partial v} \right\|\).</p>
+<b>b)</b> Vypočítejte plošný integrál
+(skalární funkce)  \(\displaystyle\iint_{\sigma} (4x^2+4y^2+1) \; {\rm d} p\).{#vypocet}<p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>V=pi()*(25*sqrt(5)-1)/10;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#vypocet</text>
+ </placeholder>
+ <answermark>
+  <text>17</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek je {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 204488  -->
+  <question type="formulas">
+    <name>
+      <text>plošný (upr. MII_A_06_06_19)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<b>a)</b> Načrtněte plochu 
+\(Q=\{[x,y,z]\in \mathbb E_3\, ;\ 4x+2y+z=4, \, x\geq 0, \, y\geq 0, \,
+z\geq 0\}\).  Navrhněte parametrizaci dané plochy. Toto uveďte v odevzdávaném řešení.<br><div><div><div data-tid="messageBodyContainer">Na základě vámi vybrané parametrizace určete vektor normály \(\vec n\)&nbsp; a vypočítejte skalární součiny&nbsp;vektorů: {#vektor}<br></div></div></div><p></p><p><b>b)</b> Vypočítejte tok vektorového pole \(\vec{f}=(2x,y,x^2 y)\) touto
+plochou. Plocha je orientována normálovým vektorem, který svírá
+s vektorem \(\vec{k}=(0,0,1)\) ostrý úhel. {#tok}</p><p>Postup řešení zapište do odevzdávaného souboru.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>#n=[4,2,1];
+V=61/15;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#vektor</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0,0]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[\(\vec n \cdot(1,0,-4)=\){_0}, <br>\(\vec n \cdot(1,-2, 0)=\){_1}.]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#tok</text>
+ </placeholder>
+ <answermark>
+  <text>13</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Tok vektorového pole \(\vec f\) plochou \(Q\) je {_0}.</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 204490  -->
+  <question type="formulas">
+    <name>
+      <text>plošný (upr. MII_A_10_06_19) (param)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<b>a)</b> Ověřte, že Gaussovu-Ostrogradského větu lze použít pro výpočet toku vektorového pole \(\displaystyle \vec{f}=(x \, y^2,y \, x^2,{\rm e}^{-x}+{\rm e}^{-y})\) dovnitř orientovanou plochou \(Q\), která je povrchem tělesa \(M=\Bigl\{[x,y,z]\in\mathbb E_3;\ \sqrt{x^2 + y^2} \leq  z \leq {c} \Bigr\}\). Toto podrobně zapište do odevzdávaného souboru.<p><b>b)</b> Určete divergenci zadaného pole \(\vec{f}\) v bodě \(\displaystyle \left[ \sqrt{{a}};\, \sqrt{{b}}\right] \). {#divergence}</p><p><b>c</b>) Vypočítejte tok 
+vektorového pole \(\vec{f}\) touto plochou. Postup výpočtu zapište do 
+odevzdávaného řešení, zde uveďte pouze výsledek.{#tok}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>18.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={3,5,7,8,10,11,12,13,14,15,17,18,19,20,21,22,23,24}; 
+b={2,5,7,8,10,11,12,13,14,15,17,18,19,20,21,22,23,24};
+c={1:8};</text>
+</varsrandom>
+<varsglobal><text>#a=2;b=3; c=9; 
+divergencef=a+b;
+V=-pi()*pow(c,5)/10;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#divergence</text>
+ </placeholder>
+ <answermark>
+  <text>6</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>divergencef</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>div \(\vec f(\sqrt{{a}};\, \sqrt{{b}}) = \) {_0}<br></p><br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#tok</text>
+ </placeholder>
+ <answermark>
+  <text>12</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek je {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 204489  -->
+  <question type="formulas">
+    <name>
+      <text>plošný (upr. MII_A_27.06.17)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Je dáno těleso \(M=\{ [x,y,z]\in\mathbb E_{3}: 0\leq z \leq \sqrt{{a2}-x^2-y^2}\, \} \).<p><b>a) </b>Načrtněte těleso \(M\) a jeho průmět \(B\) do roviny \(z=0\).<br></p><p><b>b)</b> Navrhněte parametrizaci plochy \(Q\) tvořené pláštěm tělesa \(M\).</p><p><b>c</b><b>)</b> Určete hmotnost nehomogenní fólie tvaru této plochy \(Q\), je-li plošná hustota 
+\(\rho (x,y,z)={b}+x^2+y^2\).{#vypocet}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>výsledek je {pomocne}\(\frac\pi 3\).<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:5}; b = {1:5}; #výsledek  řádově a na 4</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=2*pi()*a*a*(b+a2*2/3);
+pomocne=2*a2*(3*b+2*a2);</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#vypocet</text>
+ </placeholder>
+ <answermark>
+  <text>17</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[Hmotnost fólie je {_0}.<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 204493  -->
+  <question type="formulas">
+    <name>
+      <text>plošný (upr. MII_B 06_06_19)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<b>a)</b> V odevzdávaném řešení načrtněte plochu&nbsp; \(Q=\{[x,y,z]\in \mathbb E_3\, ;\ x^2+y^2= 4, \, 0 \le z\le 1\}\). <br><p><b>b)</b> Vypočítejte tok vektorového pole \(\vec{f}=(2x,y,-z)\) plochou \(Q\). Plocha je orientována normálovým vektorem,&nbsp; který má v bodě \([2,0,1]\) směr \(&nbsp; (1,0,0) \). Podrobný postup řešení zapište do odevzdávaného souboru. Zde uveďte pouze výsledek výpočtu.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>17</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>12*pi()</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 204491  -->
+  <question type="formulas">
+    <name>
+      <text>plošný (upr. MII_B_10_6_10)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Dána plocha \(Q = \{[x,y,z]\in \mathbb E_3;\ {a}x + {a}y + z&nbsp; = {b},  0 \le x\le 1,  0\le y\le 1 \} \). <br><p>Do odevzdávaného řešení ji načrtněte a navrhněte její parametrizaci, včetně rozmezí pro parametry. Užitím této parametrizace určete vektor kolmý k dané ploše.</p><p><b>a)</b> Vypočítejte jednotkový 
+vektor normály \(\vec n_0\) v bodě [{n1}; {n2}], který svírá s vektorem 
+\(\vec k=(0;\,0;\,1)\) tupý úhel.{#vektor}</p><p></p><p><b>b)</b>
+ Vypočítejte tok vektorového pole \(\vec{f}=({A}x;\,-{B}y;\,z)\) plochou
+ \(Q\), která je orientována normálovým vektorem svírajícím
+s vektorem \(\vec{k}=(0;0;1)\) tupý úhel.</p><p>V odevzdávaném řešení uveďte postup výpočtu. Zde zadejte pouze výsledek.{#tok}</p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:4}; q={2:6};
+A={1:5};</text>
+</varsrandom>
+<varsglobal><text>#a=2;b=6; A=2;
+b=a+q;
+n=[-a/sqrt(1+2*a*a), -a/sqrt(1+2*a*a), -1/sqrt(1+2*a*a)]; n1=0.5; n2=0.5;
+B=A+1;
+V=1.5*a-b; #OPRAVENO</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#vektor</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>n</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\vec n_0= \) ({_0}, {_1}, {_2}).<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#tok</text>
+ </placeholder>
+ <answermark>
+  <text>13</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[Výsledek {_0}.<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 204492  -->
+  <question type="formulas">
+    <name>
+      <text>plošný (upr. MII_B_27_6_17)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Uvažujme těleso ve tvaru části rotačního paraboloidu  \(M=\{[x,y,z]\in \mathbb E_3\,; 0\leq z\leq {a2}-x^2-y^2\,\}\).<p><b>a)</b> Načrtněte toto těleso a spočtěte jeho objem.{#objem}</p><p><b>b)</b>  Pomocí plošného integrálu spočtěte plošný obsah celého povrchu daného tělesa.{#plast}{#podstava}{#obsah}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:6};
+</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=pi()*a2*a2/2;
+S1=pi()*a2;
+S2=pi()*((1+4*a2)*sqrt(1+4*a2)-1)/6;
+S=S1+S2;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#objem</text>
+ </placeholder>
+ <answermark>
+  <text>7</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Objem tělesa je {_0}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#plast</text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>S2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Obsah pláště tělesa je {_0}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#podstava</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>S1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Obsah podstavy tělesa je {_0}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#obsah</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>S1+S2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Obsah celého&nbsp; povrchu je {_0}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

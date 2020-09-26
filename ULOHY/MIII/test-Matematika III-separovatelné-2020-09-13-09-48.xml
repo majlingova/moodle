@@ -1,0 +1,3622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "Matematika III".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM/ODR</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM/ODR/separovatelné</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 201894  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 1 (Herrmann 1.2.7)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Je zadaná diferenciální rovnice pro funkci \(y(x), x\mapsto y(x),\) $$ y^\prime = \sqrt{1-y^2}$$ <strong>a)</strong> Určete oblast \(G\) existence řešení této rovnice.<br>Pro \(-\infty\) použijte -infty, pro \(+\infty\) +infty nebo infty. (vyberte správné závorky)
+</p>\(G = \{[x ; y] \in \mathbb R^2 | \)<br>\(x \in \)
+<div style="display:inline-block;">{#1}</div>
+<div style="display:inline-block;">{#2}</div>
+<div style="display:inline-block;">{#3}</div><br> \(y \in \)
+<div style="display:inline-block;">{#4}</div>
+<div style="display:inline-block;">{#5}</div>
+<div style="display:inline-block;">{#6}</div>
+\(\}\)<br>
+<p dir="ltr" style="text-align: left;"><strong>b)</strong> Jsou funkce \(y(x) = 1\) a \(y(x) = -1\) řešeními zadané rovnice? {#stacionarni}</p>
+<p dir="ltr" style="text-align: left;"><strong>c)</strong> Určete obecné řešení zadané rovnice. {#obecne}<br></p>
+<p dir="ltr" style="text-align: left;"><strong>d)</strong> Určete řešení zadané rovnice, které vyhovuje počáteční podmínce \(\displaystyle y\left({X0}\right) = {Y0}\). {#partikularni}</p>
+<p dir="ltr" style="text-align: left;"><strong>e)</strong> Uveďte interval tohoto řešení.{#interval}&nbsp; <br></p>
+<p dir="ltr" style="text-align: left;"><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>10.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ansLx_order=shuffle([0:4]);
+ansRx_order=shuffle([0:4]);
+ansLy_order=shuffle([0:4]);
+ansRy_order=shuffle([0:4]);
+ky={0,1,2,3,4,5,6};
+kx={0,1,2,3};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[Y0=pick(ky,"0","\\frac 12","-\\frac 12","\\frac{\\sqrt 2}{2}",  "-\\frac{\\sqrt 2}{2}", "\\frac{\\sqrt{3}}{2}", "-\\frac{\\sqrt{3}}{2}");
+X0=pick(kx, "0", "-\\frac\\pi 2", "\\frac\\pi 2", "-\\pi");
+Cy0=[0, pi()/6, -pi()/6, 0];
+Cy1=[pi()/6, 2*pi()/3, -pi()/3, -pi()/6];
+Cy2=[-pi()/6, pi()/3, -2*pi()/6, pi()/6];
+Cy3=[pi()/4,   3*pi()/4, -pi()/4, -pi()/4];
+Cy4=[-pi()/4, -3*pi()/4,pi()/4,pi()/4];
+Cy5=[pi()/3,   5*pi()/6, -pi()/6, -pi()/3];
+Cy6=[-pi()/3, -5*pi()/6, pi()/6,  pi()/3];
+Cy=pick(ky,Cy0,Cy1,Cy2, Cy3,Cy4,Cy5, Cy6);
+C=pick(kx, Cy[0], Cy[1], Cy[2], Cy[3]);
+
+infty=9999;
+ansLx_inv=inv(ansLx_order); ansRx_inv=inv(ansRx_order);
+ansLy_inv=inv(ansLy_order); ansRy_inv=inv(ansRy_order);
+answers=["<", "(", ")" , ">"];
+ansLx_permuted=sublist(answers,ansLx_order);
+ansRx_permuted=sublist(answers,ansRx_order);
+ansLy_permuted=sublist(answers,ansLy_order);
+ansRy_permuted=sublist(answers,ansRy_order);
+ansLx = ansLx_inv[1];   ansRx = ansRx_inv[2];   
+ansLy = ansLy_inv[1];   ansRy = ansRy_inv[2];   
+xL=-infty; xR=infty;
+yL=-1; yR=1;
+answers1=["je řešením zadané diferenciální rovnice", "není řešením zadané diferenciální rovnice"];
+ans1=0; ans2=0;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansLx</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ansLx_permuted:MCE}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["xL", "xR"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0} ; {_1}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#3</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansRx</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ansRx_permuted:MCE}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#4</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansLy</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ansLy_permuted:MCE}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#5</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[yL,yR]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0} ; {_1}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#6</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansRy</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ansRy_permuted:MCE}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>6</text>
+ </partindex>
+ <placeholder>
+  <text>#stacionarni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ans1, ans2]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">Funkce \(y(x)=-1\) {_0:answers1:MCE}, protože ... (zdůvodnění uveďte v odevzdávaném řešení).</p><p dir="ltr" style="text-align: left;">Funkce \(y(x)=1\) {_1:answers1:MCE}, protože ... (zdůvodnění uveďte v odevzdávaném řešení).<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>7</text>
+ </partindex>
+ <placeholder>
+  <text>#obecne</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>C=222; c=222; x={-3:3:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["sin( x + C)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">Řešení uveďte i explicitním tvaru. Pro případnou konstantu použijte C nebo c.<br></p><p dir="ltr" style="text-align: left;">\(y(x) =\) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>8</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-5:5:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["sin(x + C)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y(x)=\) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>9</text>
+ </partindex>
+ <placeholder>
+  <text>#interval</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[-pi()/2 -C, pi()/2-C]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(x\in \) ( {_0}; {_1})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201895  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 2 (Pick)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Je zadaná diferenciální rovnice pro funkci \(y(x), x\mapsto y(x),\) $$ y^\prime = x\sqrt[3]{y^2}$$ <strong>a)</strong> Určete oblasti \(G_1, G_2\) existence řešení této rovnice.<br>Pro \(-\infty\) použijte -infty, pro \(+\infty\) +infty nebo infty.
+</p>\(G_1 = \{[x ; y] \in \mathbb R^2 | \)<br>\(x \in \)
+<div style="display:inline-block;">{#x1}</div>
+,<br> \(y \in \)
+<div style="display:inline-block;">{#y1}</div>\(\}\)<br> \(G_2 = \{[x ; y] \in \mathbb R^2 | \)<br>\(x \in \)
+<div style="display:inline-block;">{#x2}</div>
+,<br> \(y \in \)
+<div style="display:inline-block;">{#y2}</div>\(\}\)<br>
+
+<p dir="ltr" style="text-align: left;"><strong>b)</strong> Je funkce \(y(x) = 0\) řešením zadané rovnice? {#stacionarni}</p>
+<p dir="ltr" style="text-align: left;"><strong>c)</strong> Určete obecné řešení zadané rovnice. {#obecne}<br></p>
+<p dir="ltr" style="text-align: left;"><strong>d)</strong> Určete řešení zadané rovnice, které vyhovuje počáteční podmínce \(\displaystyle y\left({X0}\right) = {Y0}\). {#partikularni}</p>
+<p dir="ltr" style="text-align: left;"><strong>e)</strong> Uveďte interval tohoto řešení.{#interval}&nbsp; <br></p>
+<p dir="ltr" style="text-align: left;"><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>8.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ansLx_order=shuffle([0:4]);
+ansRx_order=shuffle([0:4]);
+ansLy_order=shuffle([0:4]);
+ansRy_order=shuffle([0:4]);
+ky={0,1,2,3,4,5,6};
+kx={0,1,2,3};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[X0=0; Y0=1; C=3;
+
+#Y0=pick(ky,"0","\\frac 12","-\\frac 12","\\frac{\\sqrt 2}{2}",  "-\\frac{\\sqrt 2}{2}", "\\frac{\\sqrt{3}}{2}", "-\\frac{\\sqrt{3}}{2}");
+#X0=pick(kx, "0", "-\\frac\\pi 2", "\\frac\\pi 2", "-\\pi");
+#Cy0=[0, pi()/6, -pi()/6, 0];
+#Cy1=[pi()/6, 2*pi()/3, -pi()/3, -pi()/6];
+#Cy2=[-pi()/6, pi()/3, -2*pi()/6, pi()/6];
+#Cy3=[pi()/4,   3*pi()/4, -pi()/4, -pi()/4];
+#Cy4=[-pi()/4, -3*pi()/4,pi()/4,pi()/4];
+#Cy5=[pi()/3,   5*pi()/6, -pi()/6, -pi()/3];
+#Cy6=[-pi()/3, -5*pi()/6, pi()/6,  pi()/3];
+#Cy=pick(ky,Cy0,Cy1,Cy2, Cy3,Cy4,Cy5, Cy6);
+#C=pick(kx, Cy[0], Cy[1], Cy[2], Cy[3]);
+
+infty=9999;
+ansLx_inv=inv(ansLx_order); ansRx_inv=inv(ansRx_order);
+ansLy_inv=inv(ansLy_order); ansRy_inv=inv(ansRy_order);
+answers=["<", "(", ")" , ">"];
+ansLx_permuted=sublist(answers,ansLx_order);
+ansRx_permuted=sublist(answers,ansRx_order);
+ansLy_permuted=sublist(answers,ansLy_order);
+ansRy_permuted=sublist(answers,ansRy_order);
+ansLx = ansLx_inv[1];   ansRx = ansRx_inv[2];   
+ansLy = ansLy_inv[1];   ansRy = ansRy_inv[2];   
+xL=-infty; xR=infty;
+yL1=-infty; yR1=0; yL2=0; yR2=infty;
+answers1=["je řešením zadané diferenciální rovnice", "není řešením zadané diferenciální rovnice"];
+ans1=0; ans2=0;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#x1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["xL", "xR"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>( {_0} ; {_1} )</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#y1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["yL1","yR1"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[( {_0} ; {_1} )<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#x2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["xL", "xR"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>( {_0} ; {_1} )</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#y2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["yL2","yR2"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>( {_0} ; {_1} )</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#stacionarni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ans1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">Funkce \(y(x)=0\) {_0:answers1:MCE}, protože ... (zdůvodnění uveďte v odevzdávaném řešení).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#obecne</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>C=222; c=222; x={-3:3:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["((x^2 / 2 + C) / 3)^3"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">Řešení uveďte v explicitním tvaru. Pro případnou konstantu použijte C nebo c.<br></p><p dir="ltr" style="text-align: left;">\(y(x) =\) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>6</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-5:5:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["((x^2 / 2 + C) / 3)^3"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y(x)=\) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>7</text>
+ </partindex>
+ <placeholder>
+  <text>#interval</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["-infty", "infty"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(x\in \) ( {_0}; {_1})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201896  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 3 (Kamke 1.9)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Je zadaná diferenciální rovnice pro funkci \(y(x), x\mapsto y(x),\) $$ y^\prime = \left( \sin(\ln x) + \cos(\ln x) {strA}\right) y $$ <strong>a)</strong> Určete oblasti \(G_1, G_2\) existence řešení této rovnice.<br>Pro \(-\infty\) použijte -infty, pro \(+\infty\) +infty nebo infty.
+</p>\(G_1 = \{[x ; y] \in \mathbb R^2 | \)<br>\(x \in \)
+<div style="display:inline-block;">{#x1}</div>
+,<br> \(y \in \)
+<div style="display:inline-block;">{#y1}</div>\(\}\)<br> \(G_2 = \{[x ; y] \in \mathbb R^2 | \)<br>\(x \in \)
+<div style="display:inline-block;">{#x2}</div>
+,<br> \(y \in \)
+<div style="display:inline-block;">{#y2}</div>\(\}\)<br>
+
+<p dir="ltr" style="text-align: left;"><strong>b)</strong> Je funkce \(y(x) = 0\) řešením zadané rovnice? {#stacionarni}</p>
+<p dir="ltr" style="text-align: left;"><strong>c)</strong> Určete obecné řešení zadané rovnice. {#obecne}<br></p>
+<p dir="ltr" style="text-align: left;"><strong>d)</strong> Určete řešení zadané rovnice, které vyhovuje počáteční podmínce \(\displaystyle y\left({X0}\right) = {Y0}\). {#partikularni}</p>
+<p dir="ltr" style="text-align: left;"><strong>e)</strong> Uveďte interval tohoto řešení.{#interval}&nbsp; <br></p>
+<p dir="ltr" style="text-align: left;"><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>8.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ansLx_order=shuffle([0:4]);
+ansRx_order=shuffle([0:4]);
+ansLy_order=shuffle([0:4]);
+ansRy_order=shuffle([0:4]);
+ky={0,1};
+kx={0,1,2,3};
+A={-2,-1,1,2};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[q = A<0 ? 0:1;
+znA=pick(q, " ","+");
+strA=join(" ",znA, str(A));
+
+X0=1; 
+Y00=join(" ", "e^{", str(A), "}");    #"e^{{strA}}";
+Y01=join(" ", "-e^{", str(A), "}");   #"-e^{{strA}}";
+Y0=pick(ky, Y00, Y01); 
+C=pick(ky,1,-1);
+
+infty=9999;
+
+xL=0; xR=infty;
+yL1=-infty; yR1=0; yL2=0; yR2=infty;
+answers1=["je řešením zadané diferenciální rovnice", "není řešením zadané diferenciální rovnice"];
+ans=0;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#x1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["xL", "xR"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>( {_0} ; {_1} )</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#y1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["yL1","yR1"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[( {_0} ; {_1} )<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#x2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["xL", "xR"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>( {_0} ; {_1} )</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#y2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["yL2","yR2"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>( {_0} ; {_1} )</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#stacionarni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">Funkce \(y(x)=0\) {_0:answers1:MCE}, protože ... (zdůvodnění uveďte v odevzdávaném řešení).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#obecne</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>C=222; c=222; x={2:3:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["C exp(A x + x sin(ln(x)))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">Řešení uveďte v explicitním tvaru. Pro případnou konstantu použijte C nebo c.<br></p><p dir="ltr" style="text-align: left;">\(y(x) =\) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>6</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={3:4:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["C exp(A x + x sin(ln(x)))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y(x)=\) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>7</text>
+ </partindex>
+ <placeholder>
+  <text>#interval</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["0", "infty"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(x\in \) ( {_0}; {_1})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201897  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 4 (Kamke 1.17)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Je zadaná diferenciální rovnice pro funkci \(y(x), x\mapsto y(x),\) $$ y^\prime = y^2+3y-4$$
+</p>
+<p dir="ltr" style="text-align: left;"><strong>a)</strong> Jsou funkce \(y(x) = -4,\ y(x)=1\) řešeními zadané rovnice? {#stacionarni}</p>
+<p dir="ltr" style="text-align: left;"><strong>b)</strong> Určete řešení zadané rovnice, které vyhovuje počáteční podmínce \(\displaystyle y\left({X0}\right) = {Y0}\). {#partikularni}</p>
+<p dir="ltr" style="text-align: left;"><strong>c)</strong> Uveďte interval tohoto řešení.<br> Pro \(-\infty\) použijte -infty, pro \(+\infty\) použijte infty nebo +infty. Vyberte správné závorky.</p>\(x \in \)
+<div style="display:inline-block;">{#1}</div>
+<div style="display:inline-block;">{#2}</div>
+<div style="display:inline-block;">{#3}</div><br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ansL_order=shuffle([0:4]);
+ansR_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[X0=0; 
+Y0=0; 
+
+
+infty=9999;
+
+xL=0; xR=infty;
+
+answers1=["je řešením zadané diferenciální rovnice", "není řešením zadané diferenciální rovnice"];
+ans1=0; ans2=0;
+
+answers=["<", "(", ")" , ">"];
+ansL=0; ansR=2;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#stacionarni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ans1, ans2]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">Funkce \(y(x)=-4\) {_0:answers1:MCE}, protože ... (zdůvodnění uveďte v odevzdávaném řešení).</p><p dir="ltr" style="text-align: left;">Funkce \(y(x)=1\) {_1:answers1:MCE}, protože ... (zdůvodnění uveďte v odevzdávaném řešení).<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["(4 - 4 exp(5 x))/(4 + exp(5 x))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y(x)=\) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansL</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["0", "infty"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0}; {_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#3</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansR</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201898  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 5a (Kamke 1.23)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Je zadaná diferenciální rovnice pro funkci \(y(x), x\mapsto y(x),\) $$ y^\prime = {b2}-{a2}y^2$$
+</p>
+<p dir="ltr" style="text-align: left;"><strong>a)</strong> Jsou funkce \(\displaystyle y(x) = \frac{{b}}{{a}},\ y(x)=-\frac{{b}}{{a}}\) řešeními zadané rovnice? {#stacionarni}</p>
+<p dir="ltr" style="text-align: left;"><strong>b)</strong>Určete obecné řešení zadané rovnice.{#obecne}</p>
+<p dir="ltr" style="text-align: left;"><strong>b)</strong> Určete řešení zadané rovnice, které vyhovuje počáteční podmínce \(\displaystyle y\left({X0}\right) = {Y0}\). {#partikularni}</p>
+<p dir="ltr" style="text-align: left;"><strong>c)</strong> Uveďte interval tohoto řešení.<br> Pro \(-\infty\) použijte -infty, pro \(+\infty\) použijte infty nebo +infty. Vyberte správné závorky.</p>\(x \in \)
+<div style="display:inline-block;">{#1}</div>
+<div style="display:inline-block;">{#2}</div>
+<div style="display:inline-block;">{#3}</div><br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>6.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text><![CDATA[#"a>0, b<0"
+a={1,2,3,4}; b={1,2,3,4};
+ansL_order=shuffle([0:4]);
+ansR_order=shuffle([0:4]);]]></text>
+</varsrandom>
+<varsglobal><text><![CDATA[X0=0; 
+Y0=0; 
+a2=a*a; b2 = -b*b; #"a>0, b<0"
+
+infty=9999;
+
+xL=-pi()/(2*a*b); xR=pi()/(2*a*b);
+
+answers1=["je řešením zadané diferenciální rovnice", "není řešením zadané diferenciální rovnice"];
+ans1=1; ans2=1;
+
+answers=["<", "(", ")" , ">"];
+ansL=1; ansR=2;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#stacionarni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ans1, ans2]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">Funkce \(y(x)=\frac{{b}}{{a}},\) {_0:answers1:MCE}, protože ... (zdůvodnění uveďte v odevzdávaném řešení).</p><p dir="ltr" style="text-align: left;">Funkce \(y(x)=-\frac{{b}}{{a}},\) {_1:answers1:MCE}, protože ... (zdůvodnění uveďte v odevzdávaném řešení).<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#obecne</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:1:0.1}; C=0; c=0;</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["b / a tan(- a b x + C)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">Řešení uveďte i explicitním tvaru. Pro případnou konstantu použijte C nebo c.</p><p dir="ltr" style="text-align: left;">\(y(x) = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:1:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["b / a tan(- a b x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y(x)=\) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansL</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["xL", "xR"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0}; {_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#3</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansR</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201899  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 5b (Kamke 1.23)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Je zadaná diferenciální rovnice pro funkci \(y(x), x\mapsto y(x),\) $$ y^\prime = {b2}+{a2}y^2$$
+</p>
+<p dir="ltr" style="text-align: left;"><strong>a)</strong> Jsou funkce \(\displaystyle y(x) = \frac{{b}}{{a}},\ y(x)=-\frac{{b}}{{a}}\) řešeními zadané rovnice? {#stacionarni}</p>
+<p dir="ltr" style="text-align: left;"><strong>b)</strong>Určete obecné řešení zadané rovnice.{#obecne}</p>
+<p dir="ltr" style="text-align: left;"><strong>b)</strong> Určete řešení zadané rovnice, které vyhovuje počáteční podmínce \(\displaystyle y\left({X0}\right) = {Y0}\). {#partikularni}</p>
+<p dir="ltr" style="text-align: left;"><strong>c)</strong> Uveďte interval tohoto řešení.<br> Pro \(-\infty\) použijte -infty, pro \(+\infty\) použijte infty nebo +infty. Vyberte správné závorky.</p>\(x \in \)
+<div style="display:inline-block;">{#1}</div>
+<div style="display:inline-block;">{#2}</div>
+<div style="display:inline-block;">{#3}</div><br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>6.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text><![CDATA[#"a<0, b>0"
+a={1,2,3,4}; b={1,2,3,4};
+ansL_order=shuffle([0:4]);
+ansR_order=shuffle([0:4]);]]></text>
+</varsrandom>
+<varsglobal><text><![CDATA[X0=0; 
+Y0=0; 
+a2=a*a; b2 = b*b; #"a<0, b>0"
+
+infty=9999;
+
+xL=-pi()/(2*a*b); xR=pi()/(2*a*b);
+
+answers1=["je řešením zadané diferenciální rovnice", "není řešením zadané diferenciální rovnice"];
+ans1=1; ans2=1;
+
+answers=["<", "(", ")" , ">"];
+ansL=1; ansR=2;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#stacionarni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ans1, ans2]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">Funkce \(y(x)=\frac{{b}}{{a}},\) {_0:answers1:MCE}, protože ... (zdůvodnění uveďte v odevzdávaném řešení).</p><p dir="ltr" style="text-align: left;">Funkce \(y(x)=-\frac{{b}}{{a}},\) {_1:answers1:MCE}, protože ... (zdůvodnění uveďte v odevzdávaném řešení).<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#obecne</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:1:0.1}; C=0; c=0;</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["b / a tan( a b x + C)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">Řešení uveďte i explicitním tvaru. Pro případnou konstantu použijte C nebo c.</p><p dir="ltr" style="text-align: left;">\(y(x) = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:1:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["b / a tan(a b x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y(x)=\) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansL</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["xL", "xR"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0}; {_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#3</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansR</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201900  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 5c (Kamke 1.23) nedokončeno</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Je zadaná diferenciální rovnice pro funkci \(y(x), x\mapsto y(x),\) $$ y^\prime = {b2}-{a2}y^2$$
+</p>
+<p dir="ltr" style="text-align: left;"><strong>a)</strong> Jsou funkce \(\displaystyle y(x) = \frac{{b}}{{a}},\ y(x)=-\frac{{b}}{{a}}\) řešeními zadané rovnice? {#stacionarni}</p>
+<p dir="ltr" style="text-align: left;"><strong>b)</strong> Určete obecné řešení zadané rovnice.{#obecne}</p>
+<p dir="ltr" style="text-align: left;"><strong>c)</strong> Určete řešení zadané rovnice, které vyhovuje počáteční podmínce \(\displaystyle y\left({X0}\right) = {Y0}\). {#partikularni}</p>
+<!--<p dir="ltr" style="text-align: left;"><strong>c)</strong> Uveďte interval tohoto řešení.<br> Pro \(-\infty\) použijte -infty, pro \(+\infty\) použijte infty nebo +infty. Vyberte správné závorky.</p>\(x \in \)
+<div style="display:inline-block;">{1}</div>
+<div style="display:inline-block;">{2}</div>
+<div style="display:inline-block;">{3}</div><br>-->]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>6.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text><![CDATA[#"a>0, b>0"
+a={1,2,3,4}; b={1,2,3,4};
+ansL_order=shuffle([0:4]);
+ansR_order=shuffle([0:4]);]]></text>
+</varsrandom>
+<varsglobal><text><![CDATA[X0=0; 
+Y0=a; 
+a2=a*a; b2 = b*b; #"a>0, b>0"
+
+infty=9999;
+
+xL=-pi()/(2*a*b); xR=pi()/(2*a*b);
+
+answers1=["je řešením zadané diferenciální rovnice", "není řešením zadané diferenciální rovnice"];
+ans1=1; ans2=1;
+
+answers=["<", "(", ")" , ">"];
+ansL=1; ansR=2;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#stacionarni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ans1, ans2]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">Funkce \(y(x)=\frac{{b}}{{a}},\) {_0:answers1:MCE}, protože ... (zdůvodnění uveďte v odevzdávaném řešení).</p><p dir="ltr" style="text-align: left;">Funkce \(y(x)=-\frac{{b}}{{a}},\) {_1:answers1:MCE}, protože ... (zdůvodnění uveďte v odevzdávaném řešení).<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#obecne</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:1:0.1}; C=0; c=0;</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["b / a tan(- a b x + C)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">Řešení uveďte i explicitním tvaru. Pro případnou konstantu použijte C nebo c.</p><p dir="ltr" style="text-align: left;">\(y(x) = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:1:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["b / a tan(- a b x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y(x)=\) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansL</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["xL", "xR"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0}; {_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansR</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201901  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 6 (Kamke 1.159) nedokončeno - obecné</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Je zadaná diferenciální rovnice pro funkci \(y(x), x\mapsto y(x),\) $$ y^\prime = \frac{2xy\ln y}{x^2-1}$$
+</p>
+<p dir="ltr" style="text-align: left;"><strong>a)</strong> Je funkce \(\displaystyle y(x) = 1\) řešením zadané rovnice? {#stacionarni}</p>
+<p dir="ltr" style="text-align: left;"><strong>b)</strong> Určete obecné řešení zadané rovnice.{#obecne}</p>
+<p dir="ltr" style="text-align: left;"><strong>c)</strong> Určete řešení zadané rovnice, které vyhovuje počáteční podmínce \(\displaystyle y\left({X0}\right) = {Y0}\). {#partikularni}</p>
+<p dir="ltr" style="text-align: left;"><strong>c)</strong> Uveďte interval tohoto řešení.<br> Pro \(-\infty\) použijte -infty, pro \(+\infty\) použijte infty nebo +infty. Vyberte správné závorky.</p>\(x \in \)
+<div style="display:inline-block;">{#1}</div>
+<div style="display:inline-block;">{#2}</div>
+<div style="display:inline-block;">{#3}</div><br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>6.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ansL_order=shuffle([0:4]);
+ansR_order=shuffle([0:4]);
+q={0,1}</text>
+</varsrandom>
+<varsglobal><text><![CDATA[X0=0; 
+Y0=pick(q,"e","\\frac 1 e"); 
+C=pick(q,1,-1);
+infty=9999;
+xL=-1; xR=1;
+
+answers1=["je řešením zadané diferenciální rovnice", "není řešením zadané diferenciální rovnice"];
+ans1=0; 
+
+answers=["<", "(", ")" , ">"];
+ansL=1; ansR=2;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#stacionarni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">Funkce \(y(x)=1,\) {_0:answers1:MCE}, protože ... (zdůvodnění uveďte v odevzdávaném řešení).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#obecne</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-1:1:0.1}; C=1; c=1;</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp( C (x^2-1))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">Řešení uveďte i explicitním tvaru. Pro případnou konstantu použijte C nebo c.</p><p dir="ltr" style="text-align: left;">\(y(x) = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-1:1:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(C*(x^2 - 1))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y(x)=\) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansL</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["xL", "xR"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0}; {_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#3</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansR</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

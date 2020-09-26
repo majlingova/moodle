@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068</text>
+    </category>
+    <info format="html">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "B192-2011068".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 8/plošný-sklalární-valec</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 141963  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 11 (válec, parametrizovaný poloměr)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část&nbsp; válcové plochy }&nbsp; x^2+y^2={a2} ,\ 0\leq z\leq {b},\ x\geq 0,\ y\geq 0.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \( xy,\ D_{xy}\). <br></p><p>2. Navrhněte parametrizaci plochy \(P\), pro válcovou plochu například&nbsp;&nbsp; \(\displaystyle P(u,v) = \left[{a}\cos u,\ {a}\sin u,\ v\right]\) a určete množinu \(B =\{[u,v]\in\mathbb E_2:\ \dots \leq u\leq \dots, \ \dots\leq v\leq \dots \}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\).<br></p><p>4. Vyjádřete \(f(P(u,v))\) a&nbsp; \( {\rm d} p = \|\vec n\| {\rm d} u {\rm d}v\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{B} \ f(P(u,v))\ \|\vec n\| \ {\rm d} u {\rm d}v$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:5}; b={1:6}</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a2=a*a;
+f="x";
+V = a2*b]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 141993  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 12 (válec, parametrizovaný poloměr)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část&nbsp; rotační válcové plochy }&nbsp; x^2+y^2={a2} ,\ {b}\leq z\leq {bc},\ x\leq 0.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \( xy,\ D_{xy}\). <br></p><p>2. Navrhněte parametrizaci plochy \(P\), pro válcovou plochu například&nbsp;&nbsp; \(\displaystyle P(u,v) = \left[{a}\cos u,\ {a}\sin u,\ v\right]\) a určete množinu \(B =\{[u,v]\in\mathbb E_2:\ \dots \leq u\leq \dots, \ \dots\leq v\leq \dots \}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\).<br></p><p>4. Vyjádřete \(f(P(u,v))\) a&nbsp; \( {\rm d} p = \|\vec n\| {\rm d} u {\rm d}v\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{B} \ f(P(u,v))\ \|\vec n\| \ {\rm d} u {\rm d}v$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:4}; b={1:3} ; c={1:3};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a2=a*a; bc=b+c;
+f="xy^2z^3";
+V = -a2*a2*(pow(b+c,4)-pow(b,4))/6]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 141996  -->
+  <question type="formulas">
+    <name>
+      <text>plošný skalární 13 (válec, parametrizovaný poloměr)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte plošný integrál $$\iint_\sigma\ {f}\ {\rm d}p,$$ $$\mbox{ kde plocha } \sigma \mbox{ je část&nbsp; rotační válcové plochy }&nbsp; x^2+z^2={a2} ,\ {b}\leq y\leq {bc},\ x\geq 0,\ z\geq 0.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.</p><p>1. Načrtněte si obrázek plochy \(\sigma\) a její průmět do roviny \( xz,\ D_{xz}\). <br></p><p>2. Navrhněte parametrizaci plochy \(P\), pro válcovou plochu například&nbsp;&nbsp; \(\displaystyle P(u,v) = \left[{a}\cos u,\ v,\ {a}\sin u\right]\) a určete množinu \(B =\{[u,v]\in\mathbb E_2:\ \dots \leq u\leq \dots, \ \dots\leq v\leq \dots \}\). <br></p><p>3. Určete normálový vektor \(\vec{n}\) a jeho velikost \( \|\vec{n}\|\).<br></p><p>4. Vyjádřete \(f(P(u,v))\) a&nbsp; \( {\rm d} p = \|\vec n\| {\rm d} u {\rm d}v\).</p><p>5. Převeďte plošný integrál na dvojný integrál $$\displaystyle \iint_\sigma \ {f}\ {\rm d}p = \iint_{B} \ f(P(u,v))\ \|\vec n\| \ {\rm d} u {\rm d}v$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:4}; b={1:3} ; c={1:3};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a2=a*a; bc=b+c;
+f="xz";
+V = a2*a*c/2]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

@@ -1,0 +1,2270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011049/teplo implicitni</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 140086  -->
+  <question type="formulas">
+    <name>
+      <text>teplo implicitni 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána smíšená úloha pro rovnici vedení tepla: $$\frac{\partial u}{\partial t} ={{p}}\frac{\partial^2 u}{\partial x^2} + {{f}} \ \mbox{ v oblasti } \Omega = \{[x,t]:\ x\in({a},{b}),\ t&gt;0\}$$ s počáteční podmínkou \( u(x,0) = {{phi}},\ x\in\langle {a},\ {b}\rangle \) <br></p><p>a okrajovými podmínkami \( u({a},t) = {alpha},\ u({b},t) = {beta},\ t\geq 0\).</p><p>Volte prostorový krok \(h = {h}\), časový krok \(\tau = {tau}\).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Soustavu rovnic sestavujeme podle schématu $$-\frac{p\tau}{h^2}U_{i-1}^{k+1} + \left(1 + 2\frac{p\tau}{h^2}\right) U_i^{k+1} - \frac{p\tau}{h^2} U_{i+1}^{k+1}= U_i^k + \tau f(x_i, t^{k+1})$$</p><p>Pro zadanou úlohu je \(p={p}\), jsou zvolené kroky \(h={h}, \tau = {tau}\), tedy \(\displaystyle \frac{p\tau}{h^2} = {sigma}\). <br></p><p>Uzly sítě mají \(x\)-ové souřadnice \(x_0 = {x[0]},\ x_1 = {x[1]}, x_2= {x[2]}, x_3 = {x[3]}, x_4 = {x[4]} \).<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>6.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[p=2; f="4x";
+a = -1; b = 1;
+phi="2x + 2"; alpha="0"; beta = "4-t";
+h=0.5; tau = 0.1;
+x=[-1, -0.5, 0, 0.5, 1];
+u0= [0, 1, 2, 3, 4]; u1=[0, 4-tau];
+sigma = p*tau/(h*h);
+prava = [ u0[1]+tau*4*x[1]+sigma*u1[0],  u0[2]+ tau*4*x[2] , u0[3] +tau* 4*x[3] + sigma*u1[1] ];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>5</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>u0</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty v nulté časové vrstvě. <br></p><p>\(U_0^0 = \){_0}, \(U_1^0 = \){_1}, \(U_2^0 = \){_2}, \(U_3^0 = \){_3}, \(U_4^0 = \){_4}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>u1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty \(U_0^1 = \){_0} a \(U_4^1 = \){_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>sigma</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \(\displaystyle \frac{p\tau}{h^2} = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[1+2*sigma, -sigma, 0, prava[0]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Doplňte koeficienty a pravou stranu soustavy rovnic pro určení hodnot \(U_i^1\) implicitní metodou.</p><p> 1. rovnice : {_0}\(U_1^1\) {_1} \(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[-sigma, 1+2*sigma, -sigma, prava[1]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>2. rovnice : {_0}\(U_1^1\) {_1} \(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0, -sigma, 1+2*sigma, prava[2]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>3. rovnice : {_0}\(U_1^1\){_1}\(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 140113  -->
+  <question type="formulas">
+    <name>
+      <text>teplo implicitni 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána smíšená úloha pro rovnici vedení tepla: $$\frac{\partial u}{\partial t} ={{p}}\frac{\partial^2 u}{\partial x^2} + {{f}} \ \mbox{ v oblasti } \Omega = \{[x,t]:\ x\in({a},{b}),\ t&gt;0\}$$ s počáteční podmínkou \( u(x,0) = {{phi}},\ x\in\langle {a},\ {b}\rangle \) <br></p><p>a okrajovými podmínkami \( u({a},t) = {alpha},\ u({b},t) = {{beta}},\ t\geq 0\).</p><p>Volte prostorový krok \(h = {h}\), časový krok \(\tau = {tau}\).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Soustavu rovnic sestavujeme podle schématu $$-\frac{p\tau}{h^2}U_{i-1}^{k+1} + \left(1 + 2\frac{p\tau}{h^2}\right) U_i^{k+1} - \frac{p\tau}{h^2} U_{i+1}^{k+1}= U_i^k + \tau f(x_i, t^{k+1})$$</p><p>Pro zadanou úlohu je \(p={p}\), jsou zvolené kroky \(h={h}, \tau = {tau}\), tedy \(\displaystyle \frac{p\tau}{h^2} = {sigma}\). <br></p><p>Uzly sítě mají \(x\)-ové souřadnice \(x_0 = {x[0]},\ x_1 = {x[1]}, x_2= {x[2]}, x_3 = {x[3]}, x_4 = {x[4]} \).<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>6.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[p=3; f="2xt";
+a = -2; b = 2;
+phi="x^2 - 4"; alpha="4t"; beta = "\\sqrt t";
+h=1; tau = 0.25;
+x=[-2, -1, 0, 1, 2];
+u0= [0, -3, -4, -3, 0]; u1=[1, 0.5];
+sigma = p*tau/(h*h);
+prava = [ u0[1]+tau*2*x[1]*tau+sigma*u1[0],  u0[2]+ tau*tau*2*x[2] , u0[3] +tau* tau*2*x[3] + sigma*u1[1] ];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>5</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>u0</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty v nulté časové vrstvě. <br></p><p>\(U_0^0 = \){_0}, \(U_1^0 = \){_1}, \(U_2^0 = \){_2}, \(U_3^0 = \){_3}, \(U_4^0 = \){_4}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>u1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty \(U_0^1 = \){_0} a \(U_4^1 = \){_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>sigma</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \(\displaystyle \frac{p\tau}{h^2} = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[1+2*sigma, -sigma, 0, prava[0]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Doplňte koeficienty a pravou stranu soustavy rovnic pro určení hodnot \(U_i^1\) implicitní metodou.</p><p> 1. rovnice : {_0}\(U_1^1\) {_1} \(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[-sigma, 1+2*sigma, -sigma, prava[1]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>2. rovnice : {_0}\(U_1^1\) {_1} \(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0, -sigma, 1+2*sigma, prava[2]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>3. rovnice : {_0}\(U_1^1\){_1}\(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 140148  -->
+  <question type="formulas">
+    <name>
+      <text>teplo implicitni 3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána smíšená úloha pro rovnici vedení tepla: $$\frac{\partial u}{\partial t} ={{p}}\frac{\partial^2 u}{\partial x^2} + {{f}} \ \mbox{ v oblasti } \Omega = \{[x,t]:\ x\in({a},{b}),\ t&gt;0\}$$ s počáteční podmínkou \( u(x,0) = {{phi}},\ x\in\langle {a},\ {b}\rangle \) <br></p><p>a okrajovými podmínkami \( u({a},t) = {alpha},\ u({b},t) = {{beta}},\ t\geq 0\).</p><p>Volte prostorový krok \(h = {h}\), časový krok \(\tau = {tau}\).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Soustavu rovnic sestavujeme podle schématu $$-\frac{p\tau}{h^2}U_{i-1}^{k+1} + \left(1 + 2\frac{p\tau}{h^2}\right) U_i^{k+1} - \frac{p\tau}{h^2} U_{i+1}^{k+1}= U_i^k + \tau f(x_i, t^{k+1})$$</p><p>Pro zadanou úlohu je \(p={p}\), jsou zvolené kroky \(h={h}, \tau = {tau}\), tedy \(\displaystyle \frac{p\tau}{h^2} = {sigma}\). <br></p><p>Uzly sítě mají \(x\)-ové souřadnice \(x_0 = {x[0]},\ x_1 = {x[1]}, x_2= {x[2]}, x_3 = {x[3]}, x_4 = {x[4]} \).<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>6.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[p=0.125; f="2x-t";
+a = -0.5; b = 0.5;
+phi="2x"; alpha=-1; beta = 1;
+h=0.25; tau = 0.5;
+x=[-0.5, -0.25, 0, 0.25, 0.5];
+u0= [-1, -0.5, 0, 0.5, 1]; u1=[-1, 1];
+sigma = p*tau/(h*h);
+prava = [ u0[1]+tau*(2*x[1]-tau)+sigma*u1[0],  u0[2]+ tau*(2*x[2]-tau) , u0[3] +tau*(2*x[3]- tau) + sigma*u1[1] ];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>5</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>u0</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty v nulté časové vrstvě. <br></p><p>\(U_0^0 = \){_0}, \(U_1^0 = \){_1}, \(U_2^0 = \){_2}, \(U_3^0 = \){_3}, \(U_4^0 = \){_4}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>u1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty \(U_0^1 = \){_0} a \(U_4^1 = \){_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>sigma</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \(\displaystyle \frac{p\tau}{h^2} = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[1+2*sigma, -sigma, 0, prava[0]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Doplňte koeficienty a pravou stranu soustavy rovnic pro určení hodnot \(U_i^1\) implicitní metodou.</p><p> 1. rovnice : {_0}\(U_1^1\) {_1} \(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[-sigma, 1+2*sigma, -sigma, prava[1]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>2. rovnice : {_0}\(U_1^1\) {_1} \(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0, -sigma, 1+2*sigma, prava[2]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>3. rovnice : {_0}\(U_1^1\){_1}\(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 140149  -->
+  <question type="formulas">
+    <name>
+      <text>teplo implicitni 4</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána smíšená úloha pro rovnici vedení tepla: $$\frac{\partial u}{\partial t} ={{p}}\frac{\partial^2 u}{\partial x^2} + {{f}} \ \mbox{ v oblasti } \Omega = \{[x,t]:\ x\in({a},{b}),\ t&gt;0\}$$ s počáteční podmínkou \( u(x,0) = {{phi}},\ x\in\langle {a},\ {b}\rangle \) <br></p><p>a okrajovými podmínkami \( u({a},t) = {alpha},\ u({b},t) = {{beta}},\ t\geq 0\).</p><p>Volte prostorový krok \(h = {h}\), časový krok \(\tau = {tau}\).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Soustavu rovnic sestavujeme podle schématu $$-\frac{p\tau}{h^2}U_{i-1}^{k+1} + \left(1 + 2\frac{p\tau}{h^2}\right) U_i^{k+1} - \frac{p\tau}{h^2} U_{i+1}^{k+1}= U_i^k + \tau f(x_i, t^{k+1})$$</p><p>Pro zadanou úlohu je \(p={p}\), jsou zvolené kroky \(h={h}, \tau = {tau}\), tedy \(\displaystyle \frac{p\tau}{h^2} = {sigma}\). <br></p><p>Uzly sítě mají \(x\)-ové souřadnice \(x_0 = {x[0]},\ x_1 = {x[1]}, x_2= {x[2]}, x_3 = {x[3]}, x_4 = {x[4]} \).<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>6.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[p=1.25; f="x+t";
+a = 1; b = 3;
+phi="1-x"; alpha="t"; beta = -2;
+h=0.5; tau = 0.5;
+x=[1, 1.5, 2, 2.5, 3];
+u0= [0, -0.5, -1, -1.5, -2]; u1=[0.5, -2];
+sigma = p*tau/(h*h);
+prava = [ u0[1]+tau*(x[1]+tau)+sigma*u1[0],  u0[2]+ tau*(x[2]+tau) , u0[3] +tau*(x[3]+ tau) + sigma*u1[1] ];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>5</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>u0</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty v nulté časové vrstvě. <br></p><p>\(U_0^0 = \){_0}, \(U_1^0 = \){_1}, \(U_2^0 = \){_2}, \(U_3^0 = \){_3}, \(U_4^0 = \){_4}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>u1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty \(U_0^1 = \){_0} a \(U_4^1 = \){_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>sigma</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \(\displaystyle \frac{p\tau}{h^2} = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[1+2*sigma, -sigma, 0, prava[0]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Doplňte koeficienty a pravou stranu soustavy rovnic pro určení hodnot \(U_i^1\) implicitní metodou.</p><p> 1. rovnice : {_0}\(U_1^1\) {_1} \(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[-sigma, 1+2*sigma, -sigma, prava[1]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>2. rovnice : {_0}\(U_1^1\) {_1} \(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0, -sigma, 1+2*sigma, prava[2]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>3. rovnice : {_0}\(U_1^1\){_1}\(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 140150  -->
+  <question type="formulas">
+    <name>
+      <text>teplo implicitni 5</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána smíšená úloha pro rovnici vedení tepla: $$\frac{\partial u}{\partial t} ={{p}}\frac{\partial^2 u}{\partial x^2} + {{f}} \ \mbox{ v oblasti } \Omega = \{[x,t]:\ x\in({a},{b}),\ t&gt;0\}$$ s počáteční podmínkou \( u(x,0) = {{phi}},\ x\in\langle {a},\ {b}\rangle \) <br></p><p>a okrajovými podmínkami \( u({a},t) = {alpha},\ u({b},t) = {{beta}},\ t\geq 0\).</p><p>Volte prostorový krok \(h = {h}\), časový krok \(\tau = {tau}\).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Soustavu rovnic sestavujeme podle schématu $$-\frac{p\tau}{h^2}U_{i-1}^{k+1} + \left(1 + 2\frac{p\tau}{h^2}\right) U_i^{k+1} - \frac{p\tau}{h^2} U_{i+1}^{k+1}= U_i^k + \tau f(x_i, t^{k+1})$$</p><p>Pro zadanou úlohu je \(p={p}\), jsou zvolené kroky \(h={h}, \tau = {tau}\), tedy \(\displaystyle \frac{p\tau}{h^2} = {sigma}\). <br></p><p>Uzly sítě mají \(x\)-ové souřadnice \(x_0 = {x[0]},\ x_1 = {x[1]}, x_2= {x[2]}, x_3 = {x[3]}, x_4 = {x[4]} \).<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>6.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[p=0.5; f="x-2t";
+a = -0.8; b = 0.8;
+phi="-1.25x"; alpha="t+1"; beta = -1;
+h=0.4; tau = 0.4;
+x=[-0.8, -0.4, 0, 0.4, 0.8];
+u0= [1, 0.5, 0, -0.5, -1]; u1=[1.4, -1];
+sigma = p*tau/(h*h);
+prava = [ u0[1]+tau*(x[1]-2*tau)+sigma*u1[0],  u0[2]+ tau*(x[2]-2*tau) , u0[3] +tau*(x[3]- 2*tau) + sigma*u1[1] ];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>5</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>u0</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty v nulté časové vrstvě. <br></p><p>\(U_0^0 = \){_0}, \(U_1^0 = \){_1}, \(U_2^0 = \){_2}, \(U_3^0 = \){_3}, \(U_4^0 = \){_4}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>u1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty \(U_0^1 = \){_0} a \(U_4^1 = \){_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>sigma</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \(\displaystyle \frac{p\tau}{h^2} = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[1+2*sigma, -sigma, 0, prava[0]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Doplňte koeficienty a pravou stranu soustavy rovnic pro určení hodnot \(U_i^1\) implicitní metodou.</p><p> 1. rovnice : {_0}\(U_1^1\) {_1} \(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[-sigma, 1+2*sigma, -sigma, prava[1]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>2. rovnice : {_0}\(U_1^1\) {_1} \(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0, -sigma, 1+2*sigma, prava[2]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>3. rovnice : {_0}\(U_1^1\){_1}\(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 140151  -->
+  <question type="formulas">
+    <name>
+      <text>teplo implicitni 6</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána smíšená úloha pro rovnici vedení tepla: $$\frac{\partial u}{\partial t} =\frac{\partial^2 u}{\partial x^2} + {{f}} \ \mbox{ v oblasti } \Omega = \{[x,t]:\ x\in({a},{b}),\ t&gt;0\}$$ s počáteční podmínkou \( u(x,0) = {{phi}},\ x\in\langle {a},\ {b}\rangle \) <br></p><p>a okrajovými podmínkami \( u({a},t) = {alpha},\ u({b},t) = {{beta}},\ t\geq 0\).</p><p>Volte prostorový krok \(h = {h}\), časový krok \(\tau = {tau}\).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Soustavu rovnic sestavujeme podle schématu $$-\frac{p\tau}{h^2}U_{i-1}^{k+1} + \left(1 + 2\frac{p\tau}{h^2}\right) U_i^{k+1} - \frac{p\tau}{h^2} U_{i+1}^{k+1}= U_i^k + \tau f(x_i, t^{k+1})$$</p><p>Pro zadanou úlohu je \(p={p}\), jsou zvolené kroky \(h={h}, \tau = {tau}\), tedy \(\displaystyle \frac{p\tau}{h^2} = {sigma}\). <br></p><p>Uzly sítě mají \(x\)-ové souřadnice \(x_0 = {x[0]},\ x_1 = {x[1]}, x_2= {x[2]}, x_3 = {x[3]}, x_4 = {x[4]} \).<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>6.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[p=1; f="2x-t";
+a = -1; b = 1;
+phi="x^2"; alpha="1+t"; beta = "1+t";
+h=0.5; tau = 0.5;
+x=[-1, -0.5,  0,  0.5, 1];
+u0= [1, 0.25, 0, 0.25, 1]; u1=[1.5, 1.5];
+sigma = p*tau/(h*h);
+prava = [ u0[1]+tau*(2*x[1]-tau)+sigma*u1[0],  u0[2]+ tau*(2*x[2]-tau) , u0[3] +tau*(2*x[3]- tau) + sigma*u1[1] ];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>5</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>u0</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty v nulté časové vrstvě. <br></p><p>\(U_0^0 = \){_0}, \(U_1^0 = \){_1}, \(U_2^0 = \){_2}, \(U_3^0 = \){_3}, \(U_4^0 = \){_4}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>u1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty \(U_0^1 = \){_0} a \(U_4^1 = \){_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>sigma</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \(\displaystyle \frac{p\tau}{h^2} = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[1+2*sigma, -sigma, 0, prava[0]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Doplňte koeficienty a pravou stranu soustavy rovnic pro určení hodnot \(U_i^1\) implicitní metodou.</p><p> 1. rovnice : {_0}\(U_1^1\) {_1} \(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[-sigma, 1+2*sigma, -sigma, prava[1]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>2. rovnice : {_0}\(U_1^1\) {_1} \(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0, -sigma, 1+2*sigma, prava[2]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>3. rovnice : {_0}\(U_1^1\){_1}\(U_2^1\) {_2}\(U_3^1 = \){_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

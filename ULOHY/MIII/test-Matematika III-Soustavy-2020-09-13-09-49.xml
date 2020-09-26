@@ -1,0 +1,1787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "Matematika III".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM/ODR</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM/ODR/Soustavy</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 203045  -->
+  <question type="formulas">
+    <name>
+      <text>soustavy 0 (kopie)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A3</b><br></p><p>Je dána Cauchyova úloha: $$\dot 
+{X}\,=\left ( \begin {array}{cc} 2 &amp; p \\ 1 &amp; 2 \end {array} 
+\right ) \, X, \quad X(0)\,=\left ( \begin {array}{r} -9 \\ 1 \end 
+{array} \right ).$$ </p><p><b>a)</b> Určete, pro jakou hodnotu \(p\in\mathbb R\) nemá tato soustava izolovaný bod rovnováhy. Výsledek zdůvodněte v odevzdávaném řešení.{#br} <br></p><p><b>b)</b> Zjistěte, pro jaké 
+hodnoty parametru \(p\in\mathbb R\) má tato soustava izolovaný bod rovnováhy typu 
+sedlo. Zadejte interval \(I =(a,\ b)\), pro \(-\infty\) použijte -infty, pro \(+\infty\) použijte +infty. Je-li intervalů více, zadejte libovolný z nich. {#sedlo}</p><p><b>c)</b> Pro \(p=9\) určete 
+vlastní čísla matice zadané soustavy diferenciálních rovnic a ke každému vlastnímu číslu zapište odpovídající vlastní vektor ve tvaru, kdy má druhou složku rovnu jedné. {#vlc}</p><p><b>d)</b> Zapište fundamentální systém řešení \(\{\Phi_1=(x(t), y(t)),\ \Phi_2=(x(t), y(t))\}\) zadané soustavy diferenciálních rovnic. Funkce \(\Phi_1, \Phi_2\) zapište po složkách. Vlastní vektory použijte ve tvaru z bodu <b>c)</b>, tj. s druhými složkami rovnými jedné. Jako \(\Phi_1\) uveďte funkci, která odpovídá menšímu v absolutní hodnotě vlastnímu číslu. {#fsr1}{#fsr2}<br></p><p><b>e)</b> Určete maximální řešení zadané soustavy diferenciálních rovnic. Řešení zapište po složkách \( (x(t), y(t))^T\).{#resenix}{#reseniy}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>25.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>lambda1=-1;lambda2=5;u=-3;v=3; C1=2; C2=-1;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#br</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>4</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(p\) = {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#sedlo</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text>a=4; b=302741;infty=b;</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["a","b"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(I=\)({_0}, {_1})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#vlc</text>
+ </placeholder>
+ <answermark>
+  <text>12</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>6</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[lambda1, 0,u,lambda2,0,v]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[c1=(_0 == lambda1 && _1==0 && _2 == u) || (_0 == lambda2 && _1==0 && _2 == v);
+c2=(_3 == lambda2 && _4==0 && _5 == v) || (_3 == lambda1 && _4==0 && _5 == u);
+c3=(_0 != _3);
+c4=(_2 != _5);]]></text>
+ </vars2>
+ <correctness>
+  <text>(c1+c2+c3+c4)/4</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Vlastnímu číslu \(\lambda_1 = \){_0} +{_1} \(i\) odpovídá vlastní vektor \(\vec u = \)({_2}, 1)\(^T\).</p><p>Vlastnímu číslu \(\lambda_2 = \){_3} +{_4} \(i\) odpovídá vlastní vektor \(\vec v = \)({_5}, 1)\(^T\).</p><p>Je-li reálná nebo imaginární část vlastního čísla nulová, nezapomeňte zadat nulu!<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#fsr1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text>t={-3:3:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["u*exp(lambda1*t)", "exp(lambda1*t)" ]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.015]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\Phi_1(x,y): x(t) = \){_0}, \(y(t) = \){_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#fsr2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["v*exp(lambda2*t)", "exp(lambda2*t)" ]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\Phi_2(x,y): x(t) = \){_0}, \(y(t) = \){_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#resenix</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.01}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["u*C1*exp(lambda1*t) + v*C2*exp(lambda2*t)"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.001]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x(t) = \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>6</text>
+ </partindex>
+ <placeholder>
+  <text>#reseniy</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.01}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["C1*exp(lambda1 t) + C2*exp(lambda2*t)"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.001]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y(t) = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 203044  -->
+  <question type="formulas">
+    <name>
+      <text>soustavy 1 (kopie)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A3</b><br></p><p>Je dána Cauchyova úloha: $$\dot 
+{X}\,=\left ( \begin {array}{rr} 1 &amp; -2 \\ p &amp; 3 \end {array} 
+\right )&nbsp; X, \quad X(0)\,=\left ( \begin {array}{r} -4 \\ 2 \end 
+{array} \right ).$$ </p><p><b>a)</b> Určete, pro jakou hodnotu \(p\in\mathbb R\) nemá tato soustava izolovaný bod rovnováhy. Výsledek zdůvodněte v odevzdávaném řešení.{#br} <br></p><p><b>b)</b> Zjistěte, pro jaké 
+hodnoty parametru \(p\in\mathbb R\) má tato soustava izolovaný bod rovnováhy typu sedlo. Zadejte interval \(I =(a,\ b)\), pro \(-\infty\) použijte -infty, pro \(+\infty\) použijte +infty. Je-li intervalů více, zadejte libovolný z nich. {#sedlo}</p><p><b>c)</b> Pro \(p=-4\) určete 
+vlastní čísla matice zadané soustavy diferenciálních rovnic a ke každému vlastnímu číslu zapište odpovídající vlastní vektor ve tvaru, kdy má druhou složku rovnu dvěma. {#vlc}</p><p><b>d)</b> Zapište fundamentální systém řešení \(\{\Phi_1=(x(t), y(t)),\ \Phi_2=(x(t), y(t))\}\) zadané soustavy diferenciálních rovnic. Funkce \(\Phi_1, \Phi_2\) zapište po složkách. Vlastní vektory použijte ve tvaru z bodu <b>c)</b>, tj. s druhými složkami rovnými dvěma. Jako \(\Phi_1\) uveďte funkci, která odpovídá menšímu v absolutní hodnotě vlastnímu číslu. {#fsr1}{#fsr2}<br></p><p><b>e)</b> Určete maximální řešení zadané soustavy diferenciálních rovnic. Řešení zapište po složkách \( (x(t), y(t))^T\).{#resenix}{#reseniy}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>25.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>lambda1=-1;lambda2=5;u=2;v=-1; C1=-1; C2=2;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#br</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>-3/2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(p\) = {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#sedlo</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text>a=-3/2; b=302741;infty=b;</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["-b","a"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(I=\)({_0}, {_1})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#vlc</text>
+ </placeholder>
+ <answermark>
+  <text>12</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>6</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[lambda1, 0,u,lambda2,0,v]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[c1=(_0 == lambda1 && _1==0 && _2 == u) || (_0 == lambda2 && _1==0 && _2 == v);
+c2=(_3 == lambda2 && _4==0 && _5 == v) || (_3 == lambda1 && _4==0 && _5 == u);
+c3=(_0 != _3);
+c4=(_2 != _5);]]></text>
+ </vars2>
+ <correctness>
+  <text>(c1+c2+c3+c4)/4</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Vlastnímu číslu \(\lambda_1 = \){_0} +{_1} \(i\) odpovídá vlastní vektor \(\vec u = \)({_2}, 2)\(^T\).</p><p>Vlastnímu číslu \(\lambda_2 = \){_3} +{_4} \(i\) odpovídá vlastní vektor \(\vec v = \)({_5}, 2)\(^T\).</p><p>Je-li reálná nebo imaginární část vlastního čísla nulová, nezapomeňte zadat nulu!<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#fsr1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text>t={-3:3:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["u*exp(lambda1*t)", "2*exp(lambda1*t)" ]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.015]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\Phi_1(x,y): x(t) = \){_0}, \(y(t) = \){_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#fsr2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["v*exp(lambda2*t)", "2*exp(lambda2*t)" ]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\Phi_2(x,y): x(t) = \){_0}, \(y(t) = \){_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#resenix</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.01}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["u*C1*exp(lambda1*t) + v*C2*exp(lambda2*t)"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.001]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x(t) = \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>6</text>
+ </partindex>
+ <placeholder>
+  <text>#reseniy</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.01}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["C1*2*exp(lambda1 t) + C2*2*exp(lambda2*t)"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.001]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y(t) = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 203381  -->
+  <question type="formulas">
+    <name>
+      <text>soustavy 2 (kopie)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A3</b><br></p><p>Je dána Cauchyova úloha: $$\dot 
+{X}\,=\left ( \begin {array}{rr} 0 &amp; 1 \\ -4 &amp; 0 \end {array} 
+\right ) \, X +\left ( \begin {array}{r} -1 \\ 4 \end 
+{array} \right )\quad X(0)\,=\left ( \begin {array}{c} 2 \\ 5 \end 
+{array} \right ).$$ </p><p><b>a)</b> Pokud má tato soustava izolovaný bod rovnováhy, zapište jeho souřadnice. {#br} {#typ} Výsledek zdůvodněte v odevzdávaném řešení.<br></p><p><b>b)</b> Určete 
+jedno (libovolné) vlastní číslo matice zadané soustavy diferenciálních rovnic a k tomuto vlastnímu číslu zapište odpovídající vlastní vektor ve tvaru, kdy má první složku rovnu jedné. {#vlc}</p><p><b>c)</b> Určete maximální řešení zadané soustavy diferenciálních rovnic. Řešení zapište po složkách \( (x(t), y(t))^T\).{#resenix}{#reseniy}</p><p><b>d)</b> Vypočítejte tečný vektor v bodě \(X_0\) a zapište násobek tohoto vektoru, který má první složku rovnu jedné. {#tau}</p><p><b>e)</b> Převeďte zadanou soustavu diferenciálních rovnic na jednu rovnici druhého řádu. V odevzdávaném řešení zapište postup, zde pouze doplňte koeficienty <b>homogenní</b>&nbsp; rovnice. {#rovnice}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>25.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ans_order=shuffle([0:5]); #5 je počet otázek</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ans_inv=inv(ans_order);
+answers=[ "uzel", "sedlo", "střed", "ohnisko", "žádný z uvedených"];
+ans_permuted=sublist(answers,ans_order);
+ans = ans_inv[2]; #číslo správné odpovědi v answers]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#br</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[1, 1]</text>
+ </answer>
+ <vars2>
+  <text>Criterion1=(_0==1); Criterion2=(_1==1);</text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Pokud soustava nemá izolovaný bod rovnováhy, zapište [9999, 9999]. <br>Bod rovnováhy: [{_0}, {_1}].</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#typ</text>
+ </placeholder>
+ <answermark>
+  <text>12</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[Bod rovnováhy je typu {_0:ans_permuted:MCE}.<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#vlc</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0, 2,0, 2]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[criterion1=( _0==0)&&(_1 == 2) && (_2 == 0) &&(_3 == 2); 
+criterion2=( _0==0)&&(_1 == -2) && (_2 == 0) &&(_3 == -2);]]></text>
+ </vars2>
+ <correctness>
+  <text>criterion1||criterion2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Jedno z vlastních čísel \(\lambda = \) {_0} + {_1} i. <br>Jemu odpovídající vlastní vektor je (1, {_2}+{_3} i )\(^T\).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#resenix</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-10:10:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["cos(2 t) +2 sin(2 t)+1"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.001]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x(t) = \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#reseniy</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-10:10:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["4 cos(2 t)-2 sin(2 t)+1"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.001]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y(t) = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#tau</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-3:3:0.1}</text>
+ </vars1>
+ <answer>
+  <text>-1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.015]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\tau= \)(1, {_0}).<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>6</text>
+ </partindex>
+ <placeholder>
+  <text>#rovnice</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text>[0, 4, 4 ]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\ddot x + \){_0}\(\dot x +\){_1} \(x = \){_2}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 203382  -->
+  <question type="formulas">
+    <name>
+      <text>soustavy 3 (kopie)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A3</b><br></p><p>Je dána Cauchyova úloha: $$\dot 
+{X}\,=\left ( \begin {array}{cc} 1 &amp; 3 \\ 7 &amp; 5 \end {array} 
+\right ) \, X\, +\left ( \begin {array}{r} 0 \\ -16 \end 
+{array} \right ), \quad X(0)\,=\left ( \begin {array}{c} -6 \\ -2 \end 
+{array} \right ).$$ </p><p><b>a)</b> Pokud má tato soustava izolovaný bod rovnováhy, zapište jeho souřadnice. {#br} {#typ} Výsledek zdůvodněte v odevzdávaném řešení.<br></p><p><b>b)</b> Určete&nbsp; vlastní čísla matice zadané soustavy diferenciálních rovnic a k&nbsp; vlastním číslům zapište odpovídající vlastní vektory. Vlastní vektory zvolte ve tvaru, ve kterém jsou první složky obou vektorů rovny třem. {#vlc}</p><p><b>c)</b> Určete maximální řešení zadané soustavy diferenciálních rovnic. Řešení zapište po složkách \( (x(t), y(t))^T\).{#resenix}{#reseniy}</p><p><b>d)</b> Vypočítejte a zapište tečný vektor v bodě \(X(0)\).{#tau}</p><p><b>e)</b> Převeďte zadanou soustavu diferenciálních rovnic na jednu rovnici druhého řádu. V odevzdávaném řešení zapište postup, zde pouze doplňte koeficienty <b>homogenní</b> rovnice. {#rovnice}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>25.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ans_order=shuffle([0:5]); #5 je počet otázek</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ans_inv=inv(ans_order);
+answers=[ "uzel", "sedlo", "střed", "ohnisko", "žádný z uvedených"];
+ans_permuted=sublist(answers,ans_order);
+ans = ans_inv[1]; #číslo správné odpovědi v answers
+brx=3; bry=-1;
+lambda1=-2;lambda2=8;
+u=-3;v=7; 
+C1=-2; C2=-1;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#br</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[brx, bry]</text>
+ </answer>
+ <vars2>
+  <text>Criterion1=(_0==3); Criterion2=(_1==-1);</text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Pokud soustava nemá izolovaný bod rovnováhy, zapište [9999, 9999]. <br>Bod rovnováhy: [{_0}, {_1}].</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#typ</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[Bod rovnováhy je typu {_0:ans_permuted:MCE}.<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#vlc</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>8</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[lambda1, 0, u, 0, lambda2, 0, v, 0]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[c1=(_0 == lambda1 && _1==0 && _2 == u&&_3==0) || (_0 == lambda2 && _1==0 && _2 == v&& _3==0);
+c2=(_4 == lambda2 &&_5==0 && _6 == v&&_7==0) || (_4 == lambda1 && _5==0 && _6 == u&&_7==0);
+c3=(_0 != _4);
+c4=(_2 != _6);]]></text>
+ </vars2>
+ <correctness>
+  <text>(c1+c2+c3+c4)/4</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Vlastnímu číslu \(\lambda_1 = \) {_0} + {_1} i odpovídá vlastní vektor&nbsp; (3, {_2}+{_3} i )\(^T\).<br>Vlastnímu číslu \(\lambda_2 = \) {_4} + {_5} i odpovídá vlastní vektor&nbsp; (3, {_6}+{_7} i )\(^T\).<br>Je-li reálná nebo imaginární část nulová, nezapomeňte zadat nulu!</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#resenix</text>
+ </placeholder>
+ <answermark>
+  <text>6</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["3*C1*exp(lambda1*t) + 3*C2*exp(lambda2*t) +brx"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.001]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x(t) = \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#reseniy</text>
+ </placeholder>
+ <answermark>
+  <text>6</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["C1*u*exp(lambda1 t) + C2*v*exp(lambda2*t)+bry"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.001]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y(t) = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#tau</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text>t={-3:3:0.1}</text>
+ </vars1>
+ <answer>
+  <text>[-12,-68]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\tau= \)({_0}, {_1}).<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>6</text>
+ </partindex>
+ <placeholder>
+  <text>#rovnice</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text>[-6, -16 ]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\ddot x + \){_0}\(\dot x +\){_1} \(x = 0\)<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

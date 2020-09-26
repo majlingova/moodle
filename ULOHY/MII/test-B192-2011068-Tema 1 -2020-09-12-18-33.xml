@@ -1,0 +1,2134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068</text>
+    </category>
+    <info format="html">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "B192-2011068".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Tema 1 </text>
+    </category>
+    <info format="html">
+      <text>Derivace, gradient, tečná rovina, derivace ve směru</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 203647  -->
+  <question type="formulas">
+    <name>
+      <text>derivace (upr.MII_B_10_6_19) bez param</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><strong></strong>Je zadána funkce \(\displaystyle f(x,y) = \sqrt{{c}-x^2-y}\). <br>
+</p><p><strong>a)</strong> V odevzdávaném řešení zapište definiční obor funkce \(f(x,y)\), uveďte (se zdůvodněním), kde je funkce \(f(x,y)\) diferencovatelná a načrtněte množinu bodů v \(\mathbb E_2\), kde je funkce \(f(x,y)\) diferencovatelná.</p>
+<p> Určete a zadejte parciální derivace 1. řádu funkce \(f(x,y)\)</p>
+<div style="display:inline-block;">{#derivacex}</div>
+<div style="display:inline-block;">{#derivacey}</div>
+<p><strong>b)</strong> Vypočítejte parciální derivace 1.řádu funkce \(f\) v bodě \(A=[{ax}; \, {ay}]\). {#derivace}</p>
+<p>Popište chování funkce \(f\) v bodě \(A\).{#chovani}</p>
+<p><strong>c)</strong> Napište rovnici tečné roviny \(\tau\) ke grafu funkce \(f\) v bodě dotyku \([{ax};\, {ay};\, ?]\). {#tecnaRovina}</p><p> Výsledku použijte pro výpočet přibližné hodnoty funkce \(f\) v bodě \([{aax};\, {aay}]\).{#hodnota}</p>
+<p><strong>d)</strong> Vypočítejte derivaci funkce \(f\) v bodě \(A\) ve směru \(\vec{s}=({s[0]};{s[1]})\).{#veSmeru}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text># bez parametrů
+ans_order=shuffle([0:3]);
+#q1={-0.2, -0.1, 0.1, 0.2};q2={-0.2, -0.1, 0.1, 0.2};
+#ax={1:4}; ay={1:4};
+#sx={1:4};sy={1:4};
+</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ax=2; ay=1; c=9; #f=sqrt(c-x^2-y),[x0,y0]=[ax,ay], 
+#c=ax*ax+ay+1;
+aax=1.8; aay=0.9;
+#aax=ax+q1; aay=ay+q2;
+ s=[1,4];
+#s=[sx, sy];
+z0=sqrt(c-ax*ax-ay);  #z0=1;
+gradA=[-ax/sqrt(c-ax*ax-ay), -1/(2*sqrt(c-ax*ax-ay))];
+z1=z0+gradA[0]*(aax-ax)+gradA[1]*(aay-ay);
+
+ans_inv=inv(ans_order);
+answers=["rostoucí", "klesající", "konstantní"];
+ans_permuted=sublist(answers,ans_order);
+#ans = (gradA[0]>0) ? ans_inv[0] : (gradA[0]<0) ? ans_inv[1]: ans_inv[2]; #nemusí být přesně nula
+ans12 = (gradA[0]>0) ? ans_inv[0] : ans_inv[1];
+
+ans = (abs(gradA[0])<1E-6)?ans_inv[2]:ans12;  #pokud by se objevila skoro nula 
+
+
+dfds = (s[0]*gradA[0]+s[1]*gradA[1])/sqrt(s[0]*s[0]+s[1]*s[1]);]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#derivacex</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-2:2:0.1}; y={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["-x / sqrt(9 - x^2 - y)"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>\(\displaystyle \frac{\partial f}{\partial x} = \) {_0}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#derivacey</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-2:2:0.1}; y={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["-1 / 2 sqrt(9 - x^2 - y)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>\(\displaystyle \frac{\partial f}{\partial y} = \) {_0}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#derivace</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>gradA</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=(abs(_0-gradA[0])<= 0.015); Criterion2=(abs(_1-gradA[1])<= 0.015);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\displaystyle  \frac{\partial f}{\partial x}(A) =\){_0}, \(\displaystyle  \frac{\partial f}{\partial y}(A) =\){_1}.</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#chovani</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Doplňte tvrzení, aby bylo pravdivé. <br>Funkce \(f\) v zadaném bodě \(A\) je v kladném směru osy \(x\) {_0:ans_permuted:MCE}.</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#tecnaRovina</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[z0, gradA[0], gradA[1]]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=(abs(_1-gradA[0])<= 0.015); Criterion2=(abs(_2-gradA[1])<= 0.015);
+Criterion3=(abs(_0-z0)<=0.015);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2+Criterion3)/3</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\tau: \) z - {_0} = {_1}<b>(</b> \(x-{ax}\)<b>) </b>+ {_2}<b>(</b> \(y-{ay}\) <b>)</b>.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#hodnota</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>z1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(f({aax};\,{aay}) \doteq \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>6</text>
+ </partindex>
+ <placeholder>
+  <text>#veSmeru</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>dfds</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek je {_0}.</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 203648  -->
+  <question type="formulas">
+    <name>
+      <text>derivace (upr.MII_B_27_6_17) bez param</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je zadána funkce \(\displaystyle f(x,y) = \sqrt{y-x^2+4}\).
+</p><p><strong>a)</strong>V odevzdávaném řešení zapište definiční obor funkce \(f(x,y)\), uveďte (se zdůvodněním), kde je funkce \(f(x,y)\) diferencovatelná a načrtněte množinu bodů v \(\mathbb E_2\), kde je funkce \(f(x,y)\) diferencovatelná.</p>
+<p> Určete a zadejte parciální derivace 1. řádu funkce \(f(x,y)\)</p>
+<div style="display:inline-block;">{#derivacex}</div>
+<div style="display:inline-block;">{#derivacey}</div>
+<p><strong>b)</strong> Vypočítejte parciální derivace 1.řádu funkce \(f\) v bodě \(A=[{ax}; \, {ay}]\). {#derivace}</p>
+<p>Popište chování funkce \(f\) v bodě \(A\).{#chovani}</p>
+<p><strong>c)</strong> Napište rovnici tečné roviny \(\tau\) ke grafu funkce \(f\) v bodě dotyku \([{ax};\, {ay};\, ?]\). {#tecnaRovina}</p>
+<p>Výsledku použijte pro výpočet přibližné hodnoty funkce \(f\) v bodě \([{aax};\, {aay}]\).{#hodnota}</p>
+<p><b>d)</b> Vypočítejte derivaci funkce \(f\) v bodě \(A\) ve směru \(\vec{s}=({s[0]};{s[1]})\).{#veSmeru}<br>
+</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>#c={1:10}; 
+#ax={1:5}; q={1:4}; q1={-0.2,-0.1,0.1,0.2}; 
+#sx={-2,-1,1,2}; sy={-2,-1,1,2};
+
+ans_order=shuffle([0:3]);
+ans1_order=shuffle([0:6]);
+</text>
+</varsrandom>
+<varsglobal><text><![CDATA[c=4; ax=2; ay=1;
+#ay=ax*ax-c+q;  #f=sqrt(c-x^2+y),[x0,y0]=[ax,ay], 
+q1=0.1; sx=-1; sy=4;
+aax=ax+q1; aay=ay-q1; s=[sx,sy];
+z0=sqrt(c-ax*ax+ay); 
+gradA=[-ax/sqrt(c-ax*ax+ay), 1/(2*sqrt(c-ax*ax+ay))];
+z1=z0+gradA[0]*(aax-ax)+gradA[1]*(aay-ay);
+
+ans1_inv=inv(ans1_order);
+
+#p1=join(" ", "\\(\\{[x,y]\\in\\mathbb E_2: y\\geq x^2-", str(c), "\\}\\)");
+#p2=join(" ", "\\(\\{[x,y]\\in\\mathbb E_2: y\\neq x^2-", str(c), "\\}\\)");
+#p3=join(" ", "\\(\\{[x,y]\\in\\mathbb E_2: y> x^2-", str(c),"\\}\\)");
+#p4=join(" ", "\\(\\{[x,y]\\in\\mathbb E_2: y\\leq x^2-",str(c),"\\}\\)");
+#p5=join(" ", "\\(\\{[x,y]\\in\\mathbb E_2: y< x^2-", str(c), "\\}\\)");
+#answers1=[p1, p2, p3, p4 , p5, "žádná z uvedených"];
+#ans1_permuted=sublist(answers1,ans1_order);
+#ans1=ans1_inv[0];
+
+ans_inv=inv(ans_order);
+answers=["rostoucí", "klesající", "konstantní"];
+ans_permuted=sublist(answers,ans_order);
+
+ans = (gradA[0]>0) ? ans_inv[0] :  ans_inv[1];
+
+
+dfds = (s[0]*gradA[0]+s[1]*gradA[1])/sqrt(s[0]*s[0]+s[1]*s[1]);]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#derivacex</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-1:1:0.1}; y={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["- x / sqrt(y - x^2 + 4)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(\displaystyle \frac{\partial f}{\partial x} =\){_0},<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#derivacey</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-1:1:0.1}; y={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["1 / (2 sqrt(y - x^2 + 4))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(\displaystyle \frac{\partial f}{\partial y} =\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#derivace</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>gradA</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=(abs(_0-gradA[0])<=0.015);Criterion2=(abs(_1-gradA[1])<=0.015);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>\(\displaystyle \frac{\partial f}{\partial x}(A) =\){_0}, \(\displaystyle \frac{\partial f}{\partial y}(A) =\){_1}.</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#chovani</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[Doplňte tvrzení, aby bylo pravdivé. Funkce \(f\) v zadaném bodě \(A\) je v kladném směru osy \(x\) {_0:ans_permuted:MCE}.<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#tecnaRovina</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[z0, gradA[0], gradA[1]]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=(abs(_1-gradA[0])<=0.015);
+Criterion2=(abs(_2-gradA[1])<=0.015);
+Criterion3=(abs(_0-z0)<=0.015);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2+Criterion3)/3</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>z - {_0} = {_1}<b>(</b> \(x-{ax}\)<b>) </b>+ {_2}<b>(</b> \(y-{ay}\) <b>)</b>.</p><br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#hodnota</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>z1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(f({aax};\,{aay}) \doteq \){_0}</p><br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>6</text>
+ </partindex>
+ <placeholder>
+  <text>#veSmeru</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>dfds</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p>Výsledek je {_0}.<br></p><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 203597  -->
+  <question type="formulas">
+    <name>
+      <text>derivace 1 (upr. MIIA_06_06_19)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p>Je dána funkce:  \(f(x,y)={c}-{a}x^{2}y-\ln (xy)\) a bod \(\displaystyle A=[{ax};\frac{1}{{ax}}]\).</p><p><b>a) </b>Doplňte koeficienty do rovnice tečné roviny \(\tau\) ke grafu funkce \(f\) v bodě \(P=[{ax}; \frac{1}{{ax}} ;?]\).{#tecna}</p><p><b>b)</b> Určete směr \(\vec{s}\), ve kterém funkce \(f\) v bodě \(A\) nejrychleji klesá.{#smer}</p><p>Zadejte&nbsp; jednotkový vektor \(\vec s^0 = (s^0_1, s^0_2)\), který má stejný směr jako \(\vec s\), {#vektor}<br></p><p><b>c) </b>Určete derivaci funkce \(f\) v bodě \(A\) v tomto směru.{#derivs}</p><p>Zapište diferenciál \({\rm d} f(A)\) dané funkce \(f\) v bodě \(A\) (doplňte koeficienty).{#diferenc}</p><p><b>d)</b> Do odevzdávaného řešení zapište a načrtněte množinu \(D\subset\mathbb E_{2}\), ve které je funkce \(f(x,y)\) diferencovatelná.{#mnozinaD}<br></p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:8}; q={1:8};
+ans_order=shuffle([0:3]);
+ans1_order=shuffle([0:5]);
+ans2_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[#f(x,y) = c-ax^2y-ln(xy), c>/ay pro lepší zobrazení
+#ax=2; ay=0.5; c=6; #ax,ay>0 pro lepší zobrazení; ale je možné i ax<0,ay<0
+ax=a+1; ay=1/ax; c=a*ax+1;
+z0=1;  #protože ax*ay=1 a c=a*ax+1;
+gradfA = [-2*a-1/ax, -a*ax*ax-1/ay];
+norms=sqrt(gradfA[0]*gradfA[0] + gradfA[1]*gradfA[1]);
+s=[-gradfA[0]/norms, -gradfA[1]/norms];
+
+ans_inv=inv(ans_order);
+answers = ["ve směru gradientu", "ve směru kolmém na gradient", "ve směru opačném ke gradientu"];
+ans_permuted=sublist(answers,ans_order);
+ans = ans_inv[2];
+
+ans1_inv=inv(ans1_order);
+#p0="žádná z uvedených" ;
+#p1=join(" ","\\(x\\in (0, +\\infty)\\wedge" , "y\\in (0, +\\infty)\\)");
+#p2=join(" ","\\(x\\in (0, +\\infty)\\wedge" , "y\\in (-\\infty, 0)\\)");
+#p3=join(" ","\\(x\\in (-\\infty, 0)\\wedge" , "y\\in (0, +\\infty)\\)");
+#p4=join(" ","\\( x\\in (-\\infty, 0)\\wedge" , "y\\in (-\\infty, 0)\\)");
+#answers1=[p0, p1, p2, p3, p4];
+answers1=["v prvním kvadrantu", 
+"ve druhém kvadrantu", 
+"ve třetím kvadrantu", 
+"ve čtvrém kvadrantu",
+"v celé rovině"
+];
+ans1_permuted=sublist(answers1,ans1_order);
+ans1a= ans1_inv[0];
+ans1b=ans1_inv[2];
+
+ans2_inv=inv(ans2_order);
+answers2=["nenáleží", "náleží pouze na ose y", "náleží pouze na ose x", "náleží, na obou osách" ];
+ans2_permuted=sublist(answers2,ans2_order);
+ans2= ans2_inv[0];
+
+
+]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#tecna</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[z0, gradfA[0], gradfA[1]]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[criterion1 = abs(_0-z0)<=0.015; 
+criterion2 =(abs( _1 - gradfA[0])<=0.015); 
+criterion3 =(abs( _2 - gradfA[1])<=0.015);]]></text>
+ </vars2>
+ <correctness>
+  <text>(criterion1 + criterion2 + criterion3)/3</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<sub>Jsou-li koeficienty záporné, zapisujte znaménko&nbsp; - , jsou-li kladné, znaménko + psát nemusíte.</sub><br><p>\(\tau\): z - {_0} = {_1} (x-{ax}) {_2} (y -\(\frac{1}{{ax}}\))</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#smer</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Doplňte tvrzení tak, aby bylo pravdivé. <br></p><p>Funkce nejrychleji klesá {_0:ans_permuted:MCE}.</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#vektor</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>s</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[criterion1 = abs(_0 - s[0])<= 0.015; criterion2 = abs(_1 - s[1])<= 0.015;]]></text>
+ </vars2>
+ <correctness>
+  <text>(criterion1 + criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\ \vec s^0 = \) ({_0}, {_1}).<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#derivs</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>-norms</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>\(\displaystyle \frac{df}{d\vec s}(A) = \) {_0}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#diferenc</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>gradfA</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[criterion1 = abs(_0 - gradfA[0])<= 0.015; criterion2 = abs(_1 - gradfA[1])<= 0.015;]]></text>
+ </vars2>
+ <correctness>
+  <text>(criterion1 + criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>d\(f(A)=\) {_0} (x-{ax})+ {_1} (y -\(\frac{1}{{ax}}\))</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#mnozinaD</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ans1a, ans1b, ans2]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[criterion1=((_0 == ans1a)&&(_1==ans1b))||((_0 == ans1b)&&(_1==ans1a));
+criterion2=_2==ans2;
+criterion3=_0 != _1;]]></text>
+ </vars2>
+ <correctness>
+  <text>(criterion1 + criterion2 + criterion3)/3</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>
+Doplňte tvrzení o množině \(D\) tak, aby bylo správné.<br></p><p>Množinu \(D\) tvoří body {_0:ans1_permuted:MCE} nebo {_1:ans1_permuted:MCE}, body na osách množině \(D\) {_2:ans2_permuted:MCE}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 203598  -->
+  <question type="formulas">
+    <name>
+      <text>derivace 2(upr.MII_A_27_6_17)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je zadána funkce \(\displaystyle f(x,y) = \ln({b}-x-{a}y^2)\).</p><p><b>a)</b> Určete gradient této funkce \(f\) v bodě  \(A=[{A};\, 0]\).{#gradient}</p><p></p><p><b>b)</b> Určete směr \(\vec{u}, \vec{u} = (u_1, u_2)\), ve kterém daná funkce v bodě \(A\) nejrychleji klesá.{#vektoru}</p><p><b>c)</b> Napište rovnici tečné roviny ke grafu funkce \(f\) v bodě dotyku \([{A};\, 0;\, ?]\). {#tecnaRovina}}Napište diferenciál \({\rm d} f(A)\) dané funkce v bodě \(A\).{#diferencial}</p><p><b>d)</b> Vypočítejte derivaci funkce \(f\) v bodě \(A\) ve směru \(\vec{s}=({sx}, {sy})\).{#dfds} Popište
+chování dané funkce v bodě \(A\) v tomto směru. Doplňte tvrzení tak, aby bylo pravdivé.{#chovani}<br></p><p></p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={0.5:8:0.5}; b={3:12}; q={1:10};
+sx={2:6}; sy={-6:-1};
+ans_order=shuffle([0:3]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[A=b-q;
+#f=ln(b-x-ay^2) fx=-1/(b-x-ay^2); fy=-2ay/(b-x-ay^2); 
+#x0=A; y0=0; A musí být <b; na a>0 moc nezáleží  (y0=0), A může být záporné, bod je na ose x
+z0=log(b-A);
+gradA=[-1/(b-A), 0];
+u=[-gradA[0],0];
+s=[sx, sy]; 
+dfds=(gradA[0]*s[0])/sqrt(sx*sx+sy*sy); #y0 JE nula
+ans_inv=inv(ans_order);
+answers=["rostoucí", "klesající", "konstantní"];
+ans_permuted=sublist(answers,ans_order);
+ans2= (dfds > 0) ? ans_inv[0] :ans_inv[1];
+ans = (abs(dfds) < 1E-6) ? ans_inv[2]:ans2;
+
+
+]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#gradient</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>gradA</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=(abs(_0-gradA[0])<=0.015); Criterion2=(_1==0);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>grad \( f\left({A},\, 0\right) =\)({_0}, {_1}).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#vektoru</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>u</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1 =(_0*u[0]>0)&&  (_1==0); #stejná znaménka v první složce A nula ve druhé]]></text>
+ </vars2>
+ <correctness>
+  <text>Criterion1</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[\( u_1 = \){_0},&nbsp; \(u_2 = \){_1}.<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#tecnaRovina</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[z0, gradA[0], 0]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=(abs(_1-gradA[0])<=0.015); Criterion2=(_2==0); 
+Criterion3=(abs(_0-z0)<=0.015);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2+Criterion3)/3</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>z - {_0} = {_1}<b>(</b> \(x-{A}\)<b>) </b>+ {_2}y.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#diferencial</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>gradA</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=(abs(_0-gradA[0])<=0.015); Criterion2=(_1==0);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\({\rm d} f(A)\) = {_0}<b>(</b> \(x-{A}\)<b>) </b>+ {_1}y.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#dfds</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>dfds</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek je {_0}.</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#chovani</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Funkce \(f\) je v bodě \(A\) ve směru \(\vec s\) {_0:ans_permuted:MCE}.</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 203599  -->
+  <question type="formulas">
+    <name>
+      <text>derivace 3 (upr.MII_A_10_6_19)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je zadána funkce \(\displaystyle f(x,y) = {a}{\rm e}^{{{b}}y}\sin {c}x\).</p><p><b>a)</b> Určete gradient této funkce \(f\) v bodě  \(A=[\frac{\pi}{{k}};\, 0]\).{#gradient}</p><p><b>b)</b> Určete směr \(\vec{u}\), ve kterém má daná funkce v bodě \(A\) nejmenší derivaci. Uveďte jednotkový vektor \(\vec{u}^0 = (u^0_1, u^0_2)\), který odpovídá tomuto směru.{#vektoru}</p><p><b>c)</b> Napište rovnici tečné roviny ke grafu funkce \(f\) v bodě dotyku \([\frac{\pi}{{k}};\, 0;\, ?]\). {#rovina}Napište diferenciál \({\rm d} f(A)\) dané funkce v bodě \(A\). {#diferencial}</p><p><b>d)</b> Vypočítejte derivaci funkce \(f\) v bodě \(A\) ve směru \(\vec{s}=(-1;2\sqrt{3})\).{#dfds}</p><p>Uveďte směr \(\vec v = (v_1, v_2)\), ve kterém zadaná funkce \(f(x,y)\) v bodě A nejrychleji klesá.{#minusgrad}</p><p></p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:6};b={3:6};</text>
+</varsrandom>
+<varsglobal><text>#a=8; b=2; #dle pisemky
+c=2*b; k=6*c; 
+#f=a*exp(b*y)*sin(c*x); fx=a*c*exp(b*y)*cos(c*x); fy=a*b*exp(b*y)*sin(c*x); 
+x0=pi()/k; y0=0;
+z0=a/2; #sin(pi/6)=1/2
+gradA=[a*c*cos(pi()/6), a*b*sin(pi()/6)];
+normu=sqrt(gradA[0]*gradA[0] + gradA[1]*gradA[1] );
+u=[-gradA[0] /normu, -gradA[1]/normu ];
+s=[-1, 2*sqrt(3)]; 
+#dfds=u[0]*s[0]+u[1]*s[1];
+dfds = 0; #pro zadané a,b,c,x0,s
+</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#gradient</text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>gradA</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=(abs(_0-gradA[0])<=0.015); Criterion2=(abs(_1-gradA[1])<=0.015);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>grad \( f\left(\frac{\pi}{{k}},\, 0\right) =\)({_0}, {_1}).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#vektoru</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>u</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=(abs(_0-u[0])<=0.015); Criterion2=(abs(_1-u[1])<=0.015);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\( u_1 = \){_0},&nbsp; \(u_2 = \){_1}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#rovina</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[z0, gradA[0], gradA[1]]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=(abs(_1-gradA[0])<=0.015); Criterion2=(abs(_2-gradA[1])<=0.015); 
+Criterion3=(abs(_0-z0)<=0.015);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2+Criterion3)/3</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>z - {_0} = {_1}<b>(</b> \(x-\frac{\pi}{{k}}\)<b>) </b>+ {_2}y.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#diferencial</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>gradA</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=(abs(_0-gradA[0])<=0.015); Criterion2=(abs(_1-gradA[1])<=0.015);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\({\rm d} f(A)\) = {_0}<b>(</b> \(x-\frac{\pi}{{k}}\)<b>) </b>+ {_1}y.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#dfds</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>dfds</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek je {_0}.</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#minusgrad</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[-gradA[0], -gradA[1]]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion =( _0*(-1)+_1*2*sqrt(3))<=1E-6]]></text>
+ </vars2>
+ <correctness>
+  <text>Criterion</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[\(\vec v =\) = ({_0}, {_1}).<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

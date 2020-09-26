@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068</text>
+    </category>
+    <info format="html">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "B192-2011068".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 5/trojny_sfericke</text>
+    </category>
+    <info format="html">
+      <text>Výpočet trojného integrálu ve sférických souřadnicích.</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 135081  -->
+  <question type="formulas">
+    <name>
+      <text>sférické 1. (koule - 1.oktant)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte integrál $$\iiint_W\ \sqrt{x^2+y^2+z^2}\ {\rm d}x{\rm d}y{\rm d}z,$$ $$\mbox{kde }W = \{[x,y,z]\in\mathbb E_3:\ x^2+y^2+z^2\leq {R2},\ x\geq0,\ y\geq0,\ z\geq 0\} $$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Je vhodné použít sférické souřadnice: 
+$$\begin{array}{l}x = r\cos\varphi\cos\vartheta\\y=r\sin\varphi\cos\vartheta\\z = r\sin\vartheta\end{array},
+\quad {\rm d}x{\rm d}y{\rm d}z = r^2\cos\vartheta\ {\rm d}r{\rm d}\varphi{\rm d}\vartheta,\quad 
+\begin{array}{c} 0\leq r \leq {R}\\0\leq \varphi\leq \frac \pi 2\\0\leq\vartheta\leq \frac\pi 2\end{array}$$
+</p><p>Při takové volbě počítáme:&nbsp; $$\int_0^{\frac \pi 2}\ {\rm d}\varphi \cdot \int_0^{\frac \pi 2}\ \cos\vartheta\ {\rm d}\vartheta \cdot\int_0^{{R}}\ r^3\ {\rm d}r$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>R={1:6}</text>
+</varsrandom>
+<varsglobal><text>R2 = R*R;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pi()*pow(R,4)/8</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135132  -->
+  <question type="formulas">
+    <name>
+      <text>sférické 10. special</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte integrál $$\iiint_W\ \ {\rm d}x{\rm d}y{\rm d}z,$$ $$\mbox{kde }W \mbox{ je omezená plochou } \left( x^2+y^2+z^2\right)^3 = (x^2+y^2)^2,\ z\geq 0$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Je vhodné použít sférické souřadnice: 
+$$\begin{array}{l}x = r\cos\varphi\cos\vartheta\\y=r\sin\varphi\cos\vartheta\\z = r\sin\vartheta\end{array},
+\quad {\rm d}x{\rm d}y{\rm d}z = r^2\cos\vartheta\ {\rm d}r{\rm d}\varphi{\rm d}\vartheta,\quad 
+\begin{array}{c} 0\leq r \leq \cos^2\vartheta\\0\leq \varphi\leq 2\pi \\0\leq\vartheta\leq \frac\pi 2\end{array}$$
+</p><p>Při takové volbě počítáme:&nbsp; 
+$$\int_{0}^{2\pi } \int_{0}^{\frac \pi 2}\int_0^{\cos^2\vartheta}\ r^2 \cos\vartheta \ {\rm d}r&nbsp; {\rm d}\vartheta {\rm d}\varphi$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>R={1:6}</text>
+</varsrandom>
+<varsglobal><text>R2 = R*R;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pi()*32/105</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135135  -->
+  <question type="formulas">
+    <name>
+      <text>sférické 11. (elipsoid - celý)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte integrál $$\iiint_W\ x^2+y^2\ {\rm d}x{\rm d}y{\rm d}z,$$ $${kde }W = \{[x,y,z]\in\mathbb E_3:\&nbsp; \frac{x^2}{{A2}}+\frac{y^2}{{B2}}+\frac{z^2}{{C2}}\leq 1\} $$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Je vhodné použít zobecněné sférické souřadnice: 
+$$\begin{array}{l}x = {A} r\cos\varphi\cos\vartheta\\y={B} r\sin\varphi\cos\vartheta\\z = {C} r\sin\vartheta\end{array},
+\quad {\rm d}x{\rm d}y{\rm d}z ={A}{B}{C} r^2\cos\vartheta\ {\rm d}r{\rm d}\varphi{\rm d}\vartheta,\ \quad
+\begin{array}{c} 0\leq r \leq 1\\0\leq \varphi\leq 2\pi\\-\frac \pi 2\leq\vartheta\leq \frac\pi 2\end{array}$$
+</p><p>Při takové volbě počítáme:&nbsp; $${A4C}\int_0^{2\pi}\&nbsp; {\rm d}\varphi \cdot \int_{-\frac \pi 2}^{\frac \pi 2}\ \cos^3\vartheta\ {\rm d}\vartheta \cdot\int_0^1\ r^4\ {\rm d}r$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>A={2:5};
+</text>
+</varsrandom>
+<varsglobal><text>A2 = A*A;
+B=A; B2 = B*B; 
+C = A+1; C2 = C*C; 
+A4C = pow(A,4)*C;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pi()*A4C*8/15</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135082  -->
+  <question type="formulas">
+    <name>
+      <text>sférické 2. (koule - 1.oktant)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte integrál $$\iiint_W\ z\ {\rm d}x{\rm d}y{\rm d}z,$$&nbsp; $$\mbox{kde }W = \{[x,y,z]\in\mathbb E_3:\ x^2+y^2+z^2\leq {R2},\ x\geq0,\ y\geq0,\ z\geq 0\} $$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Je vhodné použít sférické souřadnice: 
+$$\begin{array}{l}x = r\cos\varphi\cos\vartheta\\y=r\sin\varphi\cos\vartheta\\z = r\sin\vartheta\end{array},
+\quad {\rm d}x{\rm d}y{\rm d}z = r^2\cos\vartheta\ {\rm d}r{\rm d}\varphi{\rm d}\vartheta,\quad 
+\begin{array}{c} 0\leq r \leq {R}\\0\leq \varphi\leq \frac \pi 2\\0\leq\vartheta\leq \frac\pi 2\end{array}$$
+</p><p>Při takové volbě počítáme:&nbsp; $$\int_0^{\frac \pi 2}\ {\rm d}\varphi \cdot \int_0^{\frac \pi 2}\ \sin\vartheta\cos\vartheta\ {\rm d}\vartheta \cdot\int_0^{{R}}\ r^3\ {\rm d}r$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>R={1:6}</text>
+</varsrandom>
+<varsglobal><text>R2 = R*R;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pi()*pow(R,4)/16</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135083  -->
+  <question type="formulas">
+    <name>
+      <text>sférické 3. (koule - 1.oktant)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte integrál $$\iiint_W\ xyz\ {\rm d}x{\rm d}y{\rm d}z,$$&nbsp; $$\mbox{kde }W = \{[x,y,z]\in\mathbb E_3:\ x^2+y^2+z^2\leq {R2},\ x\geq0,\ y\geq0,\ z\geq 0\} $$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Je vhodné použít sférické souřadnice: 
+$$\begin{array}{l}x = r\cos\varphi\cos\vartheta\\y=r\sin\varphi\cos\vartheta\\z = r\sin\vartheta\end{array},
+\quad {\rm d}x{\rm d}y{\rm d}z = r^2\cos\vartheta\ {\rm d}r{\rm d}\varphi{\rm d}\vartheta,\quad
+\begin{array}{c} 0\leq r \leq {R}\\0\leq \varphi\leq \frac \pi 2\\0\leq\vartheta\leq \frac\pi 2\end{array}$$
+</p><p>Při takové volbě počítáme:&nbsp; $$\int_0^{\frac \pi 2}\ \sin\varphi\cos\varphi\ {\rm d}\varphi \cdot \int_0^{\frac \pi 2}\ \cos^3\vartheta\sin\vartheta\ {\rm d}\vartheta \cdot\int_0^{{R}}\ r^5\ {\rm d}r$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>R={1:6}</text>
+</varsrandom>
+<varsglobal><text>R2 = R*R;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pow(R,6)/48</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135084  -->
+  <question type="formulas">
+    <name>
+      <text>sférické 4. (koule - čtvrtina)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte integrál $$\iiint_W\ z\ {\rm d}x{\rm d}y{\rm d}z,$$ $$\mbox{kde }W = \{[x,y,z]\in\mathbb E_3:\ x^2+y^2+z^2\leq {R2},\ x\geq0,\&nbsp; z\geq 0\} $$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Je vhodné použít sférické souřadnice: 
+$$\begin{array}{l}x = r\cos\varphi\cos\vartheta\\y=r\sin\varphi\cos\vartheta\\z = r\sin\vartheta\end{array},
+\quad {\rm d}x{\rm d}y{\rm d}z = r^2\cos\vartheta\ {\rm d}r{\rm d}\varphi{\rm d}\vartheta,\quad 
+\begin{array}{c} 0\leq r \leq {R}\\-\frac \pi2\leq \varphi\leq \frac \pi 2\\0\leq\vartheta\leq \frac\pi 2\end{array}$$
+</p><p>Při takové volbě počítáme:&nbsp; $$\int_{-\frac \pi 2}^{\frac \pi 2}\&nbsp; {\rm d}\varphi \cdot \int_0^{\frac \pi 2}\ \sin\vartheta\cos\vartheta\ {\rm d}\vartheta \cdot\int_0^{{R}}\ r^3\ {\rm d}r$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>R={1:6}</text>
+</varsrandom>
+<varsglobal><text>R2 = R*R;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pi()*pow(R,4)/8</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135095  -->
+  <question type="formulas">
+    <name>
+      <text>sférické 5. (mezikoulí - celé)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte integrál $$\iiint_W\ x^2+y^2+z^2\ {\rm d}x{\rm d}y{\rm d}z,$$ kde $$W = \{[x,y,z]\in\mathbb E_3:\ {A2}\leq x^2+y^2+z^2\leq {B2}\} $$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Je vhodné použít sférické souřadnice: 
+$$\begin{array}{l}x = r\cos\varphi\cos\vartheta\\y=r\sin\varphi\cos\vartheta\\z = r\sin\vartheta\end{array},
+\quad {\rm d}x{\rm d}y{\rm d}z = r^2\cos\vartheta\ {\rm d}r{\rm d}\varphi{\rm d}\vartheta,\ \quad
+\begin{array}{c} {A}\leq r \leq {B}\\0\leq \varphi\leq 2\pi\\-\frac \pi 2\leq\vartheta\leq \frac\pi 2\end{array}$$
+</p><p>Při takové volbě počítáme:&nbsp; $$\int_0^{2\pi}\&nbsp; {\rm d}\varphi \cdot \int_{-\frac \pi 2}^{\frac \pi 2}\ \cos\vartheta\ {\rm d}\vartheta \cdot\int_{{A}}^{{B}}\ r^4\ {\rm d}r$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>A={1:3};
+B={4:6};</text>
+</varsrandom>
+<varsglobal><text>A2 = A*A;
+B2 = B*B;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pi()*(pow(B,5) - pow(A,5))*0.8</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135096  -->
+  <question type="formulas">
+    <name>
+      <text>sférické 6. (mezikoulí - polovina)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte integrál $$\iiint_W\ x^2+y^2\ {\rm d}x{\rm d}y{\rm d}z,$$ kde $$W = \{[x,y,z]\in\mathbb E_3:\ {A2}\leq x^2+y^2+z^2\leq {B2},\&nbsp; z\geq 0\} $$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Je vhodné použít sférické souřadnice: 
+$$\begin{array}{l}x = r\cos\varphi\cos\vartheta\\y=r\sin\varphi\cos\vartheta\\z = r\sin\vartheta\end{array},
+\quad {\rm d}x{\rm d}y{\rm d}z = r^2\cos\vartheta\ {\rm d}r{\rm d}\varphi{\rm d}\vartheta,\quad
+\begin{array}{c} {A}\leq r \leq {B}\\0\leq \varphi\leq&nbsp; 2\pi\\0\leq\vartheta\leq \frac\pi 2\end{array}$$
+</p><p>Při takové volbě počítáme:&nbsp; $$\int_0^{2\pi}\&nbsp; {\rm d}\varphi \cdot \int_{0}^{\frac \pi 2}\ \cos^3\vartheta\ {\rm d}\vartheta \cdot\int_{{A}}^{{B}}\ r^4\ {\rm d}r$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>A={1:3};
+B={4:6};</text>
+</varsrandom>
+<varsglobal><text>A2 = A*A;
+B2 = B*B;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>4*pi()*(pow(B,5) - pow(A,5))/15</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135097  -->
+  <question type="formulas">
+    <name>
+      <text>sférické 7. (mezikoulí - osmina - 1. oktant)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte integrál $$\iiint_W\ z^2\ {\rm d}x{\rm d}y{\rm d}z,$$ kde $$W = \{[x,y,z]\in\mathbb E_3:\ {A2}\leq x^2+y^2+z^2\leq {B2},\ x\geq0,\ y\geq 0,\ z\geq 0\} $$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Je vhodné použít sférické souřadnice: 
+$$\begin{array}{l}x = r\cos\varphi\cos\vartheta\\y=r\sin\varphi\cos\vartheta\\z = r\sin\vartheta\end{array},
+\quad {\rm d}x{\rm d}y{\rm d}z = r^2\cos\vartheta\ {\rm d}r{\rm d}\varphi{\rm d}\vartheta,\quad
+\begin{array}{c} {A}\leq r \leq {B}\\0\leq \varphi\leq&nbsp; \frac\pi 2\\0\leq\vartheta\leq \frac\pi 2\end{array}$$
+</p><p>Při takové volbě počítáme:&nbsp; $$\int_0^{\frac\pi 2}\&nbsp; {\rm d}\varphi \cdot \int_{0}^{\frac \pi 2}\ \sin^2\vartheta\cos\vartheta\ {\rm d}\vartheta \cdot\int_{{A}}^{{B}}\ r^4\ {\rm d}r$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>A={1:3};
+B={4:6};</text>
+</varsrandom>
+<varsglobal><text>A2 = A*A;
+B2 = B*B;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pi()*(pow(B,5) - pow(A,5))/30</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135098  -->
+  <question type="formulas">
+    <name>
+      <text>sférické 8. (koule - dílek)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte integrál $$\iiint_W\ \frac{1}{1+x^2+y^2+z^2}\ {\rm d}x{\rm d}y{\rm d}z,$$ kde $$W = \{[x,y,z]\in\mathbb E_3:\ x^2+y^2+z^2\leq {R2},\ 0\leq x\leq y\leq x\sqrt 3,\ z\geq 0\} $$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Je vhodné použít sférické souřadnice: 
+$$\begin{array}{l}x = r\cos\varphi\cos\vartheta\\y=r\sin\varphi\cos\vartheta\\z = r\sin\vartheta\end{array},
+\quad {\rm d}x{\rm d}y{\rm d}z = r^2\cos\vartheta\ {\rm d}r{\rm d}\varphi{\rm d}\vartheta,\quad
+\begin{array}{c} 0\leq r \leq {R}\\\frac \pi 4\leq \varphi\leq \frac \pi 3\\0\leq\vartheta\leq \frac\pi 2\end{array}$$
+</p><p>Při takové volbě počítáme:&nbsp; $$\int_{\frac \pi 4}^{\frac \pi 3}\ {\rm d}\varphi \cdot \int_0^{\frac \pi 2}\ \cos\vartheta\ {\rm d}\vartheta \cdot\int_0^{{R}}\ \frac{r^2}{1+r^2}\ {\rm d}r$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>R={1:6}</text>
+</varsrandom>
+<varsglobal><text>R2 = R*R;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pi()/12*(R-atan(R))</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135099  -->
+  <question type="formulas">
+    <name>
+      <text>sférické 9. special</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte integrál $$\iiint_W\ \ {\rm d}x{\rm d}y{\rm d}z,$$ $$\mbox{kde }W \mbox{ je omezená plochou } \left( x^2+y^2+z^2\right)^2 = 3x$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Je vhodné použít sférické souřadnice: 
+$$\begin{array}{l}x = r\cos\varphi\cos\vartheta\\y=r\sin\varphi\cos\vartheta\\z = r\sin\vartheta\end{array},
+\quad {\rm d}x{\rm d}y{\rm d}z = r^2\cos\vartheta\ {\rm d}r{\rm d}\varphi{\rm d}\vartheta,\ 
+\begin{array}{c} 0\leq r \leq \sqrt[3]{3\cos\vartheta\cos\varphi}\\-\frac \pi 2\leq \varphi\leq \frac \pi 2\\-\frac\pi 2\leq\vartheta\leq \frac\pi 2\end{array}$$
+</p><p>Při takové volbě počítáme:&nbsp; 
+$$\int_{-\frac \pi 2}^{\frac \pi 2} \int_{-\frac \pi 2}^{\frac \pi 2}\int_0^{\sqrt[3]{3\cos\vartheta\cos\varphi}}\ r^2 \cos\vartheta \ {\rm d}r {\rm d}\varphi {\rm d}\vartheta $$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>R={1:6}</text>
+</varsrandom>
+<varsglobal><text>R2 = R*R;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pi()</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

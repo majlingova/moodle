@@ -1,0 +1,3428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "Matematika I".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I/OM</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I/OM/Lineární algebra</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I/OM/Lineární algebra/Matice</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 200958  -->
+  <question type="formulas">
+    <name>
+      <text>matice-otázky</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Doplňte tvrzení tak, aby byla pravdivá.</p>
+Matice \(A\) typu \((m\times n)\) má
+<div style="display:inline-block;">{#1}</div>
+<div style="display:inline-block;">sloupců.</div>
+<br>Matice \(A^T\) transponovaná k matici \(A\) typu \((m\times n)\)
+<div style="display:inline-block;">{#2}</div>
+<br>Dvě matice \(A\) a \(B\) lze sečíst pouze když
+<div style="display:inline-block;">{#3}</div>
+<br>Matici \(A\) typu \((m\times n)\) násobíme reálným číslem \(p\) tak, že vynásobíme číslem \(p\)
+<div style="display:inline-block;">{#4}</div>
+<br>Součet matic
+<div style="display:inline-block;">{#5}</div>
+<br>Součin matic \(A \cdot B\) je definovaný pouze když
+<div style="display:inline-block;">{#6}</div>
+<br>Součin matic
+<div style="display:inline-block;">{#7}</div>
+<br>Při součinu dvou matic \(A,B\)
+<div style="display:inline-block;">{#8}</div>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>8.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ans1_order=shuffle([0:3]);
+ans2_order=shuffle([0:3]);
+ans3_order=shuffle([0:3]);
+ans4_order=shuffle([0:3]);
+ans5_order=shuffle([0:3]);
+ans6_order=shuffle([0:3]);
+ans7_order=shuffle([0:3]);
+ans8_order=shuffle([0:3]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ans1_inv=inv(ans1_order);
+ans2_inv=inv(ans2_order);
+ans3_inv=inv(ans3_order);
+ans4_inv=inv(ans4_order);
+ans5_inv=inv(ans5_order);
+ans6_inv=inv(ans6_order);
+ans7_inv=inv(ans7_order);
+ans8_inv=inv(ans8_order);
+
+answers1=["n", "m", "m+n"];
+answers2=["je typu (n x m).", "je typu (m x n).", "neexistuje, protože A není čtvercová."];
+answers3=["obě matice jsou stejného typu.", "obě matice jsou čtvercové.", "počet sloupců první matice je roven počtu řádků druhé matice."];
+answers4=["všechny prvky matice A.", "všechny prvky hlavní diagonály matice A.", "libovolný řádek matice A."];
+answers5=["je komutativní a asociativní.", "není komutativní, je asociativní.", "není komutativní ani asociativní."];
+answers6=["obě matice jsou stejného typu.", "obě matice jsou čtvercové.", "počet sloupců první matice je roven počtu řádků druhé matice."];
+answers7=["je komutativní a asociativní.", "není komutativní, je asociativní.", "není komutativní ani asociativní."];
+answers8=["záleží na pořadí matic.", "nezáleží na pořadí matic.", "nezáleží na pořadí matic, pokud matice A a B jsou čtvercové."];
+
+ans1_permuted=sublist(answers1,ans1_order);
+ans2_permuted=sublist(answers2,ans2_order);
+ans3_permuted=sublist(answers3,ans3_order);
+ans4_permuted=sublist(answers4,ans4_order);
+ans5_permuted=sublist(answers5,ans5_order);
+ans6_permuted=sublist(answers6,ans6_order);
+ans7_permuted=sublist(answers7,ans7_order);
+ans8_permuted=sublist(answers8,ans8_order);
+
+ans1 = ans1_inv[0];
+ans2 = ans2_inv[0];
+ans3 = ans3_inv[0];
+ans4 = ans4_inv[0];
+ans5 = ans5_inv[0];
+ans6 = ans6_inv[2];
+ans7 = ans7_inv[1];
+ans8 = ans8_inv[0];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ans1_permuted:MCE}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ans2_permuted:MCE}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#3</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ans3_permuted:MCE}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#4</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans4</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ans4_permuted:MCE}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#5</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans5</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ans5_permuted:MCE}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#6</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans6</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ans6_permuted:MCE}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>6</text>
+ </partindex>
+ <placeholder>
+  <text>#7</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans7</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ans7_permuted:MCE}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>7</text>
+ </partindex>
+ <placeholder>
+  <text>#8</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans8</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ans8_permuted:MCE}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200959  -->
+  <question type="formulas">
+    <name>
+      <text>operace: mocnina</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete matice \(X, Y\), pro které platí \(X =A^2,\ Y=A^3\), kde&nbsp; $$A = \left(\begin{array}{rr}{a11}&amp;{a12}\\{a21}&amp;{a22}\end{array}\right)$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>2.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11={-10:10};a12={-10:10};
+a21={-10:10};a22={-10:10};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[A1=[a11,a12];
+A2=[a21,a22];
+
+B1=[a11,a21];
+B2=[a12,a22];
+
+X1=sum(map("*",A1,B1));
+X2=sum(map("*",A1,B2));
+X3=sum(map("*",A2,B1));
+X4=sum(map("*",A2,B2));
+
+Y1=sum(map("*",[X1,X2],B1));
+Y2=sum(map("*",[X1,X2],B2));
+Y3=sum(map("*",[X3,X4],B1));
+Y4=sum(map("*",[X3,X4],B2));]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[X1,X2,X3,X4]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(X=\left(\begin{array}{c}\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>{_2}<br> </td>
+                            <td>{_3}<br> </td>
+                            
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[Y1,Y2,Y3,Y4]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(Y=\left(\begin{array}{c}\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                           
+                        </tr>
+                        <tr>
+                            <td>{_2}<br> </td>
+                            <td>{_3}<br> </td>
+                           
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200960  -->
+  <question type="formulas">
+    <name>
+      <text>operace: mocnina 2a (idempotentni)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete matice \(X, Y\), pro které platí \(X =A^2,\ Y=A^3\), kde&nbsp; $$A = \left(\begin{array}{rr}{a11}&amp;{a12}\\{a21}&amp;{a22}\end{array}\right)$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>2.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>k={0:49};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a=  [2, 3,3,3,3,  4,4,4,4,4,4,  5,5,5,5,5,5,   6,6,6,6,6,6,6,6,6,    7,7,7,7,7,7,7,   8,8,8,8,8,  9,9,9,9,9,9,9,9,9,9,9,9];
+b= [2, 1,2,3,6, 1,2,3,4,6,12, 1,2,4,5,10,20, 1,2,3,4,5,6,10,15,30, 1,2,3,6,7,21,42, 1,2,7,8,56, 1,2,3,4,6,8,9,12,18,24,36,72];
+bc=a[k]-a[k]*a[k];
+a11=a[k];  a12=b[k];  a21=bc/a12; a22=1-a11;
+
+A1=[a11,a12];
+A2=[a21,a22];
+
+B1=[a11,a21];
+B2=[a12,a22];
+
+X1=sum(map("*",A1,B1));
+X2=sum(map("*",A1,B2));
+X3=sum(map("*",A2,B1));
+X4=sum(map("*",A2,B2));
+
+Y1=sum(map("*",[X1,X2],B1));
+Y2=sum(map("*",[X1,X2],B2));
+Y3=sum(map("*",[X3,X4],B1));
+Y4=sum(map("*",[X3,X4],B2));]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[X1,X2,X3,X4]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(X=\left(\begin{array}{c}\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>{_2}<br> </td>
+                            <td>{_3}<br> </td>
+                            
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[Y1,Y2,Y3,Y4]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(Y=\left(\begin{array}{c}\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                           
+                        </tr>
+                        <tr>
+                            <td>{_2}<br> </td>
+                            <td>{_3}<br> </td>
+                           
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200961  -->
+  <question type="formulas">
+    <name>
+      <text>operace: rovnost</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete \(x,y\in\mathbb R\) pro která platí $$\left(\begin{array}{rr}{a11}&amp;{a12}\\{a21}&amp;{a22}\end{array}\right) = \left(\begin{array}{rr}{b11}&amp;{b12}\\{b21}&amp;{b22}\end{array}\right)$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={-10:-3, 3:10};
+b={2:10};
+c={-10:-3, 3:10};
+
+a12={-10:-1,1:10}; a21={-10:-1,1:10};
+b22={-10:-1,1:10};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[d=c+1; 
+e=a+1;
+f=b+1; 
+b12=a12;
+b21=a21; 
+a11 = join(" ", str(a), "x" , "+" , str(b), "y");
+a22 = join(" ", str(c), "x" , "+" , str(d), "y");
+b11 = join(" ", str(e), "x" , "+" , str(f), "y");
+x=b22; y=-b22;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x,y]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[\(x=\){_0}, \(y=\){_1}<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200962  -->
+  <question type="formulas">
+    <name>
+      <text>operace: rovnost transp.</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete \(x,y\in\mathbb R\) pro která platí $$\left(\begin{array}{rr}{a11}&amp;{a12}\\{a21}&amp;{a22}\end{array}\right) = \left(\begin{array}{rr}{b11}&amp;{b12}\\{b21}&amp;{b22}\end{array}\right)^T$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={-10:-2, 2:10};
+b={1:10};
+c={-10:-2, 2:10};
+d={1:10};
+
+b11={-10:-1,1:10}; b12={-10:-1,1:10};
+b21={-10:-1,1:10}; b22={-10:-1,1:10};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a11=b11; a22=b22; 
+a12 = join(" ", str(a), "x" , "+" , str(b));
+a21 = join(" ", str(c), "y" , "+" , str(d));
+x=(b21-b)/a;
+y=(b12-d)/c;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x,y]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[\(x=\){_0}, \(y=\){_1}<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200963  -->
+  <question type="formulas">
+    <name>
+      <text>operace: součet</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete matici \(X\), pro kterou platí \(X = A+B\), kde&nbsp; $$A = \left(\begin{array}{rr}{a11}&amp;{a12}&amp;{a13}\\{a21}&amp;{a22}&amp;{a23}\end{array}\right),\&nbsp; B = \left(\begin{array}{rrr}{b11}&amp;{b12}&amp;{b13}\\{b21}&amp;{b22}&amp;{b23}\end{array}\right)$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11={-10:10};a12={-10:10};a13={-10:10};
+a21={-10:10};a22={-10:10};a23={-10:10};
+b11={-10:10};b12={-10:10};b13={-10:10};
+b21={-10:10};b22={-10:10};b23={-10:10};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[A1=[a11,a12,a13];
+A2=[a21,a22,a23];
+B1=[b11,b12,b13];
+B2=[b21,b22,b23];
+X1=map("+",A1,B1);
+X2=map("+",A2,B2);]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>6</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[X1[0],X1[1],X1[2], X2[0],X2[1],X2[2]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(X = \left(\begin{array}{c}\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_3}<br> </td>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200964  -->
+  <question type="formulas">
+    <name>
+      <text>operace: součet, nás. číslem</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete matici \(X\), pro kterou platí \(X + A=B\), kde&nbsp; $$A = \left(\begin{array}{rr}{a11}&amp;{a12}&amp;{a13}\\{a21}&amp;{a22}&amp;{a23}\end{array}\right),\&nbsp; B = \left(\begin{array}{rrr}{b11}&amp;{b12}&amp;{b13}\\{b21}&amp;{b22}&amp;{b23}\end{array}\right)$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11={-10:10};a12={-10:10};a13={-10:10};
+a21={-10:10};a22={-10:10};a23={-10:10};
+b11={-10:10};b12={-10:10};b13={-10:10};
+b21={-10:10};b22={-10:10};b23={-10:10};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[A1=[a11,a12,a13];
+A2=[a21,a22,a23];
+B1=[b11,b12,b13];
+B2=[b21,b22,b23];
+X1=map("-",B1,A1);
+X2=map("-",B2,A2);]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>6</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[X1[0],X1[1],X1[2], X2[0],X2[1],X2[2]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(X = \left(\begin{array}{c}\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_3}<br> </td>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200965  -->
+  <question type="formulas">
+    <name>
+      <text>operace: součet, nás. číslem 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete matici \(X\), pro kterou platí \({alpha}X + {beta}A={gamma}B\), kde&nbsp; $$A = \left(\begin{array}{rr}{a11}&amp;{a12}&amp;{a13}\\{a21}&amp;{a22}&amp;{a23}\end{array}\right),\&nbsp; B = \left(\begin{array}{rr}{b11}&amp;{b12}&amp;{b13}\\{b21}&amp;{b22}&amp;{b23}\end{array}\right)$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11={-10:10};a12={-10:10};a13={-10:10};
+a21={-10:10};a22={-10:10};a23={-10:10};
+b11={-10:10};b12={-10:10};b13={-10:10};
+b21={-10:10};b22={-10:10};b23={-10:10};
+alpha={2,4,5,8,10};
+beta={2:10};
+gamma={-10:-2,2:10};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[A1=[a11,a12,a13];
+A2=[a21,a22,a23];
+B1=[b11,b12,b13];
+B2=[b21,b22,b23];
+#alpha X+beta A=gamma B
+betakrat=fill(3,beta);
+alfina = fill(3,1/alpha);
+gammakrat=fill(3,gamma);
+
+X1=map("*", alfina, map("-", map("*",gammakrat,B1), map("*",A1, betakrat)));
+X2=map("*", alfina, map("-", map("*",gammakrat,B2), map("*",A2, betakrat)));]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>6</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[X1[0],X1[1],X1[2], X2[0],X2[1],X2[2]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(X = \left(\begin{array}{c}\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_3}<br> </td>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200966  -->
+  <question type="formulas">
+    <name>
+      <text>operace: součet, nás. číslem 3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete matici \(X\), pro kterou platí \(X = {alpha}A {strbeta} B\), kde&nbsp; $$A = \left(\begin{array}{rr}{a11}&amp;{a21}\\{a12}&amp;{a22}\\{a13}&amp;{a23}\end{array}\right),\&nbsp; B = \left(\begin{array}{rr}{b11}&amp;{b21}\\{b12}&amp;{b22}\\{b13}&amp;{b23}\end{array}\right)$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11={-10:10};a12={-10:10};a13={-10:10};
+a21={-10:10};a22={-10:10};a23={-10:10};
+b11={-10:10};b12={-10:10};b13={-10:10};
+b21={-10:10};b22={-10:10};b23={-10:10};
+alpha={-10:-2,2:10};
+beta={-10:-2,2:10};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[A1=[a11,a12,a13];
+A2=[a21,a22,a23];
+B1=[b11,b12,b13];
+B2=[b21,b22,b23];
+#X=alpha A + beta B, ale transponovaně
+betakrat=fill(3,beta);
+alphakrat=fill(3,alpha);
+
+X1=map("+", map("*",betakrat,B1), map("*",A1, alphakrat));
+X2=map("+", map("*",betakrat,B2), map("*",A2, alphakrat));
+
+znb=beta<0? 0:1;
+znbb=pick(znb," ","+");
+strbeta=join(" ",znbb,str(beta));]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>6</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[X1[0],X2[0],X1[1], X2[1],X1[2],X2[2]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(X = \left(\begin{array}{c}\\\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_2}<br> </td>
+                            <td>{_3}<br> </td>
+                        </tr>
+                      <tr>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200967  -->
+  <question type="formulas">
+    <name>
+      <text>operace: součin</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete matice \(X, Y\), pro které platí \(X =AB,\ Y=BA\), kde&nbsp; $$A = \left(\begin{array}{rrr}{a11}&amp;{a12}&amp;{a13}\\{a21}&amp;{a22}&amp;{a23}\end{array}\right),\&nbsp; B = \left(\begin{array}{rr}{b11}&amp;{b12}\\{b21}&amp;{b22}\\{b31}&amp;{b32}\end{array}\right)$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>2.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11={-10:10};a12={-10:10};a13={-10:10};
+a21={-10:10};a22={-10:10};a23={-10:10};
+b11={-10:10};b12={-10:10};b31={-10:10};
+b21={-10:10};b22={-10:10};b32={-10:10};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[A1=[a11,a12,a13];
+A2=[a21,a22,a23];
+B1=[b11,b21,b31];
+B2=[b12,b22,b32];
+
+X1=sum(map("*",A1,B1));
+X2=sum(map("*",A1,B2));
+X3=sum(map("*",A2,B1));
+X4=sum(map("*",A2,B2));
+
+Y1=sum(map("*",[a11,a21],[b11,b12]));
+Y4=sum(map("*",[a11,a21],[b21,b22]));
+Y7=sum(map("*",[a11,a21],[b31,b32]));
+
+Y2=sum(map("*",[a12,a22],[b11,b12]));
+Y5=sum(map("*",[a12,a22],[b21,b22]));
+Y8=sum(map("*",[a12,a22],[b31,b32]));
+
+Y3=sum(map("*",[a13,a23],[b11,b12]));
+Y6=sum(map("*",[a13,a23],[b21,b22]));
+Y9=sum(map("*",[a13,a23],[b31,b32]));]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[X1,X2,X3,X4]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(X=\left(\begin{array}{c}\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_2}<br> </td>
+                            <td>{_3}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>9</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[Y1,Y2,Y3,Y4,Y5,Y6,Y7,Y8,Y9]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(Y=\left(\begin{array}{c}\\\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_3}<br> </td>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                       <tr>
+                            <td>{_6}<br> </td>
+                            <td>{_7}<br> </td>
+                            <td>{_8}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200968  -->
+  <question type="formulas">
+    <name>
+      <text>operace: součin 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete matice \(X, Y\), pro které platí \(X =AB,\ Y=BA\), kde&nbsp; $$A = \left(\begin{array}{rrr}{a11}&amp;{a12}&amp;{a13}\\{a21}&amp;{a22}&amp;{a23}\\{a31}&amp;{a32}&amp;{a33}\end{array}\right),\&nbsp; B = \left(\begin{array}{rrr}{b11}&amp;{b12}&amp;{b13}\\{b21}&amp;{b22}&amp;{b23}\\{b31}&amp;{b32}&amp;{b33}\end{array}\right)$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>2.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11={-10:10};a12={-10:10};a13={-10:10};
+a21={-10:10};a22={-10:10};a23={-10:10};
+a31={-10:10};a32={-10:10};a33={-10:10};
+
+b11={-10:10};b12={-10:10};b13={-10:10};
+b21={-10:10};b22={-10:10};b23={-10:10};
+b31={-10:10};b32={-10:10};b33={-10:10};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[A1=[a11,a12,a13];
+A2=[a21,a22,a23];
+A3=[a31, a32,a33];
+B1=[b11,b21,b31];
+B2=[b12,b22,b32];
+B3=[b13,b23,b33];
+
+X1=sum(map("*",A1,B1));
+X2=sum(map("*",A1,B2));
+X3=sum(map("*",A1,B3));
+X4=sum(map("*",A2,B1));
+X5=sum(map("*",A2,B2));
+X6=sum(map("*",A2,B3));
+X7=sum(map("*",A3,B1));
+X8=sum(map("*",A3,B2));
+X9=sum(map("*",A3,B3));
+
+Y1=sum(map("*",[a11,a21,a31],[b11,b12,b13]));
+Y2=sum(map("*",[a12,a22,a32],[b11,b12,b13]));
+Y3=sum(map("*",[a13,a23,a33],[b11,b12,b13]));
+Y4=sum(map("*",[a11,a21,a31],[b21,b22,b23]));
+Y5=sum(map("*",[a12,a22,a32],[b21,b22,b23]));
+Y6=sum(map("*",[a13,a23,a33],[b21,b22,b23]));
+Y7=sum(map("*",[a11,a21,a31],[b31,b32,b33]));
+Y8=sum(map("*",[a12,a22,a32],[b31,b32,b33]));
+Y9=sum(map("*",[a13,a23,a33],[b31,b32,b33]));]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>9</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[X1,X2,X3,X4,X5,X6,X7,X8,X9]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(X=\left(\begin{array}{c}\\\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_3}<br> </td>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                      <tr>
+                            <td>{_6}<br> </td>
+                            <td>{_7}<br> </td>
+                            <td>{_8}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>9</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[Y1,Y2,Y3,Y4,Y5,Y6,Y7,Y8,Y9]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(Y=\left(\begin{array}{c}\\\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_3}<br> </td>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                       <tr>
+                            <td>{_6}<br> </td>
+                            <td>{_7}<br> </td>
+                            <td>{_8}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200969  -->
+  <question type="formulas">
+    <name>
+      <text>operace: součin 3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete matice \(X, Y\), pro které platí \(X =AB,\ Y=BA\), kde&nbsp; $$A = \left(\begin{array}{rr}{a11}&amp;{a12}\\{a21}&amp;{a22}\end{array}\right),\&nbsp; B = \left(\begin{array}{rr}{b11}&amp;{b12}\\{b21}&amp;{b22}\end{array}\right)$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>2.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11={-10:10};a12={-10:10};
+a21={-10:10};a22={-10:10};
+
+b11={-10:10};b12={-10:10};
+b21={-10:10};b22={-10:10};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[A1=[a11,a12];
+A2=[a21,a22];
+
+B1=[b11,b21];
+B2=[b12,b22];
+
+X1=sum(map("*",A1,B1));
+X2=sum(map("*",A1,B2));
+X3=sum(map("*",A2,B1));
+X4=sum(map("*",A2,B2));
+
+Y1=sum(map("*",[a11,a21],[b11,b12]));
+Y2=sum(map("*",[a12,a22],[b11,b12]));
+Y3=sum(map("*",[a11,a21],[b21,b22]));
+Y4=sum(map("*",[a12,a22],[b21,b22]));]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[X1,X2,X3,X4]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(X=\left(\begin{array}{c}\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>{_2}<br> </td>
+                            <td>{_3}<br> </td>
+                            
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[Y1,Y2,Y3,Y4]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(Y=\left(\begin{array}{c}\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                           
+                        </tr>
+                        <tr>
+                            <td>{_2}<br> </td>
+                            <td>{_3}<br> </td>
+                           
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200970  -->
+  <question type="formulas">
+    <name>
+      <text>operace: součin 4 (AC=BA)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete součiny matic \(A\cdot C,\ B\cdot A\), pro&nbsp; $$A = \left(\begin{array}{rrr}{A1[0]}&amp;{A1[1]}&amp;{A1[2]}\\{A2[0]}&amp;{A2[1]}&amp;{A2[2]}\\{A3[0]}&amp;{A3[1]}&amp;{A3[2]}\end{array}\right),\&nbsp; B = \left(\begin{array}{rrr}{B1[0]}&amp;{B1[1]}&amp;{B1[2]}\\{B2[0]}&amp;{B2[1]}&amp;{B2[2]}\\{B3[0]}&amp;{B3[1]}&amp;{B3[2]}\end{array}\right),\ C = 
+\left(\begin{array}{rrr}{C1[0]}&amp;{C1[1]}&amp;{C1[2]}\\{C2[0]}&amp;{C2[1]}&amp;{C2[2]}\\{C3[0]}&amp;{C3[1]}&amp;{C3[2]}\end{array}\right)$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>2.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>#a11={-10:10};a12={-10:10};a13={-10:10};
+#a21={-10:10};a22={-10:10};a23={-10:10};
+#a31={-10:10};a32={-10:10};a33={-10:10};
+
+#b11={-10:10};b12={-10:10};b13={-10:10};
+#b21={-10:10};b22={-10:10};b23={-10:10};
+#b31={-10:10};b32={-10:10};b33={-10:10};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[A1=[1, 0, 0];
+A2=[0, 0, 1];
+A3=[0, 1, 0];
+
+B1=[0, 0, 1];
+B2=[0, 1, 0];
+B3=[1, 0, 0];
+
+C1=[0, 1, 0];
+C2 =[1, 0, 0];
+C3 =[0, 0, 1];
+
+X1=sum(map("*",A1,C1));
+X2=sum(map("*",A1,C2));
+X3=sum(map("*",A1,C3));
+
+X4=sum(map("*",A2,C1));
+X5=sum(map("*",A2,C2));
+X6=sum(map("*",A2,C3));
+
+X7=sum(map("*",A3,C1));
+X8=sum(map("*",A3,C2));
+X9=sum(map("*",A3,C3));
+
+Y1=sum(map("*",B1,A1));
+Y2=sum(map("*",B1,A2));
+Y3=sum(map("*",B1,A3));
+
+Y4=sum(map("*",B2,A1));
+Y5=sum(map("*",B2,A2));
+Y6=sum(map("*",B2,A3));
+
+Y7=sum(map("*",B3,A1));
+Y8=sum(map("*",B3,A2));
+Y9=sum(map("*",B3,A3));]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>9</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[X1,X2,X3,X4,X5,X6,X7,X8,X9]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(AC=\left(\begin{array}{c}\\\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_3}<br> </td>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                      <tr>
+                            <td>{_6}<br> </td>
+                            <td>{_7}<br> </td>
+                            <td>{_8}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>9</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[Y1,Y2,Y3,Y4,Y5,Y6,Y7,Y8,Y9]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(BA=\left(\begin{array}{c}\\\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_3}<br> </td>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                       <tr>
+                            <td>{_6}<br> </td>
+                            <td>{_7}<br> </td>
+                            <td>{_8}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200971  -->
+  <question type="formulas">
+    <name>
+      <text>operace: součin 5 (AB=0)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete matice \(X, Y\), pro které platí \(X =AB,\ Y=BA\), kde&nbsp; $$A = \left(\begin{array}{rrr}{A1[0]}&amp;{A1[1]}&amp;{A1[2]}\\{A2[0]}&amp;{A2[1]}&amp;{A2[2]}\\{A3[0]}&amp;{A3[1]}&amp;{A3[2]}\end{array}\right),\&nbsp; B = \left(\begin{array}{rrr}{B1[0]}&amp;{B1[1]}&amp;{B1[2]}\\{B2[0]}&amp;{B2[1]}&amp;{B2[2]}\\{B3[0]}&amp;{B3[1]}&amp;{B3[2]}\end{array}\right)$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>2.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[A1=[1, 1, 1]; AT=[1,2,5];
+A2=[2, 2, 2]; 
+A3=[5, 5, 5];
+
+B1=[3, 4, 2];     BT1=[3,-2,-1];
+B2=[-2, -1, -1]; BT2=[4,-1,-3];
+B3=[-1, -3, -1]; BT3=[2,-1,-1];
+
+X1=sum(map("*",A1,BT1));
+X2=sum(map("*",A1,BT2));
+X3=sum(map("*",A1,BT3));
+
+X4=sum(map("*",A2,BT1));
+X5=sum(map("*",A2,BT2));
+X6=sum(map("*",A2,BT3));
+
+X7=sum(map("*",A3,BT1));
+X8=sum(map("*",A3,BT2));
+X9=sum(map("*",A3,BT3));
+
+Y1=sum(map("*",B1,AT));
+Y2=sum(map("*",B1,AT));
+Y3=sum(map("*",B1,AT));
+
+Y4=sum(map("*",B2,AT));
+Y5=sum(map("*",B2,AT));
+Y6=sum(map("*",B2,AT));
+
+Y7=sum(map("*",B3,AT));
+Y8=sum(map("*",B3,AT));
+Y9=sum(map("*",B3,AT));]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>9</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[X1,X2,X3,X4,X5,X6,X7,X8,X9]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(X=\left(\begin{array}{c}\\\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_3}<br> </td>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                      <tr>
+                            <td>{_6}<br> </td>
+                            <td>{_7}<br> </td>
+                            <td>{_8}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>9</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[Y1,Y2,Y3,Y4,Y5,Y6,Y7,Y8,Y9]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(Y=\left(\begin{array}{c}\\\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_3}<br> </td>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                       <tr>
+                            <td>{_6}<br> </td>
+                            <td>{_7}<br> </td>
+                            <td>{_8}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200972  -->
+  <question type="formulas">
+    <name>
+      <text>operace: součin 6 (AB=BA)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Určete matice \(X, Y\), pro které platí \(X =AB,\ Y=BA\), kde&nbsp; $$A = \left(\begin{array}{rr}{a11}&amp;{a12}\\{a21}&amp;{a22}\end{array}\right),\&nbsp; B = \left(\begin{array}{rr}{b11}&amp;{b12}\\{b21}&amp;{b22}\end{array}\right)$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>2.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={-10:-1,1:10}; b={-10:-1,1:10};e={-10:-1,1:10};f={-10:-1,1:10};
+k={-10:-1,1:10};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a11=a; a12=k*b; a21=b; a22=a;
+b11=e; b12=k*f; b21=f; b22=e;
+
+A1=[a11,a12];
+A2=[a21,a22];
+
+B1=[b11,b21];
+B2=[b12,b22];
+
+X1=sum(map("*",A1,B1));
+X2=sum(map("*",A1,B2));
+X3=sum(map("*",A2,B1));
+X4=sum(map("*",A2,B2));
+
+Y1=sum(map("*",[a11,a21],[b11,b12]));
+Y2=sum(map("*",[a12,a22],[b11,b12]));
+Y3=sum(map("*",[a11,a21],[b21,b22]));
+Y4=sum(map("*",[a12,a22],[b21,b22]));]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[X1,X2,X3,X4]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(X=\left(\begin{array}{c}\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>{_2}<br> </td>
+                            <td>{_3}<br> </td>
+                            
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[Y1,Y2,Y3,Y4]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(Y=\left(\begin{array}{c}\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                           
+                        </tr>
+                        <tr>
+                            <td>{_2}<br> </td>
+                            <td>{_3}<br> </td>
+                           
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200973  -->
+  <question type="formulas">
+    <name>
+      <text>zadat matici</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Zadejte matici \(A\in\mathbb R^{3\times 4}\) (typu \((3\times 4)\)), pro kterou platí:$$A = (a_{i,j}),\ \left\lbrace \begin{array}{ll}a_{i,j} = 1&amp;\mbox{pro } i=j\\a_{i,j} = 0&amp;\mbox{pro } i\ne j\end{array}\right. , i=1,2,3,\ j=1,2,3,4$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>12</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[1,0,0,0,  0,1,0,0, 0,0,1,0]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(A = \left(\begin{array}{c}\\\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                            <td>{_3}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                            <td>{_6}<br> </td>
+                            <td>{_7}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_8}<br> </td>
+                            <td>{_9}<br> </td>
+                            <td>{_10}<br> </td>
+                            <td>{_11}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\\\end{array}\right)\)
+            </td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200974  -->
+  <question type="formulas">
+    <name>
+      <text>zadat matici 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Zadejte matici \(B\in\mathbb R^{3\times 3}\) (typu \((3\times 3)\)), pro kterou platí:$$B = (b_{i,j}),\ \left\lbrace \begin{array}{ll}b_{i,j} = 0&amp;\mbox{pro } i&lt;j\\b_{i,j} = 1&amp;\mbox{pro } i\geq j\end{array}\right. ,\ i=1,2,3,\ j=1,2,3$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>9</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[1,0,0,  1,1,0, 1,1,1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(B = \left(\begin{array}{c}\\\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_3}<br> </td>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_6}<br> </td>
+                            <td>{_7}<br> </td>
+                            <td>{_8}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\\\end{array}\right)\)
+            </td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200975  -->
+  <question type="formulas">
+    <name>
+      <text>zadat matici 3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Zadejte matici \(C\in\mathbb R^{2\times 4}\) (typu \((2\times 4)\)), pro kterou platí:$$C = (c_{i,j}),\ c_{i,j}=i+j ,\ i=1,2,\ j=1,2,3,4$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>8</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[2,3,4,5, 3,4,5,6]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(C = \left(\begin{array}{c}\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                            <td>{_3}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                            <td>{_6}<br> </td>
+                            <td>{_7}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\end{array}\right)\)
+            </td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

@@ -1,0 +1,6564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068</text>
+    </category>
+    <info format="html">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "B192-2011068".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 6/křivkový-skalární-úsečka</text>
+    </category>
+    <info format="html">
+      <text>Výpočet křivkového integrálu skalární funkce, křivka je úsečka.</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 135826  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 1 (úsečka)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (x+z)\ {\rm d}s,$$ $$\mbox{ kde křivka } C \mbox{ úsečka } \overline{AB},\ A = [1,\ 2,\ 3],\ B=[3,\ 2,\ 1].$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.<br></p><p>1. Navrhněte parametrizaci \(P(t)\) úsečky \(\ \overline{AB}\), například \(\displaystyle X = A + t(B-A),\ t\in\langle 0,\ 1\rangle\).</p><p>2. Určete tečný vektor \(\dot{P}(t)\) a jeho velikost \( \|\dot{P}(t)\|\).</p><p>3. Vyjádřete integrovanou funkci pomocí zvolené parametrizace a \( {\rm d} s = \|\dot{P}(t)\| {\rm d} t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \ (x+z)\ {\rm d}s = \int_0^1\ f(P(t))\ \|\dot P(t)\| {\rm d} t$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>V=8*sqrt(2)</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135827  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 2 (úsečka)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ \frac{1}{x-y}\ {\rm d}s,$$ $$\mbox{ kde křivka } C \mbox{ úsečka } \overline{AB},\ A = [0,\ -1],\ B=[2,\ 0].$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.<br></p><p>1. Navrhněte parametrizaci \(P(t)\) úsečky \(\ \overline{AB}\), například \(\displaystyle X = A + t(B-A),\ t\in\langle 0,\ 1\rangle\).</p><p>2. Určete tečný vektor \(\dot{P}(t)\) a jeho velikost \( \|\dot{P}(t)\|\).</p><p>3. Vyjádřete integrovanou funkci pomocí zvolené parametrizace a \( {\rm d} s = \|\dot{P}(t)\| {\rm d} t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \ \frac{1}{x-y}\ {\rm d}s = \int_0^1\ f(P(t))\ \|\dot P(t)\| {\rm d} t$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>V=sqrt(5)*log(2)</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135828  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 3 (úsečka)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (x^2 +y +3z)\ {\rm d}s,$$ $$\mbox{ kde křivka } C \mbox{ úsečka } \overline{AB},\ A = [{ax},\ {ay},\ {az}],\ B=[{bx},\ {by},\ {bz}].$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Navrhněte parametrizaci \(P(t)\) úsečky \(\ \overline{AB}\), například \(\displaystyle X = A + t(B-A),\ t\in\langle 0,\ 1\rangle\), $$P(t) = [{ax}+t({abx}) ,\ {ay}+t({aby}),\ {az} +t({abz})].$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) = ({abx},\ {aby},\ {abz}) \) a jeho velikost \( \|\dot{P}(t)\| = \displaystyle \sqrt {({abx})^2 + ({aby})^2 + ({abz})^2}\).</p><p>3. Vyjádřete integrovanou funkci pomocí zvolené parametrizace, $$f(P(t)) = \left(({ax} + t({abx}))^2 +({ay}) + t({aby}) + 3({az} + t({abz}))\right) $$ a \( {\rm d} s = \|\dot{P}(t)\| {\rm d} t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \ (x^2 +y +3z)\ {\rm d}s = \int_0^1\ f(P(t))\ \|\dot P(t)\| {\rm d} t$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ax={-2:2}; ay={-2:2}; az={-2:2}; q={-2,-1,1,2}
+</text>
+</varsrandom>
+<varsglobal><text>bx=ax+q; by=ay+q; bz=az+q;
+abx=(bx)-(ax); aby=(by)-(ay); abz = (bz)-(az);
+dP=sqrt(abx*abx+aby*aby+abz*abz);
+V=dP*(ax*ax+ay+3*az + abx + 0.5*aby+1.5*abz + abx*abx/3)</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135830  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 4 (úsečka)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ \frac{1}{x+y}\ {\rm d}s,$$ $$\mbox{ kde křivka } C \mbox{ úsečka } \overline{AB},\ A = [{ax},\ {ay}],\ B=[{bx},\ {by}].$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Navrhněte parametrizaci \(P(t)\) úsečky \(\ \overline{AB}\), například \(\displaystyle X = A + t(B-A),\ t\in\langle 0,\ 1\rangle\), $$P(t) = [{ax}+t({abx}) ,\ {ay}+t({aby})].$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) = ({abx},\ {aby}) \) a jeho velikost \( \|\dot{P}(t)\| = \displaystyle \sqrt {({abx})^2 + ({aby})^2 }\).</p><p>3. Vyjádřete integrovanou funkci pomocí zvolené parametrizace, $$f(P(t)) =\frac{1}{{ax}+t({abx})+{ay}+t({aby})} $$ a \( {\rm d} s = \|\dot{P}(t)\| {\rm d} t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \ \frac{1}{x+y}\ {\rm d}s = \int_0^1\ f(P(t))\ \|\dot P(t)\| {\rm d} t$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ax={1:3}; ay={0:4};  q={-2,-1,1,2}
+</text>
+</varsrandom>
+<varsglobal><text>bx=ax+q; by=ay+q; 
+abx=bx-ax; aby=by-ay;
+dP=sqrt(abx*abx+aby*aby);
+V=dP*(log(abs(ax+ay+abx+aby)) -log(abs(ax+ay)))/(abx+aby)</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135831  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 5 (úsečka)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ x\ {\rm d}s,$$ $$\mbox{ kde křivka } C \mbox{ úsečka } \overline{AB},\ A = [{ax},\ {ay}],\ B=[{bx},\ {by}].$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Navrhněte parametrizaci \(P(t)\) úsečky \(\ \overline{AB}\), například \(\displaystyle X = A + t(B-A),\ t\in\langle 0,\ 1\rangle\), $$P(t) = [{ax}+t({abx}) ,\ {ay}+t({aby})].$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) = ({abx},\ {aby}) \) a jeho velikost \( \|\dot{P}(t)\| = \displaystyle \sqrt {({abx})^2 + ({aby})^2 }\).</p><p>3. Vyjádřete integrovanou funkci pomocí zvolené parametrizace, $$f(P(t)) ={ax} + t({abx})$$ a \( {\rm d} s = \|\dot{P}(t)\| {\rm d} t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \ x\ {\rm d}s = \int_0^1\ f(P(t))\ \|\dot P(t)\| {\rm d} t$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ax={-3:3}; ay={-4:4};  q={-2,-1,1,2}
+</text>
+</varsrandom>
+<varsglobal><text>bx=ax+q; by=ay+q; 
+abx=bx-ax; aby=by-ay;
+dP=sqrt(abx*abx+aby*aby);
+V=dP*(ax+abx/2)</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135832  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 6 (úsečka)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (xy +x +y -1)\ {\rm d}s,$$ $$\mbox{ kde křivka } C \mbox{ úsečka } \overline{AB},\ A = [{ax},\ {ay}],\ B=[{bx},\ {by}].$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Navrhněte parametrizaci \(P(t)\) úsečky \(\ \overline{AB}\), například \(\displaystyle X = A + t(B-A),\ t\in\langle 0,\ 1\rangle\), $$P(t) = [{ax}+t({abx}) ,\ {ay}+t({aby})].$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) = ({abx},\ {aby} \) a jeho velikost \( \|\dot{P}(t)\| = \displaystyle \sqrt {({abx})^2 + ({aby})^2} \).</p><p>3. Vyjádřete integrovanou funkci pomocí zvolené parametrizace, $$f(P(t)) =({ax} + t({abx}))({ay}+t({aby})) +({ax} + t({abx}))+({ay} + t({aby})) -1 $$ a \( {\rm d} s = \|\dot{P}(t)\| {\rm d} t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \ (xy +x +y -1)\ {\rm d}s = \int_0^1\ f(P(t))\ \|\dot P(t)\| {\rm d} t$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ax={-2:2}; ay={-2:2}; az={-2:2}; q={-2,-1,1,2}
+</text>
+</varsrandom>
+<varsglobal><text>bx=ax+q; by=ay+q; 
+abx=(bx)-(ax); aby=(by)-(ay);
+dP=sqrt(abx*abx+aby*aby);
+V=dP*(ax+ay+ax*ay-1 +0.5*(ay*abx + ax*aby + abx+aby) +abx*aby/3)</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 6/křivkový-skalární-kružnice</text>
+    </category>
+    <info format="html">
+      <text>Výpočet křivkového integrálu skalární funkce, křivka je (část) kružnice.</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 135974  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 10 (kružnice)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ x^2y\ {\rm d}s,$$ $$\mbox{ kde křivka } C =\{[x,\ y]\in\mathbb E_2: x^2 + y^2 = {a2},\ \mbox{ mezi body } A=[{a},0],\ B=[0,\ {a}]. \}$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Navrhněte parametrizaci \(P(t)\) kružnice, například $$P(t) = [{a}\cos t ,\&nbsp; {a}\sin t],\ t\in\langle 0,\ \frac\pi 2\rangle .$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) = (-{a}\sin t,\ {a}\cos t) \) a jeho velikost \( \|\dot{P}(t)\| = \displaystyle \sqrt {(-{a}\sin t)^2 + ({a}\cos t)^2} \).</p><p>3. Vyjádřete integrovanou funkci pomocí zvolené parametrizace, \(f(P(t))\), a \( {\rm d} s = \|\dot{P}(t)\|\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \ x^2y\ {\rm d}s = \int_0^{\frac \pi 2}\ f(P(t))\ \|\dot P(t)\|\ {\rm d} t$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+dP=a;
+V=a2*a2/3;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135968  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 7 (kružnice)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (x^2 + y^2)\ {\rm d}s,$$ $$\mbox{ kde křivka } C =\{[x,\ y]\in\mathbb E_2: x^2 + y^2 = {a2}\}$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Navrhněte parametrizaci \(P(t)\) kružnice, například $$P(t) = [{a}\cos t ,\&nbsp; {a}\sin t],\ t\in\langle 0,\ 2\pi\rangle .$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) = (-{a}\sin t,\ {a}\cos t) \) a jeho velikost \( \|\dot{P}(t)\| = \displaystyle \sqrt {(-{a}\sin t)^2 + ({a}\cos t)^2} \).</p><p>3. Vyjádřete integrovanou funkci pomocí zvolené parametrizace, \(f(P(t))\), a \( {\rm d} s = \|\dot{P}(t)\|\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \ (x^2 + y^2)\ {\rm d}s = \int_0^{2\pi}\ f(P(t))\ \|\dot P(t)\| {\rm d} t$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+dP=a;
+V=2*pi()*a2*a;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135970  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 8 (kružnice)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ \frac{1}{\sqrt{x^2 + y^2}}\ {\rm d}s,$$ $$\mbox{ kde křivka } C =\{[x,\ y]\in\mathbb E_2: x^2 + y^2 = {a2},\ y\geq 0\}$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Navrhněte parametrizaci \(P(t)\) kružnice, například $$P(t) = [{a}\cos t ,\&nbsp; {a}\sin t],\ t\in\langle 0,\ \pi\rangle .$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) = (-{a}\sin t,\ {a}\cos t) \) a jeho velikost \( \|\dot{P}(t)\| = \displaystyle \sqrt {(-{a}\sin t)^2 + ({a}\cos t)^2} \).</p><p>3. Vyjádřete integrovanou funkci pomocí zvolené parametrizace, \(f(P(t))\), a \( {\rm d} s = \|\dot{P}(t)\|\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \ \frac{1}{\sqrt{x^2 + y^2}}\ {\rm d}s = \int_0^{\pi}\ f(P(t))\ \|\dot P(t)\|\ {\rm d} t$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+dP=a;
+V=pi();</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135971  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 9 (kružnice)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ x^2\ {\rm d}s,$$ $$\mbox{ kde křivka } C =\{[x,\ y]\in\mathbb E_2: x^2 + y^2 = {a2},\ y\geq 0\}$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Navrhněte parametrizaci \(P(t)\) kružnice, například $$P(t) = [{a}\cos t ,\&nbsp; {a}\sin t],\ t\in\langle 0,\ \pi\rangle .$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) = (-{a}\sin t,\ {a}\cos t) \) a jeho velikost \( \|\dot{P}(t)\| = \displaystyle \sqrt {(-{a}\sin t)^2 + ({a}\cos t)^2} \).</p><p>3. Vyjádřete integrovanou funkci pomocí zvolené parametrizace, \(f(P(t))\), a \( {\rm d} s = \|\dot{P}(t)\|\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \ x^2\ {\rm d}s = \int_0^{\pi}\ f(P(t))\ \|\dot P(t)\|\ {\rm d} t$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+dP=a;
+V=pi()*a2*a/2;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 6/křivkový-skalární-zadaná</text>
+    </category>
+    <info format="html">
+      <text>Výpočet křivkového integrálu skalární funkce, křivka je zadaná parametricky.</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 135983  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 11 (cykloida)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ \ {\rm d}s,$$ $$\mbox{ kde křivka } C \mbox{ je první oblouk cykloidy},\ x={a}(t-\sin t), \ y = {a}(1-\cos t),\ t\in\langle 0,\ 2\pi\rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Cykloida je zadaná parametricky,$$P(t) = [{a}(t-\sin t) ,\&nbsp; {a}(1-\cos t)],\ t\in\langle 0,\ 2\pi\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) = ({a}(1-\cos t),\ {a}\sin t) \) a jeho velikost \( \|\dot{P}(t)\| = \displaystyle \sqrt {({a}(1-\cos t))^2 + ({a}\sin t)^2} \).</p><p>3. Vyjádřete \( {\rm d} s = \|\dot{P}(t)\|\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp; \ {\rm d}s = \int_0^{2\pi}\ \|\dot P(t)\|\ {\rm d} t$$</p><p>5. \(\displaystyle&nbsp; \sqrt{1-\cos t}\) je možné upravit na \(\displaystyle \sqrt 2\sin \frac t2\).<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=8*a;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135984  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 12 (cykloida)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ \sqrt{{c}y}\ {\rm d}s,$$ $$\mbox{ kde křivka } C \mbox{ je první oblouk cykloidy},\ x={a}(t-\sin t), \ y = {a}(1-\cos t),\ t\in\langle 0,\ 2\pi\rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Cykloida je zadaná parametricky,$$P(t) = [{a}(t-\sin t) ,\&nbsp; {a}(1-\cos t)],\ t\in\langle 0,\ 2\pi\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) = ({a}(1-\cos t),\ {a}\sin t) \) a jeho velikost \( \|\dot{P}(t)\| = \displaystyle \sqrt {({a}(1-\cos t))^2 + ({a}\sin t)^2} \).</p><p>3. Vyjádřete integrovanou funkci \(f(P(t)) = \sqrt{{c}\cdot({a}(1-\cos t))}\) a \( {\rm d} s = \|\dot{P}(t)\|\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp; \sqrt{{c}y}\ {\rm d}s = \int_0^{2\pi}\ \sqrt{{c}\cdot({a}(1-\cos t))}\|\dot P(t)\|\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5};
+c={2:5};</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=pi()*a*sqrt(a)*sqrt(c)*2*sqrt(2);</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135987  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 13</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ \sqrt{x^2+y^2}\ {\rm d}s,$$ $$\mbox{ kde křivka } C \mbox{ je zadaná rovnicemi: } \ x={a}(\cos t+t\sin t), \ y = {a}(\sin t-t\cos t),\ t\in\langle 0,\ 2\pi\rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Křivka \(C\) je zadaná parametricky,$$P(t) = [{a}(\cos t+t\sin t) ,\&nbsp; {a}(\sin t-t\cos t)],\ t\in\langle 0,\ 2\pi\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) \) a jeho velikost \( \|\dot{P}(t)\| \).</p><p>3. Vyjádřete integrovanou funkci \(f(P(t))\) a \( {\rm d} s = \|\dot{P}(t)\|\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp; \sqrt{x^2+y^2}\ {\rm d}s = \int_0^{2\pi}\ (f(P(t))\ \|\dot P(t)\|\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=a2*((1+4*pi()*pi())*sqrt(1+4*pi()*pi())-1)/3</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135999  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 14 (asteroida)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ x^2\ {\rm d}s,$$ $$\mbox{ kde křivka } C \mbox{ je oblouk asteroidy},\ x={a}\cos^3 t, \ y = {a}\sin^3 t,\ t\in\langle 0,\ \frac \pi 2\rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Asteroida je zadaná parametricky,$$P(t) = [{a}\cos^3 t ,\&nbsp; {a}\sin^3 t],\ t\in\langle 0,\ \frac \pi 2\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) \) a jeho velikost \( \|\dot{P}(t)\| \).</p><p>3. Vyjádřete integrovanou funkci \(f(P(t)) = {a2}\cos^6 t\) a \( {\rm d} s = \|\dot{P}(t)\|\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp; x^2\ {\rm d}s = \int_0^{\frac \pi 2}\ {a2}\cos^6 t\ \|\dot P(t)\|\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=3*a2*a/8;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 136018  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 15 (šroubovice)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (x^2+y^2+z^2)\ {\rm d}s,$$ $$\mbox{ kde křivka } C \mbox{ je závit šroubovice},\ x={a}\cos t, \ y = {a}\sin t,\ z={a}t,\ t\in\langle 0,\ 2\pi \rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Šroubovice je zadaná parametricky,$$P(t) = [{a}\cos t ,\&nbsp; {a}\sin t,\ {a}t],\ t\in\langle 0,\ 2 \pi\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) \) a jeho velikost \( \|\dot{P}(t)\| \).</p><p>3. Vyjádřete integrovanou funkci \(f(P(t)) = {a2}(1+t^2) \) a \( {\rm d} s = \|\dot{P}(t)\|\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp; (x^2+y^2+z^2)\ {\rm d}s = \int_0^{2\pi}\ {a2}(1+t^2)\ \|\dot P(t)\|\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=a2*a*2*sqrt(2)*pi()*(1+4*pi()*pi()/3);</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 136024  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 16 (šroubovice)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ \frac{z^2}{x^2+y^2}\ {\rm d}s,$$ $$\mbox{ kde křivka } C \mbox{ je závit šroubovice},\ x={a}\cos t, \ y = {a}\sin t,\ z={a}t,\ t\in\langle 0,\ 2\pi \rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Šroubovice je zadaná parametricky,$$P(t) = [{a}\cos t ,\&nbsp; {a}\sin t,\ {a}t],\ t\in\langle 0,\ 2 \pi\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) \) a jeho velikost \( \|\dot{P}(t)\| \).</p><p>3. Vyjádřete integrovanou funkci \(f(P(t)) = t^2 \) a \( {\rm d} s = \|\dot{P}(t)\|\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp; \frac{z^2}{x^2+y^2}\ {\rm d}s = \int_0^{2\pi}\ t^2\ \|\dot P(t)\|\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=a*sqrt(2)*8*pi()*pi()*pi()/3;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 136030  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 17</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ z\ {\rm d}s,$$ $$\mbox{ kde křivka } C \mbox{ je zadaná rovnicemi: } \ x={a}t\cos t, \ y = {a}t\sin t ,\ z={a}t,\ t\in\langle 0,\ 1\rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Křivka \(C\) je zadaná parametricky,$$P(t) = [{a}t\cos t,\&nbsp; {a}t\sin t,\ {a}t],\ t\in\langle 0,\ 1\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) \) a jeho velikost \( \|\dot{P}(t)\| \).</p><p>3. Vyjádřete integrovanou funkci \(f(P(t))\) a \( {\rm d} s = \|\dot{P}(t)\|\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp; z\ {\rm d}s = \int_0^{1}\ f(P(t))\ \|\dot P(t)\|\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=a2*(3*sqrt(3) - 2*sqrt(2))/3</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 136034  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 18</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ \left(z+\sqrt{x^2+y^2}\right)\ {\rm d}s,$$ $$\mbox{ kde křivka } C \mbox{ je zadaná rovnicemi: } \ x={a}t\cos t, \ y = {a}t\sin t ,\ z={a}t,\ t\in\langle 0,\ 1\rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Křivka \(C\) je zadaná parametricky,$$P(t) = [{a}t\cos t,\&nbsp; {a}t\sin t,\ {a}t],\ t\in\langle 0,\ 1\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) \) a jeho velikost \( \|\dot{P}(t)\| \).</p><p>3. Vyjádřete integrovanou funkci \(f(P(t))\) a \( {\rm d} s = \|\dot{P}(t)\|\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp; \left(z+\sqrt{x^2+y^2}\right)\ {\rm d}s = \int_0^{1}\ f(P(t))\ \|\dot P(t)\|\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=a2*2*(3*sqrt(3) - 2*sqrt(2))/3</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 136038  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový skalární 19</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ xz\ {\rm d}s,$$ $$\mbox{ kde křivka } C \mbox{ je zadaná rovnicemi: } \ x=t, \ y = \frac 23 \sqrt{2t^3},\ z=\frac 12 t^2,\ t\in\langle 0,\ 1\rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Křivka \(C\) je zadaná parametricky,$$P(t) = [t,\&nbsp; \frac 23 \sqrt{2t^3},\ \frac 12 t^2],\ t\in\langle 0,\ 1\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) \) a jeho velikost \( \|\dot{P}(t)\| \).</p><p>3. Vyjádřete integrovanou funkci \(f(P(t))\) a \( {\rm d} s = \|\dot{P}(t)\|\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp; xz\ {\rm d}s = \int_0^{1}\ f(P(t))\ \|\dot P(t)\|\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>V=9/40;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 6/křivkový-vektorová-úsečka</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 137802  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový vektorová 1 (úsečka)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (x-y,\ x+y)\ {\rm d}\vec s,$$ $$\mbox{ kde křivka } C \mbox{ je úsečka } \overline{AB},\ A = [2,\ 3],\ B=[3,\ 5],\ \mbox{ počáteční bod je }A.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.<br></p><p>1. Navrhněte parametrizaci \(P(t)\) úsečky \(\ \overline{AB}\), například \(\displaystyle X = A + t(B-A),\ t\in\langle 0,\ 1\rangle\).</p><p>2. Určete tečný vektor \(\dot{P}(t)\).</p><p>3. Vyjádřete integrovanou funkci pomocí zvolené parametrizace a \( {\rm d} \vec s =\dot{P}(t) {\rm d} t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \ (x-y,\ x+y)\ {\rm d}\vec s = \int_0^1\ f(P(t))\cdot\dot P(t)\ {\rm d} t$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>V=23/2</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 137804  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový vektorová 2 (úsečka)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (x,\ -y,\ z)\ {\rm d}\vec s,$$ $$\mbox{ kde křivka } C \mbox{ je úsečka } \overline{AB},\ A = [1,\ 1,\ 1],\ B=[4,\ 3,\ 2],\ \mbox{ počáteční bod je }A.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.<br></p><p>1. Navrhněte parametrizaci \(P(t)\) úsečky \(\ \overline{AB}\), například \(\displaystyle X = A + t(B-A),\ t\in\langle 0,\ 1\rangle\).</p><p>2. Určete tečný vektor \(\dot{P}(t)\).</p><p>3. Vyjádřete integrovanou funkci pomocí zvolené parametrizace a \( {\rm d} \vec s =\dot{P}(t) {\rm d} t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \ (x,\ -y,\ z)\ {\rm d}\vec s = \int_0^1\ f(P(t))\cdot\dot P(t)\ {\rm d} t$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>V=5</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 137805  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový vektorová 3 (úsečka)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ \left(\frac{x}{\sqrt{x^2+y^2+z^2}},\ \frac{y}{\sqrt{x^2+y^2+z^2}},\ \frac{z}{\sqrt{x^2+y^2+z^2}}\right)\ {\rm d}\vec s,$$ $$\mbox{ kde křivka } C \mbox{ je úsečka } \overline{AB},\ A = [0,\ 0,\ {a}],\ B=[0,\ {b},\ 0],\ \mbox{ počáteční bod je }A.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.<br></p><p>1. Navrhněte parametrizaci \(P(t)\) úsečky \(\ \overline{AB}\), například \(\displaystyle X = A + t(B-A),\ t\in\langle 0,\ 1\rangle\).</p><p>2. Určete tečný vektor \(\dot{P}(t)\).</p><p>3. Vyjádřete integrovanou funkci pomocí zvolené parametrizace a \( {\rm d} \vec s =\dot{P}(t) {\rm d} t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \ \left(\frac{x}{\sqrt{x^2+y^2+z^2}},\ \frac{y}{\sqrt{x^2+y^2+z^2}},\ \frac{z}{\sqrt{x^2+y^2+z^2}}\right)\ {\rm d}\vec s = \int_0^1\ f(P(t))\cdot\dot P(t)\ {\rm d} t$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:5}; q={1:3}</text>
+</varsrandom>
+<varsglobal><text>b=a+q;
+V=b-a</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 137809  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový vektorová 4 (úsečka)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (y,\ z,\ x)\ {\rm d}\vec s,$$ \(\mbox{ kde křivka } C \mbox{ je lomená čára } \overline{OABC},\)$$O=[0,\ 0,\ 0],\ A = [{a},\ 0,\ 0],\ B=[{a},\ {a},\ 0],\ C=[{a},\ {a},\ {a}]\mbox{ počáteční bod je }O.$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Postup.<br></p><p>1. Navrhněte parametrizaci \(P(t)\) úsečky \(\ \overline{AB}\), například \(\displaystyle X = A + t(B-A),\ t\in\langle 0,\ 1\rangle\).</p><p>2. Určete tečný vektor \(\dot{P}(t)\).</p><p>3. Vyjádřete integrovanou funkci pomocí zvolené parametrizace a \( {\rm d} \vec s =\dot{P}(t) {\rm d} t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \ (y,\ z,\ x)\ {\rm d}\vec s = \int_0^1\ f(P(t))\cdot\dot P(t)\ {\rm d} t$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:5}</text>
+</varsrandom>
+<varsglobal><text>V=a*a</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 6/křivkový-vektorová-kružnice</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 137814  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový vektorová 5 (kružnice)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (y,\ x)\ {\rm d}\vec s,$$ $$\mbox{ kde křivka } C =\{[x,\ y]\in\mathbb E_2: x^2 + y^2 = {a2},\ x\geq 0,\ y\geq 0\},\ \mbox{počáteční bod je }A = [{a},\ 0].$$ <br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Navrhněte parametrizaci \(P(t)\) kružnice, například $$P(t) = [{a}\cos t ,\&nbsp; {a}\sin t],\ t\in\langle 0,\ \frac \pi 2\rangle .$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) = (-{a}\sin t,\ {a}\cos t) \).</p><p>3. Vyjádřete integrovanou funkci pomocí zvolené parametrizace, \(\vec f(P(t))\), a \( {\rm d} \vec s = \dot{P}(t)\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \ (y,\ x)\ {\rm d}\vec s = \int_0^{\frac\pi 2}\ \vec f(P(t))\cdot \dot P(t) {\rm d} t$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=0;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 137815  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový vektorová 6 (kružnice)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ \left(\frac{x}{(x^2+y^2)^3},\ \frac{-y}{(x^2+y^2)^3}\right)\ {\rm d}\vec s,$$ $$\mbox{ kde křivka } C =\{[x,\ y]\in\mathbb E_2: x^2 + y^2 = {a2},\ x\geq 0,\ y\geq 0\},\ \mbox{počáteční bod je }A = [{a},\ 0].$$ <br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Navrhněte parametrizaci \(P(t)\) kružnice, například $$P(t) = [{a}\cos t ,\&nbsp; {a}\sin t],\ t\in\langle 0,\ \frac \pi 2\rangle .$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) = (-{a}\sin t,\ {a}\cos t) \).</p><p>3. Vyjádřete integrovanou funkci pomocí zvolené parametrizace, \(\vec f(P(t))\), a \( {\rm d} \vec s = \dot{P}(t)\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \ \left(\frac{x}{(x^2+y^2)^3},\ \frac{-y}{(x^2+y^2)^3}\right)\ {\rm d}\vec s = \int_0^{\frac\pi 2}\ \vec f(P(t))\cdot \dot P(t) {\rm d} t$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=-1/(a2*a2);</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 137817  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový vektorová 7 (elipsa)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (xy - 1,\ x^2y)\ {\rm d}\vec s,$$ $$\mbox{ kde křivka } C =\{[x,\ y]\in\mathbb E_2: \frac{x^2}{{a2}} + \frac{y^2}{{b2}} = 1\},\ \mbox{ od }A = [{a},\ 0] \mbox{ do } B=[0,\ {b}].$$ <br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Navrhněte parametrizaci \(P(t)\) kružnice, například $$P(t) = [{a}\cos t ,\&nbsp; {b}\sin t],\ t\in\langle 0,\ \frac \pi 2\rangle .$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) = (-{a}\sin t,\ {b}\cos t) \).</p><p>3. Vyjádřete integrovanou funkci pomocí zvolené parametrizace, \(\vec f(P(t))\), a \( {\rm d} \vec s = \dot{P}(t)\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \ (xy - 1,\ x^2y)\ {\rm d}\vec s = \int_0^{\frac\pi 2}\ \vec f(P(t))\cdot \dot P(t) {\rm d} t$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5} ; </text>
+</varsrandom>
+<varsglobal><text>b=a+1;
+a2=a*a; b2 = b*b;
+V=a2*b2/4 -a2*b/3 + a;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 6/křivkový-vektorová-zadaná</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 137843  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový vektorová 10 (asteroida)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (-y,\ x)\ {\rm d}\vec s,$$ $$\mbox{ kde křivka } C \mbox{ je oblouk asteroidy},\ x={a}\cos^3 t, \ y = {a}\sin^3 t,\ t\in\langle 0,\ 2 \pi \rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Asteroida je zadaná parametricky,$$P(t) = [{a}\cos^3 t ,\&nbsp; {a}\sin^3 t],\ t\in\langle 0,\ \frac \pi 2\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) \) .</p><p>3. Vyjádřete integrovanou funkci \(\vec f(P(t))\) a \( {\rm d} \vec s =\dot{P}(t)\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp; (-y,\ x)\ {\rm d}\vec s = \int_0^{2 \pi}\ \vec f(P(t))\cdot \dot P(t)\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=pi()*3*a2/4;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 137835  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový vektorová 11 (šroubovice)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (yz,\ -xz,\ 0)\ {\rm d}\vec s,$$ $$\mbox{ kde křivka } C \mbox{ je závit šroubovice},\ x={a}\cos t, \ y = {a}\sin t,\ z={b}t,\ t\in\langle 0,\ 2\pi \rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Šroubovice je zadaná parametricky,$$P(t) = [{a}\cos t ,\&nbsp; {a}\sin t,\ {b}t],\ t\in\langle 0,\ 2 \pi\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) \).</p><p>3. Vyjádřete integrovanou funkci \(\vec f(P(t)) \) a \( {\rm d} \vec s = \dot{P}(t)\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp; (yz,\ -xz,\ 0)\ {\rm d}\vec s = \int_0^{2\pi}\ \vec f(P(t))\cdot \dot P(t)\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}; b={2:5};</text>
+</varsrandom>
+<varsglobal><text>b2=b*b; a2=a*a;
+V=-a2*b*2*pi()*pi();</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 137844  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový vektorová 12 (cykloida)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (-y,\ x)\ {\rm d}\vec s,$$ $$\mbox{ kde křivka } C \mbox{ je první oblouk cykloidy},\ x={a}(t-\sin t), \ y = {a}(1-\cos t),\ t\in\langle 0,\ 2\pi\rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Cykloida je zadaná parametricky,$$P(t) = [{a}(t-\sin t) ,\&nbsp; {a}(1-\cos t)],\ t\in\langle 0,\ 2\pi\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) = ({a}(1-\cos t),\ {a}\sin t) \).</p><p>3. Vyjádřete \(\vec f(P(t))\) a&nbsp; \( {\rm d} \vec s = \dot{P}(t)\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp;(-y,\ x) \ {\rm d}\vec s = \int_0^{2\pi}\ \vec f(P(t))\cdot \dot P(t)\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=-6*a2*pi();</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 137828  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový vektorová 8 (šroubovice)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (yz,\ xz,\ xy)\ {\rm d}\vec s,$$ $$\mbox{ kde křivka } C \mbox{ je závit šroubovice},\ x={a}\cos t, \ y = {a}\sin t,\ z={b}t,\ t\in\langle 0,\ 2\pi \rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Šroubovice je zadaná parametricky,$$P(t) = [{a}\cos t ,\&nbsp; {a}\sin t,\ {b}t],\ t\in\langle 0,\ 2 \pi\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) \).</p><p>3. Vyjádřete integrovanou funkci \(\vec f(P(t)) \) a \( {\rm d} \vec s = \dot{P}(t)\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp; (yz,\ xz,\ xy)\ {\rm d}\vec s = \int_0^{2\pi}\ \vec f(P(t))\cdot \dot P(t)\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}; b={2:5};</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=0;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 137832  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový vektorová 9 (šroubovice)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (x,\ y,\ z)\ {\rm d}\vec s,$$ $$\mbox{ kde křivka } C \mbox{ je závit šroubovice},\ x={a}\cos t, \ y = {a}\sin t,\ z={b}t,\ t\in\langle 0,\ 2\pi \rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Šroubovice je zadaná parametricky,$$P(t) = [{a}\cos t ,\&nbsp; {a}\sin t,\ {b}t],\ t\in\langle 0,\ 2 \pi\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) \).</p><p>3. Vyjádřete integrovanou funkci \(\vec f(P(t)) \) a \( {\rm d} \vec s = \dot{P}(t)\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp; (x,\ y,\ z)\ {\rm d}\vec s = \int_0^{2\pi}\ \vec f(P(t))\cdot \dot P(t)\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}; b={2:5};</text>
+</varsrandom>
+<varsglobal><text>b2=b*b;
+V=b2*2*pi()*pi();</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 6/cirkulace trojuhelnik</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 139466  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 1 trojúhelník</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\oint_C\ x\ dy,$$ $$\mbox{ kde } C \mbox{ tvoří kladně orientovaný obvod trojúhelníku } ABC,\ \begin{array}{l}A=[0,\ 0]\\B=[2,\ 0]\\C=[0,\ 3]\end{array}$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139468  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 2 trojúhelník</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\oint_C\ (x^2+y^2)\ dx + (x+y)^2\ dy,$$ $$\mbox{ kde } C \mbox{ tvoří kladně orientovaný obvod trojúhelníku } ABC,\ \begin{array}{l}A=[1,\ 1]\\B=[1,\ 3]\\C=[3,\ 3]\end{array}$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>20/3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139470  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 3 trojúhelník</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\oint_C\ (x^2 - y^2)\ dx,$$ $$\mbox{ kde } C \mbox{ tvoří kladně orientovaný obvod trojúhelníku } ABC,\ \begin{array}{l}A=[2,\ 0]\\B=[4,\ 4]\\C=[0,\ 4]\end{array}$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>128/3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139491  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 4 trojúhelník</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\oint_C\ 2y\ dx -(x+y)\ dy,$$&nbsp; kde&nbsp; \(C\) tvoří kladně orientovaný obvod trojúhelníku&nbsp; \(ABC\),$$\mbox{ jehož strany leží na přímkách } \begin{array}{l}x=0\\y=0\\x+2y=4\end{array}$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>-12</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139504  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 5 trojúhelník</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\oint_C\&nbsp; (x-2y^3)\ dy,$$&nbsp; kde&nbsp; \(C\) tvoří kladně orientovaný obvod trojúhelníku&nbsp; \(ABC\),$$\mbox{ jehož strany leží na přímkách } \begin{array}{l}x=0\\y=0\\2x+3y=6\end{array}$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 6/cirkulace obdelnik</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 139505  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 6 čtyřúhelník</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\oint_C\&nbsp; (x^2+y^2)\ dy,$$&nbsp; kde&nbsp; \(C\) tvoří kladně orientovaný obvod obdélníku,$$\mbox{ jehož strany leží na přímkách } \begin{array}{ll}x=0,&amp;x=2,\\y=0,&amp;y=4\end{array}$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>16</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139507  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 7 čtyřúhelník</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\oint_C\&nbsp; y^2\ dx + x\ dy,$$&nbsp; kde&nbsp; \(C\) tvoří kladně orientovaný obvod čtverce,$$\mbox{ jehož strany leží na přímkách } \begin{array}{ll}x=-2,&amp;x=2,\\y=-2,&amp;y=2\end{array}$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>16</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139514  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 8 čtyřúhelník</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\oint_C\ (1+xy)e^{xy}\ dx + x^2(1 + e^{xy})\ dy,$$ $$\mbox{ kde } C \mbox{ tvoří kladně orientovaný obvod obdélníku } ABCD,\ \begin{array}{ll}A=[0,\ 0]&amp;B=[2,\ 0]\\C=[2,\ 1]&amp;D=[0,\ 1]\end{array}$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>4</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139518  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 9 čtyřúhelník</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\oint_C\&nbsp; xy^2\ dx+(x^2+y^2)\ dy,$$&nbsp; kde&nbsp; \(C\) tvoří kladně orientovaný obvod obdélníku,$$\mbox{ jehož strany leží na přímkách } \begin{array}{ll}x=1,&amp;x=4,\\y=2,&amp;y=3\end{array}$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>-45/2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 6/cirkulace kružnice, elipsa</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 139560  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 10 kružnice</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte cirkulaci vektorového pole \(\vec f = (x+y,\ -2x)\) podél křivky \(C\), která je kladně orientovanou hranicí množiny \( D = \{[x,y]\in\mathbb E_2: x^2 + y^2 \leq 4,\ x\geq 0,\ y\geq 0\} \).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>-3*pi()</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139561  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 11 elipsa</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte cirkulaci vektorového pole \(\vec f = (x+y,\ y-x)\) podél křivky \(C\), která je kladně orientovanou hranicí množiny \( D = \{[x,y]\in\mathbb E_2: 4x^2 + 9y^2 \leq 36\} \).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>-12*pi()</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139588  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 12 kružnice</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte cirkulaci vektorového pole \(\vec f = (-x^2y,\ xy^2)\) podél křivky \(C\), která je kladně orientovanou hranicí množiny \( D = \{[x,y]\in\mathbb E_2: x^2 + y^2 \leq 1\} \).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>0.5*pi()</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139566  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 13 kružnice</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte cirkulaci vektorového pole \(\vec f = (y^2,\ x)\) podél křivky \(C\), která je kladně orientovanou hranicí množiny \( D = \{[x,y]\in\mathbb E_2: x^2 + y^2 \leq 4\} \).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>4*pi()</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139583  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 14 kružnice</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte cirkulaci vektorového pole \(\vec f = (2xy - 5y,\ x^2+y)\) podél křivky \(C\), která je kladně orientovanou hranicí množiny \( D = \{[x,y]\in\mathbb E_2: x^2 + y^2 \leq {a2}\} \).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:4}</text>
+</varsrandom>
+<varsglobal><text>a2 = a*a;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>5*a2*pi()</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139585  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 15 kružnice</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte cirkulaci vektorového pole \(\vec f = (e^x\sin y -16y,\ e^x\cos y +16)\) podél křivky \(C\), která je kladně orientovanou hranicí množiny \( D = \{[x,y]\in\mathbb E_2: x^2 + y^2 \leq {b}x\} \).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:4}</text>
+</varsrandom>
+<varsglobal><text>a2 = a*a;
+b=2*a;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>16*a2*pi()</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139591  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 19 elipsa</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte cirkulaci vektorového pole \(\vec f = (-y,\ x)\) podél křivky \(C\), která je kladně orientovanou hranicí množiny \( D = \{[x,y]\in\mathbb E_2: {b2}x^2 + {a2}y^2 \leq {ab}\} \).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:6}</text>
+</varsrandom>
+<varsglobal><text>b=a-1;
+a2=a*a; b2=b*b; ab=a2*b2;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>2*a*b*pi()</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139592  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 20 kružnice</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte cirkulaci vektorového pole \(\vec f = (x-y,\ x+y)\) podél křivky \(C\), která je kladně orientovanou hranicí množiny \( D = \{[x,y]\in\mathbb E_2: x^2 + y^2 \leq {a2}\} \).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>2*a2*pi()</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139593  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 21 kružnice</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte cirkulaci vektorového pole \(\vec f = \left(-(x^2+y),\ (x-y^2)\right)\) podél křivky \(C\), která je kladně orientovanou hranicí množiny \( D = \{[x,y]\in\mathbb E_2: x^2 + y^2 \leq {a2}\} \).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>2*a2*pi()</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 6/cirkulace kružnice výseč</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 139587  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 16 kružnice výseč</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte cirkulaci vektorového pole \(\vec f = \displaystyle \left(\frac 1x {\rm arctg }\frac yx,\ \frac 2y {\rm arctg }\frac xy\right)\) podél křivky \(C\), která je kladně orientovanou hranicí množiny \( D = \{[x,y]\in\mathbb E_2: 1\leq x^2 + y^2 \leq 4,\ x\leq y\leq \sqrt{3}x\} \).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:4}</text>
+</varsrandom>
+<varsglobal><text>a2 = a*a;
+b=2*a;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>log(2)*pi()/12</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139589  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 17 kružnice výseč</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte cirkulaci vektorového pole \(\vec f = \displaystyle \left(x-y^2,\ x^2+y\right)\) podél křivky \(C\), která je kladně orientovanou hranicí množiny \( \displaystyle D = \{[x,y]\in\mathbb E_2:&nbsp; x^2 + y^2 \leq {a2},\ \frac{\sqrt 3}{3} x\leq y\leq \sqrt{3}x\} \).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:4}</text>
+</varsrandom>
+<varsglobal><text>a2 = a*a;
+b=2*a;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>2*a*a2*(sqrt(3)-1)/3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 139590  -->
+  <question type="formulas">
+    <name>
+      <text>cirkulace 18 kružnice výseč</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočítejte cirkulaci vektorového pole \(\vec f = \displaystyle \left(xy,\ x^2-2y\right)\) podél křivky \(C\), která je kladně orientovanou hranicí množiny \( \displaystyle D = \{[x,y]\in\mathbb E_2:&nbsp; x^2 + y^2 \leq {a2},\ 0\leq y\leq x\} \).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:4}</text>
+</varsrandom>
+<varsglobal><text>a2 = a*a;
+b=2*a;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>a*a2*sqrt(2)/6</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 6</text>
+    </category>
+    <info format="html">
+      <text>Křivkový integrál</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 204460  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový (MII_A 13_06_19)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<b>a)</b> V odevzdávaném řešení načrtněte orientovanou křivku \(C\) danou rovnicí \(y={\rm e}^{x}\), kde \(0 \le x\leq1\), mající počáteční bod
+se souřadnicí \(x=0\). Navrhněte její parametrizaci \(X=P(t)\) a  napište vektor \(\dot{P}(t)\). Zdůvodněte,
+zda je křivka \(C\) orientována souhlasně s touto parametrizací. <br><p><b>b)</b> Pomocí křivkového integrálu vypočítejte práci,  kterou vykoná síla
+\(\displaystyle \vec{f}=\left(x^{3}\, ,\, \frac{\ln y}{y}\right)\) působením po
+křivce \(C\). Podrobný postup výpočtu zapište do odevzdávaného řešení, zde uveďte pouze výsledek.{#integral} <br></p><p><b>c)</b> Ověřte, že je vektorové pole 
+\(\displaystyle \vec{f}=\left(x^{3}\, ,\, \frac{\ln y}{y}\right)\) potenciální. <br></p><p>Vypočítejte práci,  kterou vykoná síla
+\(\displaystyle \vec{f}\) působením po
+křivce \(C\) s využitím potenciálu.{#potencial}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>V1=3/4; </text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#integral</text>
+ </placeholder>
+ <answermark>
+  <text>9</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek je {_0}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#potencial</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek je {_0}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 204461  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový (MII_A 26.6.19)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<b>a)</b> Definujte pojem potenciálního vektorového pole a napište postačující podmínky pro to, aby vektorové pole \(\vec{h}=(U,V)\) bylo potenciální v oblasti \(D\subset\mathbb E_2\).<br><p>
+Ověřte splnění těchto podmínek pro vektorové pole \(\displaystyle \vec{h}=(\, \frac{y^2}{x^2}-\sin y, \, \frac{2y}{x}-x\cos y)\).{#overeni}</p>
+<p><b>b)</b> Vypočítejte potenciál vektorového pole \(\displaystyle \vec{f}=(\,1+\frac{1}{x},\,2-\frac{2}{y})\)
+ a uveďte (vyberte) oblast nebo oblasti, kde je vektorové pole potenciální.{#oblast}</p>
+<p><b>c)</b> Pomocí potenciálu z úlohy b) vypočítejte křivkový integrál
+dané vektorové funkce \(\vec{f}\) po křivce  \(x=y^2\) z bodu \(A=[{ax};\,{ay}]\) do bodu \(B=[{bx};\,{by}]\).{#potencial}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ans2_order=shuffle([0:4]);
+ans1_order=shuffle([0:5]);
+ay={1:8};
+q={1:5};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[#písemka  ax=1; ay=1; bx=4; by = 2; V=5;
+by = ay + q;  
+bx=by*by; ax=ay*ay;
+VB=bx+log(bx)+2*by-2*log(by);
+VA=ax+log(ax)+2*ay-2*log(ay);
+V=VB-VA;
+answers=["Vektorové pole \\(h\\) je potenciální.", "Vektorové pole \\(h\\) není potenciální." ];
+ans=1;
+
+
+ans1_inv=inv(ans1_order);
+answers1=["v prvním kvadrantu", 
+"v horní polorovině (s kladnými y-ovými souřadnicemi)", 
+"v dolní polorovině (se zápornými y-ovými souřadnicemi)", 
+"v pravé polorovině (s kladnými x-ovými souřadnicemi)", 
+"v levé polorovině (se zápornými x-ovými souřadnicemi)"
+];
+ans1_permuted=sublist(answers1,ans1_order);
+ans1=ans1_inv[0];
+
+ans2_inv=inv(ans2_order);
+answers2=["nenáleží", "náleží pouze na ose y", "náleží pouze na ose x", "náleží, na obou osách" ];
+ans2_permuted=sublist(answers2,ans2_order);
+ans2= ans2_inv[0];
+]]></text>
+</varsglobal>
+<answernumbering><text>none</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#overeni</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:answers}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#oblast</text>
+ </placeholder>
+ <answermark>
+  <text>7</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ans1,ans2]</text>
+ </answer>
+ <vars2>
+  <text>criterion1=_0==ans1;
+criterion2=_1==ans2;</text>
+ </vars2>
+ <correctness>
+  <text>(criterion1+criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Doplňte tvrzení o oblasti \(D\),&nbsp;ve které je vektorové pole potenciální tak, aby bylo správné.<br></p><p></p><p>Oblast \(D\) tvoří body {_0:ans1_permuted:MCE}, body na osách množině \(D\) {_1:ans2_permuted:MCE}.</p><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#potencial</text>
+ </placeholder>
+ <answermark>
+  <text>7</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek je {_0}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 204468  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový (MII_B 20.06.19)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>a)</b> Načrtněte křivku \(C=\{ [x;\,y]\in\mathbb E_2;\ x^2 +y^2 ={a2}, \, x\geq 0\, y\geq 0\} \) a navrhněte její parametrizaci \(X=P(t)\). Napište vektor \(\dot{P}(t)\) a vypočítejte jeho délku \(\| \dot{P}(t) \| \).</p><p>Vypočítejte hmotnost struny tvaru této křivky, je-li délková hustota
+ \(\rho(x,y)=xy\).{#vypocet1}</p>
+<p><b>b)</b> Křivka \(K\) je orientovaná úsečka \(\overrightarrow{AB}\),
+kde \(A=[1;\,0]\), \(B=[3;\,2]\). Navrhněte parametrizaci křivky \(K\) a
+ vypočítejte práci, kterou vykoná síla
+\(\displaystyle \vec{f}=( xy \, ,\, x^2)\) působením po křivce \(K\).{#vypocet2}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:6};</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V1=a*a2/2;
+V2=40/3;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#vypocet1</text>
+ </placeholder>
+ <answermark>
+  <text>9</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek je {_0}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#vypocet2</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek je {_0}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 204467  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový (MII_B 26.6.19)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>a)</b> Pomocí křivkového integrálu vektorové funkce vypočítejte práci, kterou
+ vykoná síla \(\displaystyle \vec{f}=( \frac 12 y^2-2xy;\, x(y-x))\)
+působením po oblouku paraboly \(y=x^2\) s počátečním bodem \(A=[-1,1]\) a koncovým bodem \(B=[1,1]\).{#integral}</p>
+<p><b>b)</b> Rozhodněte, zda je pole \(\vec{f}\) potenciální v \(\mathbb E_{2}\). V
+kladném případě nalezněte potenciál a použijte ho k výpočtu práce
+z úlohy a).{#potencial}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>V=1;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#integral</text>
+ </placeholder>
+ <answermark>
+  <text>9</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek je {_0}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#potencial</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek je {_0}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 204459  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový (upr. MII_A 06_06_19)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<b>a) </b>Napište Greenovu větu. Ověřte, že jsou splněny její předpoklady pro výpočet cirkulace vektorového pole \(\vec f=(2x-y, x)\)  po záporně orientované křivce \(x^2+y^2=4\), tj. pro výpočet \(\oint\vec f\cdot \vec{{ d}s}\). Integrál vypočítejte  užitím Greenovy věty. {#int1}<br><p><b>b)</b> Stejný integrál vypočítejte bez použití Greenovy věty. {#int2}</p><p>Postup řešení podrobně zapište do odevzdávaného souboru.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>V=-8*pi();</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#int1</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek výpočtu užitím Greenovy věty je {_0}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#int2</text>
+ </placeholder>
+ <answermark>
+  <text>9</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek výpočtu bez použití Greenovy věty je {_0}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 204463  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový (upr. MII_A_10_06_19)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<b>a)</b> Vypočítejte křivkový 
+integrál skalární funkce \(\displaystyle 
+f(x,y)=\frac{{{a}}x+{{b}}y}{\sqrt{1+\sin^{2}\!x\ }}\)  podél křivky 
+\(\displaystyle C=\Bigl\{[x,y]\in\mathbb E_2: y=\cos x , 
+x\in\langle0;\pi\rangle \Bigr\}\). Postup řešení zapište do 
+odevzdávaného souboru, zde uveďte pouze výsledek.{#vypocet}<p><b>b)</b> Pomocí křivkového integrálu vektorové funkce vypočítejte práci, kterou 
+vykoná síla
+\(\displaystyle \vec{f}=({\rm e}^{y-x} ,\,{\rm e}^{{{c}}x})\) podél 
+úsečky \(AB\), a to od bodu \(A=[0;0]\) do bodu \(B=[{bb};{bb}]\). 
+Postup řešení zapište do odevzdávaného souboru, zde uveďte pouze 
+výsledek.{#vypocet2}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}; b={2:10};
+bb={1:3}; c={2:4};</text>
+</varsrandom>
+<varsglobal><text>#a=2; b=9; c=2; bb=2;
+V1=a*pi()*pi()/2;
+V2=(bb+(exp(c*bb)-1)/c);</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#vypocet</text>
+ </placeholder>
+ <answermark>
+  <text>9</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek je {_0}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#vypocet2</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek je {_0}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 204466  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový (upr. MII_B  06_06_19)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je zadaná vektorová funkce: \(\displaystyle{\vec{f}(x,y)=\bigl(2/3 \, y^{3} ;2xy^2\bigr)}\)
+a orientovaná křivka \(C\subset\mathbb E_{2}\) definovaná grafem funkce \(y=2/x\) s počátečním bodem \(A=[1;?]\) a koncovým bodem \(B=[2;?]\).
+V odevzdávaném řešení načrtněte křivku \(C\) a zapište její parametrizaci. <br></p><p><b>a)</b> Užitím této parametrizace vypočítejte křivkový integrál \(\displaystyle \int_{C}\vec{f}\cdot d\vec{s}\). <br></p><p>Podrobný postup řešení zapište do odevzdávaného souboru, zde uveďte pouze výsledek.{#integral}<br></p><p><b>b)</b> Dané vektorové pole \(\vec{f}(x,y)\) je potenciální (neověřujte). Spočtěte jeho potenciál \(\varphi(x,y)\). Postup výpočtu a potenciál uveďte v odevzdávaném řešení. <br></p><p>Zde uveďte rozdíl potenciálů v bodech \(A\) a \(B\) a výsledek výpočtu integrálu z úlohy a) pomocí potenciálu&nbsp; \(\varphi(x,y)\).{#potencial}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>Ay=2; By=1; 
+V=-4; 
+phiA=16/3; phiB=4/3;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#integral</text>
+ </placeholder>
+ <answermark>
+  <text>11</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#potencial</text>
+ </placeholder>
+ <answermark>
+  <text>6</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[Ay, By, V, V]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1 = (abs(_0 - Ay)<= 0.015);
+Criterion2 = (abs(_1 - By)<= 0.015);
+Criterion3 = (abs(_2 - V)<= 0.015);
+Criterion4 = (abs(_3 - V)<= 0.015);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2+Criterion3+Criterion4)/4</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Bod \(A\) má \(y\)-ovou souřadnici {_0}.</p><p>Bod \(B\) má \(y\)-ovou souřadnici {_1}.</p><p>\(\varphi(B) - \varphi(A) =&nbsp; \){_2}.</p><p>\(\displaystyle \int_{A}^{B}\vec{f}\cdot d\vec{s} =\){_3}.</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 204464  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový (upr. MII_B_10_06_19)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<b>a) </b>Pomocí křivkového 
+integrálu vektorové funkce vypočítejte práci, kterou vykoná síla 
+\(\displaystyle \vec{f}=( {a}y^{2}x-{b} ;\, {a}yx^2+{c})\) působením po 
+orientované úsečce ležící na přímce \(y={d}x\) s počátečním bodem v 
+\(x={a0}\)  a koncovým bodem v \(x={a1}\). <p>Postup řešení zapište do odevzdávaného souboru, zde uveďte pouze výsledek.{#prace}</p><p><b>b)</b> V odevzdávaném řešení určete potenciál zadaného vektorového pole \(\vec f\) a použijte ho k výpočtu práce z bodu a). Pokud je v uvedených možnostech funkce, která je potenciálem zadaného 
+vektorového pole \(\vec f\), označte ji. {#potencial}<br></p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={3:5}; b={2:4};c={2:4}; d={2:4};
+a0={0:6}; q={1:5};
+ans_order=shuffle([0:3]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[#a=2;b=3;c=4; d=2; a0=1; a1=3; 
+a1=a0+q;b0=d*a0; b1=d*a1;      #[a0, b0], [a1, b1];
+
+apul=a/2;
+#V=      a1*a1*b1*b1-b*a1+c*b1-(         a0*a0*b0*b0-b*a0+c*b0); #OPRAVENO
+V=apul*a1*a1*b1*b1-b*a1+c*b1-(apul*a0*a0*b0*b0-b*a0+c*b0);
+ans_inv=inv(ans_order);
+p1=join(" ", "\\( \\varphi(x,y)=", str(apul), "x^2 y^2 - ", str(b), "x + ", str(c),"y + const\\)");
+p2=join(" ", "\\( \\varphi(x,y)=", str(apul), "x^3 y -" ,str(b),"x+",str(c),"y+const.\\)");
+p3=join(" ", "\\( \\varphi(x,y)=", str(apul), "x y^3 - ",str(b),"x+",str(c),"y+const.\\)");
+p4=join(" ", "\\( \\varphi(x,y)=", str(apul), "x^2 y-" ,str(b),"x+",str(c),"y+const.\\)");
+answers=[p1,p2, p3,p4];
+ans_permuted=sublist(answers,ans_order);
+ans = ans_inv[0];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#prace</text>
+ </placeholder>
+ <answermark>
+  <text>12</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[Práce síly je {_0}.<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#potencial</text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans_permuted}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 204465  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový (upr. MII_B_27_06_17)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>a)</b> Pomocí křivkového integrálu vektorové funkce vypočítejte práci, kterou vykoná síla \(\displaystyle \vec{f}=( {a}x^{2}-2xy ;\, {b}y^2-x^2)\) působením po oblouku paraboly \(y=x^2\) s počátečním bodem \(A=[{xA};\, {yA}]\) a koncovým bodem v \(B=[{xB};\, {yB}]\).
+
+Postup řešení zapište do odevzdávaného souboru, zde uveďte pouze výsledek.{#prace}</p><p><b>b)</b> Je-li zadané vektorové 
+pole \(\vec f\) potenciální v \(\mathbb E_2\), určete jeho potenciál 
+\(\varphi(x,y)\) a použijte ho k výpočtu práce z bodu a). </p><p>Pokud je v uvedených možnostech funkce, která je potenciálem zadaného
+ vektorového pole \(\vec f\), označte ji. {#potencial}</p><p><b>c)</b> Je-li zadané vektorové pole \(\vec f\) potenciální&nbsp; v \(\mathbb E_2\) a 
+určili jste&nbsp; potenciál \(\varphi(x,y)\) uveďte rozdíl {#rozdil}<br></p><p></p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:4}; b={2:4}; xA={-2,-1,1,2,3}; q={1:5};
+ans_order=shuffle([0:5]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[#BODY [xA, yA], [xB, yB)]na y=x^2 :           TO NEBYLO DODRŽENO!
+xB = xA+q; yA = xA*xA; yB = xB*xB;           #OPRAVENO, BYLO: yA=c*xA; yB=c*xB; 
+
+VA = a*pow(xA,3)/3+b*pow(yA,3)/3-xA*xA*yA; #OPRAVENO, nebylo násobeno a,b
+VB = a*pow(xB,3)/3+b*pow(yB,3)/3-xB*xB*yB;#OPRAVENO
+V= VB-VA;
+
+ans_inv=inv(ans_order);
+p1=join(" ",  "\\( \\varphi(x,y)= \\frac{", str(a), "}{3}", "x^3 + \\frac{", str(b), "}{3}", "y^3 -x^2y+ const.\\)");
+p2=join(" ",  "\\( \\varphi(x,y)= \\frac{", str(a), "}{3}", "x^3 + \\frac{", str(b), "}{3}", "y^3 -2x^2y+ const.\\)");
+p3=join(" ",  "\\( \\varphi(x,y)= \\frac{", str(a), "}{3}",  "x^3 + \\frac{", str(b), "}{3}", "y^3+2x^2y+ const.\\)");
+p4=join(" ",  "\\( \\varphi(x,y)= \\frac{", str(a), "}{3}",  "x^3 +\\frac{", str(b), "}{3}", "y^3+ x^2y+ const.\\)");
+answers=[p1,p2,p3,p4, "Pole není potenciální."];
+ans_permuted=sublist(answers,ans_order);
+ans = ans_inv[0];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#prace</text>
+ </placeholder>
+ <answermark>
+  <text>10</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[Práce síly je {_0}.<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#potencial</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ans_permuted}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#rozdil</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>VB-VA</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\varphi([{xB};\,{yB}]) - \varphi([{xA};\,{yA}])= \){_0}. Není-li 
+zadané pole potenciální, zadejte 9999.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 204462  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový (upr. MIIA_27.06.17)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<b>a)</b> Do odevzdávaného řešení napište postačující podmínky pro to, aby vektorové pole \(\vec{f}=(U,V)\) bylo potenciální v oblasti \(D\subset\mathbb E_2\).<p><b>b)</b> Zjistěte, zda&nbsp; vektorové 
+pole \(\displaystyle \vec{f}=(\, \frac{y^2}{x^2}-\sin y, \, 
+-\frac{2y}{x}-\cos y)\) je potenciání, případně v jaké oblasti. Vyberte 
+pravdivé tvrzení.{#podminky}</p><p></p><p><b>c</b>) Vypočítejte potenciál \(\varphi(x,y)\) vektorového pole \(\displaystyle \vec{f}=(\, {a}+2xy, \, x^2-{c}y^2)\).</p><p>Výpočet zapište do odevzdávaného řešení, zde uveďte pouze rozdíl potenciálů :{#potencial}</p><p><b>d</b>) Pomocí potenciálu z úlohy c) vypočítejte křivkový integrál
+dané vektorové funkce \(\vec{f}\) po křivce \(x=y^3\) z bodu \(A=[{ax},{ay}]\) do bodu \(B=[{bx},{by}]\).{#vysledek}<br></p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>16.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={-5,-4,-3,-2,-1,1,2,3,4,5}; c={2:11};  #a nebude 0, c kladné pro hezčí výpis
+ay={-2,-1,1,2}; #A nebude [0,0], B může být
+q={-1,1};  #ve výsledku bude ax, bx na 6 násobené třetinou c
+ans_order=shuffle([0:3]);
+</text>
+</varsrandom>
+<varsglobal><text><![CDATA[by=ay+q; #změna křivky z y=x^3 na x=y^3
+ax=pow(ay,3); bx=pow(by,3);
+aax=1; aay=1; bbx=0;bby=0;
+Vaa=a*aax+aax*aax*aay-c*pow(aay,3)/3;
+Vbb=a*bbx+bbx*bbx*bby-c*pow(bby,3)/3;
+VA=a*ax+ax*ax*ay-c*pow(ay,3)/3;
+VB=a*bx+bx*bx*by-c*pow(by,3)/3;
+V = VB-VA;
+
+
+ans_inv=inv(ans_order);
+answers=["Vektorové pole \\(\\vec f\\) není potenciální. ", "Vektorové pole \\(\\vec f\\) je potenciální v \\(\\{[x,y]\\in\\mathbb E_2:\\  x\\in (-\\infty, 0),\\ y\\in (-\\infty,+\\infty)\\}\\)", "vektorové pole \\(\\vec f\\) je potenciální v \\(\\{[x,y]\\in\\mathbb E_2:\\  x\\in (0,+\\infty),\\ y\\in (-\\infty,+\\infty)\\}\\)"];
+ans_permuted=sublist(answers,ans_order);
+ans = ans_inv[0] ;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#podminky</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans_permuted}</p><p>V odevzdávaném řešení výběr zdůvodněte.<br></p><br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#potencial</text>
+ </placeholder>
+ <answermark>
+  <text>6</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>Vaa-Vbb</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[\(\varphi([{aax},{aay}]) -\varphi([{bbx},{bby}]) = \) {_0} .<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#vysledek</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>VB-VA</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>Zadejte výsledek {_0} a zdůvodnění výsledku zapište do odevzdávaného řešení.</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

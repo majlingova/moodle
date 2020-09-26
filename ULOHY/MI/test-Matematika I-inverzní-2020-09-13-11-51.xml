@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "Matematika I".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I/OM</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I/OM/Lineární algebra</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I/OM/Lineární algebra/inverzní</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 205573  -->
+  <question type="formulas">
+    <name>
+      <text>inverzní (šifra)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"><strong></strong>Jsou dány matice $$A = \left(\begin{array}{rrr}{A[0]}&amp;{A[1]}&amp;{A[2]}\\{A[3]}&amp;{A[4]}&amp;{A[5]}\\{A[6]}&amp;{A[7]}&amp;{A[8]}\end{array}\right),\quad B=\left(\begin{array}{rrr}{B[0]}&amp;{B[1]}&amp;{B[2]}\\{B[3]}&amp;{B[4]}&amp;{B[5]}\\{B[6]}&amp;{B[7]}&amp;{B[8]}\end{array}\right)$$.</p>
+<p dir="ltr" style="text-align: left;"><strong>a)</strong> Určete inverzní matici k matici \(A\).{#inverzni}</p>
+<p dir="ltr" style="text-align: left;">\(\bullet\) Ověřte (zapište do odevzdávaného řešení), že platí \(A^{-1}\cdot A = I\), kde \(I\) je jednotková matice.</p>
+<p dir="ltr" style="text-align: left;"><strong>b)</strong> Určete matici \(C = A^{-1}\cdot B\).{#nasobeni}</p>
+<p dir="ltr" style="text-align: left;">\(\bullet\) Čísla v matici \(C\) nahraďte písmeny anglické abecedy (bez diakritiky)<br> (\( 1 \to A, 2\to B, 3\to C, 4\to D, \dots,W\to 23,X\to 24,Y\to 25, Z\to 26\)), nulu nahraďte mezerou. <br>Matici se znaky zapište
+    do odevzdávaného řešení.</p><p dir="ltr" style="text-align: left;"><strong>c)</strong> Doplňte následující tvrzení tak, aby byla pravdivá.</p><p dir="ltr" style="text-align: left;">\(\bullet\) Čtvercovou matici jejíž determinant je nulový nazýváme {#otazka1}</p><p dir="ltr" style="text-align: left;">\(\bullet\) K matici \(A\) existuje inverzní matice, když matice \(A\) je {#otazka2}</p><p dir="ltr" style="text-align: left;">\(\bullet\) Mějme matice \(X, Y\) typu (\(n\times n\)), pro které platí \(X\cdot Y = O\), kde \(O\) je nulová matice. To znamená, že {#otazka3}</p><p dir="ltr" style="text-align: left;">\(\bullet\) Mějme matice \(X,Y,Z\) typu (\(n\times n\)), pro které platí \(X\cdot Y = Y\cdot Z\). To znamená, že {#otazka4}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>16.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>k={0:13};
+ans1_order=shuffle([0:3]);
+ans2_order=shuffle([0:3]);
+ans3_order=shuffle([0:3]);
+ans4_order=shuffle([0:3]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[A1=[ 1, 2, 2, 2, 5, 3, 1, 3, 2  ]; 
+A2=[1, 0, 1, 1, 2, 0, 2, 1, 2];
+A3=[ 1, 2, 1,2, 5, 3,2, 3, 2];
+A4=[1, 1 ,1,1, 2 ,1,1, 1 ,2];
+A5=[1, -1 ,1,2, 0 ,-1,-4, 1, 1];
+A6=[1, 3, 6,1, 2, 3,0, 0, 1];
+A7=[1, 3, 2, 2, 5, 4, 1, 3, 1];
+A8=[ -1, 1, 1,1, 2 ,1,3, 1 ,0];
+A9=[ 2, 3, 1, 3, 4, 3, 2, 2, 3 ]; 
+A10=[ 2, 1, -1, 2, -1, 2, 3, 0, 1];
+A11=[ 2, 6 ,5, 5, 3 ,-2, 7, 4 ,-3];
+A12=[ 2, 2, 3,1, -1, 0,-1, 2 ,1];
+A13=[ 6, 2, 3,1, 1, 4,2, 1, 3];
+A14=[ 7, 0, 5,0, 1, 0,4, 0, 3];
+B1=[43, 81, 78, 69, 153, 155, 45, 93, 92];
+A1_inv = [1,  2, -4, -1,  0,  1,  1, -1,  1 ];
+C1=[1, 15, 20,  2, 12, 14, 19, 21, 15]; 
+B2 =[ 5,  6, 32, 25,  9, 20, 22, 14, 65];
+A2_inv =[ 4,  1, -2, -2,  0,  1, -3, -1,  2 ];
+C2 =[ 1,  5, 18, 12,  2,  1,  4,  1, 14];
+B3 =[39, 32, 41, 97, 81, 94, 60, 62, 71 ];
+A3_inv =[ 1, -1,  1,  2,  0, -1, -4,  1,  1];
+C3 =[ 2, 13, 18, 18,  2, 11,  1, 15,  1];
+B4 =[45, 43, 36, 69, 61, 62, 61, 63, 37];
+A4_inv =[ 3, -1, -1, -1,  1,  0, -1,  0,  1 ];
+C4 =[ 5,  5,  9, 24, 18, 26, 16, 20,  1 ];
+B5 =[17, 28, 14, -1,  6, 31, -8, -27, -58 ];
+A5_inv =[ 1,  2,  1,  2,  5,  3,  2,  3,  2 ];
+C5 =[ 7, 13, 18,  5,  5,  9, 15, 20,  5 ];
+B6 =[176, 87, 45, 101, 59, 31, 20,  5,  3];
+A6_inv =[-2,  3,  3,  1, -1, -3,  0,  0,  1];
+C6 =[11, 18, 12, 15, 13,  5, 20,  5,  3];
+B7 =[53, 52, 53, 102, 101, 92, 40, 38, 52 ];
+A7_inv =[-7,  3,  2,  2, -1,  0,  1,  0, -1 ];
+C7 =[15, 15,  9,  4,  3, 14, 13, 14,  1];
+B8 =[-3, 10, -8, 41, 24, 43, 60, 17, 71];
+A8_inv =[ 1, -1,  1, -3,  3, -2,  5, -4,  3];
+C8 =[16,  3, 20, 12,  8, 11,  1,  5,  1];
+B9 =[117, 78, 97, 189, 129, 136, 128, 88, 77];
+A9_inv =[ 6, -7,  5, -3,  4, -3, -2,  2, -1];
+C9 =[19,  5, 15, 21, 18, 22, 16, 14,  1];
+B10 =[33, 23, 62, 59,  6, 43, 72, 24, 79];
+A10_inv =[ 1,  1, -1, -4, -5,  6, -3, -3,  4];
+C10 =[20,  5, 26,  5, 22, 11, 12,  9,  1];
+B11 =[190, 123, 71, 121, 77, 69, 164, 104, 95];
+A11_inv =[ 1, -38, 27, -1, 41, -29,  1, -34, 24];
+C11 =[20,  5, 14, 15, 18,  3, 12,  1,  5];
+B12 =[122, 119, 111, 13, -21, -2, 16, 66, 33];
+A12_inv =[ 1, -4, -3,  1, -5, -3, -1,  6,  4];
+C12 =[22,  5, 20,  9, 26, 22, 20, 19,  9];
+B13 =[196, 147, 45, 85, 81, 31, 95, 81, 28];
+A13_inv =[-1, -3,  5,  5, 12, -21, -1, -2,  4];
+C13 =[24, 15,  2,  5,  6,  9, 14, 15,  5];
+B14 =[270, 138, 103, 16, 12, 11, 157, 81, 59 ];
+A14_inv =[ 3,  0, -5,  0,  1,  0, -4,  0,  7];
+C14 =[25,  9, 14, 16, 12, 11, 19, 15,  1 ];
+
+A=pick(k,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14);
+B=pick(k,B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11,B12,B13,B14);
+invA=pick(k,A1_inv,A2_inv,A3_inv,A4_inv,A5_inv,A6_inv,A7_inv,A8_inv,A9_inv,A10_inv,A11_inv,A12_inv,A13_inv,A14_inv);
+C=pick(k,C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C14);
+
+ans1_inv=inv(ans1_order);
+ans2_inv=inv(ans2_order);
+ans3_inv=inv(ans3_order);
+ans4_inv=inv(ans4_order);
+answers1=["regulární.","singulární.","nulová."];
+answers2=["regulární.","singulární.","čtvercová."];
+answers3=["X nebo Y je nulová matice.", "X a Y jsou nulové matice.", "ani jedna z matic X,Y nemusí být nulová."];
+answers4=["X se musí rovnat Z.", "X se musí rovnat Y a Z.", "X se nemusí rovnat Z." ];
+ans1_permuted=sublist(answers1,ans1_order);
+ans2_permuted=sublist(answers2,ans2_order);
+ans3_permuted=sublist(answers3,ans3_order);
+ans4_permuted=sublist(answers4,ans4_order);
+
+ans1 = ans1_inv[0];
+ans2 = ans2_inv[0];
+ans3 = ans3_inv[2];
+ans4 = ans4_inv[2];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#inverzni</text>
+ </placeholder>
+ <answermark>
+  <text>6</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>9</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>invA</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(A^{-1}=\left(\begin{array}{c}\\\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_3}<br> </td>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_6}<br> </td>
+                            <td>{_7}<br> </td>
+                            <td>{_8}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#nasobeni</text>
+ </placeholder>
+ <answermark>
+  <text>6</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>9</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>C</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+    <tbody>
+        <tr>
+            <td width="NaNpx" valign="top">\(C=\left(\begin{array}{c}\\\\\\\\\end{array}\right.\)
+            </td>
+            <td width="NaNpx" valign="top">
+                <table width="10px" border="0">
+                    <tbody>
+                        <tr>
+                            <td>{_0}<br> </td>
+                            <td>{_1}<br> </td>
+                            <td>{_2}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_3}<br> </td>
+                            <td>{_4}<br> </td>
+                            <td>{_5}<br> </td>
+                        </tr>
+                        <tr>
+                            <td>{_6}<br> </td>
+                            <td>{_7}<br> </td>
+                            <td>{_8}<br> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="NaNpx" valign="top">\(\left.\begin{array}{c}\\\\\\\\\end{array}\right)\)</td>
+        </tr>
+    </tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#otazka1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:ans1_permuted:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#otazka2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:ans2_permuted:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#otazka3</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:ans3_permuted:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#otazka4</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans4</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0.</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:ans4_permuted:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

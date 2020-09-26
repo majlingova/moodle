@@ -1,0 +1,1807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068</text>
+    </category>
+    <info format="html">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "B192-2011068".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 2  </text>
+    </category>
+    <info format="html">
+      <text>Extrémy</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 203596  -->
+  <question type="formulas">
+    <name>
+      <text>extremy 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><strong>a) </strong>Vyberte tvrzení, které zaručuje existenci lokálního {minmax} funkce \(f(x,y)\) v bodě \([x_0, y_0]\).<br> Jsou použita označení</p> $$\displaystyle \Delta_2 = \left\vert\begin{array}{cc}\frac{\partial^2 f}{\partial x^2}&amp;\frac{\partial^2f}{\partial
+    x\partial y}\\\frac{\partial^2 f}{\partial y\partial x}&amp;\frac{\partial^2 f}{\partial y^2}\end{array}\right\vert,\quad \Delta_1 = \frac{\partial^2 f}{\partial x^2}.$${#podminky}
+   <p> <strong>b) </strong>Pro reálnou funkci dvou proměnných $$f(x,y) = {a}\ln(x^2y) -{b}y^3 -{c}x^2 -{d}$$
+</p>
+<p><strong>b1)</strong> Určete gradient funkce \(f(x,y)\).{#gradient}</p>
+<p><strong>b2)</strong> Určete parciální derivace 2. řádu funkce \(f(x,y)\).{#druhederivace}</p>
+<p><strong>b3)</strong> Uveďte všechny body, ve kterých platí:&nbsp; \(\\ \hbox{grad} f(x_0, y_0) = (0,0) \)
+    <br> Body uspořádejte vzestupně podle \(x\)-ové souřadnice, body se stejnou \(x\)-ovou souřadnicí uspořádejte podle \(y\)-ové souřadnice. <br> Má-li funkce více než 2 body s uvedenou vlastností, uveďte pouze první dva, označte je (\(A,\ B)\). Má-li
+    méně než 2 body s uvedenou vlastností, zadejte do přebytečných políček&nbsp; 9999. <br></p>
+<strong>b4)</strong> Pro každý z určených bodů \(A\) a \(B\) uveďte hodnoty \(\Delta_1\) a \(\Delta_2\).
+<p><sub>Má-li
+ funkce více než 2 body s uvedenou vlastností, uveďte pouze první dva. 
+Má-li méně než 2 body s uvedenou vlastností, zadejte do přebytečných 
+políček&nbsp; 9999.</sub></p>
+<p>{#extremyAB}</p>
+<p><strong>b5)</strong> Rozhodněte o existenci a typu lokálních extrémů funkce \(f(x,y)\). {#extremy1C}{#extremy1D}</p>
+<p><strong>c) </strong>Určete absolutní extrémy funkce \(g(x,y) = xy\) na úsečce \(x+y=2, \ x\in\langle 0.5,\ 2\rangle\).{#extremy2}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ans_order=shuffle([0:7]);
+b={1:4}; d={1:10};
+var = {0,1,2,3};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[minmax=pick(var,"minima","maxima","minima","maxima");
+#b=1; d=5;
+a=3*b; c=a; sb=[-1,1,1,1]; hodnota =- b-c-d;
+Delta1A = -4*a; Delta1B = Delta1A; Delta2A =108*b**2; Delta2B = Delta2A;
+
+abmin=0; bodmin=[2,0]; abmax=1; bodmax=[1,1];
+ans_inv=inv(ans_order);
+answers=["\\(\\ \\ \\hbox{grad} f(x_0, y_0) = (0,0) \\ \\wedge \\ \\Delta_2(x_0, y_0)>0  \\ \\wedge \\ \\Delta_1(x_0,y_0)>0\\).",
+"\\(\\ \\ \\hbox{grad} f(x_0, y_0) = (0,0) \\  \\wedge \\ \\Delta_2(x_0, y_0)<0\\  \\wedge \\ \\Delta_1(x_0,y_0)>0\\).",
+"\\(\\ \\ \\hbox{grad} f(x_0, y_0) = (0,0) \\ \\wedge\\ \\Delta_2(x_0, y_0)>0\\  \\wedge \\ \\Delta_1(x_0,y_0)<0\\).",
+"\\(\\ \\ \\hbox{grad} f(x_0, y_0) = (0,0) \\  \\wedge \\ \\Delta_2(x_0, y_0)<0 \\ \\wedge \\ \\Delta_1(x_0,y_0)<0\\).",
+"\\(\\ \\ \\Delta_2(x_0, y_0)>0\\  \\wedge \\ \\Delta_1(x_0,y_0)>0\\).",
+"\\(\\ \\ \\Delta_2(x_0, y_0)<0 \\ \\wedge \\ \\Delta_1(x_0,y_0)>0\\).",
+"\\( \\ \\ \\Delta_2(x_0, y_0)>0 \\ \\wedge \\ \\Delta_1(x_0,y_0)<0\\).",
+"\\(\\ \\ \\Delta_2(x_0, y_0)<0 \\ \\wedge \\ \\Delta_1(x_0,y_0)<0\\)."
+];
+ans_permuted=sublist(answers,ans_order);
+ans=pick(var,ans_inv[0],ans_inv[2],ans_inv[0],ans_inv[2]);
+typextremuA=["má lokální minimum", "má lokální maximum", "nemá extrém"];]]></text>
+</varsglobal>
+<answernumbering><text>none</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#podminky</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[{_0:ans_permuted}<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#gradient</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text>x={1:2:0.1}; y={1:2:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["2 a / x - 2 c x", "a / y - 3 b y^2"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">grad \(f(x,y) =\) ( {_0}, {_1} )<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#druhederivace</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text>aa=-a; x={1:2:0.1}; y={1:2:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["(-2 a) / x^2 - 2 c", "0", "0", "(-a) / y^2 - 6 b y"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(\displaystyle \frac{\partial^2 f}{\partial x^2} = \) &nbsp; {_0},<br>\(\displaystyle \frac{\partial^2 f}{\partial x\partial y} = \) {_1},<br>\(\displaystyle \frac{\partial^2 f}{\partial x\partial y} = \) {_2},<br>\(\displaystyle \frac{\partial^2 f}{\partial y^2} = \) &nbsp; {_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#extremyAB</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>8</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[sb[0],sb[1], Delta1A, Delta2A, sb[2],sb[3], Delta1B, Delta2B]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[crit1 =(_0==sb[0]) && (_1==sb[1])  && (_1 != _5) && (_2 == Delta1A) && (_3 == Delta2A) && (_3 != _7);
+crit2 =(_0==sb[2]) && (_1==sb[3])  && (_1 != _5) && (_2 == Delta1B) && (_3 == Delta2B) && (_3 != _7);
+crit3 =(_4==sb[0]) && (_5==sb[1])  && (_1 != _5) && (_6 == Delta1A) && (_7 == Delta2A) && (_3 != _7);
+crit4 =(_4==sb[2]) && (_5==sb[3])  && (_1 != _5) && (_6 == Delta1B) && (_7 == Delta2B) && (_3 != _7);]]></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\bullet\) Bod \(A =\) [{_0}, {_1}]:</p>
+<p>\(\Delta_1(A) =\) {_2}, \(\Delta_2(A) = \){_3}<br>
+</p>
+<p> \(\bullet\) Bod \(B=\) [{_4}, {_5}]:</p> <p>\(\Delta_1(B) =\) {_6}, \(\Delta_2(B) = \){_7}
+</p><p><br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#extremy1C</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[1,1]</text>
+ </answer>
+ <vars2>
+  <text>crit1 = _0==1; crit2 = _1 == 1;</text>
+ </vars2>
+ <correctness>
+  <text>(crit1 + crit2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><b>Doplňte tvrzení</b> tak, aby byla pravdivá:<br></p><p>funkce \(f(x,y)\)&nbsp; v bodě A {_0:typextremuA:MCE}.</p><p>funkce \(f(x,y)\)&nbsp; v bodě B {_1:typextremuA:MCE}.<br></p><p><br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#extremy1D</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[hodnota, hodnota]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[crit1 =abs( _0-hodnota)<0.015; crit2 =abs( _1-hodnota)<0.015;]]></text>
+ </vars2>
+ <correctness>
+  <text>(crit1 + crit2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p>Pokud funkce má v bodě A extrém, uveďte jeho hodnotu, v opačném případě zadejte 9999. {_0}</p><p></p><p>Pokud funkce má v bodě B extrém, uveďte jeho hodnotu, v opačném případě zadejte 9999. {_1}</p><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>6</text>
+ </partindex>
+ <placeholder>
+  <text>#extremy2</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>6</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[abmin, bodmin[0], bodmin[1], abmax, bodmax[0], bodmax[1]]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1 = (abs(_0 - abmin)<=0.015);
+Criterion2 = (abs(_1 - bodmin[0])<=0.015);
+Criterion3 = (abs(_2 - bodmin[1])<=0.015);
+Criterion4 = (abs(_3 - abmax)<=0.015);
+Criterion5 = (abs(_4 - bodmax[0])<=0.015);
+Criterion6 = (abs(_5 - bodmax[1])<=0.015);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1 +Criterion2 +Criterion3 +Criterion4 +Criterion5 +Criterion6 )/6</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;"></p><p>Funkce \(g(x,y)\) nabývá na zadané úsečce globálního (absolutního) minima {_0} </p><p>v bodě [{_1}; {_2}].</p><p>Funkce \(g(x,y)\) nabývá na zadané úsečce globálního (absolutního)maxima {_3} </p><p>v bodě [{_4}; {_5}].</p><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 203602  -->
+  <question type="formulas">
+    <name>
+      <text>extremy 2(upr. MIIB 06_06_19 bez parametrů)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<strong></strong>Je dána reálná funkce dvou proměnných: \(\displaystyle f(x,y)={a}x^{2}-\frac{{b}}{3}\, y^{3}+{c}y^2-{d}x\) <br>
+<p><strong>a)</strong> Určete gradient funkce \(f(x,y)\).{#gradient}</p>
+<p><strong>b)</strong> Určete parciální derivace 2. řádu funkce \(f(x,y)\).{#druhederivace}</p>
+<p><strong>c)</strong> Určete body (\(A,\ B)\), ve kterých platí \(\hbox{grad} f = (0,0)\). </p>
+<p>Body uspořádejte vzestupně podle \(x\)-ové souřadnice, body se stejnou \(x\)-ovou souřadnicí uspořádejte vzestupně podle \(y\)-ové souřadnice.</p>
+<!-- <p>{#bodyAB}</p>-->
+<!--V bodech \(A\) a \(B\), které jste určili v předcházejícím bodě, uveďte do matice $$M =\left( \begin{array}{cc}\frac{\partial^2 f}{\partial x^2}&amp;\frac{\partial^2
+f}{\partial x\partial y} \\\frac{\partial^2 f}{\partial y\partial x}&amp;\frac{\partial^2 f}{\partial y^2}\end{array}\right)$$ hodnoty parciálních derivací 2. řádu.-->Pro každý z určených bodů \(A\) a \(B\) uveďte hodnoty, které jsou běžně označovány \(\Delta_1\) a \(\Delta_2\).
+<p><sub>Má-li
+ funkce více než 2 body s uvedenou vlastností, uveďte pouze první dva. 
+Má-li méně než 2 body s uvedenou vlastností, zadejte do přebytečných 
+políček&nbsp; 9999.</sub></p>
+<p>{#extremyAB}</p>
+<p><strong>d)</strong> Rozhodněte o existenci a typu lokálních extrémů funkce \(f(x,y)\). {#extremy1C}{#extremy1D}<br></p>
+<p><strong>e)</strong> Nalezněte globální extrémy funkce \(g(x,y)=x^2-y^2+2xy-2y+2\) na úsečce \(y={cc}x, x \in \left\langle {aa}; {bb} \right\rangle\). Uveďte hodnoty globálního minima a globálního maxima a zadejte souřadnice bodů, ve kterých těchto hodnot
+    funkce \(g(x,y)\) nabývá. </p>
+<p><sub>Pokud takové body neexistují, zadejte 9999. </sub></p>
+<p>{#extremy2}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ans_order=shuffle([0:3]);
+#a={1:8}; c={1:8}; e={1:8}; (bez parametrů)
+aa={1,2}; cc={3,4}; q={1,2};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a=2; b=4; c=2; d=4; e=0; #bez parametrů #d=2*a;b=2*c;
+#f=a*x^2 -b/3*y^3+c*y^2-d*x+e;
+
+sb=[1,0,1,1];
+#fxxA=4; fxyA=0; fyyA=4;
+#fxxB=4; fxyB=0; fyyB=-4;
+#fxxA=2*a;  fxyA=0; fyyA=b;
+#fxxB=2*a;  fxyB=0; fyyB=-b;
+#Delta1A=fxxA; Delta1B = fxxB;
+#Delta2A = fxxA*fyyA-fxyA*fxyA;
+#Delta2B = fxxB*fyyB-fxyB*fxyB;
+hodnotaB=9999; 
+hodnotaA =a*sb[0]*sb[0]-b*pow(sb[1],3)/3 + c*sb[1]*sb[1]-d*sb[0] +e;
+
+ans_inv=inv(ans_order);
+answers=["má lokální minimum", "má lokální maximum", "nemá extrém"];
+ans_permuted=sublist(answers,ans_order);
+#ansA=(Delta2A>0)?(Delta1A>0)?ans_inv[0]:ans_inv[1]:ans_inv[2];
+#ansB=(Delta2B>0)?(Delta1B>0)?ans_inv[0]:ans_inv[1]:ans_inv[2];
+ansA=ans_inv[0];
+ansB=ans_inv[2];
+
+#g(x) = x^2 - y^2 +2xy -2y +2;   #cc>=3!!!
+bb=aa+q;
+g1x = aa; g1y=cc*aa; g2x=bb; g2y=cc*bb;   #krajní body
+g12 = g1x*g1x - g1y*g1y + 2*g1x*g1y -2*g1y+2;
+g24 = g2x*g2x -g2y*g2y + 2*g2x*g2y -2*g2y+2;
+abmax=g12; bodmax=[g1x, g1y];
+abmin=g24; bodmin=[g2x, g2y];
+
+
+]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#gradient</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text>x={-4:4:0.1}; y={-4:4:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["4 x - 4", "4 y - 4 y^2"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">grad \(f(x,y) =\) ( {_0}, {_1} )<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#druhederivace</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text>y={-4:4:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["4","0","0","4 - 8y"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(\displaystyle \frac{\partial^2 f}{\partial x^2} = \) &nbsp; {_0},<br>\(\displaystyle \frac{\partial^2 f}{\partial x\partial y} = \) {_1},<br>\(\displaystyle \frac{\partial^2 f}{\partial x\partial y} = \) {_2},<br>\(\displaystyle \frac{\partial^2 f}{\partial y^2} = \) &nbsp; {_3}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#extremyAB</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>8</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[1,0, 4,16,1,1,4,-16]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[crit1 =(_0==1) && (_1==0)  && (_1 != _5) && (_2 == 4) && (_3 == 16) && (_3 != _7);
+crit2 =(_0==1) && (_1==1)  && (_1 != _5) && (_2 == 4) && (_3 == -16) && (_3 != _7);
+crit3 =(_4==1) && (_5==0)  && (_1 != _5) && (_6 == 4) && (_7 == 16) && (_3 != _7);
+crit4 =(_4==1) && (_5==1)  && (_1 != _5) && (_6 == 4) && (_7 == -16) && (_3 != _7);]]></text>
+ </vars2>
+ <correctness>
+  <text>(crit1+crit2)/2+(crit3+crit4)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\bullet\) Bod \(A =\) [{_0}, {_1}]:</p>
+<p>\(\Delta_1(A) =\) {_2}, \(\Delta_2(A) = \){_3}<br>
+</p>
+<p> \(\bullet\) Bod \(B=\) [{_4}, {_5}]:</p> <p>\(\Delta_1(B) =\) {_6}, \(\Delta_2(B) = \){_7}
+</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#extremy1C</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ansA, ansB]</text>
+ </answer>
+ <vars2>
+  <text>Criterion1 = _0==ansA; Criterion2=_1==ansB;</text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p>Doplňte tvrzení tak, aby byla pravdivá.</p><p>Funkce \(f(x,y)\) v bodě A&nbsp; {_0:ans_permuted:MCE}.</p><p>Funkce \(f(x,y)\) v bodě B&nbsp; {_1:ans_permuted:MCE}.<br></p><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#extremy1D</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[hodnotaA, hodnotaB]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=(abs(_0 -hodnotaA)<=0.015); Criterion2 = _1 == 9999;]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p>Pokud funkce má v bodě A extrém, uveďte jeho hodnotu, v opačném případě zadejte 9999. {_0}</p><p></p><p>Pokud funkce má v bodě B extrém, uveďte jeho hodnotu, v opačném případě zadejte 9999. {_1}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#extremy2</text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>6</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[abmin, bodmin[0], bodmin[1], abmax, bodmax[0], bodmax[1]]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1 = (abs(_0 - abmin)<=0.015);
+Criterion2 = (abs(_1 - bodmin[0])<=0.015);
+Criterion3 = (abs(_2 - bodmin[1])<=0.015);
+Criterion4 = (abs(_3 - abmax)<=0.015);
+Criterion5 = (abs(_4 - bodmax[0])<=0.015);
+Criterion6 = (abs(_5 - bodmax[1])<=0.015);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1 +Criterion2 +Criterion3 +Criterion4 +Criterion5 +Criterion6 )/6</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Funkce \(g(x,y)\) nabývá na zadané úsečce globálního (absolutního) minima {_0} </p><p>v bodě [{_1}; {_2}].</p><p>Funkce \(g(x,y)\) nabývá na zadané úsečce globálního (absolutního)maxima {_3} </p><p>v bodě [{_4}; {_5}].<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 203601  -->
+  <question type="formulas">
+    <name>
+      <text>extremy 3 (upr. MIIB_upr_10_6_19 bez param)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<strong></strong>Je dána reálná funkce dvou proměnných: \(\displaystyle f(x,y)=x^2-4x+\frac{y^3}{3}-2y^2-\frac 13\)<strong></strong><p></p><p><strong>a)</strong> Určete gradient funkce \(f(x,y)\).{#gradient}</p>
+<p><strong></strong></p> <p><strong>b)</strong> Určete parciální derivace 2. řádu funkce \(f(x,y)\).{#druhederivace}</p><p></p><p><strong>c)</strong> Určete body (\(A,\ B)\), ve kterých platí \(\hbox{grad} f = (0,0)\). </p>
+<p>Body uspořádejte vzestupně podle \(x\)-ové souřadnice, body se 
+stejnou \(x\)-ovou souřadnicí uspořádejte vzestupně podle \(y\)-ové 
+souřadnice.</p>
+
+Pro každý z určených bodů \(A\) a \(B\) uveďte hodnoty, které jsou běžně označovány \(\Delta_1\) a \(\Delta_2\).
+<p><sub>Má-li
+ funkce více než 2 body s uvedenou vlastností, uveďte pouze první dva. 
+Má-li méně než 2 body s uvedenou vlastností, zadejte do přebytečných 
+políček&nbsp; 9999.</sub></p>
+<p>{#extremyAB}</p><p><strong>d)</strong> Rozhodněte o existenci a typu lokálních extrémů funkce \(f(x,y)\). {#extremy1C}{#extremy1D}<br></p>
+<p><strong></strong></p><p><strong>e)</strong>
+ Nalezněte globální extrémy funkce \(g(x,y)=x^2-y^2+2xy-2y+2\) na úsečce
+ \(y={cc}x, x \in \left\langle {aa}; {bb} \right\rangle\). Uveďte 
+hodnoty globálního minima a globálního maxima a zadejte souřadnice bodů,
+ ve kterých těchto hodnot
+    funkce \(g(x,y)\) nabývá. </p>
+<p><sub>Pokud takové body neexistují, zadejte 9999. </sub></p>
+<p>{#extremy2}</p><p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ans_order=shuffle([0:3]);
+aa={1,2}; cc={3,4}; q={1,2};
+</text>
+</varsrandom>
+<varsglobal><text><![CDATA[#bez parametru f(x,y)=x^2-4x+y^3/3-2y^2-1/3
+sb=[2,0,2,4]; #ax, ay, bx, by
+Delta1A=2; Delta1B=2; Delta2A=2*2*sb[1]-4; Delta2B=2*2*sb[3]-4;
+hodnotaA=9999; 
+hodnotaB =sb[2]*sb[2]-4*sb[2]+pow(sb[3],3)/3-2*sb[3]*sb[3] -1/3;
+
+ans_inv=inv(ans_order);
+answers=["má lokální minimum", "má lokální maximum", "nemá extrém"];
+ans_permuted=sublist(answers,ans_order);
+#ansA=(Delta2A>0)?(Delta1A>0)?ans_inv[0]:ans_inv[1]:ans_inv[2];
+#ansB=(Delta2B>0)?(Delta1B>0)?ans_inv[0]:ans_inv[1]:ans_inv[2];
+ansA=ans_inv[2];
+ansB=ans_inv[0];
+
+#g(x) = x^2 - y^2 +2xy -2y +2;   #cc>=3!!!
+bb=aa+q;
+g1x = aa; g1y=cc*aa; g2x=bb; g2y=cc*bb;   #krajní body
+g12 = g1x*g1x - g1y*g1y + 2*g1x*g1y -2*g1y+2;
+g24 = g2x*g2x -g2y*g2y + 2*g2x*g2y -2*g2y+2;
+abmax=g12; bodmax=[g1x, g1y];
+abmin=g24; bodmin=[g2x, g2y];
+
+
+
+]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#gradient</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text>x={-4:4:0.1}; y={-4:4:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["2 x - 4", "y^2 - 4 y"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">grad \(f(x,y) = \) ({_0}, {_1}\)<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#druhederivace</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text>y={-4:4:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["2" , "0" , "0" , "2 y - 4"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(\displaystyle \frac{\partial^2 f}{\partial x^2} = \) &nbsp; {_0},<br>\(\displaystyle \frac{\partial^2 f}{\partial x\partial y} = \) {_1},<br>\(\displaystyle \frac{\partial^2 f}{\partial x\partial y} = \) {_2},<br>\(\displaystyle \frac{\partial^2 f}{\partial y^2} = \) &nbsp; {_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#extremyAB</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>8</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[2,0,2,-8,2,4,2,8]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[crit1 =(_0==2) && (_1==0)  && (_1 != _5) && (_2 == 2) && (_3 == -8) && (_3 != _7);
+crit2 =(_0==2) && (_1==4)  && (_1 != _5) && (_2 == 2) && (_3 == 8) && (_3 != _7);
+crit3 =(_4==2) && (_5==0)  && (_1 != _5) && (_6 == 2) && (_7 == -8) && (_3 != _7);
+crit4 =(_4==2) && (_5==4)  && (_1 != _5) && (_6 == 2) && (_7 == 8) && (_3 != _7);]]></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\bullet\) Bod \(A =\) [{_0}, {_1}]:</p>
+<p>\(\Delta_1(A) =\) {_2}, \(\Delta_2(A) = \){_3}<br>
+</p>
+<p> \(\bullet\) Bod \(B=\) [{_4}, {_5}]:</p> <p>\(\Delta_1(B) =\) {_6}, \(\Delta_2(B) = \){_7}
+</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#extremy1C</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ansA, ansB]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Doplňte tvrzení tak, aby byla pravdivá.</p>
+<p>Funkce \(f(x,y)\) v bodě A&nbsp; {_0:ans_permuted:MCE}.</p>
+<p>Funkce \(f(x,y)\) v bodě B&nbsp; {_1:ans_permuted:MCE}.<br></p><br>
+<p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#extremy1D</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[hodnotaA, hodnotaB]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Pokud funkce má v bodě A extrém, uveďte jeho hodnotu, v opačném případě zadejte 9999. {_0}</p>
+<p>Pokud funkce má v bodě B extrém, uveďte jeho hodnotu, v opačném případě zadejte 9999. {_1}</p><br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#extremy2</text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>6</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[abmin, bodmin[0], bodmin[1], abmax, bodmax[0], bodmax[1]]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1 = (abs(_0 - abmin)<=0.015);
+Criterion2 = (abs(_1 - bodmin[0])<=0.015);
+Criterion3 = (abs(_2 - bodmin[1])<=0.015);
+Criterion4 = (abs(_3 - abmax)<=0.015);
+Criterion5 = (abs(_4 - bodmax[0])<=0.015);
+Criterion6 = (abs(_5 - bodmax[1])<=0.015);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1 +Criterion2 +Criterion3 +Criterion4 +Criterion5 +Criterion6 )/6</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;"></p><p>Funkce \(g(x,y)\) nabývá na zadané úsečce globálního (absolutního) minima {_0} </p><p>v bodě [{_1}; {_2}].</p><p>Funkce \(g(x,y)\) nabývá na zadané úsečce globálního (absolutního)maxima {_3} </p><p>v bodě [{_4}; {_5}].</p><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 203600  -->
+  <question type="formulas">
+    <name>
+      <text>extremy 4 (upr. MIIA_10_6_19) param</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>a) </b>Vyberte tvrzení, které zaručuje existenci lokálního minima funkce \(f(x,y)\) v bodě \([x_0, y_0]\). Jsou použita označení $$\displaystyle \Delta_2 = \left\vert\begin{array}{cc}\frac{\partial^2 f}{\partial x^2}&amp;\frac{\partial^2f}{\partial x\partial y}\\\frac{\partial^2 f}{\partial y\partial x}&amp;\frac{\partial^2 f}{\partial y^2}\end{array}\right\vert,\quad \Delta_1 = \frac{\partial^2 f}{\partial x^2}.$${#podminky}</p><p><b>b)</b> <b>Vyšetřete lokální extrémy</b> funkce \(f(x,y) = {a}\ln(x^2y) -{b}y^3 -{c}x^2 -{d}\).</p><p>Uveďte všechny body, ve kterých platí:&nbsp; \(\\ \hbox{grad} f(x_0, y_0) = (0,0) \) 
+
+<br><br>
+
+Body uspořádejte vzestupně podle \(x\)-ové souřadnice, body se stejnou 
+\(x\)-ovou souřadnicí uspořádejte podle \(y\)-ové souřadnice. <br></p><p></p><p>Má-li
+ funkce více než 2 body s uvedenou vlastností, uveďte pouze první dva. 
+Má-li méně než 2 body s uvedenou vlastností, zadejte do přebytečných 
+políček&nbsp; 9999. {#bodA}{#bodB}{#typextremuA}{#typextremuB}{#hodnotaA}{#hodnotaB}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ans_order=shuffle([0:7]);
+b={1:4}; d={1:10};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[#b=1; d=5;
+a=3*b; c=a; sb=[-1,1,1,1]; hodnota =- b-c-d;
+ans_inv=inv(ans_order);
+answers=["\\(\\ \\ \\hbox{grad} f(x_0, y_0) = (0,0) \\ \\wedge \\ \\Delta_2(x_0, y_0)>0  \\ \\wedge \\ \\Delta_1(x_0,y_0)>0\\).",
+"\\(\\ \\ \\hbox{grad} f(x_0, y_0) = (0,0) \\  \\wedge \\ \\Delta_2(x_0, y_0)<0\\  \\wedge \\ \\Delta_1(x_0,y_0)>0\\).",
+"\\(\\ \\ \\hbox{grad} f(x_0, y_0) = (0,0) \\ \\wedge\\ \\Delta_2(x_0, y_0)>0\\  \\wedge \\ \\Delta_1(x_0,y_0)<0\\).",
+"\\(\\ \\ \\hbox{grad} f(x_0, y_0) = (0,0) \\  \\wedge \\ \\Delta_2(x_0, y_0)<0 \\ \\wedge \\ \\Delta_1(x_0,y_0)<0\\).",
+"\\(\\ \\ \\Delta_2(x_0, y_0)>0\\  \\wedge \\ \\Delta_1(x_0,y_0)>0\\).",
+"\\(\\ \\ \\Delta_2(x_0, y_0)<0 \\ \\wedge \\ \\Delta_1(x_0,y_0)>0\\).",
+"\\( \\ \\ \\Delta_2(x_0, y_0)>0 \\ \\wedge \\ \\Delta_1(x_0,y_0)<0\\).",
+"\\(\\ \\ \\Delta_2(x_0, y_0)<0 \\ \\wedge \\ \\Delta_1(x_0,y_0)<0\\)."
+];
+ans_permuted=sublist(answers,ans_order);
+ans=ans_inv[0];
+typextremuA=["má lokální minimum", "má lokální maximum", "nemá extrém"];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#podminky</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[{_0:ans_permuted}<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#bodA</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[sb[0],sb[1]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[Bod A = [{_0}, {_1}].<p><br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#bodB</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[sb[2],sb[3]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Bod B = [{_0}, {_1}].<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#typextremuA</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><b>Doplňte tvrzení</b> tak, aby byla pravdivá:<br></p><p>funkce \(f(x,y)\)&nbsp; v bodě A {_0:typextremuA:MCE}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#typextremuB</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>funkce \(f(x,y)\) v bodě B {_0:typextremuA:MCE}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#hodnotaA</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>hodnota</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Pokud funkce má v bodě A extrém, uveďte jeho hodnotu, v opačném případě zadejte 9999.</p><p>{_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>6</text>
+ </partindex>
+ <placeholder>
+  <text>#hodnotaB</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>hodnota</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p>Pokud funkce má v bodě B extrém, uveďte jeho hodnotu, v opačném případě zadejte 9999.</p><p>{_0}</p><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

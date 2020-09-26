@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Zkouškové příklady 2019//2020</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Zkouškové příklady 2019//2020/Zkouška Beta 18.6. (TN, cloze)</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 201820  -->
+  <question type="cloze">
+    <name>
+      <text>B1 upravena na B3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>B3</b><br></p><p>Je zadána mocninná řada $$\sum _{k=1}^{\infty } (-1)^k \frac {2}{4^k\,(k^2+k)}\,(x-2)^{k}.$$ <b>a)</b> Určete střed konvergence \(x_0\), poloměr konvergence \(R\) a interval konvergence \(I=(a,b)\) zadané mocninné řady: <br>\(x_0=\){4:NUMERICAL:=2:0} \(R=\){4:NUMERICAL:=4:0} \(a =\) {2:NUMERICAL:=-2:0} \(b =\){2:NUMERICAL:=6:0} <br> Zadané odpovědi zdůvodněte v odevzdávaném řešení.</p><p><b>b)</b> Rozhodněte o konvergenci následujících řad <br>(zapište K - je-li řada (relativně) konvergentní, D - jeli řada divergentní, AK - je-li řada absolutně konvergentní):</p><ul><li> \(\displaystyle\ \sum _{k=1}^{\infty } \frac {k}{k^2+1}\) {3:SHORTANSWER:=D~=d} </li><li>\(\displaystyle\ \sum _{k=2}^{\infty } (-1)^k \frac {1}{k^2-3}\){3:SHORTANSWER:=AK~=ak~=Ak~=aK}</li></ul>Zadané odpovědi zdůvodněte v odevzdávaném řešení. <br><p></p><p><b>c)</b> Uvažujte funkci \(f(x)=8\sqrt {1+x}\). Vytvořte Taylorův polynom druhého stupně funkce \(f(x)\) se středem v bodě \(x_0=0\). <br>\(T_2(x) = \) {3:NUMERICAL:=-1:0} \(x^2\) + {2:NUMERICAL:=4:0} \(x\) + {2:NUMERICAL:=8:0}.</p>Výpočet uveďte v odevzdávaném řešení.]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 201830  -->
+  <question type="cloze">
+    <name>
+      <text>B2 upravena na B1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>B1</b><br></p><p>Je dána diferenciální rovnice \( \sqrt{x}y^\prime\,= \frac 32 x\,y\) a počáteční podmínka \(y(1)=3e\). </p><p><b>a)</b> Určete a zapište oblast existence a jednoznačnosti maximálního řešení zadané Cauchyovy úlohy. V odevzdávaném řešení zapište podmínky, které ověřujete, a uveďte, zda jsou splněny. Zde vyberte správnou z následujících možností. {4:MULTICHOICE_VS:\(\ \mathbb R^2\)~\(\ (-\infty , 0)\cup (0,+\infty )\)~=\(\ (0,+\infty )\times (-\infty ,+\infty )\)~\(\ (-\infty ,+\infty )\times (0,+\infty )\)~\(\ \langle 0,1\rangle \times (-\infty ,+\infty )\)~\(\ (-\infty ,+\infty )\times ((-\infty , 0)\cup (0,+\infty ))\)} </p><p><b>b)</b> Vyřešte diferenciální rovnici. Postup zapište do odevzdávaného řešení. Zde vyberte správný výsledek z nasledujících možností: {12:MULTICHOICE_VS:\(\ y(x)=3x^2+C\)~\(\ y(x)=3/2\,e^x+C\)~\(\ y(x)=3/2\,e^&amp;#123 3/2 x&amp;#125+C\)~\(\ y(x)=C\,e^&amp;#123 3/2 x&amp;#125\)~=\(\ y(x)=C\,e^&amp;#123 \sqrt &amp;#123x^3&amp;#125&amp;#125\)~\(\ y(x)=C\,x^3+e^&amp;#123 2/3 x&amp;#125\)} </p><p></p><p><b>c)</b> Vyřešte zadanou Cauchyovu úlohu a zapište konstantu C. C\(=\){9:NUMERICAL:=3:0.00}<br> V odevzdávaném řešení uveďte maximální řešení zadané Cauchyovy úlohy a interval tohoto řešení. <br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 201834  -->
+  <question type="cloze">
+    <name>
+      <text>B3 upravena na B4</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>B4</b><br></p><p>Je zadána diferenciální rovnice \(\ddot {y}\,+\,x\,\cos(x)\,\dot {y}\,-\,x^2\,y\,=\, 2e^x\) a počáteční podmínky \(y(0)=-11\), \(\dot {y}(0)=-4\).<br> Předpokládejte, že lze vyjádřit \(y(x)\) ve tvaru \(y(x)=a_0\,+\,a_1\,x\,+\,a_2\,x^2\,+\,a_3\,x^3\,+\,a_4\,x^4\,+ \cdots \) <br><b>a)</b> Určete a z následujících možností vyberte polynom aproximující člen \(x\cos(x)\dot {y}\) do třetí mocniny \(x\). V odevzdávaném řešení podrobně zapište postup, kterým zdůvodníte výběr. {8:MULTICHOICE_VS:=\(\ x\cos(x)\dot y\simeq a_1\,x\,+\,2a_2\,x^2\,+(3a_3-1/2\,a_1)\,x^3\)~\(\ x\cos(x)\dot y\simeq a_1\,x\,+\,2a_2\,x^2\,+(3a_3-3/2\,a_1)\,x^3\)~\(\ x\cos(x)\dot y\simeq 3a_0\,+\,a_1\,x\,+\,2a_2\,x^2\,+3a_3\,x^3\)~\(\ x\cos(x)\dot y\simeq a_0\,+\,a_1\,x\,+\,a_2\,x^2\,+(3a_3-1/2\,a_1)\,x^3\)~\(\ x\cos(x)\dot y\simeq a_0\,+\,a_1\,x\,+\,a_2\,x^2\,+\,a_3\,x^3\),~\(\ x\cos(x)\dot y\simeq a_1\,x\,+\,a_1\,x^3\)~\(\ x\cos(x)\dot y\simeq 2a_1\,x\,+\,a_2\,x^2\,+(2a_3-2\,a_1)\,x^3\)} </p><p><b>b)</b> Aproximujte řešení zadané Cauchyovy úlohy polynomem 4.stupně. <br>V odevzdávaném řešení uveďte postup výpočtů koeficientů tohoto polynomu, zde zadejte výsledné hodnoty.<br>\(P_4(x) = \){5:NUMERICAL:=-1:0} \(x^4\) + {5:NUMERICAL:=1:0} \(x^3\) + {3:NUMERICAL:=1:0} \(x^2\) + {2:NUMERICAL:=-4:0} \(x\) + {2:NUMERICAL:=-11:0}.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 201841  -->
+  <question type="cloze">
+    <name>
+      <text>B4 upravena na B2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>B2</b><br></p><p>Je dána soustava rovnic: $$\dot {X}\,=\left ( \begin {array}{cc} 3 &amp; -2 \\ 3 &amp; -4 \end {array} \right ) \, X,\quad X(0) = \left(\begin{array}{c}-4\\3\end{array}\right).$$ <b>a)</b> Určete fundamentální systém řešení (FS) dané soustavy rovnic. Postup zapište do odevzdávaného řešení. Zde zapište výsledek ve tvaru $$\left\lbrace e^{a\,t}\left(\begin{array}{c}b\\3\end{array}\right),\ e^{c\,t}\left(\begin{array}{c} d\\3\end{array}\right)\right\rbrace$$ (tj. vlastní vektory převeďte do tvaru, kdy je druhá složka rovna třem).<br> První člen FS ať odpovídá vlastnímu číslu, které je v absolutní hodnotě menší. <br>\(a = \){3:NUMERICAL:=2:0} \(b =\) {3:NUMERICAL:=6:0} \(c =\) {3:NUMERICAL:=-3:0} \(d = \){3:NUMERICAL:=1:0} </p><!-- OPRAVENO a_11 bylo 2--> <p><b>b)</b> Zapište souřadnice bodu rovnováhy \(X=[x;\,y] =\) [ {1:NUMERICAL:=0:0}; {1:NUMERICAL:=0:0} ]<br>a uveďte(zapište) jeho typ: {3:SHORTANSWER:=sedlo~=SEDLO~=Sedlo~=SEdlo~=SEDlo~=SEDLo}. <br>Zdůvodnění uveďte v odevzdávaném řešení.</p><p><b>c) </b>Určete řešení zadané Cauchyovy úlohy.&nbsp; Postup zapište do odevzdávaného řešení, zde doplňte koeficienty v zápisu tohoto řešení.<br>Předpokládejte, že konstanty \(a,\ c\) jsou ty, které jste určili v bodě <b>a)</b>.</p><p>\(x(t) = \) {1:NUMERICAL:=-6:0} \( e^{at} +\) {1:NUMERICAL:=2:0} \(e^{ct}\)<br> \(y(t) = \) {1:NUMERICAL:=-3:0} \( e^{at} +\) {1:NUMERICAL:=6:0} \(e^{ct}\)<br></p><p><b>d)</b> Předpokládejte, že máte soustavu dvou obyčejných diferenciálních rovnic ve tvaru \(\dot {X}=BX\), kde \( B\in\mathbb R^{2\times 2}\). Víte, že jedno z vlastních čísel matice \(B\) je \(\lambda _1=5\). Z následujících možností vyberte ty, které mohou nastat. {4:MULTIRESPONSE_S:\(\ \lambda _2=-3\) a bod rovnováhy je typu ohnisko.~=\(\ \lambda _2=-3\) a bod rovnováhy je typu sedlo.~ &nbsp;bod rovnováhy je typu střed.~\(\ \lambda _2=3\) a bod rovnováhy je typu sedlo.~\(\ \lambda _2=-3\) a bod rovnováhy je typu uzel.~=\(\ \lambda _2=3\) a bod rovnováhy je typu uzel.}</p><p>Zdůvodnění uveďte v odevzdávaném řešení.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+</quiz>

@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011049/Gauss-Seidel</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 129298  -->
+  <question type="formulas">
+    <name>
+      <text>Gaussova-Seidelova iterační matice</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Gaussova-Seidelova metoda:&nbsp; iterační matice.</b><br></p><p>Soustavu rovnic ve tvaru \( \mathbf{A}\mathbf{x}&nbsp; = \mathbf{b} \), kde  <br>\( \mathbf{A} = \left(\begin{array}{rrr} {a11} &amp; {a12} &amp;{a13}\\{a21}&amp;{a22} &amp;{a23} \\{a31}&amp;{a32}&amp;{a33}\end{array}\right) \), \(&nbsp; \mathbf{b} = \left(\begin{array}{r} {b1}\\ {b2}\\{b3}\end{array}\right) \) <br>převeďte do tvaru \( \mathbf{x} = \mathbf{U}_G \mathbf{x} + \mathbf{v}_G \),  <br>kde \( \mathbf{U}_G \) je Gaussova-Seidelova iterační matice a \(\mathbf{v}_G \) vektor, odpovídající vektoru \(\mathbf{b} \).<br>Uveďte matici \( \mathbf{U}_G\) &nbsp;(po řádcích) a vektor&nbsp;&nbsp; \(\mathbf{v}_G \) .<br><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>\( \mathbf{U}_G = \left( \begin{array}{ccc} 0&amp;-\frac{a_{12}}{a_{11}}&amp;-\frac{a_{13}}{a_{11}}\\0&amp;\frac{a_{12}a_{21}}{a_{11}a_{22}}&amp;\frac{a_{13}a_{21}}{a_{11}a_{22}} - \frac{a_{23}}{a_{22}}\\0&amp; -\frac{a_{12}(a_{21}a_{32} - a_{22}a_{31})}{a_{11}a_{22}a_{33}}&amp; \frac{a_{23}a_{32}}{a_{22}a_{33}} - \frac{a_{13}(a_{21}a_{32} - a_{22}a_{31})}{a_{11}a_{22}a_{33}}\end{array}\right) = \left(\begin{array}{rrr} {ug[0]}&amp;{ug[1]}&amp;{ug[2]}\\{ug[3]}&amp;{ug[4]}&amp;{ug[5]} \\{ug[6]}&amp;{ug[7]}&amp;{ug[8]} \end{array}\right) \)</p><p>\( \mathbf{v}_G = \left(\begin{array}{c} \frac{b_1}{a_{11}}\\\frac{b_2}{a_{22}} - \frac{a_{21}b_1}{a_{11}a_{22}}\\\frac{b_3}{a_{33}} - \frac{a_{32}b_2}{a_{22}a_{33}} + \frac{b_1(a_{21}a_{32} - a_{22}a_{31})}{a_{11}a_{22}a_{33}} \end{array}\right) = \left(\begin{array}{r} {vg[0]}\\{vg[1]}\\{vg[2]}\end{array}\right) \)<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>2.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11 = {4,5,6};  a12 = {-0.5, 0, 0.5, 1};a13 = {-0.5, 0, 0.5, 1};a21={-0.5, 0, 0.5, 1};a22={4,5,6};  a23={-0.5, 0, 0.5, 1}; a31 = {-0.5, 0, 0.5, 1}; a32 = {-0.5, 0, 0.5, 1};a33 = {4,5,6};  b1 = {-7:7}; b2= {-7:7};b3= {-7:7};
+</text>
+</varsrandom>
+<varsglobal><text>ug = [0,  round( -a12/a11, 4), round(-a13/a11,4), 0, round((a12*a21)/(a11*a22), 4), round((a13*a21)/(a11*a22) - a23/a22, 4), 0, round(-(a12*(a21*a32 - a22*a31))/(a11*a22*a33),4), round((a23*a32)/(a22*a33) - (a13*(a21*a32 - a22*a31))/(a11*a22*a33), 4)];
+vg = [round( b1/a11,4), round(b2/a22 - (a21*b1)/(a11*a22),4), round(b3/a33 - (a32*b2)/(a22*a33) + (b1*(a21*a32 - a22*a31))/(a11*a22*a33),4)];</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>9</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ug</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>matice \( \mathbf{U}_G\):<br>\( \mathbf{U}_{G_{1,*}} = \left(\right. \) {_0}, {_1}, {_2} \( \left.\right) \) <br>\( \mathbf{U}_{G_{2,*}} = \left(\right. \) {_3}, {_4}, {_5} \( \left.\right)\)<br>\( \mathbf{U}_{G_{3,*}} = \left(\right. \){_6}, {_7}, {_8} \(\left.\right) \)<br><br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně,</p><p>pro výpočet hodnot matice \( \mathbf{U}_G \)&nbsp; nejprve určíme trojúhelníkové matice \( \mathbf{L} \), \( \mathbf{U} \) a diagonální matici \( \mathbf{D} \), takové že \( \mathbf{A} = \mathbf{L} + \mathbf{D} + \mathbf{U} \) (viz přednášky); potom určíme inverzní matici k trojúhelníkové matici \( \mathbf{L}&nbsp; + \mathbf{D} \); <br></p><p>nakonec \( \mathbf{U}_G = -\left( \mathbf{L} + \mathbf{D} \right)^{-1} \mathbf{U} \).</p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>vg</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><span id="selectionBoundary_1582390015521_7087505455372793" style="line-height: 0; display: none;" class="rangySelectionBoundary">﻿</span>\( \mathbf{v}_{G} = \left(\right. \) {_0}, {_1}, {_2} \( \left.\right)^T \)<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně,</p><p></p><p>Pro výpočet hodnot vektoru \( \mathbf{v}_G \)&nbsp; nejprve určíme 
+trojúhelníkové matice \( \mathbf{L} \), \( \mathbf{U} \) a diagonální 
+matici \( \mathbf{D} \), takové že \( \mathbf{A} = \mathbf{L} + 
+\mathbf{D} + \mathbf{U} \) (viz přednášky); potom určíme inverzní matici
+ k trojúhelníkové matici \( \mathbf{L}&nbsp; + \mathbf{D} \).<br></p><p></p>Vektor \( \mathbf{v}_G = \left(&nbsp; \mathbf{L} + \mathbf{D} \right)^{-1} \mathbf{v} \).<br><p></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+  </question>
+
+<!-- question: 129838  -->
+  <question type="formulas">
+    <name>
+      <text>Gaussova-Seidelova metoda: výpočet 1 iterace</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Gaussova-Seidelova metoda: výpočet 1 iterace.</b><br></p><p>Pro&nbsp; soustavu rovnic \( \mathbf{A} \mathbf{x} = \mathbf{b} \) , kde  <br>\( \mathbf{A} = \left(\begin{array}{rrr} {a11} &amp; {a12} &amp;{a13}\\{a21}&amp;{a22} &amp;{a23} \\{a31}&amp;{a32}&amp;{a33}\end{array}\right) \), \(&nbsp; \mathbf{b} = \left(\begin{array}{r} {b1}\\ {b2}\\{b3}\end{array}\right) \) a \(&nbsp; \mathbf{x}^{(k)} = \left(\begin{array}{r} {x1}\\ {x2}\\{x3}\end{array}\right) \)  <br>vypočtěte hodnoty \(&nbsp; \mathbf{x}^{(k+1)}&nbsp; = (x^{(k+1)}_1, x^{(k+1)}_2, x^{(k+1)}_3)^T\) <br></p><p><b>Gaussovou-Seidelovou iterační metodou.</b><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Výpočet hodnot \( \mathbf{x}^{(k+1)}\)&nbsp; po složkách :  <br>\(x_1^{(k+1)} = \frac{b_1 - x_2^{(k)}a_{12} - x_3^{(k)} a_{13}}{a_{11}} =\) ( {b1} -( {x2})*({a12}) - ({x3}) *({a13}) )/{a11} <br>\(x_2^{(k+1)} = \frac{b_2 - x_1^{(k+1)}a_{21} - x_3^{(k)} a_{23}}{a_{22}} =\) ( {b2} -( {xx1})*({a21}) - ({x3}) *({a23}) )/{a22}<br>\(x_3^{(k+1)} = \frac{b_3 - x_1^{(k+1)}a_{31} - x_2^{(k+1)} a_{32}}{a_{33}} =\) ( {b3} -( {xx1})*({a31}) - ({xx2}) *({a32}) )/{a33}<br><br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>3.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11 = {4,5,6};  a12 = {-0.5, 0, 0.5, 1};a13 = {-0.5, 0, 0.5, 1};a21={-0.5, 0, 0.5, 1};a22={4,5,6};  a23={-0.5, 0, 0.5, 1}; a31 = {-0.5, 0, 0.5, 1}; a32 = {-0.5, 0, 0.5, 1};a33 = {4,5,6};  b1 = {-7:7}; b2= {-7:7};b3= {-7:7}; x1={-3:3}; x2={-3:3}; x3={-3:3}; </text>
+</varsrandom>
+<varsglobal><text>xx1 = round((b1 - x2*a12 -x3*a13)/a11,3);
+xx2= round((b2 - xx1*a21 -x3*a23)/a22,3);
+xx3= round( (b3- xx1*a31 -xx2*a32)/a33,3);</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>xx1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_1^{(k+1)}= \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně,</p><p>\(x_1^{(k+1)} = \frac{b_1 - x_2^{(k)}a_{12} - x_3^{(k)} a_{13}}{a_{11}} =\) ( {b1} -( {x2})*({a12}) - ({x3}) *({a13}) )/{a11}<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>xx2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_2^{(k+1)}= \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně,</p><p>\(x_2^{(k+1)} = \frac{b_2 - x_1^{(k+1)}a_{21} - x_3^{(k)} a_{23}}{a_{22}} =\) ( {b2} -( {xx1})*({a21}) - ({x3}) *({a23}) )/{a22}<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>xx3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_3^{(k+1)}= \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text>správně</text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně,</p><p>\(x_3^{(k+1)} = \frac{b_3 - x_1^{(k+1)}a_{31} - x_2^{(k+1)} a_{32}}{a_{33}} =\) ( {b3} -( {xx1})*({a31}) - ({xx2}) *({a32}) )/{a33}<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+  </question>
+
+<!-- question: 129839  -->
+  <question type="formulas">
+    <name>
+      <text>Gaussova-Seidelova metoda: výpočet 2 iterací</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Gaussova-Seidelova metoda: výpočet 2 iterací.</b><br></p><p>Pro&nbsp; soustavu rovnic \( \mathbf{A} \mathbf{x} = \mathbf{b} \) , kde  <br>\( \mathbf{A} = \left(\begin{array}{rrr} {a11} &amp; {a12} &amp;{a13}\\{a21}&amp;{a22} &amp;{a23} \\{a31}&amp;{a32}&amp;{a33}\end{array}\right) \), \(&nbsp; \mathbf{b} = \left(\begin{array}{r} {b1}\\ {b2}\\{b3}\end{array}\right) \) a \(&nbsp; \mathbf{x}^{(k)} = \left(\begin{array}{r} {x1}\\ {x2}\\{x3}\end{array}\right) \)  <br>vypočtěte hodnoty \(&nbsp; \mathbf{x}^{(k+1)}&nbsp; = (x^{(k+1)}_1, x^{(k+1)}_2, x^{(k+1)}_3)^T\) a \(&nbsp; \mathbf{x}^{(k+2)}&nbsp; = (x^{(k+2)}_1, x^{(k+2)}_2, x^{(k+2)}_3)^T\) <b>Gaussovou-Seidelovou iterační metodou</b>.<br><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>2.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11 = {4,5,6};  a12 = {-0.5, 0, 0.5, 1};a13 = {-0.5, 0, 0.5, 1};a21={-0.5, 0, 0.5, 1};a22={4,5,6};  a23={-0.5, 0, 0.5, 1}; a31 = {-0.5, 0, 0.5, 1}; a32 = {-0.5, 0, 0.5, 1};a33 = {4,5,6};  b1 = {-7:7}; b2= {-7:7};b3= {-7:7}; x1={-3:3}; x2={-3:3}; x3={-3:3}; </text>
+</varsrandom>
+<varsglobal><text>xx1 = round((b1 - x2*a12 -x3*a13)/a11,3) ;
+xx2= round((b2 - xx1*a21 -x3*a23)/a22,3);
+xx3= round((b3 - xx1*a31 -xx2*a32)/a33,3);
+yy1 = round((b1 - xx2*a12 -xx3*a13)/a11,3) ;
+yy2 =round((b2 - yy1*a21 -xx3*a23)/a22,3) ;
+yy3 =round((b3 - yy1*a31 -yy2*a32)/a33,3);</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[xx1, xx2, xx3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_1^{(k+1)}= \){_0}<br>\(x_2^{(k+1)}= \){_1}<br>\(x_3^{(k+1)}= \){_2}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[yy1, yy2, yy3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_1^{(k+2)}= \){_0}<br>\(x_2^{(k+2)}= \){_1}<br>\(x_3^{(k+2)}= \){_2}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+  </question>
+
+<!-- question: 129837  -->
+  <question type="formulas">
+    <name>
+      <text>Spektrální poloměr Gaussovy-Seidelovy matice</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Spektrální poloměr Gaussovy-Seidelovy matice.</b><br></p><p>Je dána&nbsp; matice \( \mathbf{A} = \left(\begin{array}{rrr} {a11} &amp; {a12} &amp;{a13}\\{a21}&amp;{a22} &amp;{a23} \\{a31}&amp;{a32}&amp;{a33}\end{array}\right) \).<br>Určete <b>spektrální poloměr Gaussovy-Seidelovy iterační matice</b> ( \(\rho(U_G) \) ).<br><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Spektrální poloměr Gaussovy-Seidelovy iterační matice ( \(\rho(U_G) \) ) určíme z matice&nbsp; ( \(\mathbf{A}\) ).<br>Nejprve určíme \(\lambda_1, \lambda_2, \lambda_3 \) pro které platí<br>det \( \left( \begin{array}{rrr}{a11} \lambda &amp; {a12} &amp;{a13}\\ {a21}\lambda&amp; {a22}&nbsp;\lambda &amp;{a23} \\{a31}\lambda&amp;{a32}\lambda&amp; {a33} \lambda\end{array}\right) = 0\)<br>\(\rho(U_J) = \max \{ | \lambda_1|, |\lambda_2|, |\lambda_3| \} = {rhoG} \)  <br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11 = {-4,-5,-2,-1,1,2,3,4,5,6};  a12 = {-2, -1,-0.5, 0, 0.5, 1,2};a13 = {-2, -1,-0.5, 0, 0.5, 1,2};a21={-2, -1,-0.5, 0, 0.5, 1,2};a22={-4,-5,-2,-1,1,2,3,4,5,6};  a23={-2, -1,-0.5, 0, 0.5, 1,2}; a31 = {-2, -1,-0.5, 0, 0.5, 1,2}; a32 = {-2, -1,-0.5, 0, 0.5, 1,2};a33 = {-4,-5,-2,-1,1,2,3,4,5,6}; 
+</text>
+</varsrandom>
+<varsglobal><text><![CDATA[aaa=a11*a22*a33; bbb = a21*a32*a13 - a13*a22*a31-a23*a32*a11-a12*a21*a33; ccc = a31*a12*a23;
+ddd = bbb*bbb - 4*aaa*ccc;
+rhoG =(ddd>0 ? round(max(abs((sqrt(ddd)-bbb)/(2*aaa)), abs((sqrt(ddd)+bbb)/(2*aaa))),4) : round(sqrt(bbb*bbb+ abs(ddd))/abs(2*aaa) , 4));]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>rhoG</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>&nbsp;\(\rho(U_G) \)&nbsp; = {_0} <br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně,</p><p>určete řešení kvadratické rovnice \( ({aaa})\lambda^2 + ({bbb})\lambda + ({ccc}) = 0 \)<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+  </question>
+
+</quiz>

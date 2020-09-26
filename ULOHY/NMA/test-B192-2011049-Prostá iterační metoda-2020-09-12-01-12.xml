@@ -1,0 +1,1601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$module$/top/Prostá iterační metoda</text>
+    </category>
+    <info format="html">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "Prostá iterační metoda".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 128889  -->
+  <question type="formulas">
+    <name>
+      <text>ODD/neODD</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána matice <br></p><p>\( \mathbf{A} = \left( \begin{array}{c c c} {u11}&amp;      {u12}     &amp;  {u13}  \\ {u21} &amp; {u22} &amp; {u23} \\ {u31} &amp; {u32} &amp; {u33} \end{array} \right). \)<span id="selectionBoundary_1581596256291_30420559970382366" style="line-height: 0; display: none;" class="rangySelectionBoundary"></span><br></p>Ověřte jestli je tato matice ostře diagonálně dominantní (ODD).<br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>u12 = {-7:7};
+u13 = {-7:7};
+u23 = {-7:7};
+u21 = {-7:7};
+u31 = {-7:7};
+u32 = {-7:7};
+u11d = {-5,-4,-4,-3,-3,-2,-2,-1,-1,-1,0,1,4};
+u22d = {-5,-4,-4,-3,-3,-2,-2,-1,-1,-1,0,1,4};
+u33d = {-5,-4,-4,-3,-3,-2,-2,-1,-1,-1,0,1,4};
+sgn_p = {[1,1,1],[1,1,-1],[1,-1,1],[-1,1,1],[1,-1,-1],[-1,1,-1],[-1,-1,1],[-1,-1,-1]};
+v1 = {-7:7};
+v2 = {-7:7};
+v3 = {-7:7};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[u11_abs = max(0,min(abs(u12)+abs(u13),abs(u21)+abs(u31)) - u11d);
+u11 = u11_abs == 0 ? 0 : sgn_p[0]*u11_abs;
+u22_abs = max(0,min(abs(u21)+abs(u23),abs(u12)+abs(u32)) - u22d);
+u22 = u22_abs == 0 ? 0 : sgn_p[1]*u22_abs;
+u33_abs = max(0,min(abs(u31)+abs(u32),abs(u13)+abs(u23)) - u33d);
+u33 = u33_abs == 0 ? 0 : sgn_p[2]*u33_abs;
+konv = u11d < 0 && u22d < 0 && u33d < 0;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>konv</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_0 == konv</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Rozhodněte, zda je pro danou soustavu Jacobiho iterační metoda konvergentní (doplňte 1 - je konvergentní, 0 - není konvergentní): {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 128878  -->
+  <question type="formulas">
+    <name>
+      <text>Ověření konvergence PIM -</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána matice <br></p><p>\( \mathbf{A} = \left( \begin{array}{c c c} {u11}&amp;      {u12}     &amp;  {u13}  \\ {u21} &amp; {u22} &amp; {u23} \\ {u31} &amp; {u32} &amp; {u33} \end{array} \right). \)<span id="selectionBoundary_1581596256291_30420559970382366" style="line-height: 0; display: none;" class="rangySelectionBoundary"></span><br></p>Ověřte jestli je tato matice ostře diagonálně dominantní (ODD).<br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>u12 = {-7:7};
+u13 = {-7:7};
+u23 = {-7:7};
+u21 = {-7:7};
+u31 = {-7:7};
+u32 = {-7:7};
+u11d = {-5,-4,-4,-3,-3,-2,-2,-1,-1,-1,0,1,4};
+u22d = {-5,-4,-4,-3,-3,-2,-2,-1,-1,-1,0,1,4};
+u33d = {-5,-4,-4,-3,-3,-2,-2,-1,-1,-1,0,1,4};
+sgn_p = {[1,1,1],[1,1,-1],[1,-1,1],[-1,1,1],[1,-1,-1],[-1,1,-1],[-1,-1,1],[-1,-1,-1]};
+v1 = {-7:7};
+v2 = {-7:7};
+v3 = {-7:7};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[u11_abs = max(0,min(abs(u12)+abs(u13),abs(u21)+abs(u31)) - u11d);
+u11 = u11_abs == 0 ? 0 : sgn_p[0]*u11_abs;
+u22_abs = max(0,min(abs(u21)+abs(u23),abs(u12)+abs(u32)) - u22d);
+u22 = u22_abs == 0 ? 0 : sgn_p[1]*u22_abs;
+u33_abs = max(0,min(abs(u31)+abs(u32),abs(u13)+abs(u23)) - u33d);
+u33 = u33_abs == 0 ? 0 : sgn_p[2]*u33_abs;
+konv = u11d < 0 && u22d < 0 && u33d < 0;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>konv</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_0 == konv</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Rozhodněte, zda je pro danou soustavu Jacobiho iterační metoda konvergentní (doplňte 1 - je konvergentní, 0 - není konvergentní): {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 128890  -->
+  <question type="formulas">
+    <name>
+      <text>SPD matice obecná</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána matice \( \mathbf{A} = \left( \begin{array}{c c} {a1} &amp; {a2} &amp; {a3} \\ {a4} &amp; {a5} &amp; {a6} \\&nbsp;{a7} &amp; {a8} &amp; {a9} \end{array} \right) \)<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p></p><p><b>Vlastní čísla:</b><br></p><p>\( \left|&nbsp;\begin{array}{c c} {a1} - \lambda &amp; {a2} &amp; {a3} \\ {a4} &amp; {a5} - \lambda &amp; {a6} \\ {a7} &amp; {a8} &amp; {a9} - \lambda \end{array} \right| = 0 \)</p><p>\( \left( {a1} - \lambda \right) \left( {a5} - \lambda \right) \left( {a9} - \lambda \right) = 0 \)</p><p>\( \lambda_{1,2,3} = {l[0]}, \, {l[1]}, \, {l[2]} \)</p><p>\( \rho \left( \mathbf{A} \right) = \max\limits_i \left| \lambda_i \right| = {rho} \)</p><p><b>Vlastní vektory:</b></p><p></p><p>Řešíme rovnici \( \left( 
+\mathbf{A} - \lambda \mathbf{E} \right) \mathbf{u} = \mathbf{0} \) pro 
+neznámý vl. vektor \( \mathbf{u} \) a známé vl. číslo \( \lambda \).<br></p><p>Dosadíme
+ \( \lambda_1 \) : \( \left( \begin{array}{c c} {A1[0]} &amp; {a2} &amp; 
+{a3} \\ {a4} &amp; {A1[1]} &amp; {a6} \\ {a7} &amp; {a8} &amp; {A1[2]} \end{array} \right) \mathbf{u}_1 = \mathbf{0} \) , 
+řešení např. \( \mathbf{u}_1 = \left( \begin{array}{c} {Q[0]} \\ 
+{Q[3]} \\ {Q[6]} \end{array} \right) \) .</p><p></p><p>Dosadíme
+ \( \lambda_2 \) : \( \left( \begin{array}{c c} {A2[0]} &amp; {a2} &amp; 
+{a3} \\ {a4} &amp; {A2[1]} &amp; {a6} \\ {a7} &amp; {a8} &amp; {A2[2]} \end{array} \right) \mathbf{u}_2 = \mathbf{0} \) , 
+řešení např. \( \mathbf{u}_2 = \left( \begin{array}{c} {Q[1]} \\ 
+{Q[4]} \\ {Q[7]} \end{array} \right) \) .</p><p>Dosadíme
+ \( \lambda_3 \) : \( \left( \begin{array}{c c} {A3[0]} &amp; {a2} &amp; 
+{a3} \\ {a4} &amp; {A3[1]} &amp; {a6} \\ {a7} &amp; {a8} &amp; {A3[2]} \end{array} \right) \mathbf{u}_3 = \mathbf{0} \) , 
+řešení např. \( \mathbf{u}_3 = \left( \begin{array}{c} {Q[2]} \\ 
+{Q[5]} \\ {Q[8]} \end{array} \right) \) .<br></p><p></p><p></p><p></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>3.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>QQ = {[1,1,0,1,-1,0,0,0,1,0.5,0.5,0,0.5,-0.5,0,0,0,1],[0,1,0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,1]};
+l = {[-0.5,0,0.5],[0.5,-0.5,0.5]};</text>
+</varsrandom>
+<varsglobal><text>Q = sublist(QQ,[0:9]);
+R = sublist(QQ,[9:18]);
+a1 = Q[0]*l[0]*R[0] + Q[1]*l[1]*R[3] + Q[2]*l[2]*R[6];
+a4 = Q[3]*l[0]*R[0] + Q[4]*l[1]*R[3] + Q[5]*l[2]*R[6];
+a7 = Q[6]*l[0]*R[0] + Q[7]*l[1]*R[3] + Q[8]*l[2]*R[6];
+a2 = Q[0]*l[0]*R[1] + Q[1]*l[1]*R[4] + Q[2]*l[2]*R[7];
+a5 = Q[3]*l[0]*R[1] + Q[4]*l[1]*R[4] + Q[5]*l[2]*R[7];
+a8 = Q[6]*l[0]*R[1] + Q[7]*l[1]*R[4] + Q[8]*l[2]*R[7];
+a3 = Q[0]*l[0]*R[2] + Q[1]*l[1]*R[5] + Q[2]*l[2]*R[8];
+a6 = Q[3]*l[0]*R[2] + Q[4]*l[1]*R[5] + Q[5]*l[2]*R[8];
+a9 = Q[6]*l[0]*R[2] + Q[7]*l[1]*R[5] + Q[8]*l[2]*R[8];
+rho = max(abs(l[0]),abs(l[1]),abs(l[2]));
+A1 = [a1 - l[0], a5 - l[0], a9 - l[0]];
+A2 = [a1 - l[1], a5 - l[1], a9 - l[1]];
+A3 = [a1 - l[2], a5 - l[2], a9 - l[2]];</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[l[0],l[1],l[2]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Vypočítejte vlastní čísla matice \( \mathbf{A} \) a seřaďte je tak, aby \( \lambda_1 \leq \lambda_2 \leq \lambda_3 \)&nbsp; <br></p><p>\( \lambda_1 = \) {_0}, \( \lambda_2 = \) {_1}, \( \lambda_3 = \) {_2}.</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>Vlastní čísla máte správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>\( \left| \mathbf{A} - \lambda \mathbf{E} \right| = 0 \)<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>rho</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete spektrální poloměr \( \rho \left( \mathbf{A} \right) = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>Spektrální poloměr je správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>\( \rho \left( \mathbf{A} \right) = \max\limits_i \left| \lambda_i \right| \)<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>9</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[Q[0],Q[3],Q[6],Q[1],Q[4],Q[7],Q[2],Q[5],Q[8]]</text>
+ </answer>
+ <vars2>
+  <text>u1_norm = sqrt(Q[0]*Q[0] + Q[3]*Q[3] + Q[6]*Q[6]);
+a1_norm = sqrt(_0*_0 + _1*_1 + _2*_2);
+u2_norm = sqrt(Q[1]*Q[1] + Q[4]*Q[4] + Q[7]*Q[7]);
+a2_norm = sqrt(_3*_3 + _4*_4 + _5*_5);
+u3_norm = sqrt(Q[2]*Q[2] + Q[5]*Q[5] + Q[8]*Q[8]);
+a3_norm = sqrt(_6*_6 + _7*_7 + _8*_8);
+err1 = abs(abs(Q[0]*_0 + Q[3]*_1 + Q[6]*_2)/u1_norm/a1_norm - 1);
+err2 = abs(abs(Q[1]*_3 + Q[4]*_4 + Q[7]*_5)/u2_norm/a2_norm - 1);
+err3 = abs(abs(Q[2]*_6 + Q[5]*_7 + Q[8]*_8)/u3_norm/a3_norm - 1);</text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[err1 < 0.01 && err2 < 0.01 && err3 < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p>Najděte vlastní vektory příslušné vl. číslům \( \lambda_1 \), \( \lambda_2 \) a&nbsp;\( \lambda_3 \) (pozor na pořadí).</p>
+<p>\( \mathbf{u}_1 = \left( \begin{array}{c} \\ \\ \end{array} \right. 
+\) {_0}, {_1}, {_2} \( \left.&nbsp;\begin{array}{c} \\ \\ \end{array} 
+\right)^\mathbf{T} \), <br></p><p>\( \mathbf{u}_2 = \left( \begin{array}{c} \\ \\ 
+\end{array} \right. \) {_3}, {_4}, {_5} \( \left.&nbsp;\begin{array}{c} \\ \\ 
+\end{array} \right)^\mathbf{T} \), <br></p><p>\( \mathbf{u}_3 = \left( \begin{array}{c} \\ \\ 
+\end{array} \right. \) {_6}, {_7}, {_8} \( \left.&nbsp;\begin{array}{c} \\ \\ 
+\end{array} \right)^\mathbf{T} \).<br></p><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>\( \left( \mathbf{A} - \lambda \mathbf{E} \right) 
+\mathbf{u} = \mathbf{0} \)<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text><![CDATA[<p>--<br></p>]]></text>
+    </hint>
+    <hint format="html">
+      <text><![CDATA[<p>--<br></p>]]></text>
+    </hint>
+  </question>
+
+<!-- question: 128962  -->
+  <question type="formulas">
+    <name>
+      <text>Výpočet iterací PIM</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava rovnic \(&nbsp;\mathbf{x} =&nbsp;\mathbf{U}&nbsp;\mathbf{x} +&nbsp;\mathbf{v} \), kde <br></p><p>\( \mathbf{U} = \left( \begin{array}{c c c} {a1} &amp; {a2} &amp; {a3} \\ {a4} &amp; {a5} &amp; {a6} \\&nbsp;{a7} &amp; {a8} &amp; {a9} \end{array} \right), \; \mathbf{v} = \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right). \)</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p></p><p><b>Výpočet iterací:</b><br></p><p>\( \mathbf{x}^{(1)} = \mathbf{U} \mathbf{x}^{(0)} + \mathbf{v}, \)</p><p>\( \mathbf{x}^{(1)} = \left( \begin{array}{c} 0 \\ 0 \\ 0 \end{array} 
+\right) + \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right) = \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right), \)</p><p>\( \mathbf{x}^{(2)} = \mathbf{U} \mathbf{x}^{(1)} + \mathbf{v}, \)<br></p><p>\( \mathbf{x}^{(2)} = \left( \begin{array}{c c c} {a1} &amp; {a2} &amp; {a3} \\ {a4} &amp; 
+{a5} &amp; {a6} \\&nbsp;{a7} &amp; {a8} &amp; {a9} \end{array} \right) \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right) + \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right) \)</p><p>\( \mathbf{x}^{(2)} = \left( \begin{array}{c} {ux1} \\ 
+{ux2} \\&nbsp;{ux3} \end{array} 
+\right) + \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right) =&nbsp;\left( \begin{array}{c} {x21} \\ 
+{x22} \\&nbsp;{x23} \end{array} 
+\right) \)</p><p><br></p><p><b>Odhad chyby:</b></p><p></p><p>\( \left\| \mathbf{x}^{(k)} - \mathbf{x}^* \right\|_\infty \leq 
+\frac{\left\| \mathbf{U} \right\|^k_\infty}{1 - \left\| \mathbf{U} 
+\right\|_\infty} \left\| \mathbf{x}^{(1)} - \mathbf{x}^{(0)} 
+\right\|_\infty&nbsp; \)</p><p>Dosadíme \( k = 2 \) a dále:</p><p>\( \left\| \mathbf{U} 
+\right\|_\infty = {A_Linf} \)</p><p>\( \left\| \mathbf{x}^{(1)} - \mathbf{x}^{(0)} 
+\right\|_\infty =&nbsp;\left\| \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right) - \left( \begin{array}{c} 0 \\ 0 \\ 0 \end{array} 
+\right)
+\right\|_\infty = {v_Linf} \)</p><p>\( \left\| \mathbf{x}^{(2)} - \mathbf{x}^* \right\|_\infty \leq 
+\frac{{A_Linf2}}{{A_Linfm1}} {v_Linf} = {A_err} \)<br></p><p><br></p><p></p><p></p><p></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>2.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>QQ = {[1,1,0,1,-1,0,0,0,1,0.5,0.5,0,0.5,-0.5,0,0,0,1],[0,1,0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,1]};
+l = {[-0.5,0,0.5],[0.5,-0.5,0.5],[0.1,0.2,0.3],[0.3,-0.3,0.3],[0.2,0.2,0.2]};
+v1 = {-2:2};
+v2 = {-2:2};
+v3 = {-2:2};</text>
+</varsrandom>
+<varsglobal><text>Q = sublist(QQ,[0:9]);
+R = sublist(QQ,[9:18]);
+a1 = Q[0]*l[0]*R[0] + Q[1]*l[1]*R[3] + Q[2]*l[2]*R[6];
+a4 = Q[3]*l[0]*R[0] + Q[4]*l[1]*R[3] + Q[5]*l[2]*R[6];
+a7 = Q[6]*l[0]*R[0] + Q[7]*l[1]*R[3] + Q[8]*l[2]*R[6];
+a2 = Q[0]*l[0]*R[1] + Q[1]*l[1]*R[4] + Q[2]*l[2]*R[7];
+a5 = Q[3]*l[0]*R[1] + Q[4]*l[1]*R[4] + Q[5]*l[2]*R[7];
+a8 = Q[6]*l[0]*R[1] + Q[7]*l[1]*R[4] + Q[8]*l[2]*R[7];
+a3 = Q[0]*l[0]*R[2] + Q[1]*l[1]*R[5] + Q[2]*l[2]*R[8];
+a6 = Q[3]*l[0]*R[2] + Q[4]*l[1]*R[5] + Q[5]*l[2]*R[8];
+a9 = Q[6]*l[0]*R[2] + Q[7]*l[1]*R[5] + Q[8]*l[2]*R[8];
+rho = max(abs(l[0]),abs(l[1]),abs(l[2]));
+A1 = [a1 - l[0], a5 - l[0], a9 - l[0]];
+A2 = [a1 - l[1], a5 - l[1], a9 - l[1]];
+A3 = [a1 - l[2], a5 - l[2], a9 - l[2]];
+ux1 = a1*v1 + a2*v2 + a3*v3;
+ux2 = a4*v1 + a5*v2 + a6*v3;
+ux3 = a7*v1 + a8*v2 + a9*v3;
+x21 = v1 + ux1;
+x22 = v2 + ux2;
+x23 = v3 + ux3;
+A_Linf = max(abs(a1)+abs(a2) + abs(a3),abs(a4)+abs(a5) + abs(a6),abs(a7)+abs(a8) + abs(a9));
+v_Linf = max(abs(v1),abs(v2),abs(v3));
+A_err = A_Linf*A_Linf*v_Linf/(1 - A_Linf);
+A_Linf2 = A_Linf*A_Linf;
+A_Linfm1 = 1 - A_Linf;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>6</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[v1,v2,v3,x21,x22,x23]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Vypočítejte prostou iterační metodou aproximace řešení soustavy<br></p><p>\( \mathbf{x}^{(1)} = \left( \right. \) {_0}, {_1},&nbsp;{_2} \( \left. \right)^T, \) \( \mathbf{x}^{(2)} = \left( \right. \) {_3}, {_4}, {_5} \( \left. \right)^T. \)</p><p>Jako počáteční aproximaci použijte \( \mathbf{x}^{(0)} = \left( \begin{array}{c} 0 \\ 0 \\ 0 \end{array} 
+\right). \)<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>Výpočet iterací máte správně.<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>\( \mathbf{x}^{(1)} = \mathbf{U} \mathbf{x}^{(0)} + \mathbf{v}, \)</p><p>\( \mathbf{x}^{(2)} = \mathbf{U} \mathbf{x}^{(1)} + \mathbf{v} \)<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>A_err</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Odhadněte chybu iterace \( \mathbf{x}^{(2)} \) v řádkové normě:</p><p>\( \left\| \mathbf{x}^{(2)} - \mathbf{x}^* \right\|_\infty \leq \) {_0}<br></p><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p></p><p></p><p>\( \left\| \mathbf{x}^{(k)} - \mathbf{x}^* \right\|_\infty \leq \frac{\left\| \mathbf{U} \right\|^k_\infty}{1 - \left\| \mathbf{U} \right\|_\infty} \left\| \mathbf{x}^{(1)} - \mathbf{x}^{(0)} \right\|_\infty&nbsp; \)<br></p><br><p></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text><![CDATA[<p>--<br></p>]]></text>
+    </hint>
+    <hint format="html">
+      <text><![CDATA[<p>--<br></p>]]></text>
+    </hint>
+  </question>
+
+<!-- question: 128964  -->
+  <question type="formulas">
+    <name>
+      <text>Výpočet iterací PIM - složitější 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><p>Je dána soustava rovnic \(&nbsp;\mathbf{x} =&nbsp;\mathbf{U}&nbsp;\mathbf{x} +&nbsp;\mathbf{v} \), kde <br></p><p>\(
+ \mathbf{U} = \left( \begin{array}{c c c} {a1} &amp; {a2} &amp; {a3} \\ 
+{a4} &amp; {a5} &amp; {a6} \\&nbsp;{a7} &amp; {a8} &amp; {a9} \end{array} 
+\right), \; \mathbf{v} = \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right). \)</p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><p><b>Výpočet iterací:</b><br></p><p>\( \mathbf{x}^{(1)} = \mathbf{U} \mathbf{x}^{(0)} + \mathbf{v}, \)</p><p>\( \mathbf{x}^{(1)} = \left( \begin{array}{c} 0 \\ 0 \\ 0 \end{array} 
+\right) + \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right) = \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right), \)</p><p>\( \mathbf{x}^{(2)} = \mathbf{U} \mathbf{x}^{(1)} + \mathbf{v}, \)<br></p><p>\( \mathbf{x}^{(2)} = \left( \begin{array}{c c c} {a1} &amp; {a2} &amp; {a3} \\ {a4} &amp; 
+{a5} &amp; {a6} \\&nbsp;{a7} &amp; {a8} &amp; {a9} \end{array} \right) \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right) + \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right) \)</p><p>\( \mathbf{x}^{(2)} = \left( \begin{array}{c} {ux1} \\ 
+{ux2} \\&nbsp;{ux3} \end{array} 
+\right) + \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right) =&nbsp;\left( \begin{array}{c} {x21} \\ 
+{x22} \\&nbsp;{x23} \end{array} 
+\right) \)</p><br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>QQ = {[0,2,1,1,1,2,0,0,1,-0.5,1,-1.5,0.5,0,-0.5,0,0,1],[1,1,0,0,1,1,0,0,1,1,-1,1,0,1,-1,0,0,1]};
+l = {[-0.5,0,0.5],[0.5,-0.5,0.5],[0.1,0.2,0.3],[0.3,-0.3,0.3],[0.2,0.2,0.2]};
+v1 = {-2:2};
+v2 = {-2:2};
+v3 = {-2:2};</text>
+</varsrandom>
+<varsglobal><text>Q = sublist(QQ,[0:9]);
+R = sublist(QQ,[9:18]);
+a1 = Q[0]*l[0]*R[0] + Q[1]*l[1]*R[3] + Q[2]*l[2]*R[6];
+a4 = Q[3]*l[0]*R[0] + Q[4]*l[1]*R[3] + Q[5]*l[2]*R[6];
+a7 = Q[6]*l[0]*R[0] + Q[7]*l[1]*R[3] + Q[8]*l[2]*R[6];
+a2 = Q[0]*l[0]*R[1] + Q[1]*l[1]*R[4] + Q[2]*l[2]*R[7];
+a5 = Q[3]*l[0]*R[1] + Q[4]*l[1]*R[4] + Q[5]*l[2]*R[7];
+a8 = Q[6]*l[0]*R[1] + Q[7]*l[1]*R[4] + Q[8]*l[2]*R[7];
+a3 = Q[0]*l[0]*R[2] + Q[1]*l[1]*R[5] + Q[2]*l[2]*R[8];
+a6 = Q[3]*l[0]*R[2] + Q[4]*l[1]*R[5] + Q[5]*l[2]*R[8];
+a9 = Q[6]*l[0]*R[2] + Q[7]*l[1]*R[5] + Q[8]*l[2]*R[8];
+rho = max(abs(l[0]),abs(l[1]),abs(l[2]));
+A1 = [a1 - l[0], a5 - l[0], a9 - l[0]];
+A2 = [a1 - l[1], a5 - l[1], a9 - l[1]];
+A3 = [a1 - l[2], a5 - l[2], a9 - l[2]];
+ux1 = a1*v1 + a2*v2 + a3*v3;
+ux2 = a4*v1 + a5*v2 + a6*v3;
+ux3 = a7*v1 + a8*v2 + a9*v3;
+x21 = v1 + ux1;
+x22 = v2 + ux2;
+x23 = v3 + ux3;
+A_Linf = max(abs(a1)+abs(a2) + abs(a3),abs(a4)+abs(a5) + abs(a6),abs(a7)+abs(a8) + abs(a9));
+v_Linf = max(abs(v1),abs(v2),abs(v3));
+A_err = A_Linf*A_Linf*v_Linf/(1 - A_Linf);
+A_Linf2 = A_Linf*A_Linf;
+A_Linfm1 = 1 - A_Linf;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>6</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[v1,v2,v3,x21,x22,x23]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><p>Vypočítejte prostou iterační metodou aproximace řešení soustavy<br></p><p>\(
+ \mathbf{x}^{(1)} = \left( \right. \) {_0}, {_1},&nbsp;{_2} \( \left. 
+\right)^T, \) \( \mathbf{x}^{(2)} = \left( \right. \) {_3}, {_4}, {_5} 
+\( \left. \right)^T. \)</p><p>Jako počáteční aproximaci použijte \( \mathbf{x}^{(0)} = \left( \begin{array}{c} 0 \\ 0 \\ 0 \end{array} 
+\right). \)</p><br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>Výpočet iterací máte správně.<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p><p>\( \mathbf{x}^{(1)} = \mathbf{U} \mathbf{x}^{(0)} + \mathbf{v}, \)</p><p>\( \mathbf{x}^{(2)} = \mathbf{U} \mathbf{x}^{(1)} + \mathbf{v} \)</p><br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text><![CDATA[<p>--<br></p>]]></text>
+    </hint>
+  </question>
+
+<!-- question: 128965  -->
+  <question type="formulas">
+    <name>
+      <text>Výpočet iterací PIM - složitější 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p>Je dána soustava rovnic \(&nbsp;\mathbf{x} =&nbsp;\mathbf{U}&nbsp;\mathbf{x} +&nbsp;\mathbf{v} \), kde <br></p><p>\(
+ \mathbf{U} = \left( \begin{array}{c c c} {a1} &amp; {a2} &amp; {a3} \\ 
+{a4} &amp; {a5} &amp; {a6} \\&nbsp;{a7} &amp; {a8} &amp; {a9} \end{array} 
+\right), \; \mathbf{v} = \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right). \)</p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p></p><p><b>Výpočet iterací:</b><br></p><p>\( \mathbf{x}^{(1)} = \mathbf{U} \mathbf{x}^{(0)} + \mathbf{v}, \)</p><p><p>\( \mathbf{x}^{(1)} = \left( \begin{array}{c c c} {a1} &amp; {a2} &amp; {a3} \\ {a4} &amp; 
+{a5} &amp; {a6} \\&nbsp;{a7} &amp; {a8} &amp; {a9} \end{array} \right) \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right) + \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right) \)</p><p>\( \mathbf{x}^{(1)} = \left( \begin{array}{c} {ux1} \\ 
+{ux2} \\&nbsp;{ux3} \end{array} 
+\right) + \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right) =&nbsp;\left( \begin{array}{c} {x11} \\ 
+{x12} \\&nbsp;{x13} \end{array} 
+\right) \)</p></p><p>\( \mathbf{x}^{(2)} = \mathbf{U} \mathbf{x}^{(1)} + \mathbf{v}, \)<br></p><p></p><p>\( \mathbf{x}^{(2)} = \left( \begin{array}{c c c} {a1} &amp; {a2} &amp; {a3} \\ {a4} &amp; 
+{a5} &amp; {a6} \\&nbsp;{a7} &amp; {a8} &amp; {a9} \end{array} \right) \left( \begin{array}{c} {x11} \\ 
+{x12} \\&nbsp;{x13} \end{array} 
+\right) + \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right) \)</p><p>\( \mathbf{x}^{(2)} = \left( \begin{array}{c} {ux21} \\ 
+{ux22} \\&nbsp;{ux23} \end{array} 
+\right) + \left( \begin{array}{c} {v1} \\ 
+{v2} \\&nbsp;{v3} \end{array} 
+\right) =&nbsp;\left( \begin{array}{c} {x21} \\ 
+{x22} \\&nbsp;{x23} \end{array} 
+\right) \)</p><p></p><br><p></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>QQ = {[0,2,1,1,1,2,0,0,1,-0.5,1,-1.5,0.5,0,-0.5,0,0,1],[1,1,0,0,1,1,0,0,1,1,-1,1,0,1,-1,0,0,1]};
+l = {[-0.5,0,0.5],[0.5,-0.5,0.5],[0.1,0.2,0.3],[0.3,-0.3,0.3],[0.2,0.2,0.2]};
+v1 = {-2:2};
+v2 = {-2:2};
+v3 = {-2:2};</text>
+</varsrandom>
+<varsglobal><text>Q = sublist(QQ,[0:9]);
+R = sublist(QQ,[9:18]);
+a1 = Q[0]*l[0]*R[0] + Q[1]*l[1]*R[3] + Q[2]*l[2]*R[6];
+a4 = Q[3]*l[0]*R[0] + Q[4]*l[1]*R[3] + Q[5]*l[2]*R[6];
+a7 = Q[6]*l[0]*R[0] + Q[7]*l[1]*R[3] + Q[8]*l[2]*R[6];
+a2 = Q[0]*l[0]*R[1] + Q[1]*l[1]*R[4] + Q[2]*l[2]*R[7];
+a5 = Q[3]*l[0]*R[1] + Q[4]*l[1]*R[4] + Q[5]*l[2]*R[7];
+a8 = Q[6]*l[0]*R[1] + Q[7]*l[1]*R[4] + Q[8]*l[2]*R[7];
+a3 = Q[0]*l[0]*R[2] + Q[1]*l[1]*R[5] + Q[2]*l[2]*R[8];
+a6 = Q[3]*l[0]*R[2] + Q[4]*l[1]*R[5] + Q[5]*l[2]*R[8];
+a9 = Q[6]*l[0]*R[2] + Q[7]*l[1]*R[5] + Q[8]*l[2]*R[8];
+rho = max(abs(l[0]),abs(l[1]),abs(l[2]));
+A1 = [a1 - l[0], a5 - l[0], a9 - l[0]];
+A2 = [a1 - l[1], a5 - l[1], a9 - l[1]];
+A3 = [a1 - l[2], a5 - l[2], a9 - l[2]];
+ux1 = a1*v1 + a2*v2 + a3*v3;
+ux2 = a4*v1 + a5*v2 + a6*v3;
+ux3 = a7*v1 + a8*v2 + a9*v3;
+x11 = v1 + ux1;
+x12 = v2 + ux2;
+x13 = v3 + ux3;
+ux21 = a1*x11 + a2*x12 + a3*x13;
+ux22 = a4*x11 + a5*x12 + a6*x13;
+ux23 = a7*x11 + a8*x12 + a9*x13;
+x21 = v1 + ux21;
+x22 = v2 + ux22;
+x23 = v3 + ux23;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>6</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x11,x12,x13,x21,x22,x23]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p>Vypočítejte prostou iterační metodou aproximace řešení soustavy<br></p><p>\(
+ \mathbf{x}^{(1)} = \left( \right. \) {_0}, {_1},&nbsp;{_2} \( \left. 
+\right)^T, \) \( \mathbf{x}^{(2)} = \left( \right. \) {_3}, {_4}, {_5} 
+\( \left. \right)^T. \)</p><p>Jako počáteční aproximaci použijte \( \mathbf{x}^{(0)} = \mathbf{v}. \)</p><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>Výpočet iterací máte správně.<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p></p><p>\( \mathbf{x}^{(1)} = \mathbf{U} \mathbf{x}^{(0)} + \mathbf{v}, \)</p><p>\( \mathbf{x}^{(2)} = \mathbf{U} \mathbf{x}^{(1)} + \mathbf{v} \)</p><br><p></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text><![CDATA[<p>--<br></p>]]></text>
+    </hint>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$module$/top/Prostá iterační metoda/Ověření konvergence</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 128961  -->
+  <question type="multichoice">
+    <name>
+      <text>Konvergence PIM - nekonv. - 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava rovnic \( \mathbf{x} = \mathbf{U} \mathbf{x} + \mathbf{v} \), kde</p><p>\( \mathbf{U} = \left( \begin{array}{c c c} 0.9 &amp; 0.4 &amp; 0 \\ 0.4 &amp; 0.4 &amp; 0.4 \\ 0 &amp; 0.4 &amp; 0.3 \end{array} \right), \,&nbsp;\mathbf{v} = \left( \begin{array}{c} 0.2 \\ 0.2 \\ 0.2 \end{array} \right). \)</p><p>Rozhodněte, zda (a případně proč) je pro danou soustavu prostá iterační metoda konvergentní.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Bohužel, norma \( \left\| \mathbf{U} \right\|_\infty &gt; 1 \).<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Tato implikace neplatí - pokud je lib. norma větší než 1, metoda konvergovat může i nemusí.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Matice \( \mathbf{U} \) není ODD \( \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Konvergence prosté iterační metody nezávisí na tom, zda je matice ODD.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{v} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Nikoliv, konvergence na normě vektoru \( \mathbf{v} \) nezávisí.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 128970  -->
+  <question type="multichoice">
+    <name>
+      <text>Konvergence PIM - nekonv. - 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava rovnic \( \mathbf{x} = \mathbf{U} \mathbf{x} + \mathbf{v} \), kde</p><p>\( \mathbf{U} = \left( \begin{array}{c c c} 1.4 &amp; 0.1 &amp; 0.1 \\ 0 &amp; 1.2 &amp; -1 \\ 0 &amp; 0 &amp; 0.2 \end{array} \right), \,&nbsp;\mathbf{v} = \left( \begin{array}{c} -0.3 \\ -0.3 \\ -0.3 \end{array} \right). \)</p><p>Rozhodněte, zda (a případně proč) je pro danou soustavu prostá iterační metoda konvergentní.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Bohužel, norma \( \left\| \mathbf{U} \right\|_\infty &gt; 1 \).<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Tato implikace neplatí - pokud je lib. norma větší než 1, metoda konvergovat může i nemusí.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Matice \( \mathbf{U} \) není ODD \( \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Konvergence prosté iterační metody nezávisí na tom, zda je matice ODD.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{v} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Nikoliv, konvergence na normě vektoru \( \mathbf{v} \) nezávisí.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 128971  -->
+  <question type="multichoice">
+    <name>
+      <text>Konvergence PIM - nekonv. - 3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava rovnic \( \mathbf{x} = \mathbf{U} \mathbf{x} + \mathbf{v} \), kde</p><p>\( \mathbf{U} = \left( \begin{array}{c c c} 0.3 &amp; 0.6 &amp; 0 \\ 0 &amp; 0.5 &amp; -1 \\ 0 &amp; -1 &amp; 0.5 \end{array} \right), \,&nbsp;\mathbf{v} = \left( \begin{array}{c} -0.4 \\ 1 \\ 1 \end{array} \right). \)</p><p>Rozhodněte, zda (a případně proč) je pro danou soustavu prostá iterační metoda konvergentní.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Bohužel, norma \( \left\| \mathbf{U} \right\|_\infty &gt; 1 \).<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Tato implikace neplatí - pokud je lib. norma větší než 1, metoda konvergovat může i nemusí.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Matice \( \mathbf{U} \) není ODD \( \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Konvergence prosté iterační metody nezávisí na tom, zda je matice ODD.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{v} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Nikoliv, konvergence na normě vektoru \( \mathbf{v} \) nezávisí.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 128955  -->
+  <question type="multichoice">
+    <name>
+      <text>Konvergence PIM - norma - 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava rovnic \( \mathbf{x} = \mathbf{U} \mathbf{x} + \mathbf{v} \), kde</p><p>\( \mathbf{U} = \left( \begin{array}{c c c} 0.3 &amp; -0.2 &amp; 0.2 \\ 0.2 &amp; 0.1 &amp; -0.1 \\ 0.2 &amp; 0.1 &amp; 0.2 \end{array} \right), \,&nbsp;\mathbf{v} = \left( \begin{array}{c} 0.3 \\ 0.2 \\ 0.2 \end{array} \right). \)</p><p>Rozhodněte, zda (a případně proč) je pro danou soustavu prostá iterační metoda konvergentní.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Ano \( \left\| \mathbf{U} \right\|_\infty &lt; 1 \implies&nbsp;\rho \left( \mathbf{U} \right) &lt; 1, \) čili metoda konverguje.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Ano, v tomto případě ale platí i postačující podmínka - např. řádková norma matice \( \mathbf{U} \) je menší než 1. Takto se můžeme výpočtu vl. čísel vyhnout.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Tato implikace neplatí - pokud je lib. norma větší než 1, metoda konvergovat může i nemusí. Navíc řádková norma této matice je menší než 1 ...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Matice \( \mathbf{U} \) není ODD \( \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Konvergence prosté iterační metody nezávisí na tom, zda je matice ODD.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{v} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Nikoliv, konvergence na normě vektoru \( \mathbf{v} \) nezávisí.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 128966  -->
+  <question type="multichoice">
+    <name>
+      <text>Konvergence PIM - norma - 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava rovnic \( \mathbf{x} = \mathbf{U} \mathbf{x} + \mathbf{v} \), kde</p><p>\( \mathbf{U} = \left( \begin{array}{c c c} 0.1 &amp; -0.4 &amp; 0.4 \\ 0.4 &amp; 0.1 &amp; 0.4 \\ 0.4 &amp; 0.4 &amp; 0.1 \end{array} \right), \,&nbsp;\mathbf{v} = \left( \begin{array}{c} 0.2 \\ 0.4 \\ 0.2 \end{array} \right). \)</p><p>Rozhodněte, zda (a případně proč) je pro danou soustavu prostá iterační metoda konvergentní.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Ano \( \left\| \mathbf{U} \right\|_\infty &lt; 1 \implies&nbsp;\rho \left( \mathbf{U} \right) &lt; 1, \) čili metoda konverguje.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Ano, v tomto případě ale platí i postačující podmínka - např. řádková norma matice \( \mathbf{U} \) je menší než 1. Takto se můžeme výpočtu vl. čísel vyhnout.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Tato implikace neplatí - pokud je lib. norma větší než 1, metoda konvergovat může i nemusí. Navíc řádková norma této matice je menší než 1 ...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Matice \( \mathbf{U} \) není ODD \( \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Konvergence prosté iterační metody nezávisí na tom, zda je matice ODD.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{v} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Nikoliv, konvergence na normě vektoru \( \mathbf{v} \) nezávisí.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 128967  -->
+  <question type="multichoice">
+    <name>
+      <text>Konvergence PIM - norma - 3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava rovnic \( \mathbf{x} = \mathbf{U} \mathbf{x} + \mathbf{v} \), kde</p><p>\( \mathbf{U} = \left( \begin{array}{c c c} -0.1 &amp; -0.1 &amp; 0.1 \\ -0.1 &amp; 0.2 &amp; 0.1 \\ 0.1 &amp; 0.1 &amp; 0.1 \end{array} \right), \,&nbsp;\mathbf{v} = \left( \begin{array}{c} 0.1 \\ -0.1 \\ 0.1 \end{array} \right). \)</p><p>Rozhodněte, zda (a případně proč) je pro danou soustavu prostá iterační metoda konvergentní.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Ano \( \left\| \mathbf{U} \right\|_\infty &lt; 1 \implies&nbsp;\rho \left( \mathbf{U} \right) &lt; 1, \) čili metoda konverguje.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Ano, v tomto případě ale platí i postačující podmínka - např. řádková norma matice \( \mathbf{U} \) je menší než 1. Takto se můžeme výpočtu vl. čísel vyhnout.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Tato implikace neplatí - pokud je lib. norma větší než 1, metoda konvergovat může i nemusí. Navíc řádková norma této matice je menší než 1 ...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Matice \( \mathbf{U} \) není ODD \( \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Konvergence prosté iterační metody nezávisí na tom, zda je matice ODD.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{v} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Nikoliv, konvergence na normě vektoru \( \mathbf{v} \) nezávisí.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 128960  -->
+  <question type="multichoice">
+    <name>
+      <text>Konvergence PIM - spektr. - 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava rovnic \( \mathbf{x} = \mathbf{U} \mathbf{x} + \mathbf{v} \), kde</p><p>\( \mathbf{U} = \left( \begin{array}{c c c} 0.6 &amp; 0.3 &amp; 0.3 \\ 0.3 &amp; 0.4 &amp; 0 \\ 0.3 &amp; 0 &amp; 0.4 \end{array} \right), \,&nbsp;\mathbf{v} = \left( \begin{array}{c} 0.4 \\ -0.4 \\ 0.4 \end{array} \right). \)</p><p>Rozhodněte, zda (a případně proč) je pro danou soustavu prostá iterační metoda konvergentní.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Bohužel, norma \( \left\| \mathbf{U} \right\|_\infty &gt; 1 \).<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Ano, správně.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Tato implikace neplatí - pokud je lib. norma větší než 1, metoda konvergovat může i nemusí.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Matice \( \mathbf{U} \) není ODD \( \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Konvergence prosté iterační metody nezávisí na tom, zda je matice ODD.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{v} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Nikoliv, konvergence na normě vektoru \( \mathbf{v} \) nezávisí.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 128968  -->
+  <question type="multichoice">
+    <name>
+      <text>Konvergence PIM - spektr. - 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava rovnic \( \mathbf{x} = \mathbf{U} \mathbf{x} + \mathbf{v} \), kde</p><p>\( \mathbf{U} = \left( \begin{array}{c c c} 0.2 &amp; 2 &amp; 2 \\ 0 &amp; 0.3 &amp; 2 \\ 0 &amp; 0 &amp; 0.6 \end{array} \right), \,&nbsp;\mathbf{v} = \left( \begin{array}{c} 1 \\ -2 \\ 2 \end{array} \right). \)</p><p>Rozhodněte, zda (a případně proč) je pro danou soustavu prostá iterační metoda konvergentní.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Bohužel, norma \( \left\| \mathbf{U} \right\|_\infty &gt; 1 \).<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Ano, správně.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Tato implikace neplatí - pokud je lib. norma větší než 1, metoda konvergovat může i nemusí.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Matice \( \mathbf{U} \) není ODD \( \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Konvergence prosté iterační metody nezávisí na tom, zda je matice ODD.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{v} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Nikoliv, konvergence na normě vektoru \( \mathbf{v} \) nezávisí.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 128969  -->
+  <question type="multichoice">
+    <name>
+      <text>Konvergence PIM - spektr. - 3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava rovnic \( \mathbf{x} = \mathbf{U} \mathbf{x} + \mathbf{v} \), kde</p><p>\( \mathbf{U} = \left( \begin{array}{c c c} 0.2 &amp; 0 &amp; 0.1 \\ 1 &amp; 0.3 &amp; -1 \\ 0.1 &amp; 0 &amp; 0.2 \end{array} \right), \,&nbsp;\mathbf{v} = \left( \begin{array}{c} 0.1 \\ 0 \\ 1 \end{array} \right). \)</p><p>Rozhodněte, zda (a případně proč) je pro danou soustavu prostá iterační metoda konvergentní.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Bohužel, norma \( \left\| \mathbf{U} \right\|_\infty &gt; 1 \).<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Ano, správně.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{U} \right\|_\infty &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Tato implikace neplatí - pokud je lib. norma větší než 1, metoda konvergovat může i nemusí.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Matice \( \mathbf{U} \) není ODD \( \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Konvergence prosté iterační metody nezávisí na tom, zda je matice ODD.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Norma \( \left\| \mathbf{v} \right\|_\infty &lt; 1 \implies \) metoda konverguje<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Nikoliv, konvergence na normě vektoru \( \mathbf{v} \) nezávisí.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Spektrální poloměr \( \rho \left( \mathbf{U} \right) &gt; 1 \implies \) metoda nekonverguje<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>

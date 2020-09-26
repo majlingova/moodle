@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068</text>
+    </category>
+    <info format="html">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "B192-2011068".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 4/Otázky_dvojný</text>
+    </category>
+    <info format="html">
+      <text>Otázky k dvojným integrálům.</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 132977  -->
+  <question type="multichoice">
+    <name>
+      <text>a. otázky 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Jaká musí být funkce f(x,y), abychom ji mohli integrovat v obdélníku D?</b></p><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p></p><pre>kladná</pre><br><p></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>nemusí<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p></p><pre>spojitá a omezená</pre><br><p></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>OK<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p></p><pre>monotónní</pre><br><p></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>nemusí<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p></p><pre>periodická</pre><br><p></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>nemusí<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 133134  -->
+  <question type="multichoice">
+    <name>
+      <text>a. otazky 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Polární souřadnice s výhodou používáme v případě, kdy oborem integrace dvojného integrálu je:</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>kruh<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>správně<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[obdélník<br>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>kosočtverec<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>část roviny, ohraničená parabolou a úsečkou<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>to bychom si moc nepomohli<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 132978  -->
+  <question type="multichoice">
+    <name>
+      <text>b. otázky 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Jaký geometrický útvar určuje množina bodů</b> <br></p><p>\( \{[x, y]:\in\mathbb{E}_2:\&nbsp; x\in\langle  a,b \rangle , y\in \langle a,b \rangle\} \)</p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>kruh<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>obdélník<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>"skoro"<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>čtverec<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>ANO!<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>parabolu<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>To snad nemyslíte vážně !<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 133135  -->
+  <question type="multichoice">
+    <name>
+      <text>b. otázky 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<b>Polární poloměr </b>\(r\) může nabývat hodnot:]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>jen celočíselných<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[dost divné...<br>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>jen kladných<br><br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>ano<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>jen záporných<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>to snad nemyslíte vážně<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>&nbsp;reálných<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>i záporných?<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 132979  -->
+  <question type="multichoice">
+    <name>
+      <text>c. otázky 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Jaké je obecně pořadí výpočtu jednotlivých integrálů v dvojnásobném integrálu funkce f(x, y)?</b></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text>nejprve počítáme vnější integrál, pak teprve vnitřní</text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>na pořadí nezáleží</text>
+      <feedback format="html">
+        <text><![CDATA[většinou záleží...<br>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>nejprve počítáme vnitřní integrál, pak teprve vnější</text>
+      <feedback format="html">
+        <text><![CDATA[<p>ANO!<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>oba integrály počítáme současně</text>
+      <feedback format="html">
+        <text><![CDATA[<p>to je možné jenom někdy...<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 133136  -->
+  <question type="multichoice">
+    <name>
+      <text>c. otázky 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<b>Transformační rovnice</b> z kartézské do polární soustavy souřadnic mají tvar:]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text>\(\displaystyle\begin{array}{l}x = r + \cos\varphi\\y = r \sin \varphi \end{array}\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne, koukněte do skript (str.58, vydání 2016).<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\displaystyle\begin{array}{l}x = r \cos \varphi\\ y = r + \sin \varphi\end{array}\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne, koukněte do skript (str.58, vydání 2016)<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>\(\displaystyle\begin{array}{l}x=r\cos \varphi\\ y=r\sin \varphi \end{array}\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>ano<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\displaystyle\begin{array}{l}x=r\sin \varphi\\ y=r\cos \varphi\end{array}\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne, koukněte do skript (str.58, vydání 2016)<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 132980  -->
+  <question type="multichoice">
+    <name>
+      <text>d. otázky 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[J<b>aký tvar musí mít funkce \(f(x,y)\), abychom mohli v obdélníku \(D\) integrovat současně oba integrály
+ (podle proměnné \(x\) i \(y\))?</b>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text>\(f_1(x, y)\cdot f_2(y)\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(f_1(x)\cdot f_2(x, y)\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>\(f_1(x)\cdot f_2(y)\)</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(f_1(x)+ f_2(y)\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>to snad nemyslíte vážně ...<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 133138  -->
+  <question type="multichoice">
+    <name>
+      <text>d. otázky 2</text>
+    </name>
+    <questiontext format="html">
+      <text>Kruh se středem v počátku soustavy souřadnic a poloměrem \(R\) se zobrazí v polární soustavě souřadnic jako:</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text>kosočtverec</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>kruh<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>obdélník<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>část roviny ohraničená parabolou a úsečkou<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 132981  -->
+  <question type="multichoice">
+    <name>
+      <text>e. otázky 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Která z následujících množin je zapsána jako <b>elementární obor integrace (EOI )vzhledem k ose x</b>?]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text>\(\Omega:\displaystyle\begin{array}{l} 0\leq y\leq 3\\0 \leq x \leq 3 - y\end{array}\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>to není vzhledem k ose \(x\)<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>\(\Omega :\displaystyle\begin{array}{l}0\leq x\leq 3\\0 \leq y \leq 3 - x\end{array}\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>ANO!<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\Omega :\displaystyle\begin{array}{l}0\leq y\leq 3-x,\\ 0 \leq x \leq 3 - y\end{array}\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>přečtěte si skripta, str.56 (vydání 2016)<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\Omega :\displaystyle\begin{array}{l}0\leq x\leq 3\\0 \leq y \leq x + y = 3\end{array}\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>to snad nemyslíte vážně...<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 133139  -->
+  <question type="multichoice">
+    <name>
+      <text>e. otázky 2</text>
+    </name>
+    <questiontext format="html">
+      <text>Integrand \(x^2 + y^2\) nahradíme v polárních souřadnicích výrazem:</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(r\)<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\varphi\)<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>\(r^2\)<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\varphi^2\)<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 132982  -->
+  <question type="multichoice">
+    <name>
+      <text>f. otázky 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Která z následujících množin je zapsána jako <b>elementární obor integrace (EOI )vzhledem k ose y ?</b>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text>\(\Omega:\displaystyle\begin{array}{l}0\leq y\leq 3 \\0 \leq x \leq 3 - y\end{array}\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>ANO!<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\Omega:\displaystyle\begin{array}{l}0\leq x\leq 3\\0 \leq y \leq 3 - x\end{array}\)</text>
+      <feedback format="html">
+        <text>to není vzhledem k ose y</text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\Omega:\displaystyle\begin{array}{l}0\leq y\leq 3-x,\\ 0 \leq x \leq 3 - y\end{array}\)<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>přečtěte si skripta (str. 56, vydání 2016)<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\Omega:\displaystyle\begin{array}{l}0\leq x\leq 3\\0 \leq y \leq x + y = 3\end{array}\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>to snad nemyslíte vážně...<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 133140  -->
+  <question type="multichoice">
+    <name>
+      <text>f. otázky 2</text>
+    </name>
+    <questiontext format="html">
+      <text>Výraz \(dxdy\) nahradíme v polárních souřadnicích výrazem:</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text>\(r^2\ d r\ d \varphi\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>koukněte do skript (str.58, vyd. 2016)<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(( r\ + \varphi )\ d r\ d \varphi\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>koukněte do skript (str.58, vyd. 2016)<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(r \ \varphi\  d r\ d \varphi\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>koukněte do skript (str.58, vyd. 2016)<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>r\(\  d r\ d \varphi\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>ano<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 132983  -->
+  <question type="multichoice">
+    <name>
+      <text>g. otázky 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Záměna pořadí integrace</b> v <br></p><p>\(\displaystyle\int_c^d\left(\int_{h_1(y)}^{h_2(y)} f(x,y)\ dx\right)dy\) <br></p><p>znamená řešit tento integrál ve tvaru:</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text>\(\displaystyle\int_c^d\left(\int_{h_1(y)}^{h_2(y)} f(x,y)\ dy\right)dx\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(\displaystyle\int_{h_1(y)}^{h_2(y)}\left( \int_c^d f(x,y)\ dx\right)dy\)<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>fuj!<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\displaystyle\int_{g_1(x)}^{g_2(x)}\left(\int_a^b f(x,y)\ dy\right)dx\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>fuj!<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>\(\displaystyle\int_a^b\left(\int_{g_1(x)}^{g_2(x)} f(x,y)\ dy\right)dx\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>ANO!<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 133141  -->
+  <question type="multichoice">
+    <name>
+      <text>g. otázky 2</text>
+    </name>
+    <questiontext format="html">
+      <text>Nerovnice pro polární souřadnice, je-li oborem integrace část roviny ohraničená kružnicí \(x^2+y^2=6y\), mají tvar:</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[\(\begin{array}{l}0\leq \varphi \leq2 \pi \\ 0 &lt;  r  \leq 6\cos \varphi \end{array}\)]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[\(\begin{array}{l}- \pi \leq \varphi \leq \pi \\0 &lt;  r  \leq 36\sin \varphi  \end{array}\)]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[\(\begin{array}{l} 0\leq \varphi \leq \pi\\ 0 &lt;  r  \leq 12\sin \varphi  \end{array}\)]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[\(\begin{array}{l}0\leq \varphi \leq \pi \\0 &lt;  r  \leq 6\sin \varphi  \end{array}\)]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>ano<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 132984  -->
+  <question type="multichoice">
+    <name>
+      <text>h. otázky 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Převést dvojný integrál</b> <br></p><p>\(\displaystyle \iint_\Omega f(x,y)\ dxdy\),
+přičemž  \(\Omega\) je EOI\(_x\) (elementární obor integrace vzhledem k ose \(x\), ) <br></p><p> <b>na dvojnásobný</b>, znamená zapsat jej ve tvaru:</p><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text>\(\displaystyle\int_c^d\int_{h_1(y)}^{h_2(y)} f(x,y)\ dx\ dy\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>\( \Omega \) není EOI\(_y\)...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\displaystyle\int_c^d\int_{h_1(y)}^{h_2(y)}  f(x,y)\ dy\ dx\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text>\(\displaystyle\int_a^b\int_{g_1(x)}^{g_2(x)} f(x,y)\ dx\ dy\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text>\(\displaystyle\int_a^b\int_{g_1(x)}^{g_2(x)} f(x,y)\ dy\ dx\)</text>
+      <feedback format="html">
+        <text><![CDATA[<p>ANO!<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 133137  -->
+  <question type="multichoice">
+    <name>
+      <text>h. otázky 2</text>
+    </name>
+    <questiontext format="html">
+      <text>Kruh se středem v počátku soustavy souřadnic a poloměrem \(R\) popisují v polární soustavě souřadnic nerovnice:</text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[\(\displaystyle\begin{array}{l}0 &lt; r \leq R\\ 0 \leq  \varphi  &lt; 2 \pi\end{array}\)]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>ano<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[\(\displaystyle\begin{array}{c}-R \leq&nbsp; r&nbsp; \leq R\\ 0 \leq&nbsp; \varphi&nbsp; &lt; 2 \pi\end{array}\)]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>záporné \(r\)? ... koukněte do skript (str.58, vyd. 2016)<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[\(\displaystyle\begin{array}{l}0&lt; r \leq R\\ 0\leq \varphi \leq \pi\end{array}\)]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>to nebude celý kruh<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[\(\displaystyle\begin{array}{l}0&lt; r \leq R\\0&lt; \varphi \leq R\end{array}\)]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>to je divné...<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>

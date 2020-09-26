@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Zkouskova prednaska 12.5.</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 157000  -->
+  <question type="combined">
+    <name>
+      <text>A1 - GS Jacobi - mod</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p>Je dána soustava lineárních rovnic tvaru \(A X = B\), kde</p><center>\[ A = \left ( \begin {array}{rrr} 2 &amp; 1 &amp; -1 \\ 1 &amp; 2 &amp; 1 \\ -1 &amp; -1 &amp; 2 \end {array} \right ), B = \left ( \begin {array}{r} 5 \\ 3 \\ 1 \end {array}\right ), \]</center>a) Rozhodněte, zda daná matice \( A \) je [[2:multiresponse:v]]<br><p></p><p>b) Pro danou matici \(A\) platí [[4:multiresponse:v]]</p><p><span style="font-size: 0.9375rem;">c) Volte \(X^0=(1,1,1)\) a proveďte výpočet \(X^1\) Gaussovou-Seidelovou iterační metodou.&nbsp;</span></p><p>\(X^1 = \) ([[X1:numeric:_____]], [[X2:numeric:_____]], [[X3:numeric:_____]])&nbsp;</p><p>d) Urcete spektralni polomer matice \(U_J\) [[RHO:numeric:_____]]</p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<subquestions>
+<!-- question: 157001  -->
+  <question type="oumultiresponse">
+    <name>
+      <text>2</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.2</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p></p><p>symetrická</p><p></p>]]></text>
+      <feedback format="plain_text">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>symetrická a pozitivně definitní<br></p>]]></text>
+      <feedback format="plain_text">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ostře diagonálně dominantní v řádcích<br></p>]]></text>
+      <feedback format="plain_text">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>ostře diagonálně dominantní&nbsp;<br></p>]]></text>
+      <feedback format="plain_text">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>žádná z možností<br></p>]]></text>
+      <feedback format="plain_text">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 157002  -->
+  <question type="oumultiresponse">
+    <name>
+      <text>4</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.2</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <correctfeedback format="html">
+      <text></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Gauss-Seidelova metoda není konvergentní<br></p>]]></text>
+      <feedback format="plain_text">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Jacobiho metoda je konvergentní<br></p>]]></text>
+      <feedback format="plain_text">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Gauss-Seidelova metoda je konvergentní<br></p>]]></text>
+      <feedback format="plain_text">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Jacobiho metoda není konvergentní<br></p>]]></text>
+      <feedback format="plain_text">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+<!-- question: 157003  -->
+  <question type="varnumeric">
+    <name>
+      <text>X1</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <randomseed></randomseed>
+    <requirescinotation>0</requirescinotation>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>2.5</text>
+      <feedback format="plain_text">
+        <text></text>
+      </feedback>
+      <sigfigs>0</sigfigs>
+      <error>0.01</error>
+      <syserrorpenalty>0.0000000</syserrorpenalty>
+      <checknumerical>0</checknumerical>
+      <checkscinotation>0</checkscinotation>
+      <checkpowerof10>0</checkpowerof10>
+      <checkrounding>0</checkrounding>
+    </answer>
+  </question>
+<!-- question: 157004  -->
+  <question type="varnumeric">
+    <name>
+      <text>X2</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <randomseed></randomseed>
+    <requirescinotation>0</requirescinotation>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>-0.25</text>
+      <feedback format="plain_text">
+        <text></text>
+      </feedback>
+      <sigfigs>0</sigfigs>
+      <error>0.01</error>
+      <syserrorpenalty>0.0000000</syserrorpenalty>
+      <checknumerical>0</checknumerical>
+      <checkscinotation>0</checkscinotation>
+      <checkpowerof10>0</checkpowerof10>
+      <checkrounding>0</checkrounding>
+    </answer>
+  </question>
+<!-- question: 157005  -->
+  <question type="varnumeric">
+    <name>
+      <text>X3</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <randomseed></randomseed>
+    <requirescinotation>0</requirescinotation>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>1.625</text>
+      <feedback format="plain_text">
+        <text></text>
+      </feedback>
+      <sigfigs>0</sigfigs>
+      <error>0.01</error>
+      <syserrorpenalty>0.0000000</syserrorpenalty>
+      <checknumerical>0</checknumerical>
+      <checkscinotation>0</checkscinotation>
+      <checkpowerof10>0</checkpowerof10>
+      <checkrounding>0</checkrounding>
+    </answer>
+  </question>
+<!-- question: 157006  -->
+  <question type="varnumeric">
+    <name>
+      <text>RHO</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.3</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <randomseed></randomseed>
+    <requirescinotation>0</requirescinotation>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>0.5</text>
+      <feedback format="plain_text">
+        <text></text>
+      </feedback>
+      <sigfigs>0</sigfigs>
+      <error>0.01</error>
+      <syserrorpenalty>0.0000000</syserrorpenalty>
+      <checknumerical>0</checknumerical>
+      <checkscinotation>0</checkscinotation>
+      <checkpowerof10>0</checkpowerof10>
+      <checkrounding>0</checkrounding>
+    </answer>
+  </question>
+</subquestions>
+  </question>
+
+<!-- question: 152375  -->
+  <question type="cloze">
+    <name>
+      <text>A1 - GS Jacobi</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava lineárních rovnic tvaru \(A X = B\), kde <CENTER>\[ A = \left ( \begin
+    {array}{rrr} 2 & 1 & -1 \\ 1 & 2 & 1 \\ -1 & -1 & 2 \end {array} \right ), B = \left ( \begin {array}{r} 5
+    \\ 3 \\ 1 \end {array}\right ), \]</CENTER> a) Rozhodněte, zda daná matice \(A\) je
+    {2:MULTIRESPONSE:symetrická,~symetrická a pozitivně definitní,~ostře diagonálně dominantní v
+    řádcích),~ostře diagonálně dominantní (ve sloupcích),~=žádná z možností.} </P><P>b) Pro danou matici \(A\)
+    platí {4:MULTIRESPONSE:=Gauss-Seidelova metoda je konvergentní~=Jacobiho metoda je
+    konvergentní~Gauss-Seidelova metoda není konvergentní~Jacobiho metoda není konvergentní} </P><P>c) Volte
+    \(X^0=(1,1,1)\) a proveďte výpočet \(X^1\) Gaussovou-Seidelovou iterační metodou. <BR/> \(X^1 = \)
+    ({2:NUMERICAL:=2.5:0.01}, {2:NUMERICAL:=-0.25:0.01}, {3:NUMERICAL:=1.625:0.01}) </P><P>d) Urcete spektralni
+    polomer matice \(U_J\) {4:NUMERICAL:=0.5:0.01}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 152526  -->
+  <question type="cloze">
+    <name>
+      <text>A1 BENES 001</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>a) Dana soustava linearnich rovnic \({\mathbb A}X = B, {\mathbb A}\in R^{n,n}\). Rozhodnete, ktera z nasledujicich tvrzeni jsou pravdiva: </p><ul><li>a\(_1\)) Je-li \(\varrho ({\mathbb A})&lt; 1\), Jacobiho metoda konverguje. </li><li>a\(_2\)) Je-li nektera z norem \(\| \mathbb A \| &gt; 1\), Jacobiho metoda nekonverguje. </li><li>a\(_3\)) Je-li \(\mathbb A\) ODD po radcich, Jacobiho metoda konverguje. </li><li>a\(_4\)) Konverguje-li pro danou soustavu Jacobiho metoda, konverguje i Gauss-Seidlova metoda. </li><li>a\(_5\)) Je-li nektery prvek \(a_{i,i}=0\), nemohu Jacobiho metodu pouzit.</li></ul> {1:MULTIRESPONSE_H: a\(_1\))~ a\(_2\))~= a\(_3\))~ a\(_4\))~= a\(_5\))} b) Je dana matice \(\mathbb A\) a vektor \(B\) <center>\[ {\mathbb A} = \left ( \begin {array}{ccc} p+1 &amp; -2 &amp; 0 \\ p &amp; 4 &amp; 1 \\ -1 &amp; 2 &amp; 4 \end {array} \right ) \quad \quad B = \left ( \begin {array}{c} 6 \\ 4 \\ 11 \end {array} \right ) \]</center> Pro jaka \( p \in R \) je matice \(A\) ostre diagonalne dominantni v radcich? (Navod zapis intervalu: Intervaly zapisujte ve tvaru (a,b), [a,b), (a,b], nebo [a,b]. Symbol pro nekonecno +infty nebo -infty. Pokud uvadite vice intervalu radte je v rostoucim poradi a oddelujte carkou, tedy napr. (-infty,-8.76),(5.43,+infty). Mezery vynechavejte. <br> Plati pro \(p\) v intervaluech {4:SHORTANSWER:=(1,3)~=(1, 3)~=(1., 3.)} <p></p><p>c) Volte \(p = 2\), \(X^{(0)}=(-1,3,-2)^T\) a spocitejte \(X^{(1)}\) Jacobiho iteracni metodou. <br> \(X^{(1)}\) = ({2:NUMERICAL:=4:0.01}, {4:NUMERICAL:=2:0.01}, {4:NUMERICAL:=1:0.01}). </p><p>d) Spocitejte radkovou normu \(||X^{(1)}-X^{(0)}||_\infty \) <br> \(||X^{(1)}-X^{(0)}||_\infty = \) {2:NUMERICAL:=5:0}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 152382  -->
+  <question type="cloze">
+    <name>
+      <text>A2 - Newton</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava nelineárních rovnic <CENTER>\[ 4 {\rm arctg}\left ( x \right ) - y = 0
+    \]</CENTER> <CENTER>\[ x - y^2 + 1 = 0 \]</CENTER> a) Určete graficky přibližnou polohu a počet kořenů
+    soustavy. {2:MULTIRESPONSE:jediný kořen, 1. kvadrant,~jediný kořen, 3. kvadrant,~4 kořeny, v každém
+    kvadrantu jeden,~2 kořeny, v 1. a 2. kvadrantu,~=3 kořeny, jeden ve 3. a dva v 1. kvadrantu,} </P><P>b)
+    Které z následujících tvrzení je pravdivé? {2:MULTIRESPONSE:Newtonova metoda vždy konverguje.~Newtonova
+    metoda vždy konverguje pokud funkce \(f\) a \(g\) jsou spojité.~Newtonova metoda vždy konverguje pokud
+    funkce \(f\) a \(g\) jsou hladké.~Konvergence Newtonovy metody je zaručena pouze lokálně (blízko
+    libovolného řešení)~=Konvergence Newtonovy metody je zaručena pouze lokálně (a blízko jen některých
+    řešení)} </P><P>c) Zvolte \(X^0 = ( 0 , 1 )^T\) a Newtonovou metodou spočtěte \(X^1\). <BR/> \(X^{1} = (\)
+    {5:NUMERICAL:=0.28571:0.01} , {5:NUMERICAL:=1.14285:0.01} ). </P><P>d) Pro některé \(p \in \mathbb R\)
+    nelze volba počáteční iterace ve tvaru \(X^0 = ( 0 , p )^T\) použít. Pro jaké \(p\) (zde nezaokrouhlujte)?
+    <BR/> {3:NUMERICAL:=0.125:0.001} ,
+    .</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 152533  -->
+  <question type="cloze">
+    <name>
+      <text>A2 BENES 001</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dana soustava nelinearnich rovnic </p><center>\[ y^{2} = 4 - x, \quad \quad y = \ln (x - 2)\]</center> <p></p><p>a) Urcete graficky pribliznou polohu a pocet vsech korenu soustavy. Ktere tvrzeni pro danou soustavu plati? {2:MULTIRESPONSE:Nema zadny koren.~Ma prave dva koreny, ktere lezi v 1. a 2. kvadrantu.~Ma prave jeden koren, ktery je v 1. kvadrantu.~=Ve ctvrtem kvadrantu ma koren.} </p><p>b) Volte \(X^{(0)}=(3;0)^{T}\) a vypoctete \(X^{(1)}\) Newtonovou metodou. <br> \(X^{(1)} = (\) {5:NUMERICAL:=4:0.01} , {5:NUMERICAL:=1:0.01}) </p><p>c) Pro soustavu, kterou byste resili pri vypoctu aproximace \(X^{(2)}\), zapiste matici teto soustavy (\(\mathbb A\)) (pravou stranu nevycislujte ani soustavu nereste) <br> \( \mathbb A = \Bigl (\) {1:NUMERICAL:=1:0.01} , {1:NUMERICAL:=2:0.01} <br> \(\qquad \,\) {1:NUMERICAL:=0.5:0.01} , {1:NUMERICAL:=-1:0.01} \(\Bigr )\) </p><p>d) Ktere z nasledujicich bodu nemohu pouzit jako pocatecni podminku (pro Newtonovu metodu a zadany priklad) ? {1:MULTIRESPONSE_H:=\([1,0]\)~\([3,1]\)~\([5,2]\)~\([2.5,1]\)~\([4,1]\)}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 152388  -->
+  <question type="cloze">
+    <name>
+      <text>A3 - Cauchy</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána Cauchyova úloha pro soustavu obyčejných diferenciálních rovnic <CENTER>\[
+    y&rsquo;_1 = y_1^2 - 2 y_2 + x, \qquad y_1(0) = 2 \]</CENTER> <CENTER>\[ y&rsquo;_2 = y_1 - y_2^2 , \qquad
+    y_2(0) = 1\]</CENTER> a) Která z uvedených metod patří mezi jednokrokové metody alespoň druhého řádu přesnosti
+    {2:MULTIRESPONSE:Eulerova metoda (explicitní)~Eulerova metoda (implicitní)~=Collatzova metoda,~=Tříbodová
+    metoda Runge-Kutty~=Čtyřbodová metoda Runge-Kutty} </P><P>b) Jaký tvar má přírůstková funkce \(\Phi (x, y,
+    h)\) pro Collatzovu metodu? {3:MULTIRESPONSE:\(\Phi (x,y,h) = f(x,y)\)~\(\Phi (x,y,h) = h f(x,y)\)~\(\Phi
+    (x,y,h) = f(x + h, y + h \, f(x,y) )\)~\(\Phi (x,y,h) = f(x + h / 2, y + 1 /2 \, f(x,y) )\)~=\(\Phi
+    (x,y,h) = f(x + h / 2, y + h /2 \, f(x,y) )\)~\(\Phi (x,y,h) = h f(x + h / 2, y + h /2 \, f(x,y) )\)}
+    </P><P>c) Volte \(h = 0.1\) a určete hodnotu aproximace řešení \(y_1(0.2)\) užitím Eulerovy metody.<BR/>
+    \(y_1(0 + 2 h) \approx \) {4:NUMERICAL:=2.474:0.01} </P><P>d) Volte \(h = 0.2\) a určete hodnotu
+    aproximace řešení \(y_1(0.2)\) užitím Collatzovy metody. <BR/> \(y_1(0.2) \approx \)
+    {4:NUMERICAL:=2.5480:0.01} </P><P>e) Volte \(h = 0.2\) a určete hodnotu aproximace řešení \(y_2(0.2)\)
+    užitím Collatzovy metody. <BR/> \(y_2(0.2)\approx \) {4:NUMERICAL:=1.1980:0.01}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 152542  -->
+  <question type="cloze">
+    <name>
+      <text>A3 BENES 001</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dana Cauchyho uloha \(y’ = f(x,y), \quad y(1)=0\). </p><p>a) Pro kterou z funkci jsou splneny postacujici podminky pro existenci a jednoznacnost CU (a na jake oblasti?): </p><center>\[ \begin {array}{rclcrcl} {\rm a}_1) \ f(x,y) &amp; = &amp; \frac {y}{x-1}, &amp;&amp; {\rm a}_2) \ f(x,y) &amp; = &amp; y\ln {(x)}, \\ {\rm a}_3) \ f(x,y) &amp;=&amp; \sqrt {xy^2}, &amp;&amp; {\rm a}_4) \ f(x,y) &amp;=&amp; y \sqrt {x} \end {array} \]</center> <p></p><p>{2:MULTIRESPONSE_H:a\(_1\))~=a\(_2\))~=a\(_3\))~=a\(_4\))} </p><p>b) Ktera z nasledujicich tvrzeni jsou pravdiva {2:MULTIRESPONSE:=Pri pouziti implicitni Eulerovy metody mohu (obecne) pouzit delsi(vetsi) krok nez pri pouziti explicitni Eulerovy metody.~Implicitni Eulerova metoda ma vyssi rad presnosti nez Collatzova metoda.~Standardni R-K4 je pateho radu presnosti.~=Pro konvergentni metodu plati, ze \(E(x,h) \to 0\) pro \(h \to 0_+\), kde \(E(x,h)\) je hodnota globalni chyby v bode \(x\) ziskana s krokem \(h\).} </p><p>c) </p><center>\[ y”’ - x y = \frac {2}{y’} \quad \quad y(1) = 3,\quad y’(1) = 2, \quad y”(1)=0 \]</center> Uzitim Collatzovy metody s krokem \(h=2\) spocitejte numerickou aproximaci \(y”(3)\)<br> \(y'(3) \approx \) {9:NUMERICAL:=10:0.01} <p></p><p>Uzitim explicitni Eulerovy metody s krokem \(h=1\) spocitejte numerickou aproximaci \(y”(3)\):<br> \(y'(3) \approx \) {4:NUMERICAL:=6:0.01}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 152394  -->
+  <question type="cloze">
+    <name>
+      <text>A4 - Okrajova uloha ODR</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána Dirichletova okrajová úloha pro obyčejnou diferenciální rovnici v
+    samoadjungovaném tvaru </p><center>\[ - \left ( m(x) y^\prime \right )^\prime + s(x) \, y = r(x) \qquad y(0) =
+    0, y(4) = 1 . \]</center> <p></p><p>a) Zvolte postačující podmínky, které zaručují existenci a jednoznačnost
+    řešení v daném případě na \(I = [0,4]\). Vyberte jen podmínky, které jsou nezbytné, tedy jen ty, které
+    nelze vynechat. {3:MULTIRESPONSE:=\(m, s, r\) jsou spojité fce na \(I\),~\(m’, s’, r’\)
+    jsou spojité fce na \(I\),~=\(m’\) je spojitá funkce na \(I\)~=\(m(x)&gt;0\) pro \(x \in
+    I\),~\(s’\) je spojitá funkce na \(I\)~=\(s(x) \ge 0\) pro \(x \in I\),~\(r(x) &gt; 0 \) pro \(x \in
+    I\),} </p><p>b) Zjistěte pro které z následujících funkcí je zaručena existence a jednoznačnost řešení
+    úlohy: {2:MULTIRESPONSE:=\(m(x) = (9 - 2 x) / 2\) , \(s(x) = x\), \(r(x) = 4,\)~\(m(x) = (x - 2)\), \(s(x)
+    = 0\), \(r(x) = 4\),~\(m(x) = (4 - x)\), \(s(x) = 3 - x\), \(r(x) = 1\),} </p><p>c) Ukažte, že pro výraz
+    \(\frac {z(x + h/2) - z(x - h/2)}{h}\) platí {2:MULTIRESPONSE:Pro funkce \(z \in C^3\) jde o náhradu
+    \(z”(x)\) s chybou \(O(h^2)\)~Pro funkce \(z \in C^3\) jde o náhradu \(z’(x)\) s chybou
+    \(O(h)\)~=Pro funkce \(z \in C^4\) jde o náhradu \(z’(x)\) s chybou \(O(h^2)\)~Pro funkce \(z \in
+    C^3\) jde o náhradu \(z’(x + h/2)\) s chybou \(O(h^2)\)} </p><p>d) Volte \(m(x) = 2 x + 1\), \(s(x)
+    = \sqrt {x}\) a \(r(x) = 4 x\), krok \(h = 1\) a aproximace řešení označme \(Y_k \approx y(k h)\) pro \(k
+    \in \{1,2,3\}\). </p><p>Doplňte koeficienty síťové rovnice v bodě \(x = 1\): <br>
+    {1:NUMERICAL:=7.000:0.01} \(Y_1\) + {1:NUMERICAL:=-4.000:0.01} \(Y_2\) + {1:NUMERICAL:=0.000:0.01} \(Y_3\)
+    = {2:NUMERICAL:=4:0.01} </p><p>Doplňte koeficienty síťové rovnice v bodě \(x = 2\): <br>
+    {1:NUMERICAL:=-4.000:0.01} \( Y_1\) + {2:NUMERICAL:=11.414:0.01} \( Y_2\) + {1:NUMERICAL:=-6.000:0.01}
+    \(Y_3\) = {1:NUMERICAL:=8.000:0.01}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 152547  -->
+  <question type="cloze">
+    <name>
+      <text>A4 BENES 001</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Uvazujme nasledujici Dirichletovy ulohy pro obycejnou diferencialni rovnici </p><center>\[ \begin {array}{rcl} {\rm a}_1 &amp; \quad &amp; -(xy’)’ + x^2y= \sin (x) \quad x \in &lt;2, 3&gt; \\ {\rm a}_2 &amp; \quad &amp; -(x^2y’)’ + (x+1)y= \sin (x) \quad x \in &lt;-1, 3&gt; \\ {\rm a}_3 &amp; \quad &amp; -(xy’)’ + \frac {x}{x-2}y= 3 \quad x \in &lt;1, 5&gt; \\ {\rm a}_4 &amp; \quad &amp; -(\sin (x)y’)’ + \cos (x)y= 3x \quad x \in &lt;\pi /4, \pi /2&gt; \end {array} \]</center> a) Pro ktere z Dirichletovych okrajovych uloh a1) az a4) jsou splneny postacujici podminky pro existenci a jednoznacnost reseni? {2:MULTIRESPONSE_H:=a\(_1\))~a\(_2\))~a\(_3\))~=a\(_4\))} b) Jake chyby se dopustite, pokud aproximujete hodnotu \(y’(x)\) prvni centralni diferenci s krokem \(h &gt; 0\) (pro funkci, ktera ma spojite derivace az do uziteho radu). Chyba je (zde \(\xi \in (x-h, x+h)\)) <center>\[ \begin {array}{rclcrcl} {\rm b}_1) &amp; \ &amp; \frac {h^2}{12}y^{IV}(\xi ) &amp; \qquad &amp; {\rm b}_2) &amp; \ &amp; \frac {h^2}{6}y^{IV}(\xi ) \\ {\rm b}_3) &amp; \ &amp; \frac {h^2}{3}y^{III}(\xi ) &amp; \qquad &amp; {\rm b}_4) &amp; \ &amp; \frac {h^2}{6}y^{III}(\xi ) \end {array} \]</center> Vyberte spravnou moznost(spravne moznosti): {2:MULTIRESPONSE_H: b\(_1\))~ b\(_2\))~ b\(_3\))~= b\(_4\))} c) Dana Dirichletova uloha <center>\[ -((x + 1.5) y’)’ + x^{2} y = 1, \quad y(-1) = 1, \quad y(2) = 2\]</center> Sestavte sitove rovnice, ktere vzniknou pri reseni Dirichletovy ulohy s krokem \(h = 1\). <p></p><p>1. rovnice (v bode \(x_1 = 0\)): \(\qquad \) {2:NUMERICAL:=3:0.01} \(Y_1\) + {2:NUMERICAL:=-2:0.01} \(Y_2\) = {2:NUMERICAL:=2:0.01} </p><p>2. rovnice (v bode \(x_2 = 1\)): \(\qquad \) {2:NUMERICAL:=-2:0.01} \(Y_1\) + {2:NUMERICAL:=6:0.01} \(Y_2\) = {2:NUMERICAL:=7:0.01} </p><p>d) Jaky by byl pocet neznamych \(n\),pokud by krok \(h\) byl \(1 / 10\)? <br> \(n = \) {1:NUMERICAL:=29:0}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 152406  -->
+  <question type="cloze">
+    <name>
+      <text>A5 - Rovnice vedeni tepla</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána smíšená úloha pro rovnici <CENTER>\[ \frac {\partial u}{\partial t}
+    = \frac {1}{10} \frac {\partial ^2 u}{\partial x^2} + t x \quad {\rm v \ oblasti \ } \Omega = \{ [x, t] :
+    x \in (0,2), \ t &gt; 0 \} \, , \]</CENTER> <CENTER>\[ u(x,0) = \psi (x) \ {\rm pro} \ x \in \langle
+    0,2\rangle , \quad \ u(0,t) = \alpha (t), \ u(2,t) = \beta (t) \ {\rm pro} \ t \ge 0. \]</CENTER> a)
+    Podmínky souhlasu pro danou úlohu jsou splněny <BR/> {2:MULTIRESPONSE:pro libovolné funkce \(\psi (x)\),
+    \(\alpha (t)\) a \(\beta (t)\),~\(\psi (x) = x (2 - x)\), \(\alpha (t) = 2 /(1 + t)\), \(\beta (t) = 1 /(1
+    + t)\),~\(\psi (x) = x (2 - x)\), \(\alpha (t) = 0\), \(\beta (t) = 1 / (1 + t)\),~=\(\psi (x) = 24 / (1 +
+    x)\), \(\alpha (t) = 48 / (2 + t)\), \(\beta (t) = 9 - 1 / (1 + t)\),~\(\psi (x) = \sin (\pi x / 2)\),
+    \(\alpha (t) = 0\), \(\beta (t) = \cos (t)\),~žádná z možností.} </P><P>b) Zvolte všechny hodnoty \(h\) a
+    \(\tau \), pro které je explicitní metoda stabilní: <BR/> {3:MULTIRESPONSE:\(h = 0.1\), \(\tau =
+    0.2\),~\(h = 0.1\), \(\tau = 0.1\),~=\(h = 0.25\), \(\tau = 0.25\),~=\(h = 0.2\), \(\tau = 0.1\),}
+    </P><P></P><P>c) Volte \(\psi (x) = x (2 - x)\), \(\alpha (t) = 1 - \frac {1}{t + 1}\), \(\beta (t) = 0\),
+    prostorovy krok \(h = 0.5\) a časový krok \(\tau = 0.5\) a určete aproximaci v bodech \(A = [1.5; 0.5]\),
+    \(B = [1; 0.5]\) a \(C = [1.5; 1]\).<BR/> \(\qquad u(A) \approx \) {3:NUMERICAL:=0.65:0.01} \(\qquad u(B)
+    \approx \) {3:NUMERICAL:=0.9:0.01} \(\qquad u(C) \approx \) {6:NUMERICAL:=0.945:0.01}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 152557  -->
+  <question type="cloze">
+    <name>
+      <text>A5 BENES 001</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Dana Dirichletova uloha \(- \Delta u = xy\) , na oblasti \(\Omega \) danem jako ctyruhelnik s vrcholy [0;0],[0;3],[-2,3],[-3;0], \(u(x,y)= x+y\) na hranici oblasti. Volte \(h=1\) a sit tak, aby obsahovala bod [0.0]. Uzly ocislujte “zleva doprava a zdola nahoru” (ZADANI BUDE UPRESNENO NA PREDNASCE) <br> </p><center>\[ U_1 \approx u(-2, 1), \quad U_2 \approx u(-1, 1), \quad U_3 \approx u(-2, 2), \quad U_4 \approx u(-1, 2) \]</center> <p></p><p>a) Sestavte sitovou rovnici pro bod [-1,1], tak aby schema bylo druheho radu presnosti </p><p>{1:NUMERICAL:=-1:0} \(U_1+\) {1:NUMERICAL:=4:0} \(U_2+\) {1:NUMERICAL:=0:0} \(U_3+\) {1:NUMERICAL:=-1:0} \(U_4\) = {2:NUMERICAL:=-1:0.01} </p><p></p><p>b) Sestavte sitovou rovnici pro bod [-2,2], tak aby schema bylo druheho radu presnosti. </p><p>{1:NUMERICAL:=0:0} \(U_1 +\) {1:NUMERICAL:=0:0} \(U_2 +\) {2:NUMERICAL:=1.33333:0.01} \(U_3+\) {2:NUMERICAL:=-0.33333:0.01} \(U_4\) = {2:NUMERICAL:=-0.33333:0.01} </p><p>c) Mejme numericke schema ve tvaru \({\mathbb B_h} U_h = F_h\), kde \(U_h\) je vektor neznamych obsahujici numericke aproximace presneho reseni pro zvoleny krok \(h\) a matice \({\mathbb B_h}\) zavisi na kroku site \(h\). Necht schema je dale <b>konzistentni</b>. Necht dale plati nektera z podminek <br> </p><center>\[ \begin {array}{rclcrcl} {\rm c1)} &amp; \quad &amp; \varrho ({\mathbb B}_h) &lt; 1 &amp;\qquad &amp; {\rm c2)} &amp; \quad &amp; ||{\mathbb B}_h|| &lt; 1\\ {\rm c3)} &amp; \quad &amp; \varrho ({\mathbb B}_h^{-1}) &lt; 1 &amp; \qquad &amp; {\rm c4)} &amp; \quad &amp; ||{\mathbb B}_h^{-1}|| &lt; 1 \\ {\rm c5)} &amp; \quad &amp; {\mathbb B}_h {\ \rm je\ ODD} \end {array} \]</center> Ktera z nich platnych pro libovolne \(h \in (0, h_0)\) zajisti, ze dana metoda je konvergentni? {4:MULTIRESPONSE_H:c1)~c2)~=c3)~=c4)~c5)}<p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 152569  -->
+  <question type="cloze">
+    <name>
+      <text>A6 BENES 001</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Dana smisena uloha </p><center>\[ \frac {\partial u}{\partial t} = \frac {2}{3}\frac {\partial ^{2}u}{\partial x^{2}} + (2t+1)x, \]</center> <center>\[ \begin {array}{lll} u(x,0)=x-\alpha &amp;\mbox {pro } x\in &lt;-2,2&gt;,&amp;\\ u(-2,t)=-3,&amp; u(2,t)=\frac {1}{2t+\beta } &amp; \mbox {pro } t\ge 0. \end {array} \]</center> <p></p><p>a) Zvolte \(\alpha \) a \(\beta \) tak, aby byly splneny podminky souhlasu: <br> \(\alpha = \) {1:NUMERICAL:=1:0.01} \(\beta = \) {1:NUMERICAL:=1:0.01} </p><p>b) Urcete maximalni krok \(h\) a \( \tau \) tak, aby bod \(A=[1;1]\) byl uzlem site a explicitni schema bylo stabilni. <br> \(\tau = \) {1:NUMERICAL:=0.5:0.01} \(h = \) {1:NUMERICAL:=1:0.01} </p><p>c) Spoctete hodnotu aproximace \(U(A)\) explicitnim schematem. <br> \(U(A) \approx \) {10:NUMERICAL:=1:0.01} </p><p>d) Ktera z nasledujicich tvrzeni plati pro Cranka-Nicolsnove schema pro rovnici vedeni tepla v jedne prostorove dimenzi: {3:MULTIRESPONSE:Je prvniho radu v case a druheho v prostoru.~=Vede na soustavu linearnich rovnic s tridiagonalni matici.~=Vede na soustavu linearnich rovnic s ODD matici.~Kroky \(h\) a \(\tau \) musi splnovat podminku stability \(( p \tau ) / (h^2) \le 1/2\).}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 152412  -->
+  <question type="cloze">
+    <name>
+      <text>A6 Vlnova rovnice</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána smíšená úloha pro rovnici <CENTER>\[ \begin {array}{rcll} \frac {\partial ^2
+    u}{\partial t^2} & = & 3^2 \frac {\partial ^2 u}{\partial x^2} + 20 t x & {\rm v \ oblasti \ } \Omega = \{
+    [x, t] : x \in (0,2), \ t &gt; 0 \} \, , \\ u(x,0) & = & \psi (x) & {\rm pro} \ x \in \langle 0,2\rangle ,
+    \\ \frac {\partial u}{\partial t}(x,0) & = & \phi (x) & {\rm pro} \ x \in \langle 0,2\rangle , \\ u(0,t) &
+    = & \alpha (t), \ u(2,t) = \beta (t) & {\rm pro} \ t \ge 0. \end {array} \]</CENTER> </P><P>a) Uvažujme
+    zadání <CENTER>\[ \begin {array}{lllll} {\rm a1)} & \psi (x) = 2 x (2 - x), & \phi (x) = 1, & \alpha (t) =
+    \sin (t), & \beta (t) = e^{2 t} - 1 ,\\ {\rm a2)} & \psi (x) = 2 x (2 - x), & \phi (x) = 1, & \alpha (t) =
+    \cos (t), & \beta (t) = \sin (t), \\ {\rm a3)} & \psi (x) = 2 x (2 - x), & \phi (x) = 1, & \alpha (t) =
+    \sin (3 t) - e^{2t} + 1, & \beta (t) = \sin (t), \\ {\rm a4)} & \psi (x) = 2 x (2 - x), & \phi (x) = 1, &
+    \alpha (t) = e^{2t}, & \beta (t) = \sin (t), \\ \end {array} \]</CENTER> Podmínky souhlasu pro danou úlohu
+    jsou splněny pro varianty {3:MULTIRESPONSE_H: a1)~ a2)~= a3)~ a4)} </P><P>b) Zvolte všechny hodnoty \(h\)
+    a \(\tau \), pro které je explicitní metoda stabilní {3:MULTIRESPONSE: \(h = 0.1\), \(\tau = 0.1\),~ \(h
+    = 0.2\), \(\tau = 0.1\),~= \(h = 0.4\), \(\tau = 0.1\),~= \(h = 1 / 3 \), \(\tau = 0.1\),} </P><P>c) Volte
+    \(h = 0.5\), \(\tau = 0.1\), <CENTER>\[\psi (x) = 2 x (2 - x), \qquad \phi (x) = 1, \qquad \alpha (t) =
+    \sin (t), \qquad \beta (t) = t \]</CENTER> Určete aproximaci řešení v bodě \(B = [1.5; 0.1]\): \(u(B)
+    \approx \) {2:NUMERICAL:=1.6:0.01} </P><P>d) Pro data z c) určete aproximaci řešení v bodě \(C = [1;
+    0.1]\) <BR/> \(u(C) \approx \) {2:NUMERICAL:=2.1:0.01} </P><P>e) Pro data z c) určete aproximaci řešení v
+    bodě \(A = [1.5; 0.2]\) <BR/> \(u(A) \approx \) {7:NUMERICAL:=1.37:0.01}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+</quiz>

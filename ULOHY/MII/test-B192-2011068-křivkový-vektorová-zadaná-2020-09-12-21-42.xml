@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068</text>
+    </category>
+    <info format="html">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "B192-2011068".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 6/křivkový-vektorová-zadaná</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 137843  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový vektorová 10 (asteroida)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (-y,\ x)\ {\rm d}\vec s,$$ $$\mbox{ kde křivka } C \mbox{ je oblouk asteroidy},\ x={a}\cos^3 t, \ y = {a}\sin^3 t,\ t\in\langle 0,\ 2 \pi \rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Asteroida je zadaná parametricky,$$P(t) = [{a}\cos^3 t ,\&nbsp; {a}\sin^3 t],\ t\in\langle 0,\ \frac \pi 2\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) \) .</p><p>3. Vyjádřete integrovanou funkci \(\vec f(P(t))\) a \( {\rm d} \vec s =\dot{P}(t)\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp; (-y,\ x)\ {\rm d}\vec s = \int_0^{2 \pi}\ \vec f(P(t))\cdot \dot P(t)\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=pi()*3*a2/4;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 137835  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový vektorová 11 (šroubovice)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (yz,\ -xz,\ 0)\ {\rm d}\vec s,$$ $$\mbox{ kde křivka } C \mbox{ je závit šroubovice},\ x={a}\cos t, \ y = {a}\sin t,\ z={b}t,\ t\in\langle 0,\ 2\pi \rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Šroubovice je zadaná parametricky,$$P(t) = [{a}\cos t ,\&nbsp; {a}\sin t,\ {b}t],\ t\in\langle 0,\ 2 \pi\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) \).</p><p>3. Vyjádřete integrovanou funkci \(\vec f(P(t)) \) a \( {\rm d} \vec s = \dot{P}(t)\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp; (yz,\ -xz,\ 0)\ {\rm d}\vec s = \int_0^{2\pi}\ \vec f(P(t))\cdot \dot P(t)\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}; b={2:5};</text>
+</varsrandom>
+<varsglobal><text>b2=b*b; a2=a*a;
+V=-a2*b*2*pi()*pi();</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 137844  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový vektorová 12 (cykloida)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (-y,\ x)\ {\rm d}\vec s,$$ $$\mbox{ kde křivka } C \mbox{ je první oblouk cykloidy},\ x={a}(t-\sin t), \ y = {a}(1-\cos t),\ t\in\langle 0,\ 2\pi\rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Cykloida je zadaná parametricky,$$P(t) = [{a}(t-\sin t) ,\&nbsp; {a}(1-\cos t)],\ t\in\langle 0,\ 2\pi\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) = ({a}(1-\cos t),\ {a}\sin t) \).</p><p>3. Vyjádřete \(\vec f(P(t))\) a&nbsp; \( {\rm d} \vec s = \dot{P}(t)\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp;(-y,\ x) \ {\rm d}\vec s = \int_0^{2\pi}\ \vec f(P(t))\cdot \dot P(t)\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:5}</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=-6*a2*pi();</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 137828  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový vektorová 8 (šroubovice)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (yz,\ xz,\ xy)\ {\rm d}\vec s,$$ $$\mbox{ kde křivka } C \mbox{ je závit šroubovice},\ x={a}\cos t, \ y = {a}\sin t,\ z={b}t,\ t\in\langle 0,\ 2\pi \rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Šroubovice je zadaná parametricky,$$P(t) = [{a}\cos t ,\&nbsp; {a}\sin t,\ {b}t],\ t\in\langle 0,\ 2 \pi\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) \).</p><p>3. Vyjádřete integrovanou funkci \(\vec f(P(t)) \) a \( {\rm d} \vec s = \dot{P}(t)\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp; (yz,\ xz,\ xy)\ {\rm d}\vec s = \int_0^{2\pi}\ \vec f(P(t))\cdot \dot P(t)\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}; b={2:5};</text>
+</varsrandom>
+<varsglobal><text>a2=a*a;
+V=0;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 137832  -->
+  <question type="formulas">
+    <name>
+      <text>křivkový vektorová 9 (šroubovice)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte křivkový integrál $$\int_C\ (x,\ y,\ z)\ {\rm d}\vec s,$$ $$\mbox{ kde křivka } C \mbox{ je závit šroubovice},\ x={a}\cos t, \ y = {a}\sin t,\ z={b}t,\ t\in\langle 0,\ 2\pi \rangle$$<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Možný postup.<br></p><p>1. Šroubovice je zadaná parametricky,$$P(t) = [{a}\cos t ,\&nbsp; {a}\sin t,\ {b}t],\ t\in\langle 0,\ 2 \pi\rangle.$$<br></p><p>2. Určete tečný vektor \(\dot{P}(t) \).</p><p>3. Vyjádřete integrovanou funkci \(\vec f(P(t)) \) a \( {\rm d} \vec s = \dot{P}(t)\ {\rm d}t\).</p><p>4. Převeďte křivkový integrál na Riemannův integrál $$\displaystyle \int_C \&nbsp; (x,\ y,\ z)\ {\rm d}\vec s = \int_0^{2\pi}\ \vec f(P(t))\cdot \dot P(t)\ {\rm d} t$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}; b={2:5};</text>
+</varsrandom>
+<varsglobal><text>b2=b*b;
+V=b2*2*pi()*pi();</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek: {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

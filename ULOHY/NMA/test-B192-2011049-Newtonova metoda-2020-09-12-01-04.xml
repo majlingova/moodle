@@ -1,0 +1,2688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011049/Newtonova metoda</text>
+    </category>
+    <info format="html">
+      <text><![CDATA[<p>výpočet jedné iterace<br></p>]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 130855  -->
+  <question type="formulas">
+    <name>
+      <text>Výpočet iterace Newtonovou iterační metodou 1.</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava nelineárních rovnic \(f(x,y) = 0,\ g(x,y) = 0 \), kde<br></p><p>\( \begin{array}{l}f(x,y) = x^2-4x+y^2 \\ g(x,y) = y-e^{-x}-1 \end{array} \) <br></p><p>a bod \(X^{(0)} = [{x},{y}] \).</p><p><br></p><p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>4.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>x = 0; y = 1; 
+f =x^2-4*x+y^2 ; g=y-exp(-x)-1; 
+dfx=2*x-4; dfy = 2*y; dgx = exp(-x); dgy = 1;
+D=dfx*dgy-dfy*dgx;
+deltax = -(f*dgy - g*dfy)/D; deltay = -(g*dfx-f*dgx)/D;
+x1 = x+deltax; y1=y+deltay;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[f, g]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty funkcí \(f\) a \(g\) v bodě \( X^{(0)}=[{x}, {y}] \).</p><p>\(\left(\begin{array}{cc}\displaystyle f(X^{(0)})&amp; \displaystyle g(X^{(0)})\end{array}\right) =\) (&nbsp; {_0}, {_1} )<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[dfx, dfy, dgx, dgy]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty parciálních derivací funkcí \(f, g\) v bodě \([{x},{y}]\).</p><p>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\end{array}\right) =\) (&nbsp; {_0}, {_1} )<br></p><p>\(\left(\begin{array}{cc}\displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right) =\) ( {_2}, {_3})<br></p><p><br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[deltax, deltay]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \Delta^{(0)} = (\delta_x,\ \delta_y) \), řešení soustavy rovnic</p><p>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\\ \displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right)\left(\begin{array}{c}\delta_x\\\delta_y\end{array}\right) = -\left(\begin{array}{c}f(X^{(0)})\\g(X^{(0)})\end{array}\right) \).</p><p>\( \Delta^{(0)} = (\delta_x,\ \delta_y)&nbsp; =\) ({_0} , {_1})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x1, y1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \displaystyle X^{(1)} \) Newtonovou iterační metodou.</p><p>\( \displaystyle X^{(1)} \) = [{_0}, {_1}]<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+  </question>
+
+<!-- question: 130856  -->
+  <question type="formulas">
+    <name>
+      <text>Výpočet iterace Newtonovou iterační metodou 2.</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava nelineárních rovnic \(f(x,y) = 0,\ g(x,y) = 0 \), kde <br>\( \begin{array}{l}f(x,y) = \displaystyle \frac{x^2}{9} + y^2 - 1 \\ g(x,y) = 2x - y(x + 1) \end{array} \)  <br>a bod \(X^{(0)} = [{x},{y}] \).<br><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>4.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>x = 0; y = 1; 
+f =x^2/9 + y^2 - 1 ; g=2*x - y*(x + 1); 
+dfx=(2*x)/9; dfy = 2*y; dgx = 2 - y; dgy =- x - 1;
+D=dfx*dgy-dfy*dgx;
+deltax = -(f*dgy - g*dfy)/D; deltay = -(g*dfx-f*dgx)/D;
+x1 = x+deltax; y1=y+deltay;
+</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[f, g]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty funkcí \(f\) a \(g\) v bodě \( X^{(0)}=[{x}, {y}] \).<br>\(\left(\begin{array}{cc}\displaystyle f(X^{(0)})&amp; \displaystyle g(X^{(0)})\end{array}\right) =\) (&nbsp; {_0}, {_1} )<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[dfx, dfy, dgx, dgy]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty parciálních derivací funkcí \(f, g\) v bodě \([{x},{y}]\).<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\end{array}\right) =\) (&nbsp; {_0}, {_1} ) <br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right) =\) ( {_2}, {_3})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[deltax, deltay]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \Delta^{(0)} = (\delta_x,\ \delta_y) \), řešení soustavy rovnic<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\\ \displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right)\left(\begin{array}{c}\delta_x\\\delta_y\end{array}\right) = -\left(\begin{array}{c}f(X^{(0)})\\g(X^{(0)})\end{array}\right) \).<br>\( \Delta^{(0)} = (\delta_x,\ \delta_y)&nbsp; =\) ({_0} , {_1})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x1, y1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \displaystyle X^{(1)} \) Newtonovou iterační metodou.<br>\( \displaystyle X^{(1)} \) = [{_0}, {_1}]<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+  </question>
+
+<!-- question: 130864  -->
+  <question type="formulas">
+    <name>
+      <text>Výpočet iterace Newtonovou metodou 10.</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava nelineárních rovnic \(f(x,y) = 0,\ g(x,y) = 0 \), kde <br>\( \begin{array}{l}f(x,y) = y^2 - 3x - 1 \\ \displaystyle g(x,y) = e^x - y-4 \end{array} \)  <br>a bod \(X^{(0)} = [{x},{y}] \).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>4.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>x = 1; y = -2; 
+f =y*y - 3*x - 1 ; g=exp(x) - y - 4; 
+dfx=-3; dfy = 2*y; dgx = exp(x); dgy = -1;
+D=dfx*dgy-dfy*dgx;
+deltax = -(f*dgy - g*dfy)/D; deltay = -(g*dfx-f*dgx)/D;
+x1 = x+deltax; y1=y+deltay;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[f, g]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty funkcí \(f\) a \(g\) v bodě \( X^{(0)}=[{x}, {y}] \).<br>\(\left(\begin{array}{cc}\displaystyle f(X^{(0)})&amp; \displaystyle g(X^{(0)})\end{array}\right) =\) (&nbsp; {_0}, {_1} )<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[dfx, dfy, dgx, dgy]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty parciálních derivací funkcí \(f, g\) v bodě \([{x},{y}]\).<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\end{array}\right) =\) (&nbsp; {_0}, {_1} ) <br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right) =\) ( {_2}, {_3})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[deltax, deltay]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \Delta^{(0)} = (\delta_x,\ \delta_y) \), řešení soustavy rovnic<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\\ \displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right)\left(\begin{array}{c}\delta_x\\\delta_y\end{array}\right) = -\left(\begin{array}{c}f(X^{(0)})\\g(X^{(0)})\end{array}\right) \).<br>\( \Delta^{(0)} = (\delta_x,\ \delta_y)&nbsp; =\) ({_0} , {_1})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x1, y1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \displaystyle X^{(1)} \) Newtonovou iterační metodou.<br>\( \displaystyle X^{(1)} \) = [{_0}, {_1}]<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+  </question>
+
+<!-- question: 130857  -->
+  <question type="formulas">
+    <name>
+      <text>Výpočet iterace Newtonovou metodou 3.</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava nelineárních rovnic \(f(x,y) = 0,\ g(x,y) = 0 \), kde <br>\( \begin{array}{l}f(x,y) = x^2 + 5y - 1 \\ g(x,y) = 2x^2 + y - 4 \end{array} \)  <br>a bod \(X^{(0)} = [{x},{y}] \).<br><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>4.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>x = -1; y = 0; 
+f =x*x + 5*y - 1; g=2*x*x + y - 4; 
+dfx=2*x; dfy = 5; dgx =4*x ; dgy = 1;
+D=dfx*dgy-dfy*dgx;
+deltax = round(-(f*dgy - g*dfy)/D, 4); deltay = round(-(g*dfx-f*dgx)/D, 4);
+x1 = round(x+deltax, 4); y1=round(y+deltay, 4);</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[f, g]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty funkcí \(f\) a \(g\) v bodě \( X^{(0)}=[{x}, {y}] \).<br>\(\left(\begin{array}{cc}\displaystyle f(X^{(0)})&amp; \displaystyle g(X^{(0)})\end{array}\right) =\) (&nbsp; {_0}, {_1} )<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[dfx, dfy, dgx, dgy]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty parciálních derivací funkcí \(f, g\) v bodě \([{x},{y}]\).<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\end{array}\right) =\) (&nbsp; {_0}, {_1} ) <br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right) =\) ( {_2}, {_3})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[deltax, deltay]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \Delta^{(0)} = (\delta_x,\ \delta_y) \), řešení soustavy rovnic<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\\ \displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right)\left(\begin{array}{c}\delta_x\\\delta_y\end{array}\right) = -\left(\begin{array}{c}f(X^{(0)})\\g(X^{(0)})\end{array}\right) \).<br>\( \Delta^{(0)} = (\delta_x,\ \delta_y)&nbsp; =\) ({_0} , {_1})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x1, y1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \displaystyle X^{(1)} \) Newtonovou iterační metodou.<br>\( \displaystyle X^{(1)} \) = [{_0}, {_1}]<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+  </question>
+
+<!-- question: 130858  -->
+  <question type="formulas">
+    <name>
+      <text>Výpočet iterace Newtonovou metodou 4.</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava nelineárních rovnic \(f(x,y) = 0,\ g(x,y) = 0 \), kde <br>\( \begin{array}{l}f(x,y) = \frac 1x - y^2 \\ g(x,y) = \frac{1}{2x} - y \end{array} \)  <br>a bod \(X^{(0)} = [{x},{y}] \).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>4.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>x = 0.5; y = 3; 
+f =1/x - y*y ; g=1/(2*x) - y; 
+dfx= -1/(x*x); dfy = -2*y; dgx = -1/(2*x*x); dgy = -1;
+D=dfx*dgy-dfy*dgx;
+deltax = -(f*dgy - g*dfy)/D; deltay = -(g*dfx-f*dgx)/D;
+x1 = x+deltax; y1=y+deltay;
+</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[f, g]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty funkcí \(f\) a \(g\) v bodě \( X^{(0)}=[{x}, {y}] \).<br>\(\left(\begin{array}{cc}\displaystyle f(X^{(0)})&amp; \displaystyle g(X^{(0)})\end{array}\right) =\) (&nbsp; {_0}, {_1} )<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[dfx, dfy, dgx, dgy]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty parciálních derivací funkcí \(f, g\) v bodě \([{x},{y}]\).<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\end{array}\right) =\) (&nbsp; {_0}, {_1} ) <br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right) =\) ( {_2}, {_3}) <br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[deltax, deltay]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \Delta^{(0)} = (\delta_x,\ \delta_y) \), řešení soustavy rovnic<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\\ \displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right)\left(\begin{array}{c}\delta_x\\\delta_y\end{array}\right) = -\left(\begin{array}{c}f(X^{(0)})\\g(X^{(0)})\end{array}\right) \).<br>\( \Delta^{(0)} = (\delta_x,\ \delta_y)&nbsp; =\) ({_0} , {_1})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x1, y1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \displaystyle X^{(1)} \) Newtonovou iterační metodou.<br>\( \displaystyle X^{(1)} \) = [{_0}, {_1}]<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+  </question>
+
+<!-- question: 130859  -->
+  <question type="formulas">
+    <name>
+      <text>Výpočet iterace Newtonovou metodou 5.</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava nelineárních rovnic \(f(x,y) = 0,\ g(x,y) = 0 \), kde <br>\( \begin{array}{l}f(x,y) = x^2 + 4y^2 - 4 \\ g(x,y) = (x - 1)^2 - y \end{array} \)  <br>a bod \(X^{(0)} = [{x},{y}] \).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>4.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>x = 1.5; y = 0.5; 
+f =x*x + 4*y*y - 4 ; g=(x - 1)*(x - 1) - y; 
+dfx=2*x; dfy = 8*y; dgx = 2*x - 2; dgy = -1;
+D=dfx*dgy-dfy*dgx;
+deltax = -(f*dgy - g*dfy)/D; deltay = -(g*dfx-f*dgx)/D;
+x1 = x+deltax; y1=y+deltay;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[f, g]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty funkcí \(f\) a \(g\) v bodě \( X^{(0)}=[{x}, {y}] \).<br>\(\left(\begin{array}{cc}\displaystyle f(X^{(0)})&amp; \displaystyle g(X^{(0)})\end{array}\right) =\) (&nbsp; {_0}, {_1} )<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[dfx, dfy, dgx, dgy]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty parciálních derivací funkcí \(f, g\) v bodě \([{x},{y}]\).<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\end{array}\right) =\) (&nbsp; {_0}, {_1} ) <br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right) =\) ( {_2}, {_3})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[deltax, deltay]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \Delta^{(0)} = (\delta_x,\ \delta_y) \), řešení soustavy rovnic<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\\ \displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right)\left(\begin{array}{c}\delta_x\\\delta_y\end{array}\right) = -\left(\begin{array}{c}f(X^{(0)})\\g(X^{(0)})\end{array}\right) \).<br>\( \Delta^{(0)} = (\delta_x,\ \delta_y)&nbsp; =\) ({_0} , {_1})<br><br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x1, y1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \displaystyle X^{(1)} \) Newtonovou iterační metodou.<br>\( \displaystyle X^{(1)} \) = [{_0}, {_1}]<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+  </question>
+
+<!-- question: 130860  -->
+  <question type="formulas">
+    <name>
+      <text>Výpočet iterace Newtonovou metodou 6.</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava nelineárních rovnic \(f(x,y) = 0,\ g(x,y) = 0 \), kde <br>\( \begin{array}{l}f(x,y) = x^3 - y \\ g(x,y) = y - 2\cos(\pi x) \end{array} \)  <br>a bod \(X^{(0)} = [{x},{y}] \).<br><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>4.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>x = -1; y = -1; 
+f =x*x*x - y; g=y - 2*cos(pi()*x); 
+dfx=3*x*x; dfy = -1; dgx = 2*pi()*sin(pi()*x); dgy = 1;
+D=dfx*dgy-dfy*dgx;
+deltax = -(f*dgy - g*dfy)/D; deltay = -(g*dfx-f*dgx)/D;
+x1 = x+deltax; y1=y+deltay;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[f, g]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[Určete hodnoty funkcí \(f\) a \(g\) v bodě \( X^{(0)}=[{x}, {y}] \).<br>\(\left(\begin{array}{cc}\displaystyle f(X^{(0)})&amp; \displaystyle g(X^{(0)})\end{array}\right) =\) (&nbsp; {_0}, {_1} )]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[dfx, dfy, dgx, dgy]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty parciálních derivací funkcí \(f, g\) v bodě \([{x},{y}]\).<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\end{array}\right) =\) (&nbsp; {_0}, {_1} ) <br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right) =\) ( {_2}, {_3}) <br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[deltax, deltay]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \Delta^{(0)} = (\delta_x,\ \delta_y) \), řešení soustavy rovnic<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\\ \displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right)\left(\begin{array}{c}\delta_x\\\delta_y\end{array}\right) = -\left(\begin{array}{c}f(X^{(0)})\\g(X^{(0)})\end{array}\right) \).<br>\( \Delta^{(0)} = (\delta_x,\ \delta_y)&nbsp; =\) ({_0} , {_1})<br><br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x1, y1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \displaystyle X^{(1)} \) Newtonovou iterační metodou.<br>\( \displaystyle X^{(1)} \) = [{_0}, {_1}]<br><br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+  </question>
+
+<!-- question: 130861  -->
+  <question type="formulas">
+    <name>
+      <text>Výpočet iterace Newtonovou metodou 7.</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava nelineárních rovnic \(f(x,y) = 0,\ g(x,y) = 0 \), kde <br>\( \begin{array}{l}f(x,y) = 2\sin(2x) - y - 2 \\ \displaystyle g(x,y) = \frac{x^2}{4} - \frac{y^2}{2} - 1 \end{array} \)  <br>a bod \(X^{(0)} = [{x},{y}] \).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>4.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>x = 3; y = -2; 
+f =2*sin(2*x) - y - 2 ; g=x*x/4 - y*y/2 - 1; 
+dfx=4*cos(2*x); dfy = -1; dgx = x/2; dgy = -y;
+D=dfx*dgy-dfy*dgx;
+deltax = -(f*dgy - g*dfy)/D; deltay = -(g*dfx-f*dgx)/D;
+x1 = x+deltax; y1=y+deltay;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[f, g]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty funkcí \(f\) a \(g\) v bodě \( X^{(0)}=[{x}, {y}] \).<br>\(\left(\begin{array}{cc}\displaystyle f(X^{(0)})&amp; \displaystyle g(X^{(0)})\end{array}\right) =\) (&nbsp; {_0}, {_1} )<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[dfx, dfy, dgx, dgy]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty parciálních derivací funkcí \(f, g\) v bodě \([{x},{y}]\).<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\end{array}\right) =\) (&nbsp; {_0}, {_1} ) <br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right) =\) ( {_2}, {_3})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[deltax, deltay]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \Delta^{(0)} = (\delta_x,\ \delta_y) \), řešení soustavy rovnic<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\\ \displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right)\left(\begin{array}{c}\delta_x\\\delta_y\end{array}\right) = -\left(\begin{array}{c}f(X^{(0)})\\g(X^{(0)})\end{array}\right) \).<br>\( \Delta^{(0)} = (\delta_x,\ \delta_y)&nbsp; =\) ({_0} , {_1})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x1, y1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \displaystyle X^{(1)} \) Newtonovou iterační metodou.<br>\( \displaystyle X^{(1)} \) = [{_0}, {_1}]<br><br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+  </question>
+
+<!-- question: 130862  -->
+  <question type="formulas">
+    <name>
+      <text>Výpočet iterace Newtonovou metodou 8.</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava nelineárních rovnic \(f(x,y) = 0,\ g(x,y) = 0 \), kde <br>\( \begin{array}{l}f(x,y) = 3\sin(x) - y - 2x \\ \displaystyle g(x,y) = x^2-\frac{y^2}{2}-1 \end{array} \)  <br>a bod \(X^{(0)} = [{x},{y}] \).<br><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>4.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>x = -1; y = 0; 
+f =3*sin(x) - y - 2*x; g=x*x - y*y/2 - 1; 
+dfx=3*cos(x) - 2; dfy = -1; dgx = 2*x; dgy = -y;
+D=dfx*dgy-dfy*dgx;
+deltax = -(f*dgy - g*dfy)/D; deltay = -(g*dfx-f*dgx)/D;
+x1 = x+deltax; y1=y+deltay;
+</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[f, g]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty funkcí \(f\) a \(g\) v bodě \( X^{(0)}=[{x}, {y}] \).<br>\(\left(\begin{array}{cc}\displaystyle f(X^{(0)})&amp; \displaystyle g(X^{(0)})\end{array}\right) =\) (&nbsp; {_0}, {_1} )<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[dfx, dfy, dgx, dgy]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty parciálních derivací funkcí \(f, g\) v bodě \([{x},{y}]\).<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\end{array}\right) =\) (&nbsp; {_0}, {_1} ) <br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right) =\) ( {_2}, {_3}) <br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[deltax, deltay]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \Delta^{(0)} = (\delta_x,\ \delta_y) \), řešení soustavy rovnic<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\\ \displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right)\left(\begin{array}{c}\delta_x\\\delta_y\end{array}\right) = -\left(\begin{array}{c}f(X^{(0)})\\g(X^{(0)})\end{array}\right) \).<br>\( \Delta^{(0)} = (\delta_x,\ \delta_y)&nbsp; =\) ({_0} , {_1})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x1, y1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \displaystyle X^{(1)} \) Newtonovou iterační metodou.<br>\( \displaystyle X^{(1)} \) = [{_0}, {_1}]<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+  </question>
+
+<!-- question: 130863  -->
+  <question type="formulas">
+    <name>
+      <text>Výpočet iterace Newtonovou metodou 9.</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava nelineárních rovnic \(f(x,y) = 0,\ g(x,y) = 0 \), kde <br>\( \begin{array}{l}f(x,y) = x - y - \cos(x)\\ \displaystyle g(x,y) = \cos\left(x - \frac\pi 2\right) - y \end{array} \)  <br>a bod \(X^{(0)} = [{x},{y}] \).<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>4.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>x = 1; y = 1; 
+f =x - y - cos(x) ; g=cos(x - pi()/2) - y; 
+dfx=sin(x) + 1; dfy = -1; dgx = -sin(x - pi()/2); dgy = -1;
+D=dfx*dgy-dfy*dgx;
+deltax = -(f*dgy - g*dfy)/D; deltay = -(g*dfx-f*dgx)/D;
+x1 = x+deltax; y1=y+deltay;
+</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[f, g]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty funkcí \(f\) a \(g\) v bodě \( X^{(0)}=[{x}, {y}] \).<br>\(\left(\begin{array}{cc}\displaystyle f(X^{(0)})&amp; \displaystyle g(X^{(0)})\end{array}\right) =\) (&nbsp; {_0}, {_1} )<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[dfx, dfy, dgx, dgy]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete hodnoty parciálních derivací funkcí \(f, g\) v bodě \([{x},{y}]\).<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\end{array}\right) =\) (&nbsp; {_0}, {_1} ) <br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right) =\) ( {_2}, {_3})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[deltax, deltay]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \Delta^{(0)} = (\delta_x,\ \delta_y) \), řešení soustavy rovnic<br>\(\left(\begin{array}{cc}\displaystyle \frac{\partial f(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial f(X^{(0)})}{\partial y}\\ \displaystyle \frac{\partial g(X^{(0)})}{\partial x}&amp;\displaystyle \frac{\partial g(X^{(0)})}{\partial y}\end{array}\right)\left(\begin{array}{c}\delta_x\\\delta_y\end{array}\right) = -\left(\begin{array}{c}f(X^{(0)})\\g(X^{(0)})\end{array}\right) \).<br>\( \Delta^{(0)} = (\delta_x,\ \delta_y)&nbsp; =\) ({_0} , {_1})<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x1, y1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete \( \displaystyle X^{(1)} \) Newtonovou iterační metodou.<br>\( \displaystyle X^{(1)} \) = [{_0}, {_1}]<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+  </question>
+
+</quiz>

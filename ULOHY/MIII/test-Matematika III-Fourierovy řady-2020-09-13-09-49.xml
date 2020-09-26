@@ -1,0 +1,2197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "Matematika III".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM/Řady</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM/Řady/Fourierovy řady</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 201881  -->
+  <question type="formulas">
+    <name>
+      <text>alfa :)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Rozviňte funkci \(f(x) = {funkce}\) do Fourierovy řady.{#1}</p>
+Funkce \({funkce}\)<div style="display:inline-block;">{#suda}</div>.
+<p>Pro Fourierovy koeficienty \(a_0,a_k,b_k,\ k\in\mathbb N\) platí: {#koef}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>3.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>k={0,1,2,3};
+ans1_order=shuffle([0:3]);
+ans2_order=shuffle([0:5]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[#"\\sin^2 x", "\\cos^2 x", "\\sin^4 x", "\\cos^4 x"
+#f1 = "a"; f2="b"; f3="c"; f4="d";
+#funkce = pick(k,f1,f2,f3,f4);
+funkce = pick(k,"\\sin^2 x", "\\cos^2 x", "\\sin^4 x", "\\cos^4 x");
+bb1=pick(k,1/2,1/2,3/8,3/8);
+bb2=pick(k,-1/2,1/2,1/2,-1/2);
+bb3=pick(k,0,0,1/8,1/8);
+
+ans1_inv=inv(ans1_order);
+ans2_inv=inv(ans2_order);
+answers1=["je sudá", "je lichá", "není ani sudá ani lichá"];
+answers2=["a0=0  ak=0  bk=0", "a0=0 ak=0 bk nemusí být nulové", "a0 není 0  ak nemusí být 0  bk=0", "a0 není 0  ak=0  bk nemusí být nulové", "a0 není 0 ak nemusí být nulové  bk nemusí být nulové"];
+ans1_permuted=sublist(answers1, ans1_order);
+ans2_permuted=sublist(answers2, ans2_order);
+ans1=ans1_inv[0];
+ans2=ans2_inv[1];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:5:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["bb1 + bb2 cos(2 x) + bb3 cos(4 x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\({funkce} = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#suda</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0.0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ans1_permuted:MCE}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#koef</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:ans2_permuted:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201882  -->
+  <question type="formulas">
+    <name>
+      <text>alfa 1 (Děmidovič 2940)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"></p><p>Vypočtěte koeficienty a napište Fourierovu <strong></strong> řadu \(2\pi\)-periodické funkce \(f(x)\), která je v intervalu \((-\pi,\ \pi)\) definována předpisem</p><p>$$f(x) = x$$</p><p>Zadejte koeficient \(a_0\).{#a0} Zadejte \(a_k\) pro k = 1, 2. {#ak} Zadejte \(b_k\) pro k = 1,2,3,4 {#bk}</p><p>Zapište částečný součet prvních čtyř nenulových členů Fourierovy řady. {#rada}</p><p>Určete součet Fourierovy řady v bodech \(x_1 = {x1},\ x_2 = {x2}, x_3 = {x3}\). {#soucet}<br></p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Funkce \(f(x) = x\) definovaná na \((-\pi,\ \pi)\) je lichá, proto \(a_k = 0,\ k\in\mathbb N \cup \{0\}\).</p>
+<p dir="ltr" style="text-align: left;">\(\displaystyle b_k = \frac 1\pi \cdot 2\cdot\ \int_0^\pi x\ \sin kx\ dx = -2\frac 1 k \cos k\pi = \frac 2 k (-1)^{k+1}, k\in\mathbb N\).</p>
+<p dir="ltr" style="text-align: left;">Tedy \(b_1 = 2, b_2 = -1, b_3 = \frac 23, b_4 = -\frac 12, \dots \).</p>
+<p dir="ltr" style="text-align: left;">Fourierova řada pro tuto funkci: \(\displaystyle 2\cdot \sum_{k=1}^\infty\ (-1)^{k+1}\ \frac{\sin kx}{k}= 2\cdot\left( \sin x -\frac{\sin 2x}{2} + \frac{\sin 3x}{3} - \frac{\sin 4x}{4} + \dots \right)\)</p>
+<p dir="ltr" style="text-align: left;">Částečné součty: \(\displaystyle S_0(x) = \frac{a_0}{2} = 0,\ S_1(x) = S_0(x) + a_1\cos x + b_1 \sin x = 2 \sin x,\)<br>\(\displaystyle S_2(x) = S_1(x) +&nbsp; a_2\cos 2x + b_1\sin 2x&nbsp; = 2 \sin x-\sin 2x\)<br>\(\displaystyle S_3(x) = S_2(x) +&nbsp;
+    a_3\cos 3x + b_3 \sin 3x&nbsp; = 2 \sin x-\sin 2x + \frac 23 \sin 3x\)<br>\(\displaystyle S_4(x) = S_3(x) +&nbsp; a_4\cos 4x + b_4 \sin 4x&nbsp; = 2 \sin x-\sin 2x + \frac 23 \sin 3x -\frac 12 \sin 4x\)<br></p>
+<p dir="ltr" style="text-align: left;">Součet Fourierovy řady:<br> \(\displaystyle S(x) = \left\lbrace \begin{array}{cl}x-2k\pi &amp; \mbox{pro } x\in \left( (2k-1)\pi,\&nbsp; (2k+1)\pi \right),\\ 0 &amp;\mbox{pro } x\in\{ (2k -1)\pi \}, \\ &amp; k\in\mathbb Z \end{array}\right.\). <br></p>
+<p dir="ltr" style="text-align: left;">Tedy \(S \left( {x1}\right)&nbsp; = \frac \pi 2,\ (k=0) \), \(S\left( {x2}\right) = -\frac\pi 2,\ (k=1) \), \( S({x3}) =0,\ (k=2)\).<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[x1="\\frac 12 \\pi"; x2="\\frac 32 \\pi"; x3 = "3\\pi";
+s1=pi()/2; s2=-pi()/2; s3=0;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#a0</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>0</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(a_0 = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#ak</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0, 0]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(a_1 = \) {_0}, \(a_2 = \) {_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#bk</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[2, -1, 2/3, -1/2]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(b_1 = \) {_0},<br> \(b_2 = \) {_1},<br> \(b_3 = \) {_2},<br> \(b_4 = \) {_3}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#rada</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:5:0.1}; bb1=2; bb2=-1; bb3=2/3; bb4=-1/2;</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["bb1 sin(x) + bb2 sin(2 x) + bb3 sin(3 x) + bb4 sin(4 x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(S_4(x) = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#soucet</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[s1, s2, s3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(S\left({x1}\right) = \) {_0}, \(S\left({x2}\right) = \) {_1}, \(S\left({x3}\right) = \) {_2}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201883  -->
+  <question type="formulas">
+    <name>
+      <text>alfa 2 (Děmidovič 2941)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"></p><p>Vypočtěte koeficienty a napište Fourierovu <strong></strong> řadu \(2\pi\)-periodické funkce \(f(x)\), která je v intervalu \((0,\ 2\pi)\) definována předpisem</p><p>$$f(x) = \frac{\pi-x}{2}$$</p><p>Zadejte koeficient \(a_0\).{#a0} Zadejte \(a_k\) pro k = 1, 2. {#ak} Zadejte \(b_k\) pro k = 1,2,3,4 {#bk}</p><p>Zapište částečný součet prvních čtyř nenulových členů Fourierovy řady. {#rada}</p><p>Určete součet Fourierovy řady v bodech \(x_1 = {x1},\ x_2 = {x2}, x_3 = {x3}\). {#soucet}<br></p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[x1="\\frac 12 \\pi"; x2="\\frac 32 \\pi"; x3 = "4\\pi";
+s1=pi()/4; s2=-pi()/4; s3=0;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#a0</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>0</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(a_0 = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#ak</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0, 0]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(a_1 = \) {_0}, \(a_2 = \) {_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#bk</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[1, 1/2, 1/3, 1/4]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(b_1 = \) {_0},<br> \(b_2 = \) {_1},<br> \(b_3 = \) {_2},<br> \(b_4 = \) {_3}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#rada</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:5:0.1}; bb1=1; bb2=1/2; bb3=1/3; bb4=1/4;</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["bb1 sin(x) + bb2 sin(2 x) + bb3 sin(3 x) + bb4 sin(4 x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(S(x) = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#soucet</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[s1, s2, s3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(S({x1}) = \) {_0}, \(S({x2}) = \) {_1}, \(S({x3}) = \) {_2}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201884  -->
+  <question type="formulas">
+    <name>
+      <text>alfa 3 (Děmidovič 2942)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"></p><p>Vypočtěte koeficienty a napište Fourierovu <strong></strong> řadu \(2\pi\)-periodické funkce \(f(x)\), která je v intervalu \((-\pi,\pi)\) definována předpisem</p><p>$$f(x) = |x|$$</p><p>Zadejte koeficient \(a_0\).{#a0} Zadejte \(a_k\) pro k = 1,2,3,4. {#ak} Zadejte \(b_k\) pro k = 1,2 {#bk}</p><p>Zapište částečný součet prvních tří&nbsp; členů Fourierovy řady (do \(k=3\)). {#rada}</p><p>Určete součet Fourierovy řady v bodech \(x_1 = {x1},\ x_2 = {x2}, x_3 = {x3}, x_4 = {x4}\). {#soucet}<br></p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">
+</p>
+<p dir="ltr">Funkce \(f(x) = |x|\) definovaná na \((-\pi,\ \pi)\) je sudá, proto \(b_k = 0,\ k\in\mathbb N\).</p>
+<p dir="ltr">\( \displaystyle a_0 = 2\cdot \frac 1\pi \int_0^\pi\ x\ dx = \pi\).</p>
+<p dir="ltr">\( \displaystyle a_k = 2\cdot\frac 1\pi\int_0^\pi\ x\ \cos kx\ dx = \frac{2}{\pi k^2}\left(\cos k\pi - \cos 0\right) = \frac{-4}{\pi(2k-1)^2}, k\in\mathbb N\).</p>
+<p dir="ltr">Tedy \(a_1 = -\frac 4\pi,\ a_2=0,&nbsp; a_3=-\frac{9}{\pi} \)<br></p>
+<!--    <p dir="ltr">\(\displaystyle b_k = \frac 1\pi \cdot 2\cdot\ \int_0^\pi x\ \sin kx\ dx = -2\frac 1 k \cos k\pi = \frac 2 k (-1)^{k+1}, k\in\mathbb N\).</p>
+    <p dir="ltr">Tedy \(b_1 = 2, b_2 = -1, b_3 = \frac 23, b_4 = -\frac 12, \dots \).</p>-->
+<p dir="ltr">Fourierova řada pro tuto funkci:<br> \(\displaystyle \frac{\pi}{2} - \frac{4}{\pi}\cdot \sum_{k=1}^\infty\&nbsp; \frac{\cos (2k-1)x}{(2k-1)^2}=\) \(\displaystyle \frac{\pi}{2} - \frac{4}{\pi}\cdot\left( \cos x +\frac{\cos 3x}{9} + \frac{\cos 5x}{25}
+    + \frac{\cos&nbsp; 7x}{49} + \dots \right)\)</p>
+<p dir="ltr">Částečné součty: \(\displaystyle S_0(x) = \frac{a_0}{2} = \frac\pi 2,\ S_1(x) = S_0(x) + a_1\cos x + b_1 \sin x = \frac \pi 2-\frac 4\pi \cos x,\)<br>\(\displaystyle S_2(x) = S_1(x) +&nbsp; a_2\cos 2x + b_2\sin 2x&nbsp; =&nbsp; \frac \pi 2-\frac 4\pi
+    \cos x,\)<br>\(\displaystyle S_3(x) = S_2(x) +&nbsp; a_3\cos 3x + b_3 \sin 3x&nbsp; = \frac \pi 2-\frac 4\pi \cos x -\frac4\pi \frac{\cos 3x}{9}\)<!--<br>\(\displaystyle S_4(x) = S_3(x) +&nbsp; a_4\cos 4x + b_4 \sin 4x&nbsp; = 2 \sin x-\sin 2x + \frac
+    23 \sin 3x -\frac 12 \sin 4x\)<br>--></p>
+<p dir="ltr">Součet Fourierovy řady:<br> \(\displaystyle S(x) = \left\lbrace \begin{array}{cl} -x+2k\pi &amp;\mbox{pro } x\in\ \left( (2k -1)\pi,\ 2k\pi\right), \\ x-2k\pi &amp; \mbox{pro } x\in \left( 2k\pi,\&nbsp; (2k+1)\pi \right),\\\pi &amp; \mbox{pro } x\in\{2k\pi\},\\0&amp;\mbox{pro }\ x\in\{(2k-1)\pi\},\\&amp; k\in\mathbb Z \end{array}\right.\)<br></p>
+<p dir="ltr">Tedy \(S \left( {x1}\right)&nbsp; = \frac \pi 2,\ (k=0) \), \(S\left( {x2}\right) = \frac\pi 2,\ (k=1) \), \( S({x3}) =\pi,\ (k=3)\), \( S({x4}) =0,\ (k=2)\).</p><br>
+<p></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[x1="-\\frac 12 \\pi"; x2="\\frac 32 \\pi"; x3 ="3\\pi"; x4="4\\pi";
+s1=pi()/2; s2=pi()/2; s3=pi(); s4=0;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#a0</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pi()</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(a_0 = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#ak</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[-4/pi(), 0, -4/9/pi(),0]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(a_1 = \) {_0},<br> \(a_2 = \) {_1}<br>\(a_3 = \) {_2},<br> \(a_4 = \) {_3}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#bk</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0,0]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(b_1 = \) {_0},<br> \(b_2 = \) {_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#rada</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:5:0.1}; aa0 = pi()/2; aa1=-4/pi(); aa2=-4/pi()/9; bb3=1/3; bb4=1/4;</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["aa0 + aa1 cos(x) + aa2 cos(3 x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(S_3(x) = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#soucet</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[s1, s2, s3, s4]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(S({x1}) = \) {_0}, \(S({x2}) = \) {_1}, \(S({x3}) = \) {_2}, \(S({x4}) = \) {_3}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201885  -->
+  <question type="formulas">
+    <name>
+      <text>alfa 4 (Děmidovič 2943)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"></p><p>Vypočtěte koeficienty a napište Fourierovu <strong></strong> řadu \(2\pi\)-periodické funkce \(f(x)\), která je v intervalu \((-\pi,\ \pi)\) definována předpisem</p><p>$$f(x) = \left\lbrace \begin{array}{cl} {a}x&amp;\mbox{pro } -\pi&lt;x&lt;0,\\{b}x&amp;\mbox{pro }0\leq x&lt;\pi\end{array}\right.$$</p><p>Zadejte koeficient \(a_0\).{#a0} Zadejte \(a_k\) pro k = 1, 2, 3. {#ak} Zadejte \(b_k\) pro k = 1,2,3{#bk}</p><p>Zapište částečný součet Fourierovy řady \(S_3(x)\) (do \(k=3\)). Nulové členy můžete vynechat.{#rada}</p><p>Určete součet Fourierovy řady v bodech \(x_1 = {x1},\ x_2 = {x2}, x_3 = {x3}\). {#soucet}<br></p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<!--<p dir="ltr" style="text-align: left;">Funkce \(f(x)\) definovaná na \((-\pi,\ \pi)\) {jaka}.</p>-->
+<!--
+<p dir="ltr" style="text-align: left;">
+    \(\displaystyle a_k = \frac{{a}}{\pi}\int_{-\pi}^0 x\ \cos kx\ dx +\frac{{b}}{\pi}\ \int_0^{\pi} x\ \cos kx\ dx =\) \(\displaystyle \frac{1}{\pi k^2} \left( ({=a-b})\cos 0 +({=b-a})\cos k\pi\right)\) \(\displaystyle = \frac 2 \pi \frac{{=a-b}}{(2k-1)^2},
+    k\in\mathbb N\).</p>
+<p dir="ltr" style="text-align: left;">\(\displaystyle b_k = \frac{{a}}{\pi}\int_{-\pi}^0 x\ \sin kx\ dx +\frac{{b}}{\pi}\int_0^\pi x\ \sin kx\ dx = -\frac 1 k \cdot{=a+b}\cos k\pi = \frac{(-1)^{k+1}}{k}\cdot{=a+b}, k\in\mathbb N\).</p>
+<p dir="ltr" style="text-align: left;">Tedy \(\displaystyle a_1 = \frac{2({=a-b})}{\pi},\&nbsp; a_2 = \frac{2({=a-b})}{9\pi},\&nbsp; a_3 = \frac{2({=a-b})}{25\pi},\)<br> \(b_1 = {=a+b}, b_2 = -\frac 12 ({=a+b}), b_3 = \frac 13 ({=a+b}), \dots \).</p>
+<p dir="ltr" style="text-align: left;">Fourierova řada pro tuto funkci: \(\displaystyle \frac \pi 4 ){=b-a}) +\frac{2({=a-b})}{\pi} \sum_{k=1}^\infty\ \frac{\cos (2k-1)x}{(2k-1)^2} -({=a+b})\sum_{k=1}^\infty \frac{(-1)^k}{k}\sin(2k-1)x
+    --><!--= 2\cdot\left( \sin x -\frac{\sin 2x}{2} + \frac{\sin 3x}{3} - \frac{\sin 4x}{4} + \dots \right)\)-->
+<!--</p>-->
+<!--<p dir="ltr" style="text-align: left;">Částečné součty: \(\displaystyle S_0(x) = \frac{a_0}{2} = 0,\ S_1(x) = S_0(x) + a_1\cos x + b_1 \sin x = 2 \sin x,\)<br>\(\displaystyle S_2(x) = S_1(x) +&nbsp; a_2\cos 2x + b_1\sin 2x&nbsp; = 2 \sin x-\sin 2x\)<br>\(\displaystyle S_3(x) = S_2(x) +&nbsp;
+    a_3\cos 3x + b_3 \sin 3x&nbsp; = 2 \sin x-\sin 2x + \frac 23 \sin 3x\)<br>\(\displaystyle S_4(x) = S_3(x) +&nbsp; a_4\cos 4x + b_4 \sin 4x&nbsp; = 2 \sin x-\sin 2x + \frac 23 \sin 3x -\frac 12 \sin 4x\)<br></p>-->
+<!--
+<p dir="ltr" style="text-align: left;">Součet Fourierovy řady:<br> \(\displaystyle S(x) = \left\lbrace \begin{array}{cl}{=a}(x-2k)\pi &amp; \mbox{pro } x\in \left( (2k-1)\pi,\&nbsp; 2k\pi \right),\\ 0 &amp;\mbox{pro } x\in\{ (2k -1)\pi \}, \\ &amp; k\in\mathbb Z \end{array}\right.\). <br></p>
+<p dir="ltr" style="text-align: left;">Tedy \(S \left( {x1}\right)&nbsp; = \frac \pi 2,\ (k=0) \), \(S\left( {x2}\right) = -\frac\pi 2,\ (k=1) \), \( S({x3}) =0,\ (k=2)\).<br></p>-->]]></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={-3,-2,-1,1,2,3};
+b={-3,-2,-1,1,2,3};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a0=(b-a)*pi()/2;  a1=2/pi()*(a-b);  a2=2/pi()/9*(a-b); a3 = 2/pi()/25*(a-b);
+b1=(a+b);   b2=-(a+b)/2;  b3 = (a+b)/3;
+
+x1="\\frac 12 \\pi"; x2="\\frac 32 \\pi"; x3 = "3\\pi";
+s1=b*pi()/2; s2=-a*pi()/2; s3=(b-a)/2;
+
+q = a != b ? 0 : 1;
+q = a==b ? 1 : q;
+q= a == -b ? 2 : q;
+jaka=pick(q, "není ani sudá ani lichá", "je lichá", "je sudá");]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#a0</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>a0</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(a_0 = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#ak</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[a1, a2, a3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(a_1 = \) {_0}, \(a_2 = \) {_1}, \(a_3 = \) {_2}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#bk</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[b1,b2,b3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(b_1 = \) {_0},<br> \(b_2 = \) {_1},<br> \(b_3 = \) {_2}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#rada</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-2:-1:0.1, 1:2:0.1}; aa0=round(a0/2,3); aa1=round(a1,3);aa2=round(a2,3);aa3=round(a3,3);</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["aa0 + aa1 cos(x) + b1 sin(x) + aa2 cos(2 x) + b2 sin(2 x) + aa3 cos(3 x) + b3 sin(3 x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(S_4(x) = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#soucet</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[s1, s2, s3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(S\left({x1}\right) = \) {_0}, \(S\left({x2}\right) = \) {_1}, \(S\left({x3}\right) = \) {_2}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201886  -->
+  <question type="formulas">
+    <name>
+      <text>beta 1 (Herrmann, Děmidovič2939)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"></p><p>Nechť \(f(x)\) označuje {=2*b}-periodickou funkci, která je v intervalu \((-{b},\ {b}\rangle\) definována předpisem</p><p>$$f(x) = \left\lbrace\begin{array}{rl}0&amp;x\in(-{b},\ 0\rangle\\{a}&amp;x\in\langle 0,\ {b})\end{array}\right.$$</p><p>Vypočtěte Fourierovy koeficienty. {#a0} Zadejte \(a_k\) pro k = 1, 2, 3. {#ak} Zadejte \(b_k\) pro k = 1,2,3 {#bk}</p><p>Zapište částečný součet prvních tří nenulových členů Fourierovy řady. {#rada}</p><p>Určete součet Fourierovy řady v bodech \(x_1 = {x1},\ x_2 = {x2}, x_3 = {x3}\). {#soucet}<br></p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>b={1:4}; a={1:4}</text>
+</varsrandom>
+<varsglobal><text>x1=b+b/2; x2=2*b+b/2; x3 = 3*b;
+s1=0;s2=a; s3=a/2;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#a0</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>a</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(a_0 = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#ak</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0, 0, 0]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(a_1 = \) {_0}, \(a_2 = \) {_1}, \(a_3 = \) {_2},<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#bk</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[2*a/pi(), 0, 2*a/3/pi()]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(b_1 = \) {_0}, \(b_2 = \) {_1}, \(b_3 = \) {_2}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#rada</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:5:0.1}; aa=a/2; bb1=2*a/pi(); bb2=2*a/3/pi(); xx1=pi()/b; xx2=3*pi()/b;</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["aa + bb1 sin(xx1 x) + bb2 sin(xx2 x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(S(x) = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#soucet</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[s1, s2, s3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(S({x1}) = \) {_0}, \(S({x2}) = \) {_1}, \(S({x3}) = \) {_2}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201887  -->
+  <question type="formulas">
+    <name>
+      <text>beta 2 (Herrmann)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"></p><p>Vypočtěte koeficienty a napište Fourierovu <strong>sinovou</strong> řadu \(2\pi\)-periodické funkce \(f(x)\), která je v intervalu \((0,\ {b})\) definována předpisem</p><p>$$f(x) = {a}$$</p><p>Zadejte koeficient \(a_0\).{#a0} Zadejte \(a_k\) pro k = 1, 2, 3. {#ak} Zadejte \(b_k\) pro k = 1,2,3 {#bk}</p><p>Zapište částečný součet prvních tří nenulových členů Fourierovy řady. {#rada}</p><p>Určete součet Fourierovy řady v bodech \(x_1 = {x1},\ x_2 = {x2}, x_3 = {x3}\). {#soucet}<br></p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={1:5}</text>
+</varsrandom>
+<varsglobal><text><![CDATA[b="\\pi";
+x1="\\frac 32 \\pi"; x2="\\frac 52 \\pi"; x3 = "3\\pi";
+s1=-a;s2=a; s3=0;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#a0</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>0</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(a_0 = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#ak</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0, 0, 0]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(a_1 = \) {_0}, \(a_2 = \) {_1}, \(a_3 = \) {_2},<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#bk</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[4*a/pi(), 0, 4*a/3/pi()]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(b_1 = \) {_0}, \(b_2 = \) {_1}, \(b_3 = \) {_2}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#rada</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:5:0.1}; bb1=4*a/pi(); bb2=4*a/3/pi(); bb3=4*a/5/pi()</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["bb1 sin(x) + bb2 sin(3 x) + bb3 sin(5 x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(S(x) = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#soucet</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[s1, s2, s3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(S({x1}) = \) {_0}, \(S({x2}) = \) {_1}, \(S({x3}) = \) {_2}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068</text>
+    </category>
+    <info format="html">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "B192-2011068".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 5/trojny_cylindricke</text>
+    </category>
+    <info format="html">
+      <text>Výpočet trojného integrálu v cylindrických souřadnicích.</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 135008  -->
+  <question type="formulas">
+    <name>
+      <text>cylindrické 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\iiint_W\ {\rm d}x{\rm d}y{\rm d}z,$$ $$\mbox{ kde }W \mbox{ je ohraničená plochami: } x^2 + y^2 = 1,\ z=0,\ z=1$$</p><p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Doporučení: zvolte cylindrické souřadnice a odpovídající meze:$$\begin{array}{l} x = r\cos\varphi\\ y = r\sin\varphi\\ z = z\end{array},\quad \begin{array}{c}0\leq r\leq 1\\0\leq \varphi\leq 2\pi\\0\leq z\leq 1\end{array}\ \mbox{, potom } {\rm d}x{\rm d}y{\rm d}z = r\ {\rm d}r{\rm d}\varphi{\rm d}z$$</p><p>Integrál&nbsp; převedeme na $$\int_0^{2\pi}\left(\int_0^1\left(\int_0^1\ r\ {\rm d}z\right){\rm d}r\right){\rm d}\varphi$$<br></p><p><br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pi()</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek : {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135040  -->
+  <question type="formulas">
+    <name>
+      <text>cylindrické 10</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\iiint_W\ z\ {\rm d}x{\rm d}y{\rm d}z,$$ $$\mbox{ kde }W \mbox{ je zadaná nerovnicemi }$$ $$&nbsp; x^2 + y^2 \leq 9,\ x\leq y\leq x\sqrt{3},\ \ 0\leq z\leq {V}$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Doporučení: zvolte cylindrické souřadnice a odpovídající meze: 
+$$\begin{array}{l} x = r\cos\varphi\\ y = r\sin\varphi\\ z = 
+z\end{array},\quad \begin{array}{c}0\leq r\leq 3\\\frac \pi 4\leq\varphi\leq \frac\pi 3\\0\leq z\leq {V}\end{array}$$</p><p>Nerovnice (meze) pro \(\varphi\) určíme z nerovnic \( x\leq y\leq x\sqrt{3} \) v proměnných \(r, \varphi\):$$ r\cos \varphi \leq&nbsp; r\sin\varphi\leq \sqrt 3 r\cos\varphi \ \Rightarrow\ 1\leq {\rm tg}\varphi \leq \sqrt 3\ \Rightarrow \frac \pi 4 \leq \varphi\leq \frac\pi 3$$ <br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>V={1:6}</text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pi()*9*V*V/48</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek : {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135009  -->
+  <question type="formulas">
+    <name>
+      <text>cylindrické 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\iiint_W\ (x^2+y^2)\ {\rm d}x{\rm d}y{\rm d}z,$$ $$\mbox{ kde }W \mbox{ je ohraničená plochami } z=\frac12 \left( x^2 + y^2\right),\ z=2$$</p><p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Doporučení: zvolte cylindrické souřadnice $$\begin{array}{l} x = r\cos\varphi\\ y = r\sin\varphi\\ z = z\end{array}$$</p><p>Parabolická plocha \(\displaystyle z=\frac12 \left( x^2 + y^2\right) \) je shora ohraničena rovinou \(z=2\). <br></p><p>Průsečík těchto ploch je \(\displaystyle 2 = \frac 12 \left( x^2 + y^2\right)\), tj. \(\displaystyle x^2 + y^2 = 4\).</p><p>Proto meze pro \(r, \varphi, z\) jsou: $$\begin{array}{c}0\leq r\leq 2\\0\leq \varphi\leq 2\pi\\\frac 12 r^2\leq z\leq 2\end{array}$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pi()*16/3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek : {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135010  -->
+  <question type="formulas">
+    <name>
+      <text>cylindrické 3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\iiint_W\ z\ {\rm d}x{\rm d}y{\rm d}z,$$ $$\mbox{ kde }W \mbox{ je zadaná nerovnicemi } -2\leq x\leq 2,\ 0\leq y\leq \sqrt{4-x^2},\ 0\leq z\leq 2$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Doporučení: zvolte cylindrické souřadnice $$\begin{array}{l} x = r\cos\varphi\\ y = r\sin\varphi\\ z = z\end{array}$$</p><p>Z nerovnic \(\displaystyle&nbsp; -2\leq x\leq 2,\ 0\leq y\leq \sqrt{4-x^2}\) určíme průmět v rovině \(z=0\): $$x^2 + y^2 \leq 4, y\geq 0$$.</p><p>Proto pro \(\varphi\) platí: \(0\leq \varphi\leq \pi\).<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pi()*4</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek : {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135011  -->
+  <question type="formulas">
+    <name>
+      <text>cylindrické 4</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\iiint_W\ z\sqrt{x^2+y^2}\ {\rm d}x{\rm d}y{\rm d}z,$$ $$\mbox{ kde }W \mbox{ je zadaná nerovnicemi } 0\leq z\leq 1, 0\leq x\leq 2,\ 0\leq y\leq \sqrt{2x - x^2}$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Doporučení: zvolte cylindrické souřadnice a odpovídající meze: 
+$$\begin{array}{l} x = r\cos\varphi\\ y = r\sin\varphi\\ z = 
+z\end{array},\quad \begin{array}{c}0\leq r\leq 
+2\cos\varphi\\0\leq\varphi\leq \frac \pi 2\\0\leq z\leq 1\end{array}$$</p><p>Meze \(r\) a \(\varphi\) určujeme z nerovnic $$0\leq x\leq 2,\ 0\leq y\leq \sqrt{2x - x^2} \ \mbox{ tj. } x^2 + y^2 \leq 2x,\ x\geq 0,\ y\geq 0$$<br></p><p>Integrand \(\displaystyle z\sqrt{x^2 + y^2}\) zapíšeme v nových souřadnicích \(z \cdot r\) a nezapomeneme na jakobián, který je \(r\).</p><p>Počítáme integrál $$\int_0^1\ z\ {\rm d}z\cdot\int_0^{\frac \pi2}\left(\int_0^{2\cos\varphi}\ r^2\ {\rm d}r\right){\rm d}\varphi$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>8/9</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek : {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135028  -->
+  <question type="formulas">
+    <name>
+      <text>cylindrické 5</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\iiint_W\ z\left(x^2+y^2\right)\ {\rm d}x{\rm d}y{\rm d}z,$$ $$\mbox{ kde }W \mbox{ je zadaná nerovnicemi }$$ $$ 0\leq x\leq 1,\ 0\leq y\leq \sqrt{1 - x^2},\ 0\leq z\leq \sqrt{1-x^2-y^2}$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Doporučení: zvolte cylindrické souřadnice a odpovídající meze: 
+$$\begin{array}{l} x = r\cos\varphi\\ y = r\sin\varphi\\ z = 
+z\end{array},\quad \begin{array}{c}0\leq r\leq 1\\0\leq\varphi\leq \frac \pi 2\\0\leq z\leq \sqrt{1-r^2}\end{array}$$</p><p>Meze \(r\) a \(\varphi\) určujeme z nerovnic $$0\leq x\leq 1,\ 0\leq y\leq \sqrt{1- x^2} \ \mbox{ tj. } x^2 + y^2 \leq 1,\ x\geq 0,\ y\geq 0$$<br></p><p>Integrand \(\displaystyle z\left(x^2 + y^2\right)\) zapíšeme v nových souřadnicích \(z \cdot r^2\) a nezapomeneme na jakobián, který je \(r\).</p><p>Počítáme integrál $$\int_0^{\frac \pi 2}\ {\rm d}\varphi\cdot\int_0^1\left(\int_0^{\sqrt{1-r^2}}\ zr^3\ {\rm d}z\right){\rm d}r$$<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pi()/48</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek : {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135030  -->
+  <question type="formulas">
+    <name>
+      <text>cylindrické 6</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\iiint_W\ \ {\rm d}x{\rm d}y{\rm d}z,$$ $$\mbox{ kde }W \mbox{ je zadaná nerovnicemi }$$ $$&nbsp; x\geq 0,\ x^2 + y^2 \leq 1,\ 0\leq z\leq 6$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Doporučení: zvolte cylindrické souřadnice a odpovídající meze: 
+$$\begin{array}{l} x = r\cos\varphi\\ y = r\sin\varphi\\ z = 
+z\end{array},\quad \begin{array}{c}0\leq r\leq 1\\-\frac \pi 2\leq\varphi\leq \frac\pi 2\\0\leq z\leq 6\end{array}$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pi()*3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek : {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135033  -->
+  <question type="formulas">
+    <name>
+      <text>cylindrické 7 (dutý válec)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\iiint_W\ \ {\rm d}x{\rm d}y{\rm d}z,$$ $$\mbox{ kde }W \mbox{ je zadaná nerovnicemi }$$ $$&nbsp; {A2}\leq&nbsp; x^2 + y^2 \leq {B2},\ 0\leq z\leq {V}$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Doporučení: zvolte cylindrické souřadnice a odpovídající meze: 
+$$\begin{array}{l} x = r\cos\varphi\\ y = r\sin\varphi\\ z = 
+z\end{array},\quad \begin{array}{c}{A}\leq r\leq {B}\\0\leq\varphi\leq 2\pi\\0\leq z\leq {V}\end{array}$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>V={1:6};
+A={1,2,3};
+B={4,5,6};</text>
+</varsrandom>
+<varsglobal><text>A2 = A*A; B2 = B*B;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>pi()*(B2-A2)*V</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek : {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135038  -->
+  <question type="formulas">
+    <name>
+      <text>cylindrické 8 (zobecněné)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\iiint_W\ \left({C}x + y - z\right)\ {\rm d}x{\rm d}y{\rm d}z,$$ $$\mbox{ kde }W \mbox{ je zadaná nerovnicemi }$$ $${A2}x^2 + {B2}y^2 \leq {AB2} ,\ x\geq 0,\ y\geq {C}x,\ 0\leq z\leq {V}$$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Doporučení: zvolte zobecněné cylindrické souřadnice a odpovídající meze: 
+$$\begin{array}{l} x = {B}r\cos\varphi\\ y = {A}r\sin\varphi\\ z = 
+z\end{array},\quad \begin{array}{c}0\leq r\leq 1\\\frac \pi 4\leq\varphi\leq \frac\pi 2\\0\leq z\leq {V}\end{array}$$</p><p>Nezapomeňte, že \( {\rm d}x{\rm d}y{\rm d}z = {B}\cdot {A}\cdot r\ {\rm d}r{\rm d}\varphi{\rm d}z\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>A={3, 5, 7};
+B={1, 2, 4};</text>
+</varsrandom>
+<varsglobal><text>V = A-1;
+A2 = A*A;
+B2 = B*B;
+AB2 = A2*B2;
+C = A/B;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>V*B*A*A/3 - A*B*V*V*pi()/16</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek : {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 135034  -->
+  <question type="formulas">
+    <name>
+      <text>cylindrické 9 (dutý válec)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Vypočtěte integrál $$\iiint_W\ (x+y)\ {\rm d}x{\rm d}y{\rm d}z,$$ $$\mbox{ kde }W \mbox{ je zadaná nerovnicemi }$$ $$&nbsp; {A2}\leq&nbsp; x^2 + y^2 \leq {B2},\ y\geq x,\ y\geq -x,\ 0\leq z\leq {V} $$</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Doporučení: zvolte cylindrické souřadnice a odpovídající meze: 
+$$\begin{array}{l} x = r\cos\varphi\\ y = r\sin\varphi\\ z = 
+z\end{array},\quad \begin{array}{c}{A}\leq r\leq {B}\\\frac \pi 4\leq\varphi\leq \frac{3\pi} {4}\\0\leq z\leq {V}\end{array}$$</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>V={1:6};
+A={1,2,3};
+B={4,5,6};</text>
+</varsrandom>
+<varsglobal><text>A2 = A*A; B2 = B*B; A3 = A2*A; B3 = B2*B;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>\sqrt(2)*V*(B3-A3)/3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Výsledek : {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

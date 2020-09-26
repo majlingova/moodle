@@ -1,0 +1,1725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Zkouska NMA ALFA/A2</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 176317  -->
+  <question type="formulas">
+    <name>
+      <text>MNČ, polynom st. 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p><b>Je zadaná tabulka hodnot:</b></p><table border="1">
+<tbody>
+<tr>
+<td>  &nbsp; &nbsp; \( {x_i} \) &nbsp; &nbsp; </td>
+<td> &nbsp; &nbsp; {x[0]} &nbsp; &nbsp; </td>
+<td> &nbsp; &nbsp; {x[1]} &nbsp; &nbsp; </td>
+<td> &nbsp; &nbsp; {x[2]} &nbsp; &nbsp; </td>
+<td> &nbsp; &nbsp; {x[3]} &nbsp; &nbsp; </td>
+<td> &nbsp; &nbsp; {x[4]} &nbsp; &nbsp; </td>
+<td> &nbsp; &nbsp; {x[5]} &nbsp; &nbsp; </td>
+<td> &nbsp; &nbsp; {x[6]} &nbsp; &nbsp; </td>
+</tr>
+<tr>
+<td> &nbsp; &nbsp; \( {y_i}\)  &nbsp; &nbsp; </td>
+<td align="center">{y[0]}</td>
+<td align="center">{y[1]}</td>
+<td align="center">{y[2]}</td>
+<td align="center">{y[3]}</td>
+<td align="center">{y[4]}</td>
+<td align="center">{y[5]}</td>
+<td align="center">{y[6]}</td>
+</tr>
+</tbody>
+</table>
+<br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p></p><br><p></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>16.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>x= {[-2,0,0,0,1,2,3], [-1,0,0,0,1,1.5,2],[-1,0,0,0,1,2,3]};
+a0 = { 1, 2, 1.25, 0.7, 0.8, 0.5, -0.5, -1, -2, -3};
+a1 = { 2, 3, 1, 1.5, 0.5, -0.5, -1, -2, -4};
+
+posuv = {0, 0}; #-1, -2, 1, 2};
+del1 = {0.1, 0.2, -0.1, -0.2, 0.3, 0.5, -0.5};
+del2 = {0.1, 0.2, -0.1, -0.2, 0.3, 0.5, -0.5};
+
+ansord1=shuffle([0:5]);
+ansord2=shuffle([0:5]);
+
+ansord3=shuffle([0:5]);
+ansord4=shuffle([0:5]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[answers2 = [ 
+" \\( \\delta^2(p^*(x)) \\le \\delta^2(p(x)) \\) pro libovolný polynom \\( p(x) \\) stupně nejvýše 1",
+" \\( \\delta^2(p^*(x)) \\le \\delta^2(p(x)) \\) pro libovolný polynom \\( p(x) \\)  stupně nejvýše 2",
+" \\( \\delta^2(p^*(x)) \\ge \\delta^2(p(x)) \\) pro libovolný polynom \\( p(x) \\) ",
+" \\( \\delta^2(p^*(x)) < \\delta^2(p(x)) \\) pro libovolný polynom \\( p(x) \\) stupně 1",
+" \\( \\delta^2(p^*(x)) \\neq \\delta^2(p(x)) \\) pro libovolný polynom \\( p(x) \\) stupně 1"  ];
+
+answers1=[ "\\( \\sum_{i=1}^n \\left( y_i - p(x_i) \\right)^2 \\)",
+                     "\\( \\sum_{i=1}^n \\left[ y^2_i - p(x_i)^2 \\right] \\)" ,
+                     "\\( \\left[ \\sum_{i=1}^n ( y_i - p(x_i)) \\right]^2 \\)" ,
+                     "\\( \\left( \\sum_{i=1}^n y_i \\right)^2 -  \\left(\\sum_{i=1}^n  p(x_i) \\right)^2 \\)",
+                     "\\( \\sum_{i=1}^n \\left( y_i - p(x_i) \\right)^4 \\)"  ];
+
+ans_permuted1=sublist(answers1, ansord1);
+ans_inv1   = inv(ansord1);
+ans_permuted2=sublist(answers2, ansord2);
+ans_inv2   = inv(ansord2);
+
+
+answers3=[
+"První rovnice vznikne derivováním kvadratické odchylky podle \\( a_0 \\). ",
+"První rovnice vznikne derivováním kvadratické odchylky podle \\( x_i \\). ",
+"První rovnice vznikne derivováním kvadratické odchylky podle \\( y_i \\). ",
+"První rovnice vznikne derivováním kvadratické odchylky podle \\( x \\). ",
+"První rovnice vznikne derivováním kvadratické odchylky podle \\( y \\). ",
+"Žádná z uvedených možností."
+];
+
+answers4=[
+"Druhá rovnice vznikne derivováním kvadratické odchylky podle \\( a_1 \\). ",
+"Druhá  rovnice vznikne derivováním kvadratické odchylky podle \\( x_i \\). ",
+"Druhá rovnice vznikne derivováním kvadratické odchylky podle \\( y_i \\). ",
+"Druhá  rovnice vznikne derivováním kvadratické odchylky podle \\( x \\). ",
+"Druhá rovnice vznikne derivováním kvadratické odchylky podle \\( y \\). ",
+"Žádná z uvedených možností."
+];
+
+
+
+ans_permuted3=sublist(answers3, ansord3);
+ans_inv3   = inv(ansord3);
+ans_permuted4=sublist(answers4, ansord4);
+ans_inv4   = inv(ansord4);
+
+
+
+
+y=[0,0,0,0,0,0,0,0];
+for (i:[0:7])
+{
+    xx=x[i]; y[i]= a0 + a1 * xx;
+    x[i] = x[i] + posuv;
+}
+y[1] = y[1] -  del1;
+y[2] = y[2]  + del1 - del2;
+y[3] = y[3] + del2;
+
+
+
+
+
+x0sum = 7;
+x1sum = sum(x);
+x2sum = sum(map("pow",x,2));
+ysum = sum(y);
+xysum = sum(map("*",x,y));
+res = [x0sum,x1sum,ysum,x1sum,x2sum,xysum];
+
+
+
+det = x0sum * x2sum - x1sum * x1sum;
+aa0 = (x2sum * ysum - x1sum * xysum) / det;
+aa1 = (-x1sum * ysum + x0sum * xysum) / det;
+]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ans_inv1[0], ans_inv2[0]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>a) Stručně vysvětlete princip metody nejmenších čtverců (pro polynom \( p_2(x) = a_0 + a_1 x \) nejvýše 1. stupně)</b><br><br>
+V této metodě kvadratickou odchylkou \( \delta^2(p(x)) \) rozumíme výraz<br>
+{_0:ans_permuted1}<p></p><p>
+V metodě nejmenších čtverců hledáme optimální polynom \( p^*(x) \) nejvýše 1. stupně tak, aby platilo {_1:ans_permuted2}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p></p><p>Nápověda:<br></p><p>\( a_0 \sum\limits_i 1 + a_1 \sum\limits_i {x_i} + a_2 \sum\limits_i {x_i}^2&nbsp; =&nbsp;\sum\limits_i {y_i} \)</p><p>\( a_0 \sum\limits_i {x_i} + a_1 \sum\limits_i {x_i}^2+ a_2 \sum\limits_i {x_i}^3 =&nbsp;\sum\limits_i {x_i y_i} \)</p><p>\( a_0 \sum\limits_i {x_i}^2 + a_1 \sum\limits_i {x_i}^3+ a_2 \sum\limits_i {x_i}^4 =&nbsp;\sum\limits_i {{x_i}^2 y_i} \)</p><br><p></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ans_inv3[0], ans_inv4[0]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><b>b) Užijte předchozího značení a zapište podmínky z kterých se odvodí soustava normálních rovnic pro polynom stupně nejvýše 1. Tuto soustavu odvod’te! Která z následujících tvrzení jsou správná:</b><br>
+</p><table><tbody><tr><td align="center"> &nbsp; {_0:ans_permuted3} &nbsp; </td> <td>&nbsp; </td>
+<td>{_1:ans_permuted4}</td></tr></tbody></table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x0sum,x1sum,ysum]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p><b>c) Sestavte soustavu normálních rovnic pro zadanou tabulku hodnot </b>(rovnice
+ uveďte ve standardním pořadí).</p><p>{_0} \( a_0 \) + {_1} \( a_1 =&nbsp; \) {_2}</p><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x1sum,x2sum,xysum]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p>{_0} \( a_0 \) + {_1} \( a_1 = \) {_2}<br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>6</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[aa0,aa1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>d) Určete optimální polynom</b> nejvýše 1. stupně \( p_1^*(x) \), který aproximuje danou tabulku hodnot nejlépe ve smyslu metody nejmenších čtverců.<br>\( p_1^*(x) = \) {_0} + ({_1}) \( x \)<br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text><![CDATA[<p>--<br></p>]]></text>
+    </hint>
+    <hint format="html">
+      <text><![CDATA[<p>--<br></p>]]></text>
+    </hint>
+  </question>
+
+<!-- question: 174401  -->
+  <question type="formulas">
+    <name>
+      <text>MNČ, polynom st. 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p><b>Je zadaná tabulka hodnot:</b></p><table border="1">
+<tbody>
+<tr>
+<td>  &nbsp; &nbsp; \( {x_i} \) &nbsp; &nbsp; </td>
+<td> &nbsp; &nbsp; {x[0]} &nbsp; &nbsp; </td>
+<td> &nbsp; &nbsp; {x[1]} &nbsp; &nbsp; </td>
+<td> &nbsp; &nbsp; {x[2]} &nbsp; &nbsp; </td>
+<td> &nbsp; &nbsp; {x[3]} &nbsp; &nbsp; </td>
+<td> &nbsp; &nbsp; {x[4]} &nbsp; &nbsp; </td>
+<td> &nbsp; &nbsp; {x[5]} &nbsp; &nbsp; </td>
+<td> &nbsp; &nbsp; {x[6]} &nbsp; &nbsp; </td>
+</tr>
+<tr>
+<td> &nbsp; &nbsp; \( {y_i}\)  &nbsp; &nbsp; </td>
+<td align="center">{y[0]}</td>
+<td align="center">{y[1]}</td>
+<td align="center">{y[2]}</td>
+<td align="center">{y[3]}</td>
+<td align="center">{y[4]}</td>
+<td align="center">{y[5]}</td>
+<td align="center">{y[6]}</td>
+</tr>
+</tbody>
+</table>
+<br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p></p><br><p></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>16.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>x= {[-3,-2,0,0,0,2,3], [-2,-1,0,0,0,1,2],[-3,-1,0,0,0,1, 3]};
+a0 = { 0.5, -0.5};
+a1 = { 2, 3, 1, -1, -2};
+a2 = { 1, 1.5, 2.5, 0.75};
+posuv = {0, 0}; #-1, -2, 1, 2};
+del1 = {0.1, 0.2, -0.1, -0.2, 0.3, 0.5, -0.5};
+del2 = {0.1, 0.2, -0.1, -0.2, 0.3, 0.5, -0.5};
+
+ansord1=shuffle([0:5]);
+ansord2=shuffle([0:5]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[answers2 = [ 
+" \\( \\delta^2(p^*(x)) \\le \\delta^2(p(x)) \\) pro libovolný polynom \\( p(x) \\) stupně nejvýše 2",
+" \\( \\delta^2(p^*(x)) \\le \\delta^2(p(x)) \\) pro libovolný polynom \\( p(x) \\) ",
+" \\( \\delta^2(p^*(x)) \\ge \\delta^2(p(x)) \\) pro libovolný polynom \\( p(x) \\) ",
+" \\( \\delta^2(p^*(x)) < \\delta^2(p(x)) \\) pro libovolný polynom \\( p(x) \\) stupně 2",
+" \\( \\delta^2(p^*(x)) \\neq \\delta^2(p(x)) \\) pro libovolný polynom \\( p(x) \\) stupně 2"  ];
+
+answers1=[ "\\( \\sum_{i=1}^n \\left( y_i - p(x_i) \\right)^2 \\)",
+                     "\\( \\sum_{i=1}^n \\left[ y^2_i - p(x_i)^2 \\right] \\)" ,
+                     "\\( \\left[ \\sum_{i=1}^n ( y_i - p(x_i)) \\right]^2 \\)" ,
+                     "\\( \\left( \\sum_{i=1}^n y_i \\right)^2 -  \\left(\\sum_{i=1}^n  p(x_i) \\right)^2 \\)",
+                     "\\( \\sum_{i=1}^n \\left( y_i - p(x_i) \\right)^4 \\)"  ];
+
+ans_permuted1=sublist(answers1, ansord1);
+ans_inv1   = inv(ansord1);
+ans_permuted2=sublist(answers2, ansord2);
+ans_inv2   = inv(ansord2);
+
+
+
+
+
+
+y=[0,0,0,0,0,0,0,0];
+for (i:[0:7])
+{
+    xx=x[i]; y[i]= a0 + a1 * xx  + a2 * xx * xx;
+    x[i] = x[i] + posuv;
+}
+y[2] = y[2] -  del1;
+y[3] = y[3]  + del1 - del2;
+y[4] = y[4] + del2;
+
+
+
+
+
+x0sum = 7;
+x1sum = sum(x);
+x2sum = sum(map("pow",x,2));
+x3sum = sum(map("pow",x,3));
+x4sum = sum(map("pow",x,4));
+ysum = sum(y);
+xysum = sum(map("*",x,y));
+x2ysum = sum(map("*",map("*",x,x),y));
+res = [x0sum,x1sum,x2sum,ysum,x1sum,x2sum,x3sum,xysum,x2sum,x3sum,x4sum,x2ysum];
+
+aa1 = xysum / x2sum ;
+
+det = x0sum * x4sum - x2sum * x2sum;
+aa0 = (x4sum * ysum - x2sum * x2ysum) / det;
+aa2 = (-x2sum * ysum + x0sum * x2ysum) / det;
+]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ans_inv1[0], ans_inv2[0]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>a) Stručně vysvětlete princip metody nejmenších čtverců (pro polynom \( p_2(x) = a_0 + a_1 x + a_2 x^2 \) nejvýše 2. stupně)</b><br><br>
+V této metodě kvadratickou odchylkou \( \delta^2(p(x)) \) rozumíme výraz<br>
+{_0:ans_permuted1}<p></p><p>
+V metodě nejmenších čtverců hledáme optimální polynom \( p^*(x) \) nejvýše 2. stupně tak, aby platilo {_1:ans_permuted2}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p></p><p>Nápověda:<br></p><p>\( a_0 \sum\limits_i 1 + a_1 \sum\limits_i {x_i} + a_2 \sum\limits_i {x_i}^2&nbsp; =&nbsp;\sum\limits_i {y_i} \)</p><p>\( a_0 \sum\limits_i {x_i} + a_1 \sum\limits_i {x_i}^2+ a_2 \sum\limits_i {x_i}^3 =&nbsp;\sum\limits_i {x_i y_i} \)</p><p>\( a_0 \sum\limits_i {x_i}^2 + a_1 \sum\limits_i {x_i}^3+ a_2 \sum\limits_i {x_i}^4 =&nbsp;\sum\limits_i {{x_i}^2 y_i} \)</p><br><p></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x0sum,x1sum,x2sum,ysum]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><b>b) Užijte předchozího značení a zapište podmínky z kterých se odvodí soustava normálních rovnic pro polynom stupně nejvýše 2. Tuto soustavu odvod’te!</b></p><p><b>c) Sestavte soustavu normálních rovnic pro zadanou tabulku hodnot </b>(rovnice
+ uveďte ve standardním pořadí).</p><p>{_0} \( a_0 \) + {_1} \( a_1 \)+ {_2} \( a_2 = \) {_3}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x1sum,x2sum,x3sum,xysum]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p>{_0} \( a_0 \) + {_1} \( a_1 \)+ {_2} \( a_2 = \) {_3}<br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x2sum,x3sum,x4sum,x2ysum]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p>{_0} \( a_0 \) + {_1} \( a_1 \)+ {_2} \( a_2 = \) {_3}<br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>7</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[aa0,aa1,aa2]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>d) Určete optimální polynom</b> nejvýše druhého stupně \( p_2^*(x) \), který aproximuje danou tabulku hodnot nejlépe ve smyslu metody nejmenších čtverců.<br>\( p_2^*(x) = \) {_0} + ({_1}) \( x + \) ({_2}) \( x^2\).<p></p><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text><![CDATA[<p>--<br></p>]]></text>
+    </hint>
+    <hint format="html">
+      <text><![CDATA[<p>--<br></p>]]></text>
+    </hint>
+  </question>
+
+<!-- question: 166738  -->
+  <question type="formulas">
+    <name>
+      <text>Newton - var 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava nelineárních rovnic \( f(x,y) = 0 \) a \( g(x,y) = 0 \), kde <br></p><p>\[ f(x,y) = x^2 + {A} y^2 - {A} \]</p><p>\[ g(x,y) = x^2 (y + {B}) - 1 \]</p><br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>16.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>A = {4, 5, 3, 6, 9 };
+B = { 1, 0.5, 2 };
+
+k = { 0, 1, 2, 3, 4, 5, 6, 7};</text>
+</varsrandom>
+<varsglobal><text>listx = [ -1, -1, -1, 1, 1, 1, 2, 2 ];
+listy = [ -1,  1,  0, 1, -1, 0, 1, -1];
+x0 = listx[k];  y0 = listy[k];
+
+fval = x0 * x0 + A * y0 * y0 - A;
+gval = x0 * x0 * (y0 + B) - 1;
+
+fx = 2 * x0;
+fy = 2 * A * y0;
+gx = 2 * x0 * (y0 + B);
+gy = x0 * x0;
+
+det = fx * gy - fy * gx;
+
+dx = -(gy * fval - fy *gval) / det;
+dy = -(-gx * fval + fx *gval) / det;
+x1 = x0 + dx;
+y1 = y0 + dy;
+
+</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[fval, fx, fy]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>a) V postupu řešení odvoďte soustavu rovnic pro výpočet nového přiblížení </b> \( X^{(k + 1)} = [x^{(k + 1)}, y^{(k + 1)}] \) Newtonovou iterační metodou! <br><br> Zapište Taylorův polynom \( T^f_1(x,y) \) pro aproximaci funkce \( f(x,y) \) v okolí bodu \( [x_0, y_0] = [{x0}, {y0}] \) <br>
+\( T^f_1(x,y)  = \)  ({_0}) + ({_1}) \( (x - x_0) + \) ({_2}) \( (y - y_0) \)<br><br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[gval, gx, gy]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[Zapište Taylorův polynom \( T^g_1(x,y) \) pro aproximaci funkce \( g(x,y) \) v okolí bodu \( [x_0, y_0] = [{x0}, {y0}] \)<br>
+
+\( T^g_1(x,y)  = \)  ({_0}) + ({_1}) \( (x - x_0) + \) ({_2}) \( (y - y_0) \)<br><br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>6</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>6</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[fx, fy, -fval, gx, gy, -gval]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>b)</b> Volte počáteční přiblížení \( X^{(0)} = ({x0}, {y0})^T \) a sestavte soustavu rovnic, která vznikne při použítí Newtonovy iterační metody při výpočtu přírůstku \( ( \Delta x, \Delta y)^T = X^{(1)} - X^{(0)} \). <br>
+<table><tbody><tr><td rowspan="2">\( \Biggl ( \)</td><td> {_0} </td> <td> {_1} </td>
+<td rowspan="2">\( \Biggr ) \Biggl ( \)</td>
+<td> \( \Delta x \) </td>
+<td rowspan="2">\( \Biggr )  = \Biggl (  \)</td>
+<td>{_2}</td><td rowspan="2">\( \Biggr ) \)</td></tr><tr><td> {_3} </td> <td> {_4} </td><td> \( \Delta y \) </td><td>{_5}</td></tr> </tbody></table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x1,y1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>c)</b> Pro počáteční přiblížení \( X^{(0)} = ({x0}, {y0})^T \) vypočtěte nové přiblížení  \( X^{(1)} \):<br><br>
+
+\( X^{(1)} = ( \) {_0}, {_1} \( )^T. \)]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 174377  -->
+  <question type="formulas">
+    <name>
+      <text>Newton - var 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava nelineárních rovnic \( f(x,y) = 0 \) a \( g(x,y) = 0 \), kde <br></p><p>\[ f(x,y) = \ln (x + {A}) - y \]</p><p>\[ g(x,y) = x^2&nbsp; - {dvebeta} x + y^2&nbsp; - {GPOM} \]</p><br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>16.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>A = {1, 2, 3, 4 };
+r = { 2, 3, 4, 2.5, 1.5 };
+beta = { 1 , 1.5, 0.5 };
+k = { 0, 1, 2, 3, 4, 5, 6, 7};</text>
+</varsrandom>
+<varsglobal><text>beta = (A == 1) ? ((beta == 1) ? beta = 1.5 : beta) : beta;
+dvebeta = 2 * beta;
+R2 = r * r;
+GPOM = R2 - beta * beta;
+listy = [ -1,  1,  0, -2, -3, -4, 0,-5] ;
+x0 = 1 - A;  y0 = listy[k];
+
+fval = log(x0 + A) - y0;
+gval = x0 * x0  - dvebeta * x0 + y0 * y0 - GPOM;
+
+fx = 1/ (x0 + A);
+fy = -1;
+gx = 2 * x0 - dvebeta;
+gy = 2 * y0;
+
+det = fx * gy - fy * gx;
+
+dx = -(gy * fval - fy *gval) / det;
+dy = -(-gx * fval + fx *gval) / det;
+x1 = x0 + dx;
+y1 = y0 + dy;
+
+</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[fval, fx, fy]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>a) V postupu řešení odvoďte soustavu rovnic pro výpočet nového přiblížení </b> \( X^{(k + 1)} = [x^{(k + 1)}, y^{(k + 1)}] \) Newtonovou iterační metodou! <br><br> Zapište Taylorův polynom \( T^f_1(x,y) \) pro aproximaci funkce \( f(x,y) \) v okolí bodu \( [x_0, y_0] = [{x0}, {y0}] \) <br>
+\( T^f_1(x,y)  = \)  ({_0}) + ({_1}) \( (x - x_0) + \) ({_2}) \( (y - y_0) \)<br><br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[gval, gx, gy]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[Zapište Taylorův polynom \( T^g_1(x,y) \) pro aproximaci funkce \( g(x,y) \) v okolí bodu \( [x_0, y_0] = [{x0}, {y0}] \)<br>
+
+\( T^g_1(x,y)  = \)  ({_0}) + ({_1}) \( (x - x_0) + \) ({_2}) \( (y - y_0) \)<br><br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>6</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>6</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[fx, fy, -fval, gx, gy, -gval]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>b)</b> Volte počáteční přiblížení \( X^{(0)} = ({x0}, {y0})^T \) a sestavte soustavu rovnic, která vznikne při použítí Newtonovy iterační metody při výpočtu přírůstku \( ( \Delta x, \Delta y)^T = X^{(1)} - X^{(0)} \). <br>
+<table><tbody><tr><td rowspan="2">\( \Biggl ( \)</td><td> {_0} </td> <td> {_1} </td>
+<td rowspan="2">\( \Biggr ) \Biggl ( \)</td>
+<td> \( \Delta x \) </td>
+<td rowspan="2">\( \Biggr )  = \Biggl (  \)</td>
+<td>{_2}</td><td rowspan="2">\( \Biggr ) \)</td></tr><tr><td> {_3} </td> <td> {_4} </td><td> \( \Delta y \) </td><td>{_5}</td></tr> </tbody></table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x1,y1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>c)</b> Pro počáteční přiblížení \( X^{(0)} = ({x0}, {y0})^T \) vypočtěte nové přiblížení  \( X^{(1)} \):<br><br>
+
+\( X^{(1)} = ( \) {_0}, {_1} \( )^T. \)]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 174387  -->
+  <question type="formulas">
+    <name>
+      <text>Newton - var 3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava nelineárních rovnic \( f(x,y) = 0 \) a \( g(x,y) = 0 \), kde <br></p><p>\[ f(x,y) = {A} x - y + {C} \]</p><p>\[ g(x,y) = {B} \sin{(x)} - y \]</p><br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>16.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>A = {1, 2, 3, 4};
+B = {2, 3, 4};
+C = {1, 2, 3, 4};
+k = { 0, 1, 2, 3, 4, 5, 6, 7};</text>
+</varsrandom>
+<varsglobal><text>listx = [ 3, 1, 5, -1,3, 1, 5, -1  ];
+listy = [ -1,  1,  0, 2, -2, 3, -3, 4];
+xmult =  listx[k];
+x0 = pi() * listx[k] / 2;  y0 = listy[k];
+
+fval = A * x0 - y0 + C;
+gval = B * sin(x0) - y0;
+
+fx = A;
+fy = -1;
+gx = B * cos(x0);
+gy = -1;
+
+det = fx * gy - fy * gx;
+
+dx = -(gy * fval - fy *gval) / det;
+dy = -(-gx * fval + fx *gval) / det;
+x1 = x0 + dx;
+y1 = y0 + dy;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[fval, fx, fy]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>a) V postupu řešení odvoďte soustavu rovnic pro výpočet nového přiblížení \( X^{k+1} = [x^{k+1}, y^{k+1}] \) Newtonovou iterační metodou! </b><br> Zapište Taylorův polynom \( T^f_1(x,y) \) pro aproximaci funkce \( f(x,y) \) v okolí bodu \( [x_0, y_0] = [\frac{{xmult}}{2} \pi , {y0}] \) <br>
+\( T^f_1(x,y)  = \)  ({_0}) + ({_1}) \( (x - x_0) + \) ({_2}) \( (y - y_0) \)<br><br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[gval, gx, gy]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[Zapište Taylorův polynom \( T^g_1(x,y) \) pro aproximaci funkce \( g(x,y) \) v okolí bodu \( [x_0, y_0] = [\frac{{xmult}}{2} \pi, {y0}] \)<br>
+
+\( T^g_1(x,y)  = \)  ({_0}) + ({_1}) \( (x - x_0) + \) ({_2}) \( (y - y_0) \)<br><br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>6</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>6</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[fx, fy, -fval, gx, gy, -gval]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>b)</b> Volte počáteční přiblížení \( X^{(0)} = (\frac{{xmult}}{2} \pi, {y0})^T \) a sestavte soustavu rovnic, která vznikne při použítí Newtonovy iterační metody při výpočtu přírůstku \( ( \Delta x, \Delta y)^T = X^{(1)} - X^{(0)} \). <br>
+<table><tbody><tr><td rowspan="2">\( \Biggl ( \)</td><td> {_0} </td> <td> {_1} </td>
+<td rowspan="2">\( \Biggr ) \Biggl ( \)</td>
+<td> \( \Delta x \) </td>
+<td rowspan="2">\( \Biggr )  = \Biggl (  \)</td>
+<td>{_2}</td><td rowspan="2">\( \Biggr ) \)</td></tr><tr><td> {_3} </td> <td> {_4} </td><td> \( \Delta y \) </td><td>{_5}</td></tr> </tbody></table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x1,y1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>c)</b> Pro počáteční přiblížení \( X^{(0)} = (\frac{{xmult}}{2} \pi, {y0})^T \) vypočtěte nové přiblížení  \( X^{(1)} \):<br><br>
+
+\( X^{(1)} = ( \) {_0}, {_1} \( )^T. \)]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

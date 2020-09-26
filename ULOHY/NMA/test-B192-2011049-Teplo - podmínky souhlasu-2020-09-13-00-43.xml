@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$module$/top/Teplo - podmínky souhlasu</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 140510  -->
+  <question type="formulas">
+    <name>
+      <text>Podmínky souhlasu 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p>Je dána smíšená úloha \( \frac{\partial u}{\partial t} = {a1_show}&nbsp;\frac{\partial^2 u}{\partial x^2} + {a2_show} t \)</p><p>s počáteční podmínkou \( u(x,0) = {a4_show} \sin (\pi x) -&nbsp;{a3_show} x \) pro \( x \in \left[ 0, 1 \right] \)</p><p>a okrajovými podmínkami \( u(0,t) = e^t - {pl}, \quad u(1,t) = e^t - {pr} \) pro \( t \geq 0 \)<br></p><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><b>Levý okraj:</b></p><p>PP: \( u(0,0) = {a4_show} \sin 0 - 0 = 0 \)<br></p><p>OP: \( u(0,0) = e^0 - {pl} = {pl_r} \)</p><p>{hint1}<br></p><p><b>Pravý okraj:</b><br></p><p>PP: \( u(1,0) = {a4_show} \sin \pi - {a3} = {ma3} \)</p><p>OP: \( u(1,0) = e^0 - {pr} = {pr_r} \)<br></p><p>{hint2}<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a1={1,2,3,4};
+a2={1,2,3,4};
+a3={1,2,3,4};
+a4={1,2,3,4};
+pp={0,0,1,2,3};
+ans_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[show_num = ["","1","2","3","4"];
+show_times = ["","1 \\cdot","2 \\cdot","3 \\cdot","4 \\cdot"];
+a2_ind = (a2 == 1) ? 0 : a2;
+a2_show = show_num[a2_ind];
+a1_ind = (a1 == 1) ? 0 : a1;
+a1_show = show_num[a1_ind];
+a3_ind = (a3 == 1) ? 0 : a3;
+a3_show = show_num[a3_ind];
+a4_ind = (a4 == 1) ? 0 : a4;
+a4_show = show_num[a4_ind];
+ans_inv=inv(ans_order);
+answers=["Úloha je korektně zadaná",
+"Není splněna podmínka souhlasu pouze na levém okraji", 
+"Není splněna podmínka souhlasu pouze na pravém okraji", 
+"Není splněna podmínka souhlasu ani na jednom okraji"];
+ans_permuted=sublist(answers,ans_order);
+pl = 1 + a2*(pp >= 2);
+pr = 1 + a3 + a2*(pp%2);
+ans1 = (pl == 1) ? (pr == 1 + a3 ? ans_inv[0] : ans_inv[2]) : (pr == 1 + a3 ? ans_inv[1] : ans_inv[3]);
+pl_r = 1 - pl;
+pr_r = 1 - pr;
+ma3 = - a3;
+hints = ["Nesouhlasí.", "Souhlasí."];
+hint1 = hints[pl == 1];
+hint2 = hints[pr == 1 + a3];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_0 == ans1</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p><b>Označte platné tvrzení:</b><br></p><p></p>{_0:ans_permuted}<br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 140599  -->
+  <question type="formulas">
+    <name>
+      <text>Podmínky souhlasu 1 (kopie)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p>Je dána smíšená úloha \( \frac{\partial u}{\partial t} = {a1_show}&nbsp;\frac{\partial^2 u}{\partial x^2} + {a2_show} t \)</p><p>s počáteční podmínkou \( u(x,0) = {a4_show} \sin (\pi x) -&nbsp;{a3_show} x \) pro \( x \in \left[ 0, 1 \right] \)</p><p>a okrajovými podmínkami \( u(0,t) = e^t - {pl}, \quad u(1,t) = e^t - {pr} \) pro \( t \geq 0 \)<br></p><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><b>Levý okraj:</b></p><p>PP: \( u(0,0) = {a4_show} \sin 0 - 0 = 0 \)<br></p><p>OP: \( u(0,0) = e^0 - {pl} = {pl_r} \)</p><p>{hint1}<br></p><p><b>Pravý okraj:</b><br></p><p>PP: \( u(1,0) = {a4_show} \sin \pi - {a3} = {ma3} \)</p><p>OP: \( u(1,0) = e^0 - {pr} = {pr_r} \)<br></p><p>{hint2}<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a1={1,2,3,4};
+a2={1,2,3,4};
+a3={1,2,3,4};
+a4={1,2,3,4};
+pp={0,0,1,2,3};
+ans_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[show_num = ["","1","2","3","4"];
+show_times = ["","1 \\cdot","2 \\cdot","3 \\cdot","4 \\cdot"];
+a2_ind = (a2 == 1) ? 0 : a2;
+a2_show = show_num[a2_ind];
+a1_ind = (a1 == 1) ? 0 : a1;
+a1_show = show_num[a1_ind];
+a3_ind = (a3 == 1) ? 0 : a3;
+a3_show = show_num[a3_ind];
+a4_ind = (a4 == 1) ? 0 : a4;
+a4_show = show_num[a4_ind];
+ans_inv=inv(ans_order);
+answers=["Úloha je korektně zadaná",
+"Není splněna podmínka souhlasu pouze na levém okraji", 
+"Není splněna podmínka souhlasu pouze na pravém okraji", 
+"Není splněna podmínka souhlasu ani na jednom okraji"];
+ans_permuted=sublist(answers,ans_order);
+pl = 1 + a2*(pp >= 2);
+pr = 1 + a3 + a2*(pp%2);
+ans1 = (pl == 1) ? (pr == 1 + a3 ? ans_inv[0] : ans_inv[2]) : (pr == 1 + a3 ? ans_inv[1] : ans_inv[3]);
+pl_r = 1 - pl;
+pr_r = 1 - pr;
+ma3 = - a3;
+hints = ["Nesouhlasí.", "Souhlasí."];
+hint1 = hints[pl == 1];
+hint2 = hints[pr == 1 + a3];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_0 == ans1</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p><b>Označte platné tvrzení:</b><br></p><p></p>{_0:ans_permuted}<br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 140600  -->
+  <question type="formulas">
+    <name>
+      <text>Podmínky souhlasu 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p>Je dána smíšená úloha \( \frac{\partial u}{\partial t} = {a1_show}&nbsp;\frac{\partial^2 u}{\partial x^2} + {a2_show} \frac{\sin 2 \pi t}{1-t^2} \)</p><p>s počáteční podmínkou \( u(x,0) = {a33} - x^2 \) pro \( x \in \left[ -{xx}, {xx} \right] \)</p><p>a okrajovými podmínkami \( u(-{xx},t) = {pl} - \frac{1}{1-t^2}, \quad u({xx},t) = \frac{pr}{1-t^2} \) pro \( t \in \left[ 0, 0.5 \right] \)<br></p><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><b>Levý okraj:</b></p><p>PP: \( u(-{xx},0) = {a33} - {xx2} = {a3} \)<br></p><p>OP: \( u(-{xx},0) = {pl} - 1 = {pl_r} \)</p><p>{hint1}<br></p><p><b>Pravý okraj:</b><br></p><p>PP: \( u({xx},0) = {a33} - {xx2} = {a3} \)</p><p>OP: \( u({xx},0) = {pr} \)<br></p><p>{hint2}<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a1={1,2,3,4};
+a2={1,2,3,4};
+a3={1,2,3,4};
+pp={0,0,1,2,3};
+xx={1,2,3,4};
+ans_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[show_num = ["","1","2","3","4"];
+show_times = ["","1 \\cdot","2 \\cdot","3 \\cdot","4 \\cdot"];
+a2_ind = (a2 == 1) ? 0 : a2;
+a2_show = show_num[a2_ind];
+a1_ind = (a1 == 1) ? 0 : a1;
+a1_show = show_num[a1_ind];
+a33 = a3 + xx*xx;
+ans_inv=inv(ans_order);
+answers=["Úloha je korektně zadaná",
+"Není splněna podmínka souhlasu pouze na levém okraji", 
+"Není splněna podmínka souhlasu pouze na pravém okraji", 
+"Není splněna podmínka souhlasu ani na jednom okraji"];
+ans_permuted=sublist(answers,ans_order);
+pl = a3 + (pp >= 2);
+pr = a3 + a2*(pp%2);
+ans1 = (pl == a3 + 1) ? (pr == a3 ? ans_inv[0] : ans_inv[2]) : (pr == a3 ? ans_inv[1] : ans_inv[3]);
+xx2 = xx*xx;
+pl_r = pl - 1;
+hints = ["Nesouhlasí.", "Souhlasí."];
+hint1 = hints[pl == a3 + 1];
+hint2 = hints[pr == a3];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_0 == ans1</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p><b>Označte platné tvrzení:</b><br></p><p></p>{_0:ans_permuted}<br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 140626  -->
+  <question type="formulas">
+    <name>
+      <text>Podmínky souhlasu 2 (kopie)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p>Je dána smíšená úloha \( \frac{\partial u}{\partial t} = {a1_show}&nbsp;\frac{\partial^2 u}{\partial x^2} + {a2_show} \frac{\sin 2 \pi t}{1-t^2} \)</p><p>s počáteční podmínkou \( u(x,0) = {a33} - x^2 \) pro \( x \in \left[ -{xx}, {xx} \right] \)</p><p>a okrajovými podmínkami \( u(-{xx},t) = {pl} - \frac{1}{1-t^2}, \quad u({xx},t) = \frac{pr}{1-t^2} \) pro \( t \in \left[ 0, 0.5 \right] \)<br></p><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><b>Levý okraj:</b></p><p>PP: \( u(-{xx},0) = {a33} - {xx2} = {a3} \)<br></p><p>OP: \( u(-{xx},0) = {pl} - 1 = {pl_r} \)</p><p>{hint1}<br></p><p><b>Pravý okraj:</b><br></p><p>PP: \( u({xx},0) = {a33} - {xx2} = {a3} \)</p><p>OP: \( u({xx},0) = {pr} \)<br></p><p>{hint2}<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a1={1,2,3,4};
+a2={1,2,3,4};
+a3={1,2,3,4};
+pp={0,0,1,2,3};
+xx={1,2,3,4};
+ans_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[show_num = ["","1","2","3","4"];
+show_times = ["","1 \\cdot","2 \\cdot","3 \\cdot","4 \\cdot"];
+a2_ind = (a2 == 1) ? 0 : a2;
+a2_show = show_num[a2_ind];
+a1_ind = (a1 == 1) ? 0 : a1;
+a1_show = show_num[a1_ind];
+a33 = a3 + xx*xx;
+ans_inv=inv(ans_order);
+answers=["Úloha je korektně zadaná",
+"Není splněna podmínka souhlasu pouze na levém okraji", 
+"Není splněna podmínka souhlasu pouze na pravém okraji", 
+"Není splněna podmínka souhlasu ani na jednom okraji"];
+ans_permuted=sublist(answers,ans_order);
+pl = a3 + (pp >= 2);
+pr = a3 + a2*(pp%2);
+ans1 = (pl == a3 + 1) ? (pr == a3 ? ans_inv[0] : ans_inv[2]) : (pr == a3 ? ans_inv[1] : ans_inv[3]);
+xx2 = xx*xx;
+pl_r = pl - 1;
+hints = ["Nesouhlasí.", "Souhlasí."];
+hint1 = hints[pl == a3 + 1];
+hint2 = hints[pr == a3];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_0 == ans1</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p><b>Označte platné tvrzení:</b><br></p><p></p>{_0:ans_permuted}<br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 140627  -->
+  <question type="formulas">
+    <name>
+      <text>Podmínky souhlasu 3 (parametrické)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p>Je dána smíšená úloha \( \frac{\partial u}{\partial t} = {a1_show}&nbsp;\frac{\partial^2 u}{\partial x^2} + {a2_show} t^2 \)</p><p>s počáteční podmínkou \( u(x,0) = {s_f} \) pro \( x \in \left[0, 1 \right] \)</p><p>a okrajovými podmínkami \( u(0,t) = \sin \left( \pi (t + \phi) \right) , \quad u(1,t) = \cos \left( \pi (t + \phi) \right) \) pro \( t \in \left[ 0, 0.5 \right] \)<br></p><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><b>Počáteční podmínka:</b></p><p>\( u(0,0) = {s_l} \), \( u(1,0) = {s_r} \)<br></p><p><b>Okrajová podmínka</b>: <br></p><p>\( u(0,0) = \sin \left( \pi \phi \right) = {s_l} \)</p><p>\( u(1,0) = \cos \left( \pi \phi \right) = {s_r} \)</p><p>\( \phi = {ans1} \)<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a1={1,2,3,4};
+a2={1,2,3,4};
+si={0,1,2,3,4};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[s=[0,0.25,0.5,0.75,1];
+s_form=["x","\\frac{\\sqrt{2}}{2}","1-x","\\sqrt{2} \\left( \\frac{1}{2} - x \\right)","-x"];
+s_form_l=["0","\\frac{\\sqrt{2}}{2}","1","\\frac{\\sqrt{2}}{2}","0"];
+s_form_r=["1","\\frac{\\sqrt{2}}{2}","0","-\\frac{\\sqrt{2}}{2}","-1"];
+s_f = s_form[si];
+s_r= s_form_r[si];
+s_l= s_form_l[si];
+show_num = ["","1","2","3","4"];
+a2_ind = (a2 == 1) ? 0 : a2;
+a2_show = show_num[a2_ind];
+a1_ind = (a1 == 1) ? 0 : a1;
+a1_show = show_num[a1_ind];
+ans1 = s[si];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p>Zvolte hodnotu parametru \( \phi \in \left[ 0, 1 \right] \) tak, aby byly podmínky souhlasu splněny.</p><p>\( \phi = \) {_0}<br></p><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "Matematika I".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I/Zkoušky (19//20)</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I/Zkoušky (19//20)/Zkouska MA1 (cloze)</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 200991  -->
+  <question type="cloze">
+    <name>
+      <text>A1 SVACEK 001</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Pozor:&nbsp;</b><b>všechny číselné odpovědi zadávejte v desetinném čísle s přesností na dvě desetinná místa! Odpovědi typu "1/2" budou vyhodnoceny jako chybné.</b><br></p><p>Uveďte Frobeniovu větu na soustavu rovnic \(\mathbf A \vec x = \vec b\).<br>________________________________________________________________________________________________</p><p> a) Symbolem \(h(\mathbf A)\) se v této větě rozumí:<br> {2:MULTIRESPONSE_H:šířka matice \(\mathbf A\),~hloubka matice \(\mathbf A\),~hladina matice \(\mathbf A\),~=hodnost matice \(\mathbf A\),~enthalpie matice \(\mathbf A\),~entropie matice \(\mathbf A\),}</p><p><span style="font-size: 0.9375rem;">&nbsp;Symbolem \((\mathbf A | \vec b )\) se v této větě rozumí:</span></p><p> {2:MULTIRESPONSE_H:podil \(\vec&nbsp;b\) : \(\mathbf A\),~podíl \(\mathbf A\) : \(\vec&nbsp;b\),~rozdíl \(\vec b\) minus \(\mathbf A\),~rozdíl \(\mathbf A\) minus \(\vec&nbsp;b\),~=rozšířená matice \(\mathbf A\) o sloupec \(\vec&nbsp;b\),~zúžená matice \(\mathbf A\) o sloupec \(\vec&nbsp;b\),} </p><p>Věta říká, že řešení existuje pro následující případy:<br> {2:MULTIRESPONSE:\(h(\mathbf A) &lt; h(\mathbf A | \vec&nbsp;b )\)~=\(h(\mathbf A) = h(\mathbf A | \vec&nbsp;b )\)~\(h(\mathbf A) = h(\mathbf A | \vec&nbsp;b ) - 1\)~\(h(\mathbf A) = h(\mathbf A | \vec&nbsp;b ) = 2 n\), kde \(n\) je počet neznámých~\(h(\mathbf A) = n\) nebo \(h(\mathbf A | \vec&nbsp;b ) =n\), kde \(n\) je počet neznámých} </p><p>________________________________________________________________________________________________<br></p><p>b) Je dána soustava rovnic v závislosti na hodnotě parametru \(a\): </p><center>\[ \begin {array}{rcl} x-2y+3z &amp;=&amp; 0 \\ x+y+(3a+3)z &amp;=&amp; 3 \\ 2x+(a-4)y+7z &amp;=&amp; 1 \end {array} \]</center> <p></p><p>Vyberte všechna pravdivá tvrzení pro danou soustavu rovnic: <br> {4:MULTIRESPONSE:Má právě jedno řešení pro všechny hodnoty parametru \(a\).~Má právě jedno řešení pro všechny hodnoty parametru \(a \neq 1\).~=Existuje hodnota \(a \in \mathbb R\) taková, že pro ni existuje nekonečně mnoho řešení (tuto hodnotu určete).~Existují alespoň dvě různé hodnoty \(a \in \mathbb R\) takové, že pro ně existuje nekonečně mnoho řešení (hodnoty určete).~=Existuje hodnota \(a \in \mathbb R\) taková, že pro tuto neexistuje řešení (tuto hodnotu určete)~Existují alespoň dve různé hodnoty \(a \in \mathbb R\) takové, že pro ně neexistuje řešení (hodnoty určete).~Hodnost matice rozšířené je vždy rovna 3.~Hodnost matice soustavy je vždy rovna 3.~Hodnost matice a matice rozšířené jsou si vzdy rovny.} </p><p>Najděte řešení zadané soustavy pro \(a=3\): <br>x = {2:NUMERICAL:=-0.25:0.01} y = {2:NUMERICAL:=0.25:0.01} z = {2:NUMERICAL:=0.25:0.01}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 200999  -->
+  <question type="cloze">
+    <name>
+      <text>A2 SVACEK 001</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b style="font-size: 0.9375rem;">Pozor:&nbsp;</b><b style="font-size: 0.9375rem;">všechny číselné odpovědi zadávejte v desetinném čísle s přesností na dvě desetinná místa! Odpovědi typu "1/2 + sqrt(4)" budou vyhodnoceny jako chybné.</b><br></p><p><span style="font-size: 0.9375rem;">________________________________________________________________________________________________<br></span></p><p><span style="font-size: 0.9375rem;">a) Vypočtěte všechna vlastní čísla matice</span><span style="font-size: 0.9375rem;"><br></span></p><p>\[\mathbf A=\left(\array{1 &amp; 3 &amp; -1\cr 1 &amp; 1 &amp; 1 \cr 0 &amp; 0 &amp; 2 }\right)\].</p><p></p>Zadejte vlastní čísla (označte tak aby \(\lambda _1 &lt; \lambda _2 &lt;\lambda _3\)):<br> \(\lambda _1 = \) {2:NUMERICAL:=-0.73205:0.01} <p></p><p>\(\lambda _2 = \) {2:NUMERICAL:=2:0.01} </p><p>\(\lambda _3 = \) {2:NUMERICAL:=2.7321:0.01}</p><p>________________________________________________________________________________________________<br></p><p>b)&nbsp;<span style="font-size: 0.9375rem;">Pro vlastní číslo \(\lambda = \lambda _1\) určete vlastní vektor &nbsp;</span><span style="font-size: 0.9375rem;">\(\vec u\) = ({1:NUMERICAL:=-1.73:0.01}, 1 , {1:NUMERICAL:=0.00:0})\(^T\)</span></p><p></p><p>Pro vlastní číslo \(\lambda = \lambda _2\) určete vlastní vektor &nbsp; \(\vec v\) = ({1:NUMERICAL:=-1.00:0}, {1:NUMERICAL:=0.00:0},1)\(^T\)</p><p><span style="font-size: 0.9375rem;">&nbsp;Pro vlastní číslo \(\lambda = \lambda _3\) určete vlastní vektor &nbsp;&nbsp;</span><span style="font-size: 0.9375rem;">\(\vec w\) = ({1:NUMERICAL:=1.73:0.01}, 1 , {1:NUMERICAL:=0.00:0}\()^T\)</span></p><p>________________________________________________________________________________________________<br></p><p>c) Vlastní číslo matice \(\mathbf A\) splňuje: {3:MULTIRESPONSE:je rovno součtu prvků na diagonále~je hodnota \(\det (\mathbf A - \lambda \mathbf E)\)~je libovolný kořen rovnice \(\det (\mathbf A - \lambda \mathbf E) = 1\)~=je libovolný kořen rovnice \(\det (\mathbf A - \lambda \mathbf E) = 0\)~je takové \(\lambda \in \mathbb C\), že pro ně existuje vektor \(\vec&nbsp;x\) splňující \(\mathbf A \vec&nbsp;x = \lambda \vec&nbsp;x\)~=je takové \(\lambda \in \mathbb C\), že pro ně existuje nenulový vektor \(\vec&nbsp;x\) splňující \(\mathbf A \vec x = \lambda \vec&nbsp;x\)}&nbsp;<br><br></p><p>Vlastni vektor \(\vec&nbsp;x\) matice \(\mathbf A\) příslušný vlastnímu číslu \(\lambda\) splňuje {3:MULTIRESPONSE:\(\mathbf A \lambda = \lambda \vec&nbsp;x\)~\(\vec&nbsp;x \mathbf A = \lambda \vec&nbsp;x\)~\(\vec&nbsp;x^T \mathbf A = \lambda \vec&nbsp;x^T\)~=\(\mathbf A \vec&nbsp;x = \lambda \vec&nbsp;x\)~\(\mathbf A = \lambda \vec&nbsp;x\)}&nbsp;</p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 201011  -->
+  <question type="cloze">
+    <name>
+      <text>A3 SVACEK 001</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p><b>Návod pro zápis intervalu: Intervaly zapisujte ve tvaru (a,b), [a,b), (a,b], nebo [a,b].&nbsp;<b>Číselné hodnoty zadávejte pouze v desetinném tvaru s desetinnou tečkou na dvě desetinná místa.&nbsp;</b>Jako symbol pro nekonečno používejte +9999 nebo -9999. Pokud uvádíte více intervalů řaďte je v rostoucím pořadí a oddělujte čárkou, tedy např. (-9999,-8.76),(5.43,+9999). Mezery vynechávejte.&nbsp;</b><br></p><span style="font-size: 0.9375rem;"><p><span style="font-size: 0.9375rem;"><br></span></p>Je dána funkce</span><br><p></p><center>\[ f(x) = \sqrt {2 x + 3 } - \frac {x^2}{4}. \]</center>________________________________________________________________________________________________<br>a) Vypočítejte 1. derivaci této funkce \(f'(x)\). Zvolte jaký tvar tato derivace má a určete odpovídající konstanty \(A, B \in \mathbb R\): <center>\[ \begin {array}{lrcl} {\rm a}_1) &amp; f’(x) = A \frac {1}{ \sqrt {2 x + 3 } } + B x^3 \\ {\rm a}_2) &amp; f’(x) = A (2 x - 3)^{-1/2} + B x^3 \\ {\rm a}_3) &amp; f’(x) = A \frac {2 x + 3}{ \sqrt {2 x + 3 } } + B x \\ {\rm a}_4) &amp; f’(x) = A \frac {1}{ \sqrt {2 x + 3} } + B x \\ {\rm a}_5) &amp; f’(x) = A (2 x + 3)^{3/2} + B x^3 \end {array} \]</center> {2:MULTIRESPONSE_H:a\(_1\))~a\(_2\))~a\(_3\))~=a\(_4\))~a\(_5\))} <p></p><p>A= {1:NUMERICAL:=1:0.01} B= {1:NUMERICAL:=-0.5:0.01} </p><p>Určete definiční obor \(f’(x)\). {2:SHORTANSWER:=(-1.5,+9999)~=(-1.5,9999)~=(-3/2,9999)~=(-1.5, +9999)~=(-1.5, 9999)~=(-3/2, 9999)} </p><p><span style="font-size: 0.9375rem;">________________________________________________________________________________________________</span><br></p><p>b) Vypočítejte 2. derivaci této funkce \(f''(x)\). Z následujících možností</p><center>\[ \begin {array}{lcl} {\rm b}_1) &amp; &amp; C (2x + 3)^{-1/2} + D &nbsp;\\ {\rm b}_2) &amp; &amp; C (2x + 3)^{-3/2} + D &nbsp;\\ {\rm b}_3) &amp; &amp; C (2x + 3)^{1/2} + D &nbsp;\\ {\rm b}_4) &amp; &amp; C (2x + 3)^{3/2} + D &nbsp;\\ {\rm b}_5) &amp; &amp; C (2x + 3)^{3/2} + D x \\ {\rm b}_6) &amp; &amp; C (2x + 3)^{3/2} + D x \\ {\rm b}_7) &amp; &amp; {jiný,\ uveďte\ jaký} \end {array} \]</center> zvolte správný tvar této 2. derivace {2:MULTIRESPONSE_H: b\(_1\) )~= b\(_2\) )~ b\(_3\) )~ b\(_4\) )~ b\(_5\) )~ b\(_6\) )~ b\(_7\) )} <p></p><p>Pokud se v předchozí části vyskytovaly konstanty \(C, D \in \mathbb R\) určete je :<br> C = {1:NUMERICAL:=-1:0} D = {1:NUMERICAL:=-0.5:0} </p><p>________________________________________________________________________________________________<br></p><p>c) Napište Taylorův polynom \(T_{2}(x)\) stupně dva se středem \(x_{0}=-1\) dané funkce \(f\). </p><p>\(T_2(x) =\) {1:NUMERICAL:=1.5:0.01} + {1:NUMERICAL:=0:0.01} \(x\) + {1:NUMERICAL:=-0.75:0.01} \(x^2\). </p><p>Pomocí \(T_2(x)\) určete přibližně hodnotu \(f(x)\) pro \(x = 0\) a pro \(x = -0.5\). </p><p>\(T_2(0) =\) {1:NUMERICAL:=1.5:0.01} </p><p>\(T_2(-0.5) =\) {1:NUMERICAL:=1.3125:0.01} </p><p>d) Vyberte jaký tvar má Lagrangeův tvar zbytku \(R_{3}(x)\) a určete konstantu \(K\). </p><p>{2:MULTIRESPONSE:\(R_3(x) = K f''(\xi ) (x + 1)^2\)~\(R_3(x) = K f''(x) (x + 1)^2\)~\(R_3(x) = K f'''(x) (x + 1)^3\)~=\(R_3(x) = K f'''(\xi ) (x + 1)^3\)~\(R_3(x) = K f'''(\xi ) (x + 1)^4\)~\(R_3(x) = K f'''(x) / (3!) (x + 1)^3\)} </p><p>K = {1:NUMERICAL:=0.166666:0.01} </p><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 201026  -->
+  <question type="cloze">
+    <name>
+      <text>A4 SVACEK 001</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p><b>Návod pro zápis intervalu: Intervaly zapisujte ve tvaru (a,b), [a,b), (a,b], nebo [a,b].&nbsp;<b>Číselné hodnoty zadávejte pouze v desetinném tvaru s desetinnou tečkou na dvě desetinná místa.&nbsp;</b>Jako symbol pro nekonečno používejte +9999 nebo -9999. Pokud uvádíte více intervalů řaďte je v rostoucím pořadí a oddělujte čárkou, tedy např. (-9999,-8.76),(5.43,+9999). Mezery vynechávejte.&nbsp;</b></p><br><p></p><p>Je dána funkce &nbsp;<span style="font-size: 0.9375rem;">\( f(x) = x - 5 \, {\rm arctg} \, x.\)</span></p> <p></p><p>________________________________________________________________________________________________<br></p><p>a) Určete intervaly monotonie a lokální extrémy. Zapište všechny maximální(!) intervaly kde je funkce rostoucí: {2:SHORTANSWER:=(-9999, -2],[2, 9999)~=(-9999,-2],[2,9999)~=(-9999, -2],[2,9999)~=(-9999,-2],[2, 9999)~=(-9999, -2],[2, +9999)~=(-9999,-2],[2,+9999)~=(-9999, -2],[2,+9999)~=(-9999,-2],[2, +9999)~%50%(-9999, -2),(2, 9999)~%50%(-9999,-2),(2,9999)~%50%(-9999, -2),(2,9999)~%50%(-9999,-2),(2, 9999)~%50%(-9999, -2),(2, +9999)~%50%(-9999,-2),(2,+9999)~%50%(-9999, -2),(2,+9999)~%50%(-9999,-2),(2, +9999)} </p><p><span style="font-size: 0.9375rem;">Zapište všechny maximální(!) intervaly kde je funkce klesající&nbsp;</span><br></p><p> {2:SHORTANSWER:=[-2,2]~=[-2, 2]~%50%(-2,2)~%50%(-2, 2)} </p><p>Uveďte jeden libovolný bod \(x\) ve kterém funkce \(f(x)\) nabývá lokálního minima. <br> \(x = \) {2:NUMERICAL:=2:0.01} </p><p>Uveďte jeden libovolný bod \(x\) ve kterém funkce \(f(x)\) nabývá lokálního maxima. <br> \(x = \) {2:NUMERICAL:=-2:0.01} </p><p>________________________________________________________________________________________________<br></p><p>b) Určete a zapište intervaly na kterých je daná funkce konvexní, resp. konkávní.<br> Maximální(!) intervaly kde je funkce konvexní: {2:SHORTANSWER:=[0, 9999)~=[0, +9999)~=[0,9999)~=[0,+9999)~%50%(0, 9999)~%50%(0, +9999)~%50%(0,9999)~%50%(0,+9999)} </p><p>Maximální(!) intervaly kde je funkce konkávní: {2:SHORTANSWER:=(-9999,0]~=(-9999, 0]~%50%(-9999,0)~%50%(-9999, 0)} </p><p>Funkce \(f(x)\) má inflexní bod v bodě \(x = \) (uveďte jeden libovolný bod) {2:NUMERICAL:=0:0.01} </p><p>________________________________________________________________________________________________<br></p><p>c) Určete asymptotu dané funkce \(f(x)\) pro \(x\to +\infty \). y = {1:NUMERICAL:=1.00000:0.01} x + {1:NUMERICAL:=-7.8540:0.01}.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 201036  -->
+  <question type="cloze">
+    <name>
+      <text>A5 SVACEK 001</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><b>Návod pro zápis intervalu: Intervaly zapisujte ve tvaru (a,b), [a,b), (a,b], nebo [a,b].&nbsp;<b>Číselné hodnoty zadávejte pouze v desetinném tvaru s desetinnou tečkou na dvě desetinná místa.&nbsp;</b>Jako symbol pro nekonečno používejte +9999 nebo -9999. Pokud uvádíte více intervalů řaďte je v rostoucím pořadí a oddělujte čárkou, tedy např. (-9999,-8.76),(5.43,+9999). Mezery vynechávejte.&nbsp;</b><p><br></p><p>Vypočítejte následující integrály:</p><p>________________________________________________________________________________________________<br></p><p>a) Vypočítejte integrál (postup řešení odevzdejte, členy neuvedené v seznamu specifikujte v postupu řešení) </p><center>\[ I = \int \frac {x^3}{\sqrt {x^4-1}} dx \]</center> <p></p><p>\(I = \) {1:NUMERICAL:=0.000:0} \(\frac {x^4}{(x^4-1)^{3/2}}\) + {4:NUMERICAL:=0.500:0} \((x^4-1)^{1/2}\) + {1:NUMERICAL:=0.000:0} \((x^4-1)^{3/2}\) + {1:NUMERICAL:=0:0} \(x^2\) + {0:NUMERICAL:=0:0} \(x^3\) + {0:NUMERICAL:=0:0} \(x^4\) + ostatní členy specifikujte v postupu řešení</p><p>Integrál existuje na intervalu/intervalech: {1:SHORTANSWER:=(-9999,-1),(1,9999)~=(-9999,-1),(1,+9999)~=(-9999,-1), (1,+9999)~=(-9999,-1), (1,9999)} </p><p>________________________________________________________________________________________________<br></p><p></p><p>b) Vypočítejte integrál (postup řešení odevzdejte, členy neuvedené v seznamu specifikujte v postupu řešení)&nbsp;</p><center>\[ I = \int (x-x^2) \, {e}^x \; {d}x \]</center><p></p><p>\(I = \) {1:NUMERICAL:=0.000:0} \(e^{2x}\) + {1:NUMERICAL:=1.000:0} \(e^x\) + {2:NUMERICAL:=3.000:0} \(x e^x\) + {1:NUMERICAL:=-1.000:0} \(x^2 e^x\) + {1:NUMERICAL:=0:0} \(x^3 e^x\) + ostatní členy specifikujte v postupu řešení</p><p>Integrál existuje na intervalu/intervalech: {2:SHORTANSWER:=(-9999,+9999)~=(-9999, +9999)~=(-9999,9999)~=(-9999, 9999)}&nbsp;</p><br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 201050  -->
+  <question type="cloze">
+    <name>
+      <text>A6 SVACEK 001</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><p><b>Všechny číselné odpovědi zadávejte v desetinném čísle s přesností na dvě desetinná místa!</b><br></p><br></p><p>________________________________________________________________________________________________<br></p><p>a) Vypočítejte \(S\) obsah obrazce, který je pro \(x \in \langle \, 0, \pi \, \rangle \) ohraničen osou \(x\) a&nbsp;grafem funkce \(y=\cos ^4 x \; \sin x\).&nbsp;</p><p><span style="font-size: 0.9375rem;">\(S = \) {5:NUMERICAL:=0.4:0.01} &nbsp; &nbsp;&nbsp;</span><br></p><p>Uveďte kolikrát jste při výpočtu použili per-partes (zadejte číslovkou 0, 1, 2 ...): {1:NUMERICAL:=0:0} </p><p>Pokud jste ve výpočtu použili substituci, uveďte jakou (pokud ne, uveďte ne):<br> t = {1:SHORTANSWER:=cos(x)~=cos x} </p><p>dt = {1:SHORTANSWER:=-sin(x)~=-sinx~=-sin x~=(-sin x)~=(-sinx)}dx</p><p>________________________________________________________________________________________________<br></p><p>b) Obrazec \(M\) je pro \(x \in \langle \, 0, \pi /2 \, \rangle \) ohraničcen osou \(x\) a&nbsp;grafem funkce \(y=\sin x \; \cos x\). Určete objem \(V\) tělesa, které vznikne rotací tohoto obrazce kolem osy \(x\). </p><p>\(V=\) {5:NUMERICAL:=0.61685:0.01} </p><p>Uveďte kolikrát jste při výpočtu použili per-partes (zadejte císlovkou 0, 1, 2 atd): {1:NUMERICAL:=0:0} </p><p>Pokud jste ve výpočtu použili substituci, uveďte jakou (pokud ne, uveďte ne):<br> t = {1:SHORTANSWER:=4x~=2x~=ne} </p><p>dt = {1:SHORTANSWER:=4~=2~=ne}dx</p><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+</quiz>

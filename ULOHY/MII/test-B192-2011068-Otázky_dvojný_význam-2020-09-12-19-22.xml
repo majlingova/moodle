@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068</text>
+    </category>
+    <info format="html">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "B192-2011068".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011068/OM/Téma 4/Otázky_dvojný_význam</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 134268  -->
+  <question type="multichoice">
+    <name>
+      <text>vyznam 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Jakou fyzikální veličinu vypočteme pomocí integrálu</p><p>$$\iint_D x\sin x\ {\rm d}x{\rm dy}, \mbox{kde } D=\{ [x,y]\in\mathbb E_2: x\in\langle 2,3\rangle,\ y\in\langle 1,4\rangle\} $$</p><p>Jinými slovy, uveďte fyzikální význam tohoto integrálu.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Plochu nehomogenní desky ve tvaru \(D\), jejíž plošná hustota&nbsp;\(\rho(x,y)\) je \(x\sin x\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>Hmotnost nehomogenní&nbsp; rovinné desky ve tvaru \(D\), jejíž plošná hustota&nbsp; \(\rho(x,y)\) je \(x\sin x\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>ano<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Statický moment vzhledem k ose \(x\) nehomogenní&nbsp; rovinné desky ve tvaru \(D\), jejíž plošná hustota \(\rho(x,y)\) je \(\sin x\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>Statický moment vzhledem k ose \(y\) nehomogenní&nbsp; rovinné desky ve tvaru
+ \(D\), jejíž plošná hustota \(\rho(x,y)\) je \(\sin x\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>ano<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Moment setrvačnosti vzhledem k ose \(y\) nehomogenní&nbsp; rovinné desky ve tvaru
+ \(D\), jejíž plošná hustota \(\rho(x,y)\) je \(\sin x\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne...<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 134272  -->
+  <question type="multichoice">
+    <name>
+      <text>vyznam 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Jakou fyzikální veličinu vypočteme pomocí integrálu</p><p>$$\iint_D x^3 y^2 \ {\rm d}x{\rm dy}, \mbox{kde } D=\{ [x,y]\in\mathbb E_2: x^2 + y^2 \leq 4,\ x\geq 0\} $$</p><p>Jinými slovy, uveďte fyzikální význam tohoto integrálu.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Plochu nehomogenní desky ve tvaru \(D\), jejíž plošná hustota&nbsp;\(\rho(x,y)\) je \(x^3 y^2\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="20" format="html">
+      <text><![CDATA[<p>Hmotnost nehomogenní&nbsp; rovinné desky ve tvaru \(D\), jejíž plošná hustota&nbsp; \(\rho(x,y)\) je \(x^3 y^2\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>ano<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Statický moment vzhledem k ose \(x\) nehomogenní&nbsp; rovinné desky ve tvaru \(D\), jejíž plošná hustota \(\rho(x,y)\) je \(x^3 y^2\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="20" format="html">
+      <text><![CDATA[<p>Statický moment vzhledem k ose \(y\) nehomogenní&nbsp; rovinné desky ve tvaru
+ \(D\), jejíž plošná hustota \(\rho(x,y)\) je \(x^2 y^2\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>ano<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="20" format="html">
+      <text><![CDATA[<p>Moment setrvačnosti vzhledem k ose \(y\) nehomogenní&nbsp; rovinné desky ve tvaru
+ \(D\), jejíž plošná hustota \(\rho(x,y)\) je \(x y^2\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>ano<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="20" format="html">
+      <text><![CDATA[<p>Statický moment vzhledem k ose \(x\) nehomogenní&nbsp; rovinné desky ve tvaru
+ \(D\), jejíž plošná hustota \(\rho(x,y)\) je \(x^3 y\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>ano<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="20" format="html">
+      <text><![CDATA[<p>Moment setrvačnosti vzhledem k ose \(x\) nehomogenní&nbsp; rovinné desky ve tvaru
+ \(D\), jejíž plošná hustota \(\rho(x,y)\) je \(x^3\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>ano<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Moment setrvačnosti vzhledem k ose \(x\) nehomogenní&nbsp; rovinné desky ve tvaru
+ \(D\), jejíž plošná hustota \(\rho(x,y)\) je \(x y^2\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne...<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 134273  -->
+  <question type="multichoice">
+    <name>
+      <text>vyznam 3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Jakou fyzikální veličinu vypočteme pomocí integrálu</p><p>$$\iint_D x^3y + xy^3 \ {\rm d}x{\rm dy}, \mbox{kde } D=\{ [x,y]\in\mathbb E_2: x^2 + y^2 \leq 9,\ x\geq 0, y\geq 0\} $$</p><p>Jinými slovy, uveďte fyzikální význam tohoto integrálu.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Plochu nehomogenní desky ve tvaru \(D\), jejíž plošná hustota&nbsp;\(\rho(x,y)\) je \(x^3y + xy^3\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="25" format="html">
+      <text><![CDATA[<p>Hmotnost nehomogenní&nbsp; rovinné desky ve tvaru \(D\), jejíž plošná hustota&nbsp; \(\rho(x,y)\) je \(x^3y + xy^3\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>ano<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="25" format="html">
+      <text><![CDATA[<p>Statický moment vzhledem k ose \(x\) nehomogenní&nbsp; rovinné desky ve tvaru \(D\), jejíž plošná hustota \(\rho(x,y)\) je \(x^3 + xy^2\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>ano<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="25" format="html">
+      <text><![CDATA[<p>Statický moment vzhledem k ose \(y\) nehomogenní&nbsp; rovinné desky ve tvaru
+ \(D\), jejíž plošná hustota \(\rho(x,y)\) je \(x^2y+ y^3\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>ano<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="25" format="html">
+      <text><![CDATA[<p>Moment setrvačnosti vzhledem k počátku nehomogenní&nbsp; rovinné desky ve tvaru
+ \(D\), jejíž plošná hustota \(\rho(x,y)\) je \(x y\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>ano<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Statický moment vzhledem k ose \(x\) nehomogenní&nbsp; rovinné desky ve tvaru
+ \(D\), jejíž plošná hustota \(\rho(x,y)\) je \(x^2y+ y^3\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Statický moment vzhledem k ose \(y\) nehomogenní&nbsp; rovinné desky ve tvaru
+ \(D\), jejíž plošná hustota \(\rho(x,y)\) je \(x^3 + xy^2\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne...<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Moment setrvačnosti vzhledem k ose \(x\) nehomogenní&nbsp; rovinné desky ve tvaru
+ \(D\), jejíž plošná hustota \(\rho(x,y)\) je \(xy+ x^3\).<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>to ne...<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>

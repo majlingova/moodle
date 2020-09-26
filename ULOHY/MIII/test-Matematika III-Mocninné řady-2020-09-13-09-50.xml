@@ -1,0 +1,2122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "Matematika III".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM/Řady</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM/Řady/Mocninné řady</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 201872  -->
+  <question type="formulas">
+    <name>
+      <text>mocninná řada 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A4</b><br></p><p>Je zadána mocninná řada $$\sum _{k=1}^{\infty } (-1)^k \frac {1}{8^k\,(1+k^2)}\,(x-1)^{3k}$$<b><br></b></p><p><b>a) </b>Určete střed konvergence \(x_0\), poloměr konvergence \(R\) a interval konvergence \(I=(a,b)\) zadané mocninné řady.{#a}</p><p><b>b) </b>Vyšetřete konvergenci této řady v krajních bodech \(a, b\) intervalu \(I\) z výsledku z bodu a). {#krajnibody}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>18.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ansA_order=shuffle([0:4]);
+ansB_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ansA_inv=inv(ansA_order);
+ansB_inv=inv(ansB_order);
+answers=["řada konverguje absolutně", "řada konverguje relativně", "řada diverguje" , "nelze o konvergenci rozhodnout"];
+ansA_permuted=sublist(answers,ansA_order);
+ansB_permuted=sublist(answers,ansB_order);
+ansA = ansA_inv[0];    #AK v obou, #jenom jeden správně - nesmysl.
+ansB = ansB_inv[0];   
+
+x0=1; R=2;a=-1;b=3; #celočíselné!]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#a</text>
+ </placeholder>
+ <answermark>
+  <text>10</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x0, R, a, b]</text>
+ </answer>
+ <vars2>
+  <text>criterion1 = (x0==_0); #celočíselné výsledky
+criterion2 = (R==_1);
+criterion3 = (a==_2);
+criterion4 = (b==_3);</text>
+ </vars2>
+ <correctness>
+  <text>(criterion1+criterion2+criterion2+criterion3+criterion4)/5</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Střed konvergence&nbsp;&nbsp;&nbsp;&nbsp; \(x_0=\) {_0}, <br> poloměr konvergence&nbsp; \(R=\) {_1}, <br> interval konvergence&nbsp; ({_2}, {_3}).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#krajnibody</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ansA, ansB]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>V bodě \(a\) {_0:ansA_permuted:MCE} , <br>v bodě \(b\) {_1:ansB_permuted:MCE} .<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201873  -->
+  <question type="formulas">
+    <name>
+      <text>mocninná řada 2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A4</b><br></p><p>Je zadána mocninná řada $$\sum _{k=1}^{\infty } (-1)^k \frac {1}{8^k\,\sqrt{3k-1}}\,(x-2)^{3k}$$<b><br></b></p><p><b>a) </b>Určete střed konvergence \(x_0\), poloměr konvergence \(R\) a interval konvergence \(I=(a,b)\) zadané mocninné řady.{#a}</p><p><b>b) </b>Vyšetřete konvergenci této řady v krajních bodech \(a, b\) intervalu \(I\) z výsledku z bodu a). {#krajnibody}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>18.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ansA_order=shuffle([0:4]);
+ansB_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ansA_inv=inv(ansA_order);
+ansB_inv=inv(ansB_order);
+answers=["řada konverguje absolutně", "řada konverguje relativně", "řada diverguje" , "nelze o konvergenci rozhodnout"];
+ansA_permuted=sublist(answers,ansA_order);
+ansB_permuted=sublist(answers,ansB_order);
+ansA = ansA_inv[2];    #D  
+ansB = ansB_inv[1];    #KR
+
+x0=2; R=2;a=0;b=4; #celočíselné!]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#a</text>
+ </placeholder>
+ <answermark>
+  <text>10</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x0, R, a, b]</text>
+ </answer>
+ <vars2>
+  <text>criterion1 = (x0==_0); #celočíselné výsledky
+criterion2 = (R==_1);
+criterion3 = (a==_2);
+criterion4 = (b==_3);</text>
+ </vars2>
+ <correctness>
+  <text>(criterion1+criterion2+criterion2+criterion3+criterion4)/5</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Střed konvergence&nbsp;&nbsp;&nbsp;&nbsp; \(x_0=\) {_0}, <br> poloměr konvergence&nbsp; \(R=\) {_1}, <br> interval konvergence&nbsp; ({_2}, {_3}).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#krajnibody</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ansA, ansB]</text>
+ </answer>
+ <vars2>
+  <text>criterion1 = (ansA == _0) ;criterion2 = (ansB == _1)</text>
+ </vars2>
+ <correctness>
+  <text>(criterion1+criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>V bodě \(a\) {_0:ansA_permuted:MCE} , <br>v bodě \(b\) {_1:ansB_permuted:MCE} .<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201874  -->
+  <question type="formulas">
+    <name>
+      <text>mocninná řada 3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A4</b><br></p><p>Je zadána mocninná řada $$\sum _{k=1}^{\infty } \frac {(x-1)^{2k}}{16^{k-1}\,(2k+3)}$$<b><br></b></p><p><b>a) </b>Určete střed konvergence \(x_0\), poloměr konvergence \(R\) a interval konvergence \(I=(a,b)\) zadané mocninné řady.{#a}</p><p><b>b) </b>Vyšetřete konvergenci této řady v krajních bodech \(a, b\) intervalu \(I\) z výsledku z bodu a). {#krajnibody}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>18.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ansA_order=shuffle([0:4]);
+ansB_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ansA_inv=inv(ansA_order);
+ansB_inv=inv(ansB_order);
+answers=["řada konverguje absolutně", "řada konverguje relativně", "řada diverguje" , "nelze o konvergenci rozhodnout"];
+ansA_permuted=sublist(answers,ansA_order);
+ansB_permuted=sublist(answers,ansB_order);
+ansA = ansA_inv[2];    #D  
+ansB = ansB_inv[2];    #D
+
+x0=1; R=4;a=-3;b=5; #celočíselné!]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#a</text>
+ </placeholder>
+ <answermark>
+  <text>10</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x0, R, a, b]</text>
+ </answer>
+ <vars2>
+  <text>criterion1 = (x0==_0); #celočíselné výsledky
+criterion2 = (R==_1);
+criterion3 = (a==_2);
+criterion4 = (b==_3);</text>
+ </vars2>
+ <correctness>
+  <text>(criterion1+criterion2+criterion2+criterion3+criterion4)/5</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Střed konvergence&nbsp;&nbsp;&nbsp;&nbsp; \(x_0=\) {_0}, <br> poloměr konvergence&nbsp; \(R=\) {_1}, <br> interval konvergence&nbsp; ({_2}, {_3}).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#krajnibody</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ansA, ansB]</text>
+ </answer>
+ <vars2>
+  <text>criterion1 = (ansA == _0) ;criterion2 = (ansB == _1)</text>
+ </vars2>
+ <correctness>
+  <text>(criterion1+criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>V bodě \(a\) {_0:ansA_permuted:MCE} , <br>v bodě \(b\) {_1:ansB_permuted:MCE} .<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201875  -->
+  <question type="formulas">
+    <name>
+      <text>mocninná řada 4</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A4</b><br></p><p>Je zadána mocninná řada $$\sum _{k=1}^{\infty }(-1)^k \frac {(x-1)^{2k}}{9^{k-1}\,(2k+3)}$$<b><br></b></p><p><b>a) </b>Určete střed konvergence \(x_0\), poloměr konvergence \(R\) a interval konvergence \(I=(a,b)\) zadané mocninné řady.{#a}</p><p><b>b) </b>Vyšetřete konvergenci této řady v krajních bodech \(a, b\) intervalu \(I\) z výsledku z bodu a). {#krajnibody}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>18.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ansA_order=shuffle([0:4]);
+ansB_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ansA_inv=inv(ansA_order);
+ansB_inv=inv(ansB_order);
+answers=["řada konverguje absolutně", "řada konverguje relativně", "řada diverguje" , "nelze o konvergenci rozhodnout"];
+ansA_permuted=sublist(answers,ansA_order);
+ansB_permuted=sublist(answers,ansB_order);
+ansA = ansA_inv[1];    #KR  
+ansB = ansB_inv[1];    #KR
+
+x0=1; R=3;a=-2;b=4; #celočíselné!]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#a</text>
+ </placeholder>
+ <answermark>
+  <text>10</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[1, 3, -2, 4]</text>
+ </answer>
+ <vars2>
+  <text>criterion1 = (1==_0); #celočíselné výsledky
+criterion2 = (3==_1);
+criterion3 = (-2==_2);
+criterion4 = (4==_3);</text>
+ </vars2>
+ <correctness>
+  <text>(criterion1+criterion2+criterion2+criterion3+criterion4)/5</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Střed konvergence&nbsp;&nbsp;&nbsp;&nbsp; \(x_0=\) {_0}, <br> poloměr konvergence&nbsp; \(R=\) {_1}, <br> interval konvergence&nbsp; ({_2}, {_3}).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#krajnibody</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ansA, ansB]</text>
+ </answer>
+ <vars2>
+  <text>criterion1 = (ansA == _0) ;criterion2 = (ansB == _1)</text>
+ </vars2>
+ <correctness>
+  <text>(criterion1+criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>V bodě \(a\) {_0:ansA_permuted:MCE} , <br>v bodě \(b\) {_1:ansB_permuted:MCE} .<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201855  -->
+  <question type="formulas">
+    <name>
+      <text>mocninná řada 5</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je zadána mocninná řada $$\sum _{k=1}^{\infty }&nbsp; \frac {2^k}{k^2}\,(x+1)^{k}$$<b><br></b></p><p><b>a) </b>Určete střed konvergence \(x_0\), poloměr konvergence \(R\) a interval konvergence \(I=(a,b)\) zadané mocninné řady.{#a}</p><p><b>b) </b>Vyšetřete konvergenci této řady v krajních bodech \(a, b\) intervalu \(I\) z výsledku z bodu a). {#krajnibody}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>18.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ansA_order=shuffle([0:4]);
+ansB_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ansA_inv=inv(ansA_order);
+ansB_inv=inv(ansB_order);
+answers=["řada konverguje absolutně", "řada konverguje relativně", "řada diverguje" , "nelze o konvergenci rozhodnout"];
+ansA_permuted=sublist(answers,ansA_order);
+ansB_permuted=sublist(answers,ansB_order);
+ansA = ansA_inv[0];    #AK v obou, #jenom jeden správně - nesmysl.
+ansB = ansB_inv[0];   
+
+x0=-1; R=0.5; a=-3/2;b=-1/2; #NEceločíselné!]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#a</text>
+ </placeholder>
+ <answermark>
+  <text>10</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x0, R, a, b]</text>
+ </answer>
+ <vars2>
+  <text>criterion1 = (x0==_0); #celočíselné výsledky
+criterion2 = (R==_1);
+criterion3 = (a==_2);
+criterion4 = (b==_3);</text>
+ </vars2>
+ <correctness>
+  <text>(criterion1+criterion2+criterion2+criterion3+criterion4)/5</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Střed konvergence&nbsp;&nbsp;&nbsp;&nbsp; \(x_0=\) {_0}, <br> poloměr konvergence&nbsp; \(R=\) {_1}, <br> interval konvergence&nbsp; ({_2}, {_3}).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#krajnibody</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ansA, ansB]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>V bodě \(a\) {_0:ansA_permuted:MCE} , <br>v bodě \(b\) {_1:ansB_permuted:MCE} .<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201924  -->
+  <question type="formulas">
+    <name>
+      <text>mocninná řada 5 (modif.pro B)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><strong>B4.</strong></p><p>Je zadána mocninná řada $$\sum _{k=1}^{\infty }&nbsp; \frac {2^k}{k^2}\,(x+1)^{k}$$<strong><br></strong></p>
+<p><strong>a) </strong>Určete střed konvergence \(x_0\), poloměr konvergence \(R\) a interval konvergence \(I=(a,b)\) zadané mocninné řady. Chování v krajních bodech nevyšetřujte. {#a}</p>
+<p><strong>b) </strong>Rozhodněte o konvergenci násedujících číselných řad. Odpovědi zdůvodněte v odevzdávaném řešení.<br></p>
+řada \(\displaystyle \sum _{k=1}^{\infty } (-1)^k \frac{1}{k^2+3k+1}\)
+<div style="display:inline-block;">{#b1}</div><br>
+<br>řada \(\displaystyle \sum _{k=1}^{\infty } (-1)^k \frac{1}{\sqrt{k^2+3k+1}}\)
+<div style="display:inline-block;">{#b2}</div><br>
+<p><strong>c) </strong>Je zadaná funkce \(f(x) = \displaystyle \frac{8}{5-x}\).<br>Zapište první čtyři členy (tedy do třetí mocniny) rozvoje funkce \(f(x)\) do mocninné řady se středem v bodě \(x_0 = 1\).{#taylor1}<br>Zapište interval konvergence této řady{#taylor2}<strong></strong></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">c) \(2 + \frac 12(x-1) + \frac 18(x-1)^2 + \frac{1}{32} (x-1)^2\)<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>25.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ansA_order=shuffle([0:4]);
+ansB_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ansA_inv=inv(ansA_order);
+ansB_inv=inv(ansB_order);
+answers=[" konverguje absolutně", "konverguje relativně", " diverguje" , "o konvergenci nelze rozhodnout"];
+ansA_permuted=sublist(answers,ansA_order);
+ansB_permuted=sublist(answers,ansB_order);
+ansA = ansA_inv[0];    #AK 
+ansB = ansB_inv[1];   #RK
+
+x0=-1; R=0.5; a=-3/2;b=-1/2; #NEceločíselné!]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#a</text>
+ </placeholder>
+ <answermark>
+  <text>10</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x0, R, a, b]</text>
+ </answer>
+ <vars2>
+  <text>criterion1 = (x0==_0); #celočíselné výsledky
+criterion2 = (R==_1);
+criterion3 = (a==_2);
+criterion4 = (b==_3);</text>
+ </vars2>
+ <correctness>
+  <text>(criterion1+criterion2+criterion2+criterion3+criterion4)/5</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Střed konvergence&nbsp;&nbsp;&nbsp;&nbsp; \(x_0=\) {_0}, <br> poloměr konvergence&nbsp; \(R=\) {_1}, <br> interval konvergence&nbsp; ({_2}, {_3}).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#b1</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansA</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ansA_permuted:MCE}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#b2</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansB</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ansB_permuted:MCE}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#taylor1</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[2, 1/2, 1/8, 1/32]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[crit1=_0==2; crit2=abs(_1-0.5)<0.015; 
+crit3 = abs(_2-0.125)<0.001; 
+crit4=abs(_3-0.03125)<0.0001;]]></text>
+ </vars2>
+ <correctness>
+  <text>(crit1+crit2+crit3+crit4)/4</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(f(x) = \){_0}+{_1}\((x-1)+\){_2}\((x-1)^2+\){_3}\((x-1)^3\)<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#taylor2</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[-3, 5]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">Řada konverguje v intervalu ({_0}, {_1}).<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201877  -->
+  <question type="formulas">
+    <name>
+      <text>mocninná řada 6</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je zadána mocninná řada $$\sum _{k=1}^{\infty }&nbsp; \frac {2^k}{k}\,(x+2)^{k}$$<b><br></b></p><p><b>a) </b>Určete střed konvergence \(x_0\), poloměr konvergence \(R\) a interval konvergence \(I=(a,b)\) zadané mocninné řady.{#a}</p><p><b>b) </b>Vyšetřete konvergenci této řady v krajních bodech \(a, b\) intervalu \(I\) z výsledku z bodu a). {#krajnibody}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>18.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ansA_order=shuffle([0:4]);
+ansB_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ansA_inv=inv(ansA_order);
+ansB_inv=inv(ansB_order);
+answers=["řada konverguje absolutně", "řada konverguje relativně", "řada diverguje" , "nelze o konvergenci rozhodnout"];
+ansA_permuted=sublist(answers,ansA_order);
+ansB_permuted=sublist(answers,ansB_order);
+ansA = ansA_inv[1];    #KR
+ansB = ansB_inv[2];   #D
+
+x0=-2; R=0.5; a=-5/2;b=-3/2; #NEceločíselné!]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#a</text>
+ </placeholder>
+ <answermark>
+  <text>10</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x0, R, a, b]</text>
+ </answer>
+ <vars2>
+  <text>criterion1 = (x0==_0); #celočíselné výsledky
+criterion2 = (R==_1);
+criterion3 = (a==_2);
+criterion4 = (b==_3);</text>
+ </vars2>
+ <correctness>
+  <text>(criterion1+criterion2+criterion2+criterion3+criterion4)/5</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Střed konvergence&nbsp;&nbsp;&nbsp;&nbsp; \(x_0=\) {_0}, <br> poloměr konvergence&nbsp; \(R=\) {_1}, <br> interval konvergence&nbsp; ({_2}, {_3}).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#krajnibody</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ansA, ansB]</text>
+ </answer>
+ <vars2>
+  <text>criterion1 = (ansA == _0); criterion2 = (ansB ==0);</text>
+ </vars2>
+ <correctness>
+  <text>(criterion1+criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>V bodě \(a\) {_0:ansA_permuted:MCE} , <br>v bodě \(b\) {_1:ansB_permuted:MCE} .<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201925  -->
+  <question type="formulas">
+    <name>
+      <text>mocninná řada 6 (modif.pro B)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><strong>B4.</strong></p><p>Je zadána mocninná řada $$\sum _{k=1}^{\infty }&nbsp; \frac {2^k}{k}\,(x+2)^{k}$$</p>
+<p><strong>a) </strong>Určete střed konvergence \(x_0\), poloměr konvergence \(R\) a interval konvergence \(I=(a,b)\) zadané mocninné řady.
+Chování v krajních bodech nevyšetřujte. {#a}</p>
+<p><strong>b) </strong>Rozhodněte o konvergenci násedujících číselných řad. Odpovědi zdůvodněte v odevzdávaném řešení.<br></p>
+řada \(\displaystyle \sum _{k=1}^{\infty }&nbsp; \frac{1}{2k^2+5k+3}\) <div style="display:inline-block;">{#b1}</div><br>
+<br>řada \(\displaystyle \sum _{k=1}^{\infty }&nbsp; \frac{1}{\sqrt{2k^2+5k+5}}\) <div style="display:inline-block;">{#b2}</div><br>
+<p><strong>c) </strong>Je zadaná funkce \(f(x) = \displaystyle\frac{16}{2+x}\).<br>Zapište první čtyři členy (tedy do třetí mocniny) rozvoje funkce \(f(x)\) do mocninné řady se středem v bodě \(x_0 = 2\).{#taylor1}<br>Zapište interval konvergence této řady{#taylor2}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">c) \(4 -(x-1) + \frac 14(x-1)^2 - \frac{1}{16} (x-1)^2\)<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>22.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ansA_order=shuffle([0:4]);
+ansB_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ansA_inv=inv(ansA_order);
+ansB_inv=inv(ansB_order);
+answers=["konverguje absolutně", "konverguje relativně", "diverguje" , "konvergenci nelze rozhodnout"];
+ansA_permuted=sublist(answers,ansA_order);
+ansB_permuted=sublist(answers,ansB_order);
+ansA = ansA_inv[0];    #KA
+ansB = ansB_inv[2];   #D
+
+x0=-2; R=0.5; a=-5/2;b=-3/2; #NEceločíselné!]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#a</text>
+ </placeholder>
+ <answermark>
+  <text>10</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x0, R, a, b]</text>
+ </answer>
+ <vars2>
+  <text>criterion1 = (x0==_0); #celočíselné výsledky
+criterion2 = (R==_1);
+criterion3 = (a==_2);
+criterion4 = (b==_3);</text>
+ </vars2>
+ <correctness>
+  <text>(criterion1+criterion2+criterion2+criterion3+criterion4)/5</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Střed konvergence&nbsp;&nbsp;&nbsp;&nbsp; \(x_0=\) {_0}, <br> poloměr konvergence&nbsp; \(R=\) {_1}, <br> interval konvergence&nbsp; ({_2}, {_3}).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#b1</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansA</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr<0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ansA_permuted:MCE} ,</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#b2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansB</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>{_0:ansB_permuted:MCE}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#taylor1</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[4,-1,1/4,-1/16]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[crit1=_0==4; crit2=_1==-1; 
+crit3 = abs(_2-0.25)<0.01; 
+crit4=abs(_3+1/16)<0.001;]]></text>
+ </vars2>
+ <correctness>
+  <text>(crit1+crit2+crit3+crit4)/4</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(f(x) = \){_0}+{_1}\((x-2)+\){_2}\((x-2)^2+\){_3}\((x-2)^3\)<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#taylor2</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[-2, 6]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">Řada konverguje v intervalu ({_0}, {_1}).<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201878  -->
+  <question type="formulas">
+    <name>
+      <text>mocninná řada 7</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je zadána mocninná řada $$\sum_{k=1}^{\infty}&nbsp; \frac {x^k}{k^3}$$<b><br></b></p><p><b>a) </b>Určete střed konvergence \(x_0\), poloměr konvergence \(R\) a interval konvergence \(I=(a,b)\) zadané mocninné řady.{#a}</p><p><b>b) </b>Vyšetřete konvergenci této řady v krajních bodech \(a, b\) intervalu \(I\) z výsledku z bodu a). {#krajnibody}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>18.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ansA_order=shuffle([0:4]);
+ansB_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ansA_inv=inv(ansA_order);
+ansB_inv=inv(ansB_order);
+answers=["řada konverguje absolutně", "řada konverguje relativně", "řada diverguje" , "nelze o konvergenci rozhodnout"];
+ansA_permuted=sublist(answers,ansA_order);
+ansB_permuted=sublist(answers,ansB_order);
+ansA = ansA_inv[0];    #AK v obou, #jenom jeden správně - nesmysl.
+ansB = ansB_inv[0];   
+
+x0=0; R=1; a=-1;b=1; #NEceločíselné!]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#a</text>
+ </placeholder>
+ <answermark>
+  <text>10</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x0, R, a, b]</text>
+ </answer>
+ <vars2>
+  <text>criterion1 = (x0==_0); #celočíselné výsledky
+criterion2 = (R==_1);
+criterion3 = (a==_2);
+criterion4 = (b==_3);</text>
+ </vars2>
+ <correctness>
+  <text>(criterion1+criterion2+criterion2+criterion3+criterion4)/5</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Střed konvergence&nbsp;&nbsp;&nbsp;&nbsp; \(x_0=\) {_0}, <br> poloměr konvergence&nbsp; \(R=\) {_1}, <br> interval konvergence&nbsp; ({_2}, {_3}).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#krajnibody</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ansA, ansB]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>V bodě \(a\) {_0:ansA_permuted:MCE} , <br>v bodě \(b\) {_1:ansB_permuted:MCE} .<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201879  -->
+  <question type="formulas">
+    <name>
+      <text>mocninná řada 8 (beta)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je zadána mocninná řada $$\sum_{k=0}^{\infty}&nbsp; \frac {k!}{(2k!)}x^k$$</p><p><b>a) </b>Určete střed konvergence \(x_0\), poloměr konvergence \(R\) a interval konvergence \(I=(a,b)\) zadané mocninné řady.{#a}</p><p><b>b)</b>V intervalu \(I\) {#b}</p> (Doplňte tvrzení, aby bylo pravdivé.)]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>18.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ans_order=shuffle([0:2]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[#Pick 8.5.2
+infty=9999;
+x0=0; R=infty; a=-infty;b=infty; 
+ans_inv=inv(ans_order);
+answers=["řada  konverguje absolutně", "řada konverguje relativně", "nelze o konvergenci řady rozhodnout"];
+ans_permuted=sublist(answers,ans_inv);
+ans=ans_inv[0];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#a</text>
+ </placeholder>
+ <answermark>
+  <text>10</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["x0", "R", "a", "b"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Střed konvergence&nbsp;&nbsp;&nbsp;&nbsp; \(x_0=\) {_0}, <br> poloměr konvergence&nbsp; \(R=\) {_1}, <br> interval konvergence&nbsp; ({_2}, {_3}).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#b</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans_permuted:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201880  -->
+  <question type="formulas">
+    <name>
+      <text>mocninná řada 9</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je zadána mocninná řada $$\sum_{k=1}^{\infty}&nbsp; \frac {(k!)^2}{(2k)!}x^k$$<b><br></b></p><p><b>a) </b>Určete střed konvergence \(x_0\), poloměr konvergence \(R\) a interval konvergence \(I=(a,b)\) zadané mocninné řady.{#a}</p><p><b>b) </b>Vyšetřete konvergenci této řady v krajních bodech \(a, b\) intervalu \(I\) z výsledku z bodu a). {#krajnibody}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>18.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ansA_order=shuffle([0:4]);
+ansB_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[#Děmidovič 2814
+ansA_inv=inv(ansA_order);
+ansB_inv=inv(ansB_order);
+answers=["řada konverguje absolutně", "řada konverguje relativně", "řada diverguje" , "nelze o konvergenci rozhodnout"];
+ansA_permuted=sublist(answers,ansA_order);
+ansB_permuted=sublist(answers,ansB_order);
+ansA = ansA_inv[2];    #AK v obou, #jenom jeden správně - nesmysl.
+ansB = ansB_inv[2];   
+
+x0=0; R=4; a=-4;b=4;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#a</text>
+ </placeholder>
+ <answermark>
+  <text>10</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[x0, R, a, b]</text>
+ </answer>
+ <vars2>
+  <text>criterion1 = (x0==_0); #celočíselné výsledky
+criterion2 = (R==_1);
+criterion3 = (a==_2);
+criterion4 = (b==_3);</text>
+ </vars2>
+ <correctness>
+  <text>(criterion1+criterion2+criterion2+criterion3+criterion4)/5</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Střed konvergence&nbsp;&nbsp;&nbsp;&nbsp; \(x_0=\) {_0}, <br> poloměr konvergence&nbsp; \(R=\) {_1}, <br> interval konvergence&nbsp; ({_2}, {_3}).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#krajnibody</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ansA, ansB]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>V bodě \(a\) {_0:ansA_permuted:MCE},</p><p>v bodě \(b\) {_1:ansB_permuted:MCE}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

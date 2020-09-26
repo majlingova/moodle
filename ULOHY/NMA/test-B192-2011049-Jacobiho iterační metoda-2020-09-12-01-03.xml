@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v B192-2011049/Jacobiho iterační metoda</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 128958  -->
+  <question type="formulas">
+    <name>
+      <text>Jacobiho iterační matice</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Soustavu rovnic \( \mathbf{A} \mathbf{x} = \mathbf{b} \) , kde  <br>\( \mathbf{A} = \left(\begin{array}{rrr} {a11} &amp; {a12} &amp;{a13}\\{a21}&amp;{a22} &amp;{a23} \\{a31}&amp;{a32}&amp;{a33}\end{array}\right) \), \(&nbsp; \mathbf{b} = \left(\begin{array}{r} {b1}\\ {b2}\\{b3}\end{array}\right) \)&nbsp; <br></p><p>převeďte na soustavu rovnic ve tvaru \(&nbsp; \mathbf{x} =\mathbf{U_J}\mathbf{x}+ \mathbf{v_J} \), kde&nbsp;</p><p>\( \mathbf{U_J} \) je iterační Jacobiho matice a \( \mathbf{v_J} \) vektor,&nbsp; odpovídající vektoru \mathbf{b} \).</p><p>Zapište matici \( \mathbf{U_J}&nbsp; = \left(\begin{array}{rrr} {_1} &amp; {_2}&amp; {_3}\\ &nbsp;{_4} &amp; {_5}&amp; {_6}\\ {_7} &amp; {_8}&amp; {_9}&nbsp; \end{array}\right)\) a vektor \( \mathbf{v_J}=&nbsp; \left(\begin{array}{r} {_10}\\ {_11}\\ {_12} \end{array}\right)\)<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>12.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11 = {4,5,6};  a12 = {-0.5, 0, 0.5, 1};a13 = {-0.5, 0, 0.5, 1};a21={-0.5, 0, 0.5, 1};a22={4,5,6};  a23={-0.5, 0, 0.5, 1}; a31 = {-0.5, 0, 0.5, 1}; a32 = {-0.5, 0, 0.5, 1};a33 = {4,5,6};  b1 = {-7:7}; b2= {-7:7};b3= {-7:7};</text>
+</varsrandom>
+<varsglobal><text></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>12</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>12</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0, -a12/a11, -a13/a11, -a21/a22, 0, -a23/a22, -a13/a33, -a23/a33, 0, b1/a11, b2/a22, b3/a33]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 128959  -->
+  <question type="formulas">
+    <name>
+      <text>Jacobiho iterační matice</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Jacobiho iterační matice.</b> <br></p><p>Soustavu rovnic ve tvaru \( \mathbf{A}\mathbf{x}&nbsp; = \mathbf{b} \), kde <br></p><p>\( \mathbf{A} = \left(\begin{array}{rrr} {a11} &amp; {a12} &amp;{a13}\\{a21}&amp;{a22} &amp;{a23} \\{a31}&amp;{a32}&amp;{a33}\end{array}\right) \), \(&nbsp; \mathbf{b} = \left(\begin{array}{r} {b1}\\ {b2}\\{b3}\end{array}\right)&nbsp; \)<br></p><p>převeďte do tvaru \( \mathbf{x} = \mathbf{U}_J \mathbf{x} + \mathbf{v}_J \), <br></p><p>kde \( \mathbf{U}_J \) je <b>Jacobiho iterační matice</b> a \(\mathbf{v}_J \) vektor, odpovídající vektoru \(\mathbf{b} \).</p><p>Uveďte matici \( \mathbf{U}_J\) &nbsp;(po řádcích) a vektor&nbsp;&nbsp; \(\mathbf{v}_J \) .</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>\( \mathbf{U}_J =\left( \begin{array}{rrr} 0 &amp; -\frac{a_{12}}{a_{11}}&nbsp;&amp;-\frac{a_{13}}{a_{11}}\\ -\frac{a_{21}}{a_{22}} &amp;0&amp;-\frac{a_{23}}{a_{22}} \\ -\frac{a_{31}}{a_{33}} &amp;-\frac{a_{32}}{a_{33}}&amp;0 \end{array}\right) = \left(\begin{array}{rrr} {uj[0]} &amp; {uj[1]} &amp;&nbsp; {uj[2]} \\&nbsp;{uj[3]} &amp; {uj[4]} &amp;&nbsp; {uj[5]} \\ {uj[6]} &amp; {uj[7]} &amp;&nbsp; {uj[8]} \end{array}\right) \)</p><p>\(\mathbf{v}_J = \left(\begin{array}{r} \frac{b_1}{a_{11}}\\ \frac{b_2}{a_{22}}\\ \frac{b_3}{a_{33}} \end{array}\right) = \left( \begin{array}{r} {vj[0]} \\ {vj[1]} \\&nbsp;{vj[2]} \end{array}\right) \)<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>2.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11 = {4,5,6};  a12 = {-0.5, 0, 0.5, 1};a13 = {-0.5, 0, 0.5, 1};a21={-0.5, 0, 0.5, 1};a22={4,5,6};  a23={-0.5, 0, 0.5, 1}; a31 = {-0.5, 0, 0.5, 1}; a32 = {-0.5, 0, 0.5, 1};a33 = {4,5,6};  b1 = {-7:7}; b2= {-7:7};b3= {-7:7};</text>
+</varsrandom>
+<varsglobal><text>uj = [0,  round(-a12/a11,4) , round(-a13/a11,4) , round(-a21/a22 , 4) , 0 , round(-a23/a22 , 4) , round(-a31/a33, 4) , round(-a32/a33, 4) , 0]; 
+vj = [round(b1/a11, 4) , round(b2/a22, 4) , round(b3/a33, 4)];</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>9</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>uj</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>matice \( \mathbf{U}_J\):</p><p>\( \mathbf{U}_{J_{1,*}} = \left(\right. \) {_0}, {_1}, {_2} \( \left.\right) \)<br></p><p>\( \mathbf{U}_{J_{2,*}} = \left(\right. \) {_3}, {_4}, {_5} \( \left.\right)\)</p><p>\( \mathbf{U}_{J_{3,*}} = \left(\right. \){_6}, {_7}, {_8} \(\left.\right) \)<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text><![CDATA[<p></p><br><p></p>]]></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně, <br></p><p></p><p>\( \mathbf{U}_J =\left( \begin{array}{rrr} 0 &amp; 
+-\frac{a_{12}}{a_{11}}&nbsp;&amp;-\frac{a_{13}}{a_{11}}\\ 
+-\frac{a_{21}}{a_{22}} &amp;0&amp;-\frac{a_{23}}{a_{22}} \\ 
+-\frac{a_{31}}{a_{33}} &amp;-\frac{a_{32}}{a_{33}}&amp;0 
+\end{array}\right)\)</p><p></p><br><p></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>vj</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\( \mathbf{v}_{J} = \left( \right. \) {_0}, {_1}, {_2}&nbsp; \( \left.\right)^T \)<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně,</p><p>\(\mathbf{v}_J = \left(\begin{array}{r} \frac{b_1}{a_{11}}\\ \frac{b_2}{a_{22}}\\ \frac{b_3}{a_{33}} \end{array}\right)\)<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+  </question>
+
+<!-- question: 129297  -->
+  <question type="formulas">
+    <name>
+      <text>Jacobiho metoda: výpočet 2 iterací</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span id="selectionBoundary_1582378088102_12977572341217092" style="line-height: 0; display: none;" class="rangySelectionBoundary">﻿</span><b>Jacobiho metoda: výpočet 2 iterací</b><br></p><p>Pro&nbsp; soustavu rovnic \( \mathbf{A} \mathbf{x} = \mathbf{b} \) , kde  <br>\( \mathbf{A} = \left(\begin{array}{rrr} {a11} &amp; {a12} &amp;{a13}\\{a21}&amp;{a22} &amp;{a23} \\{a31}&amp;{a32}&amp;{a33}\end{array}\right) \), \(&nbsp; \mathbf{b} = \left(\begin{array}{r} {b1}\\ {b2}\\{b3}\end{array}\right) \) a \(&nbsp; \mathbf{x}^{(k)} = \left(\begin{array}{r} {x1}\\ {x2}\\{x3}\end{array}\right) \)  <br>vypočtěte hodnoty \(&nbsp; \mathbf{x}^{(k+1)}&nbsp; = (x^{(k+1)}_1, x^{(k+1)}_2, x^{(k+1)}_3)^T\) a \(&nbsp; \mathbf{x}^{(k+2)}&nbsp; = (x^{(k+2)}_1, x^{(k+2)}_2, x^{(k+2)}_3)^T\) <br></p><p><b>Jacobiho iterační metodou.</b><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>2.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11 = {4,5,6};  a12 = {-0.5, 0, 0.5, 1};a13 = {-0.5, 0, 0.5, 1};a21={-0.5, 0, 0.5, 1};a22={4,5,6};  a23={-0.5, 0, 0.5, 1}; a31 = {-0.5, 0, 0.5, 1}; a32 = {-0.5, 0, 0.5, 1};a33 = {4,5,6};  b1 = {-7:7}; b2= {-7:7};b3= {-7:7}; x1={-3:3}; x2={-3:3}; x3={-3:3}; </text>
+</varsrandom>
+<varsglobal><text>xx1 = [round((b1 - x2*a12 -x3*a13)/a11,3) , round((b2 - x1*a21 -x3*a23)/a22,3) ,round( (b3- x1*a31 -x2*a32)/a33,3)];
+xx2 = [round((b1 - xx1[1]*a12 -xx1[2]*a13)/a11,3) , round((b2 - xx1[0]*a21 -xx1[2]*a23)/a22,3) ,round( (b3- xx1[0]*a31 -xx1[1]*a32)/a33,3)];</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>xx1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_1^{(k+1)}= \){_0}</p><p>\(x_2^{(k+1)}= \){_1}</p><p>\(x_3^{(k+1)}= \){_2}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>xx2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p>\(x_1^{(k+2)}= \){_0}</p><p>\(x_2^{(k+2)}= \){_1}</p><p>\(x_3^{(k+2)}= \){_2}</p><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+      <clearwrong/>
+    </hint>
+  </question>
+
+<!-- question: 128957  -->
+  <question type="formulas">
+    <name>
+      <text>Spektrální poloměr Jacobiho matice</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Spektrální poloměr Jacobiho matice.</b><br></p><p>Pro&nbsp; soustavu rovnic \( \mathbf{A}\mathbf{x} = \mathbf{b} \), kde \( \mathbf{A} = \left(\begin{array}{rrr} {a11} &amp; {a12} &amp;{a13}\\{a21}&amp;{a22} &amp;{a23} \\{a31}&amp;{a32}&amp;{a33}\end{array}\right) \)</p><p>určete <b>spektrální poloměr Jacobiho iterační matice</b> ( \(\rho(U_J) \) ).</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Spektrální poloměr Jacobiho iterační matice ( \(\rho(U_J) \) ) určíme z matice&nbsp; ( \(\mathbf{A}\) ).</p><p>Nejprve určíme \(\lambda_1, \lambda_2, \lambda_3 \) pro které platí</p><p>det \( \left( \begin{array}{rrr}{a11} \lambda &amp; {a12} &amp;{a13}\\ {a21}&amp; {a22}&nbsp;\lambda &amp;{a23} \\{a31}&amp;{a32}&amp; {a33} \lambda\end{array}\right) = 0\)</p><p>\(\rho(U_J) = \max \{ | \lambda_1|, |\lambda_2|, |\lambda_3| \}&nbsp; = {rhoJ} \) <br></p><p><br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+<varsrandom><text>a11 = {-4, -3, -2,-1, 1, 2, 3, 4, 5, 6};  a12 = {-2, -1,-0.5, 0, 0.5, 1, 2}; a13 = {-2, -1,-0.5, 0, 0.5, 1, 2}; a22={-4, -3, -2,-1, 1, 2, 3, 4, 5, 6};  a31 ={-2, -1,-0.5, 0, 0.5, 1, 2}; a33 = {-4, -3, -2,-1, 1, 2, 3, 4, 5, 6};  </text>
+</varsrandom>
+<varsglobal><text>a21 = -a12; a23 = a13; a32 = a31;
+rhoJ = round(sqrt(abs( ( a13*a22*a31 + a23*a32*a11 +a33*a21*a12 )/ (a11*a22*a33) ) ),4);</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>rhoJ</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\rho(U_J) \) = {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text><![CDATA[<p></p><p><br></p><br><p></p>]]></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně;</p><p>Spektrální poloměr Jacobiho iterační matice ( \(\rho(U_J) \) ) určíme z matice&nbsp; ( \(\mathbf{A}\) ).</p><p>Nejprve určíme \(\lambda_1, \lambda_2, \lambda_3 \) pro které platí</p><p>det
+ \( \left( \begin{array}{rrr}{a11} \lambda &amp; {a12} &amp;{a13}\\ 
+{a21}&amp; {a22}&nbsp;\lambda &amp;{a23} \\{a31}&amp;{a32}&amp; {a33} 
+\lambda\end{array}\right) = 0\)</p><p>\(\rho(U_J) = \max \{ | \lambda_1|, |\lambda_2|, |\lambda_3| \}&nbsp; \) </p><br><p></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <clearwrong/>
+    </hint>
+  </question>
+
+<!-- question: 128956  -->
+  <question type="formulas">
+    <name>
+      <text>Výpočet jedné iterace Jacobiho metodou</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Výpočet jedné iterace Jacobiho metodou.</b><br></p><p>Pro&nbsp; soustavu rovnic \( \mathbf{A} \mathbf{x} = \mathbf{b} \) , kde <br></p><p>\( \mathbf{A} = \left(\begin{array}{rrr} {a11} &amp; {a12} &amp;{a13}\\{a21}&amp;{a22} &amp;{a23} \\{a31}&amp;{a32}&amp;{a33}\end{array}\right) \), \(&nbsp; \mathbf{b} = \left(\begin{array}{r} {b1}\\ {b2}\\{b3}\end{array}\right) \) a \(&nbsp; \mathbf{x}^{(k)} = \left(\begin{array}{r} {x1}\\ {x2}\\{x3}\end{array}\right) \) <br></p><p>vypočtěte hodnoty \(&nbsp; \mathbf{x}^{(k+1)}&nbsp; = (x^{(k+1)}_1, x^{(k+1)}_2, x^{(k+1)}_3)^T\) <br></p><p><b>Jacobiho iterační metodou.</b><br></p><br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Výpočet hodnot \( \mathbf{x}^{(k+1)}\)&nbsp; po složkách : <br></p><p>\(x_1^{(k+1)} = \frac{b_1 - x_2^{(k)}a_{12} - x_3^{(k)} a_{13}}{a_{11}} =\) ( {b1} -( {x2})*({a12}) - ({x3}) *({a13}) )/{a11}<br></p><p>\(x_2^{(k+1)} = \frac{b_2 - x_1^{(k)}a_{21} - x_3^{(k)} a_{23}}{a_{22}} =\) ( {b2} -( {x1})*({a21}) - ({x3}) *({a23}) )/{a22}</p><p>\(x_3^{(k+1)} = \frac{b_3 - x_1^{(k)}a_{31} - x_2^{(k)} a_{32}}{a_{33}} =\) ( {b3} -( {x1})*({a31}) - ({x2}) *({a32}) )/{a33}<br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>3.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a11 = {4,5,6};  a12 = {-0.5, 0, 0.5, 1};a13 = {-0.5, 0, 0.5, 1};a21={-0.5, 0, 0.5, 1};a22={4,5,6};  a23={-0.5, 0, 0.5, 1}; a31 = {-0.5, 0, 0.5, 1}; a32 = {-0.5, 0, 0.5, 1};a33 = {4,5,6};  b1 = {-7:7}; b2= {-7:7};b3= {-7:7}; x1={-3:3}; x2={-3:3}; x3={-3:3}; </text>
+</varsrandom>
+<varsglobal><text>xx1 = [round((b1 - x2*a12 -x3*a13)/a11,3) , round((b2 - x1*a21 -x3*a23)/a22,3) ,round( (b3- x1*a31 -x2*a32)/a33,3)];</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>xx1[0]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_1^{(k+1)}= \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[správně<br>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>xx1[1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p>\(x_2^{(k+1)}= \){_0}</p><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>xx1[2]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_3^{(k+1)}= \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+    </hint>
+    <hint format="html">
+      <text></text>
+      <shownumcorrect/>
+    </hint>
+  </question>
+
+</quiz>

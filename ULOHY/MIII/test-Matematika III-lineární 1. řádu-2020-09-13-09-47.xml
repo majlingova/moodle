@@ -1,0 +1,4080 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "Matematika III".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM/ODR</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM/ODR/lineární 1. řádu</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 201920  -->
+  <question type="formulas">
+    <name>
+      <text>př. 1a ? (Kamke 1.2)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A1</b><br></p><p>Je zadána diferenciální rovnice \(\displaystyle y^\prime {stra}y = {strc} e^{{strb}x}\).</p><p><b>a)</b> Určete 
+oblast existence a jednoznačnosti maximálního řešení Cauchyovy úlohy pro libovolnou počáteční podmínku. Vyberte správnou z následujících možností: {#oblast}</p><p><b>b)</b> Z uvedeného seznamu vyberte funkci \(y_P(x)\), která je řešením zadané diferenciální rovnice. V odevzdávaném řešení výběr zdůvodněte. {#partikularni}</p> <p><b>c)</b> Určete funkci \(y_H(x)\), která je řešením homogenní rovnice \(\displaystyle y^\prime {stra}y=0\) a vyhovuje počáteční podmínce \(y_H(0) = 1\). {#homogenni}</p><p><b>d)</b> Určete řešení \(y(x)\) zadané nehomogenní diferenciální rovnice \(\displaystyle y^\prime {stra}y = {strc} e^{{strb}x}\), které vyhovuje počáteční podmínce \(\displaystyle y(0)= {Y0}\). {#nehomogenni}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>25.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ans_order=shuffle([0:6]);
+ans1_order=shuffle([0:5]);
+
+#a+b !=0
+b={-4,-3,-2,2,3,4}; q={0,1}; 
+cc={-3,-2,-1,1,2,3};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[#a+b!=0
+a =  -b+1 ;
+
+
+z= a>0 ? 0 : 1;
+zna=pick(z,"+"," ");
+#q = a==1 ? 0  : a==-1 ? 1 : 2;
+q= a==1? 0 : 2;
+q= a==-1? 1 : q;
+straa = join(" ", zna, str(a)) ;
+stra = pick(q, "+","-",straa);
+
+#qb= b==1 ? 0 : b == -1? 1 : 2;
+qb= b==1 ? 0 : 2;
+qb = b == -1? 1 : qb;
+strb=pick(qb, " ", "-", str(b));
+
+qc= cc==1 ? 0  : 2;
+qc = cc == -1? 1 : qc;
+strc=pick(qc, " ", "-", str(cc));
+
+
+
+ans_inv=inv(ans_order);
+answers=["\\(\\ \\mathbb R^2\\)", 
+"\\(\\ (-\\infty , 0)\\cup (0,+\\infty )\\)", 
+"\\(\\ (0,+\\infty )\\times (-\\infty ,+\\infty )\\)",
+"\\(\\ (-\\infty ,+\\infty )\\times (0,+\\infty )\\)",
+"\\(\\ \\langle 0,1\\rangle \\times (-\\infty ,+\\infty )\\)",
+"\\(\\ (-\\infty ,+\\infty )\\times ((-\\infty , 0)\\cup (0,+\\infty ))\\)"];
+ans_permuted=sublist(answers,ans_order);
+ans = ans_inv[0];
+
+ans1_inv=inv(ans1_order);
+
+y1=join (" ", "\\(\\ y_P =", strc, "e^{", strb,"x}\\)");
+y2=join (" ", "\\(\\ y_P =", strc, "xe^{", strb,"x}\\)");
+y3=join (" ", "\\(\\ y_P =x+", strc, "xe^{", strb,"x}\\)");
+y4=join (" ", "\\(\\ y_P =", strc, "x^2e^{", strb,"x}\\)");
+answers_partikularni=[y1, y2,y3,y4,
+" žádné \\(y_P\\) není řešením zadané diferenciální rovnice."]; 
+ans1_permuted=sublist(answers_partikularni,ans1_order);
+ans_p=ans1_inv[0];
+
+
+X0=0; 
+Y0 = 2*cc/(a+b);
+C=cc/(a+b);
+infty=9999;
+xL=-infty; xR=infty;
+
+answers=["<", "(", ")" , ">"];
+ansL=1; ansR=2;]]></text>
+</varsglobal>
+<answernumbering><text>none</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#oblast</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans_permuted}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni</text>
+ </placeholder>
+ <answermark>
+  <text>7</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans_p</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans1_permuted}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#homogenni</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:1:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(- (a x))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y_H(x) = \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#nehomogenni</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["(cc) / (a + b) exp(( b ) x) + C exp((- a)x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y(x)= \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201922  -->
+  <question type="formulas">
+    <name>
+      <text>př. 1b ?(Kamke 1.2)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A1</b><br></p><p>Je zadána diferenciální rovnice \(\displaystyle y^\prime {stra}y = {strc} e^{{strb}x}\).</p><p><b>a)</b> Určete 
+oblast existence a jednoznačnosti maximálního řešení Cauchyovy úlohy pro libovolnou počáteční podmínku. Vyberte správnou z následujících možností: {#oblast}</p><p><b>b)</b> Z uvedeného seznamu vyberte funkci \(y_P(x)\), která je řešením zadané diferenciální rovnice. V odevzdávaném řešení výběr zdůvodněte. {#partikularni}</p> <p><b>c)</b> Určete funkci \(y_H(x)\), která je řešením homogenní rovnice \(\displaystyle y^\prime {stra}y=0\) a vyhovuje počáteční podmínce \(y_H(0) = 1\). {#homogenni}</p><p><b>d)</b> Určete řešení \(y(x)\) zadané nehomogenní diferenciální rovnice \(\displaystyle y^\prime {stra}y = {strc} e^{{strb}x}\), které vyhovuje počáteční podmínce \(\displaystyle y(0)= {Y0}\). {#nehomogenni}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>25.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ans_order=shuffle([0:6]);
+ans1_order=shuffle([0:5]);
+
+#a+b==0
+b={-4,-3,-2,-1,1,2,3,4}; q={0,1}; 
+cc={-3,-2,-1,1,2,3};
+Y0={-4,-3,-2,-1,1,2,3,4};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[#a+b==0
+a=-b;
+
+
+z= a>0 ? 0 : 1;
+zna=pick(z,"+"," ");
+#q = a==1 ? 0  : a==-1 ? 1 : 2;
+q= a==1? 0 : 2;
+q= a==-1? 1 : q;
+straa = join(" ", zna, str(a)) ;
+stra = pick(q, "+","-",straa);
+
+#qb= b==1 ? 0 : b == -1? 1 : 2;
+qb= b==1 ? 0 : 2;
+qb = b == -1? 1 : qb;
+strb=pick(qb, " ", "-", str(b));
+
+qc= cc==1 ? 0  : 2;
+qc = cc == -1? 1 : qc;
+strc=pick(qc, " ", "-", str(cc));
+
+
+
+ans_inv=inv(ans_order);
+answers=["\\(\\ \\mathbb R^2\\)", 
+"\\(\\ (-\\infty , 0)\\cup (0,+\\infty )\\)", 
+"\\(\\ (0,+\\infty )\\times (-\\infty ,+\\infty )\\)",
+"\\(\\ (-\\infty ,+\\infty )\\times (0,+\\infty )\\)",
+"\\(\\ \\langle 0,1\\rangle \\times (-\\infty ,+\\infty )\\)",
+"\\(\\ (-\\infty ,+\\infty )\\times ((-\\infty , 0)\\cup (0,+\\infty ))\\)"];
+ans_permuted=sublist(answers,ans_order);
+ans = ans_inv[0];
+
+ans1_inv=inv(ans1_order);
+
+y1=join (" ", "\\(\\ y_P =", strc, "e^{", strb,"x}\\)");
+y2=join (" ", "\\(\\ y_P =", strc, "xe^{", strb,"x}\\)");
+y3=join (" ", "\\(\\ y_P =", strc, "xe^{", strb,"x}+x\\)");
+y4=join (" ", "\\(\\ y_P =", strc, "x^2e^{", strb,"x}\\)");
+answers_partikularni=[y1, y2,y3,y4,
+" žádné \\(y_P\\) není řešením zadané diferenciální rovnice."]; 
+ans1_permuted=sublist(answers_partikularni,ans1_order);
+ans_p=ans1_inv[1];
+
+
+X0=0; 
+C=Y0;
+
+infty=9999;
+xL=-infty; xR=infty;
+
+answers=["<", "(", ")" , ">"];
+ansL=1; ansR=2;]]></text>
+</varsglobal>
+<answernumbering><text>none</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#oblast</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans_permuted}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni</text>
+ </placeholder>
+ <answermark>
+  <text>7</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans_p</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans1_permuted}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#homogenni</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:1:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(-(a x))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y_H(x) = \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#nehomogenni</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["cc x exp(-(a x)) + C exp(-(a x))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y(x)= \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 202282  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 10 (1.ř.lineární 4)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A1</b><br></p><p>Je zadána diferenciální rovnice \(\displaystyle y^\prime\,-xy\,=x\).</p><p><b>a)</b> Určete 
+oblast existence a jednoznačnosti maximálního řešení Cauchyovy úlohy pro libovolnou počáteční podmínku. Vyberte správnou z následujících možností: {#oblast}</p><p><b>b)</b> Z uvedeného seznamu vyberte funkci \(y_P(x)\), která je řešením zadané diferenciální rovnice. V odevzdávaném řešení výběr zdůvodněte. {#partikularni}</p> <p><b>c)</b> Určete funkci \(y_H(x)\), která je řešením homogenní rovnice \(\displaystyle y^\prime\,-\, xy\,=0\) a vyhovuje počáteční podmínce \(y_H(0) = 1\). {#homogenni}</p><p><b>d)</b> Určete řešení \(y(x)\) zadané nehomogenní diferenciální rovnice \(\displaystyle y^\prime\,-\, xy\,=\, x\), které vyhovuje počáteční podmínce \(\displaystyle y(0)= 1\). {#nehomogenni}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>25.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ans_order=shuffle([0:6]);
+ans1_order=shuffle([0:6]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ans_inv=inv(ans_order);
+answers=["\\(\\ \\mathbb R^2\\)", 
+"\\(\\ (-\\infty , 0)\\cup (0,+\\infty )\\)", 
+"\\(\\ (0,+\\infty )\\times (-\\infty ,+\\infty )\\)",
+"\\(\\ (-\\infty ,+\\infty )\\times (0,+\\infty )\\)",
+"\\(\\ \\langle 0,1\\rangle \\times (-\\infty ,+\\infty )\\)",
+"\\(\\ (-\\infty ,+\\infty )\\times ((-\\infty , 0)\\cup (0,+\\infty ))\\)"];
+ans_permuted=sublist(answers,ans_order);
+ans = ans_inv[0];
+
+ans1_inv=inv(ans1_order);
+answers_partikularni=["\\(\\ y_P=e^x\\)",
+"\\(\\ y_P=2xe^x+e^{-x}\\)",
+"\\(\\ y_P=2e^{-x^2/2}\\)",
+"\\(\\ y_P=-1\\)",
+"\\(\\ y_P=xe^{x^2/2}\\)",
+" žádné \\(y_P\\) není řešením zadané diferenciální rovnice."]; 
+ans1_permuted=sublist(answers_partikularni,ans1_order);
+ans_p=ans1_inv[3];]]></text>
+</varsglobal>
+<answernumbering><text>none</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#oblast</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans_permuted}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni</text>
+ </placeholder>
+ <answermark>
+  <text>7</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans_p</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans1_permuted}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#homogenni</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-2:2:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(x*x/2)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y_H(x) = \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#nehomogenni</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-2:2:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["2*exp(x*x/2) -1"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y(x)= \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201888  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 1a (Kamke 1.2)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"><strong>a)</strong> Určete řešení \(y_H(x)\)  rovnice \(\displaystyle y^\prime {stra}y = 0\), které vyhovuje počáteční podmínce \(y(0)=1\).{#homogenni}</p>
+<p dir="ltr" style="text-align: left;"><strong>b)</strong> Určete řešení \(y(x)\) rovnice \(\displaystyle y^\prime {stra}y ={strc} e^{{strb}x}\), které vyhovuje počáteční podmínce \(\displaystyle y\left({X0}\right) = {Y0}\).{#nehomogenni}
+</p>
+<p dir="ltr" style="text-align: left;"><strong></strong><strong>c)</strong> Uveďte maximální interval řešení z bodu b).<br></p><p dir="ltr" style="text-align: left;"> Pro \(-\infty\) použijte -infty, pro \(+\infty\) použijte infty nebo +infty. Vyberte správné závorky.</p>\(x \in \)
+<div style="display:inline-block;">{#1}</div>
+<div style="display:inline-block;">{#2}</div>
+<div style="display:inline-block;">{#3}</div><br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>#a+b !=0
+b={-4,-3,-2,2,3,4}; q={0,1}; 
+cc={-3,-2,-1,1,2,3};
+
+ansL_order=shuffle([0:4]);
+ansR_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[#a+b!=0
+a = q>0 ? -b+1 : -b-1; 
+
+
+z= a>0 ? 0 : 1;
+zna=pick(z,"+"," ");
+#q = a==1 ? 0  : a==-1 ? 1 : 2;
+q= a==1? 0 : 2;
+q= a==-1? 1 : q;
+straa = join(" ", zna, str(a)) ;
+stra = pick(q, "+","-",straa);
+
+#qb= b==1 ? 0 : b == -1? 1 : 2;
+qb= b==1 ? 0 : 2;
+qb = b == -1? 1 : qb;
+strb=pick(qb, " ", "-", str(b));
+
+qc= cc==1 ? 0  : 2;
+qc = cc == -1? 1 : qc;
+strc=pick(qc, " ", "-", str(cc));
+
+X0=0; 
+Y0 = 2*cc/(a+b);
+C=cc/(a+b);
+infty=9999;
+xL=-infty; xR=infty;
+
+answers=["<", "(", ")" , ">"];
+ansL=1; ansR=2;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#homogenni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(- (a x))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y_H(x)=\) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#nehomogenni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-1:1:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["(cc) / (a + b) exp(( b ) x) + C exp((- a)x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y(x) = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansL</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["xL", "xR"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0}; {_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#3</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansR</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201889  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 1b (Kamke 1.2)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"><strong>a)</strong> Určete řešení \(y_H(x)\)  rovnice \(\displaystyle y^\prime {stra}y = 0\), které vyhovuje počáteční podmínce \(y(0)=1\).{#homogenni}</p>
+<p dir="ltr" style="text-align: left;"><strong>b)</strong> Určete řešení \(y(x)\) rovnice \(\displaystyle y^\prime {stra}y ={strc} e^{{strb}x}\), které vyhovuje počáteční podmínce \(\displaystyle y\left({X0}\right) = {Y0}\).{#nehomogenni}
+</p>
+<p dir="ltr" style="text-align: left;"><strong></strong><strong>c)</strong> Uveďte maximální interval řešení z bodu b).<br></p><p dir="ltr" style="text-align: left;"> Pro \(-\infty\) použijte -infty, pro \(+\infty\) použijte infty nebo +infty. Vyberte správné závorky.</p>\(x \in \)
+<div style="display:inline-block;">{#1}</div>
+<div style="display:inline-block;">{#2}</div>
+<div style="display:inline-block;">{#3}</div><br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>#a+b==0
+b={-4,-3,-2,-1,1,2,3,4}; q={0,1}; 
+cc={-3,-2,-1,1,2,3};
+Y0={-4,-3,-2,-1,1,2,3,4};
+ansL_order=shuffle([0:4]);
+ansR_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[#a+b==0
+a=-b;
+
+
+z= a>0 ? 0 : 1;
+zna=pick(z,"+"," ");
+#q = a==1 ? 0  : a==-1 ? 1 : 2;
+q= a==1? 0 : 2;
+q= a==-1? 1 : q;
+straa = join(" ", zna, str(a)) ;
+stra = pick(q, "+","-",straa);
+
+#qb= b==1 ? 0 : b == -1? 1 : 2;
+qb= b==1 ? 0 : 2;
+qb = b == -1? 1 : qb;
+strb=pick(qb, " ", "-", str(b));
+
+qc= cc==1 ? 0  : 2;
+qc = cc == -1? 1 : qc;
+strc=pick(qc, " ", "-", str(cc));
+
+X0=0; 
+
+C=Y0;
+infty=9999;
+xL=-infty; xR=infty;
+
+answers=["<", "(", ")" , ">"];
+ansL=1; ansR=2;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#homogenni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(-(a x))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y_H(x)=\) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#nehomogenni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-1:1:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["cc x exp(-(a x)) + C exp(-(a x))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y(x) = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansL</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["xL", "xR"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0}; {_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#3</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansR</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201890  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 2 (Kamke 1.4)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"><strong>a)</strong> Určete řešení \(y_H(x)\)  rovnice \(\displaystyle y^\prime +2xy = 0\), které vyhovuje počáteční podmínce \(y(0)=1\).{#homogenni}</p>
+<p dir="ltr" style="text-align: left;"><strong>b)</strong> Určete řešení \(y(x)\) rovnice \(\displaystyle y^\prime + 2xy = xe^{-x^2}\), které vyhovuje počáteční podmínce \(\displaystyle y\left({X0}\right) = {Y0}\).{#nehomogenni}
+</p>
+<p dir="ltr" style="text-align: left;"><strong></strong><strong>c)</strong> Uveďte maximální interval řešení z bodu b).<br></p><p dir="ltr" style="text-align: left;"> Pro \(-\infty\) použijte -infty, pro \(+\infty\) použijte infty nebo +infty. Vyberte správné závorky.</p>\(x \in \)
+<div style="display:inline-block;">{#1}</div>
+<div style="display:inline-block;">{#2}</div>
+<div style="display:inline-block;">{#3}</div><br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>Y0={-4,-3,-2,-1,1,2,3,4};
+ansL_order=shuffle([0:4]);
+ansR_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[X0=0; 
+C=Y0;
+infty=9999;
+xL=-infty; xR=infty;
+
+answers=["<", "(", ")" , ">"];
+ansL=1; ansR=2;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#homogenni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(- (x^2))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y_H(x)=\) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#nehomogenni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-1:1:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["(x*x*0.5 + C) exp(-(x*x))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y(x) = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansL</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["xL", "xR"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0}; {_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#3</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansR</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201891  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 3 (Kamke 1.6)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"><strong>a)</strong> Určete řešení \(y_H(x)\)  rovnice \(\displaystyle y^\prime +y\cos x = 0\), které vyhovuje počáteční podmínce \(y(0)=1\).{#homogenni}</p>
+<p dir="ltr" style="text-align: left;"><strong>b)</strong> Určete řešení \(y(x)\) rovnice \(\displaystyle y^\prime +y\cos x = \frac 12 \sin 2x\), které vyhovuje počáteční podmínce \(\displaystyle y\left({X0}\right) = {Y0}\).{#nehomogenni}
+</p>
+<p dir="ltr" style="text-align: left;"><strong></strong><strong>c)</strong> Uveďte maximální interval řešení z bodu b).<br></p><p dir="ltr" style="text-align: left;"> Pro \(-\infty\) použijte -infty, pro \(+\infty\) použijte infty nebo +infty. Vyberte správné závorky.</p>\(x \in \)
+<div style="display:inline-block;">{#1}</div>
+<div style="display:inline-block;">{#2}</div>
+<div style="display:inline-block;">{#3}</div><br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>Y0={-4,-3,-2,-1,1,2,3,4};
+ansL_order=shuffle([0:4]);
+ansR_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[X0=0; 
+C=Y0+1;
+infty=9999;
+xL=-infty; xR=infty;
+
+answers=["<", "(", ")" , ">"];
+ansL=1; ansR=2;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#homogenni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp((-1) sin(x))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y_H(x)=\) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#nehomogenni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-1:1:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["sin(x) - 1 + C exp((-1) sin(x))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y(x) = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansL</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["xL", "xR"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0}; {_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#3</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansR</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201892  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 4 (Kamke 1.7)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"><strong>a)</strong> Určete řešení \(y_H(x)\)  rovnice \(\displaystyle y^\prime +y\cos x = 0\), které vyhovuje počáteční podmínce \(y(0)=1\).{#homogenni}</p>
+<p dir="ltr" style="text-align: left;"><strong>b)</strong> Určete řešení \(y(x)\) rovnice \(\displaystyle y^\prime +y\cos x = e^{-\sin x}\), které vyhovuje počáteční podmínce \(\displaystyle y\left({X0}\right) = {Y0}\).{#nehomogenni}
+</p>
+<p dir="ltr" style="text-align: left;"><strong></strong><strong>c)</strong> Uveďte maximální interval řešení z bodu b).<br></p><p dir="ltr" style="text-align: left;"> Pro \(-\infty\) použijte -infty, pro \(+\infty\) použijte infty nebo +infty. Vyberte správné závorky.</p>\(x \in \)
+<div style="display:inline-block;">{#1}</div>
+<div style="display:inline-block;">{#2}</div>
+<div style="display:inline-block;">{#3}</div><br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>Y0={-4,-3,-2,-1,1,2,3,4};
+ansL_order=shuffle([0:4]);
+ansR_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[X0=0; 
+C=Y0;
+infty=9999;
+xL=-infty; xR=infty;
+
+answers=["<", "(", ")" , ">"];
+ansL=1; ansR=2;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#homogenni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp((-1) sin(x))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y_H(x)=\) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#nehomogenni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-1:1:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["(x + C) exp((-1) sin(x))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y(x) = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansL</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["xL", "xR"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0}; {_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#3</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansR</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201893  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 5 (Kamke 1.8)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;"><strong>a)</strong> Určete řešení \(y_H(x)\)  rovnice \(\displaystyle y^\prime +y\ {\rm tg }\ x = 0\), které vyhovuje počáteční podmínce \(y(0)=1\).{#homogenni}</p>
+<p dir="ltr" style="text-align: left;"><strong>b)</strong> Určete řešení \(y(x)\) rovnice \(\displaystyle y^\prime +y\ {\rm tg }\ x = \sin 2x\), které vyhovuje počáteční podmínce \(\displaystyle y\left({X0}\right) = {Y0}\).{#nehomogenni}
+</p>
+<p dir="ltr" style="text-align: left;"><strong></strong><strong>c)</strong> Uveďte maximální interval řešení z bodu b).<br></p><p dir="ltr" style="text-align: left;"> Pro \(-\infty\) použijte -infty, pro \(+\infty\) použijte infty nebo +infty. Vyberte správné závorky.</p>\(x \in \)
+<div style="display:inline-block;">{#1}</div>
+<div style="display:inline-block;">{#2}</div>
+<div style="display:inline-block;">{#3}</div><br>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>5.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>Y0={-4,-3,-2,-1,1,2,3,4};
+ansL_order=shuffle([0:4]);
+ansR_order=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[X0=0; 
+C=Y0+2;
+infty=9999;
+xL=-infty; xR=infty;
+
+answers=["<", "(", ")" , ">"];
+ansL=1; ansR=2;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#homogenni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["cos(x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y_H(x)=\) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#nehomogenni</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-1:1:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["C cos(x) - 2 cos(x) cos(x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.1]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">\(y(x) = \) {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansL</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text><![CDATA[["xL", "xR"]]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0}; {_1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#3</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansR</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p dir="ltr" style="text-align: left;">{_0:answers:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201921  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 6 (1.ř. lineární 0 )</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>B1</b><br></p><p>Je zadána diferenciální rovnice \(\displaystyle y^\prime\,+\, y\,=\, x\,{\rm 
+e}^{x}\).</p><p><b>a)</b> Určete 
+oblast existence a jednoznačnosti maximálního řešení Cauchyovy úlohy pro libovolnou počáteční podmínku. Vyberte správnou z následujících možností: {#oblast}</p><p><b>b)</b> Z uvedeného seznamu vyberte funkci \(y_P(x)\), která je řešením zadané diferenciální rovnice. V odevzdávaném řešení výběr zdůvodněte. {#partikularni}</p> <p><b>c)</b> Určete funkci \(y_H(x)\), která je řešením homogenní rovnice \(\displaystyle y^\prime\,+\, y\,=0\) a vyhovuje počáteční podmínce \(y_H(0) = 1\). {#homogenni}</p><p><b>d)</b> Určete řešení \(y(x)\) zadané nehomogenní diferenciální rovnice \(\displaystyle y^\prime\,+\, y\,=\, x\,{\rm e}^{x}\), které vyhovuje počáteční podmínce \(\displaystyle y(0)= \frac 34\). {#nehomogenni}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>25.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ans_order=shuffle([0:6]);
+ans1_order=shuffle([0:6]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ans_inv=inv(ans_order);
+answers=["\\(\\ \\mathbb R^2\\)", 
+"\\(\\ (-\\infty , 0)\\cup (0,+\\infty )\\)", 
+"\\(\\ (0,+\\infty )\\times (-\\infty ,+\\infty )\\)",
+"\\(\\ (-\\infty ,+\\infty )\\times (0,+\\infty )\\)",
+"\\(\\ \\langle 0,1\\rangle \\times (-\\infty ,+\\infty )\\)",
+"\\(\\ (-\\infty ,+\\infty )\\times ((-\\infty , 0)\\cup (0,+\\infty ))\\)"];
+ans_permuted=sublist(answers,ans_order);
+ans = ans_inv[0];
+
+ans1_inv=inv(ans1_order);
+answers_partikularni=["\\(\\ y_P=e^x\\)",
+"\\(\\ y_P=xe^x+e^{-x}\\)",
+"\\(\\ y_P=e^x(x-\\frac 12)+e^{-x}\\)",
+"\\(\\ y_P=e^x(\\frac 12x-\\frac 14)\\)",
+"\\(\\ y_P=e^{-2x}(\\frac 12x-\\frac 14)\\)",
+" žádné \\(y_P\\) není řešením zadané diferenciální rovnice."]; 
+ans1_permuted=sublist(answers_partikularni,ans1_order);
+ans_p=ans1_inv[3];]]></text>
+</varsglobal>
+<answernumbering><text>none</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#oblast</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans_permuted}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni</text>
+ </placeholder>
+ <answermark>
+  <text>7</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans_p</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans1_permuted}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#homogenni</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:5:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(-x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y_H(x) = \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#nehomogenni</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:5:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(x) x/2 - exp(x) 0.25 + exp(-x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y(x)= \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201923  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 7 (1.ř.lineární 3)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>B1</b><br></p><p>Je zadána diferenciální rovnice \(\displaystyle y^\prime\,+2xy\,=2x{\rm e}^{-x^2}\).</p><p><b>a)</b> Určete 
+oblast existence a jednoznačnosti maximálního řešení Cauchyovy úlohy pro libovolnou počáteční podmínku. Vyberte správnou z následujících možností: {#oblast}</p><p><b>b)</b> Z uvedeného seznamu vyberte funkci \(y_P(x)\), která je řešením zadané diferenciální rovnice. V odevzdávaném řešení výběr zdůvodněte. {#partikularni}</p> <p><b>c)</b> Určete funkci \(y_H(x)\), která je řešením homogenní rovnice \(\displaystyle y^\prime\,+\, 2xy\,=0\) a vyhovuje počáteční podmínce \(y_H(0) = 1\). {#homogenni}</p><p><b>d)</b> Určete řešení \(y(x)\) zadané nehomogenní diferenciální rovnice \(\displaystyle y^\prime\,+\, 2xy\,=\, 2x\,{\rm e}^{-x^2}\), které vyhovuje počáteční podmínce \(\displaystyle y(0)= 1\). {#nehomogenni}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>25.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ans_order=shuffle([0:6]);
+ans1_order=shuffle([0:6]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ans_inv=inv(ans_order);
+answers=["\\(\\ \\mathbb R^2\\)", 
+"\\(\\ (-\\infty , 0)\\cup (0,+\\infty )\\)", 
+"\\(\\ (0,+\\infty )\\times (-\\infty ,+\\infty )\\)",
+"\\(\\ (-\\infty ,+\\infty )\\times (0,+\\infty )\\)",
+"\\(\\ \\langle 0,1\\rangle \\times (-\\infty ,+\\infty )\\)",
+"\\(\\ (-\\infty ,+\\infty )\\times ((-\\infty , 0)\\cup (0,+\\infty ))\\)"];
+ans_permuted=sublist(answers,ans_order);
+ans = ans_inv[0];
+
+ans1_inv=inv(ans1_order);
+answers_partikularni=["\\(\\ y_P=e^x\\)",
+"\\(\\ y_P=2xe^x+e^{-x}\\)",
+"\\(\\ y_P=2e^{-x}\\)",
+"\\(\\ y_P=x^2e^{-x^2}\\)",
+"\\(\\ y_P=xe^{x^2}\\)",
+" žádné \\(y_P\\) není řešením zadané diferenciální rovnice."]; 
+ans1_permuted=sublist(answers_partikularni,ans1_order);
+ans_p=ans1_inv[3];]]></text>
+</varsglobal>
+<answernumbering><text>none</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#oblast</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans_permuted}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni</text>
+ </placeholder>
+ <answermark>
+  <text>7</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans_p</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans1_permuted}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#homogenni</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-2:2:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(-x*x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y_H(x) = \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#nehomogenni</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-2:2:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["x*x*exp(-x*x) + exp(-x*x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y(x)= \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 202280  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 8(1.ř. lineární 1)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A1</b><br></p><p>Je zadána diferenciální rovnice \(\displaystyle y^\prime\,-y\,=\frac{{\rm 
+e}^{x}}{1+x^2}\).</p><p><b>a)</b> Určete 
+oblast existence a jednoznačnosti maximálního řešení Cauchyovy úlohy pro libovolnou počáteční podmínku. Vyberte správnou z následujících možností: {#oblast}</p><p><b>b)</b> Z uvedeného seznamu vyberte funkci \(y_P(x)\), která je řešením zadané diferenciální rovnice. V odevzdávaném řešení výběr zdůvodněte. {#partikularni}</p> <p><b>c)</b> Určete funkci \(y_H(x)\), která je řešením homogenní rovnice \(\displaystyle y^\prime\,-\, y\,=0\) a vyhovuje počáteční podmínce \(y_H(0) = 1\). {#homogenni}</p><p><b>d)</b> Určete řešení \(y(x)\) zadané nehomogenní diferenciální rovnice \(\displaystyle y^\prime\,-\, y\,=\, \frac{{\rm 
+e}^{x}}{1+x^2}\), které vyhovuje počáteční podmínce \(\displaystyle y(0)= 1\). {#nehomogenni}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>25.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ans_order=shuffle([0:6]);
+ans1_order=shuffle([0:6]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ans_inv=inv(ans_order);
+answers=["\\(\\ \\mathbb R^2\\)", 
+"\\(\\ (-\\infty , 0)\\cup (0,+\\infty )\\)", 
+"\\(\\ (0,+\\infty )\\times (-\\infty ,+\\infty )\\)",
+"\\(\\ (-\\infty ,+\\infty )\\times (0,+\\infty )\\)",
+"\\(\\ \\langle 0,1\\rangle \\times (-\\infty ,+\\infty )\\)",
+"\\(\\ (-\\infty ,+\\infty )\\times ((-\\infty , 0)\\cup (0,+\\infty ))\\)"];
+ans_permuted=sublist(answers,ans_order);
+ans = ans_inv[0];
+
+ans1_inv=inv(ans1_order);
+answers_partikularni=["\\(\\ y_P=e^x\\)",
+"\\(\\ y_P=xe^x+e^{-x}\\)",
+"\\(\\ y_P=x^2e^x\\)",
+"\\(\\ y_P=e^x{\\rm arctg} x\\)",
+"\\(\\ y_P=e^x + \\frac{1}{1+x^2}\\)",
+" žádné \\(y_P\\) není řešením zadané diferenciální rovnice."]; 
+ans1_permuted=sublist(answers_partikularni,ans1_order);
+ans_p=ans1_inv[3];]]></text>
+</varsglobal>
+<answernumbering><text>none</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#oblast</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans_permuted}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni</text>
+ </placeholder>
+ <answermark>
+  <text>7</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans_p</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans1_permuted}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#homogenni</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:5:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y_H(x) = \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#nehomogenni</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-2:2:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(x)*atan(x) + exp(x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y(x)= \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 202281  -->
+  <question type="formulas">
+    <name>
+      <text>priklad 9 (1.ř. lineární 2)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A1</b><br></p><p>Je zadána diferenciální rovnice \(\displaystyle y^\prime\,+y\,={\rm 
+e}^{-x}\cos(x)\).</p><p><b>a)</b> Určete 
+oblast existence a jednoznačnosti maximálního řešení Cauchyovy úlohy pro libovolnou počáteční podmínku. Vyberte správnou z následujících možností: {#oblast}</p><p><b>b)</b> Z uvedeného seznamu vyberte funkci \(y_P(x)\), která je řešením zadané diferenciální rovnice. V odevzdávaném řešení výběr zdůvodněte. {#partikularni}</p> <p><b>c)</b> Určete funkci \(y_H(x)\), která je řešením homogenní rovnice \(\displaystyle y^\prime\,+\, y\,=0\) a vyhovuje počáteční podmínce \(y_H(0) = 1\). {#homogenni}</p><p><b>d)</b> Určete řešení \(y(x)\) zadané nehomogenní diferenciální rovnice \(\displaystyle y^\prime\,+\, y\,=\, {\rm 
+e}^{-x}\cos(x)\), které vyhovuje počáteční podmínce \(\displaystyle y(0)= 1\). {#nehomogenni}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>25.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>ans_order=shuffle([0:6]);
+ans1_order=shuffle([0:6]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[ans_inv=inv(ans_order);
+answers=["\\(\\ \\mathbb R^2\\)", 
+"\\(\\ (-\\infty , 0)\\cup (0,+\\infty )\\)", 
+"\\(\\ (0,+\\infty )\\times (-\\infty ,+\\infty )\\)",
+"\\(\\ (-\\infty ,+\\infty )\\times (0,+\\infty )\\)",
+"\\(\\ \\langle 0,1\\rangle \\times (-\\infty ,+\\infty )\\)",
+"\\(\\ (-\\infty ,+\\infty )\\times ((-\\infty , 0)\\cup (0,+\\infty ))\\)"];
+ans_permuted=sublist(answers,ans_order);
+ans = ans_inv[0];
+
+ans1_inv=inv(ans1_order);
+answers_partikularni=["\\(\\ y_P=e^x\\)",
+"\\(\\ y_P=xe^x+e^{-x}\\)",
+"\\(\\ y_P=e^{-x}\\cos(x)\\)",
+"\\(\\ y_P=e^{-x} \\sin(x)\\)",
+"\\(\\ y_P=e^x \\sin(x)\\)",
+" žádné \\(y_P\\) není řešením zadané diferenciální rovnice."]; 
+ans1_permuted=sublist(answers_partikularni,ans1_order);
+ans_p=ans1_inv[3];]]></text>
+</varsglobal>
+<answernumbering><text>none</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#oblast</text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans_permuted}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni</text>
+ </placeholder>
+ <answermark>
+  <text>7</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans_p</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text>_err == 0</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans1_permuted}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#homogenni</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={0:5:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(-x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y_H(x) = \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#nehomogenni</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>x={-2:2:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(-x)*sin(x) + exp(-x)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y(x)= \){_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

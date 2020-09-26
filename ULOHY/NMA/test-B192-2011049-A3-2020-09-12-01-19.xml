@@ -1,0 +1,2122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Zkouska NMA ALFA/A3</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 158819  -->
+  <question type="formulas">
+    <name>
+      <text>A3 - Cauchy, system 2DOF, var A</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p>Je dána <b>Cauchyova úloha pro soustavu</b> <b>obyčejných diferenciálních rovnic</b></p><p><span style="font-size: 0.9375rem;">\[ y’_1 = {a11} y_1^{p11} - {a12} y_2 + {kx1} x, \qquad y_1({x0}) = {y01} \]</span></p><p><span style="font-size: 0.9375rem;">\[ y’_2 = {a21} y_1 - {a22} y_2^{p22}&nbsp;+ {kx2} x &nbsp;, \qquad y_2({x0}) = {y02} \]</span></p><p></p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>x0 = {0, 1, 2};
+h = {0.2, 0.4, 0.25, 0.1};
+a11 = {0.5, 1.5, 2, 3};  
+p11 = {2, 3};
+a12 = {2, 0.8, 1.5};
+kx1 = {0.1, 0.2, 0.3};
+
+a21 = {1.5, 2,  2.5};  
+a22 = {2, 1.5, 3, 2.5};
+p22 = {2, 3};
+kx2 = {0.4, 0.5, 0.6};
+
+
+y01 = {1, 0.5, 1.5};
+y02 = {1.1, 0.4, 1.4};
+
+kmet = {0, 1, 2, 3, 4};
+
+ansord=shuffle([0:6]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[hhh = h / 2;
+metodanazvy=["explicitni Eulerova metoda", "Collatzova metoda", "dvoustupňová metoda Runge-Kutty", "třístupňová metoda Runge-Kutty", "čtyřstupňová metoda Runge-Kutty"];
+rad = [ 1, 2, 2, 3, 4 ];
+VOLMETODA=metodanazvy[kmet];
+Ohp=rad[kmet];
+prirustek  = ["\\( \\Phi(x,y,h) = f(x,y) \\)", "\\( \\Phi(x,y,h) = f(x + h, y + h  f(x,y))\\)",  "\\( \\Phi(x,y,h) = f(x + h / 2, y + 1 /2  f(x,y) )\\)", "\\( \\Phi(x,y,h) = f(x + h / 2, y + h /2  f(x,y) )\\)",  "\\( \\Phi(x,y,h) = h f(x + h / 2, y + h /2 f(x,y) ) \\)" , "nejde o jednokrokovou metodu" ];
+ans_prirustek=sublist(prirustek, ansord);
+ans_inv   = inv(ansord);
+priok = ans_inv[0]; 
+
+#########################################
+# Euler
+y1 = y01;
+y2 = y02;
+x   = x0;
+
+kk_1 = a11 * y1**p11 - a12 * y2         + kx1 * x;
+kk_2 = a21 * y1         - a22 * y2**p22 + kx2 * x;
+yE1  = y1 +  hhh * kk_1;
+yE2  = y2 +  hhh * kk_2;
+xE    = x0 + hhh;
+
+#########################################
+# Collatz
+
+y1 = y01;
+y2 = y02;
+x   = x0;
+
+k1_1 = a11 * y1**p11 - a12 * y2         + kx1 * x;
+k1_2 = a21 * y1          - a22 * y2**p22 + kx2 * x;
+
+ypom1 = y1 + h / 2 * k1_1;
+ypom2 = y2 + h / 2 * k1_2;
+xpom   = x   + h / 2;
+
+y1 = ypom1;
+y2 = ypom2;
+x    = xpom;
+
+k2_1 = a11 * y1**p11 - a12 * y2          + kx1 * x;
+k2_2 = a21 * y1         - a22 * y2**p22 + kx2 * x;
+
+x1    = x0   + h;
+yC1 = y01 + h * k2_1;
+yC2 = y02 + h * k2_2;
+]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>priok</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>a) </b>Patří Eulerova 
+explicitní metoda pro řešení rovnice \( y^\prime = f(x,y) \) mezi jednokrokové metody? Pokud ano,&nbsp; jaký tvar má 
+přírůstková funkce \(\Phi (x, y, h)\) pro tuto metodu?<p>{_0:ans_prirustek}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>yE1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>b)</b> Volte krok \(h = {hhh} \) a určete hodnotu aproximace řešení v bodě \(x = \){xE} užitím<b> explicitní Eulerovy metody&nbsp;&nbsp;</b><p></p><p>\(&nbsp; &nbsp;y_1({xE}) \doteq \) {_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>yE2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[\(&nbsp; &nbsp;y_2({xE}) \doteq \) {_0}]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2.5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>yC1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>c)</b>&nbsp;Volte krok \( h = {h} \) a určete hodnotu aproximace řešení v bodě \(x = \){x1} užitím <b>Collatzovy metody</b> <br><p></p><p>\(&nbsp; &nbsp;y_1({x1}) \doteq \) {_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2.5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>yC2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[\(&nbsp; &nbsp;y_2({x1}) \doteq \) {_0}]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[k1_1,k1_2,k2_1,k2_2]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[V postupu řešení uveďte vzorce pro výpočet včetně vzorců pro 
+mezivýsledky obvykle označované jako \(\boldsymbol{k}_1, \boldsymbol{k}_2\). Tyto mezivýsledky zde
+ také uveďte <br><p></p><p> \(\boldsymbol{k}_1=\) ({_0}, {_1})\(^T\)</p><p>\(\boldsymbol{k}_2=\) ({_2}, {_3})\(^T\)</p><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 176653  -->
+  <question type="formulas">
+    <name>
+      <text>A3 - Cauchy, system 2DOF, var B</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p>Je dána <b>Cauchyova úloha pro soustavu</b> <b>obyčejných diferenciálních rovnic</b></p><p><span style="font-size: 0.9375rem;">\[ y’_1 = {a11} y_1^{p11} - {a12} y_2 + {kx1} x, \qquad y_1({x0}) = {y01} \]</span></p><p><span style="font-size: 0.9375rem;">\[ y’_2 = {a21} y_1 - {a22} y_2^{p22}&nbsp;+ {kx2} x &nbsp;, \qquad y_2({x0}) = {y02} \]</span></p><p></p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>x0 = {0, 1, 2};
+h = {0.8, 1, 1.2, 0.6};
+a11 = {0.5, 1.5, 2, 3};  
+p11 = {2, 3};
+a12 = {2, 0.8, 1.5};
+kx1 = {0.1, 0.2, 0.3};
+
+a21 = {1.5, 2,  2.5};  
+a22 = {2, 1.5, 3, 2.5};
+p22 = {2, 3};
+kx2 = {0.4, 0.5, 0.6};
+
+
+y01 = {1, 0.5, 1.5};
+y02 = {1.1, 0.4, 1.4};
+
+kmet = {0, 1, 2, 3, 4};
+
+ansord=shuffle([0:5]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[hhh = h / 2;
+metodanazvy=["explicitni Eulerova metoda", "Collatzova metoda", "dvoustupňová metoda Runge-Kutty", "třístupňová metoda Runge-Kutty", "čtyřstupňová metoda Runge-Kutty"];
+rad = [ 1, 2, 2, 3, 4 ];
+VOLMETODA=metodanazvy[kmet];
+Ohp=rad[kmet];
+prirustek  = ["\\( \\Phi(x,y,h) = f(x,y) \\)", "\\( \\Phi(x,y,h) = f(x + h, y + h  f(x,y))\\)",  "\\( \\Phi(x,y,h) = f(x + h / 2, y + 1 /2  f(x,y) )\\)", "\\( \\Phi(x,y,h) = f(x + h / 2, y + h /2  f(x,y) )\\)",  "\\( \\Phi(x,y,h) = h f(x + h / 2, y + h /2 f(x,y) ) \\)" ];
+ans_prirustek=sublist(prirustek, ansord);
+ans_inv   = inv(ansord);
+priok = ans_inv[0]; 
+
+#########################################
+# Euler
+y1 = y01;
+y2 = y02;
+x   = x0;
+
+kk_1 = a11 * y1**p11 - a12 * y2         + kx1 * x;
+kk_2 = a21 * y1         - a22 * y2**p22 + kx2 * x;
+yE1  = y1 +  hhh * kk_1;
+yE2  = y2 +  hhh * kk_2;
+xE    = x0 + hhh;
+
+#########################################
+# Collatz
+
+y1 = y01;
+y2 = y02;
+x   = x0;
+
+k1_1 = a11 * y1**p11 - a12 * y2         + kx1 * x;
+k1_2 = a21 * y1          - a22 * y2**p22 + kx2 * x;
+
+ypom1 = y1 + h / 2 * k1_1;
+ypom2 = y2 + h / 2 * k1_2;
+xpom   = x   + h / 2;
+
+y1 = ypom1;
+y2 = ypom2;
+x    = xpom;
+
+k2_1 = a11 * y1**p11 - a12 * y2          + kx1 * x;
+k2_2 = a21 * y1         - a22 * y2**p22 + kx2 * x;
+
+x1    = x0   + h;
+yC1 = y01 + h * k2_1;
+yC2 = y02 + h * k2_2;
+]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[Ohp,Ohp]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><b>a) </b>Patří<b> {VOLMETODA}</b>&nbsp;mezi <i>jednokrokové</i> metody? Jaký je její řád? Kolikrát&nbsp; je třeba vyčíslit pravou stranu diferenciální rovnice během <i>jednoho kroku</i> této metody?<br></p><p>Řád této jednokrokové metody je&nbsp; {_0}.&nbsp; Pravá strana se během jednoho kroku vyčísluje&nbsp; {_1} krát<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>yE1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p><b></b></p><p><b>b)</b> Volte \(h = {hhh} \) a určete hodnotu aproximace řešení v bodě \(x = \) {xE} užitím <b>explicitní Eulerovy metody</b><br>
+\( y_1({xE}) \doteq \) {_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>yE2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p>\( y_2({xE}) \doteq \) {_0}<br><p></p><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2.5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>yC1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>c)</b> Volte \( h = {h} \) a určete hodnotu aproximace řešení v bodě \(x = \) {x1} užitím <b>Collatzovy metody </b><br>
+\( y_1({x1}) \doteq \) {_0}]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2.5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>yC2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p>\(&nbsp; &nbsp;y_2({x1}) \doteq \) {_0}<br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[k1_1,k1_2,k2_1,k2_2]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>V postupu řešení uveďte vzorce pro výpočet včetně vzorců pro 
+mezivýsledky obvykle označované jako \(\boldsymbol{k}_1, \boldsymbol{k}_2\). Tyto mezivýsledky zde
+ také uveďte <br> \(\boldsymbol{k}_1=\) ({_0}, {_1})\(^T\)</p><p>\(\boldsymbol{k}_2=\) ({_2}, {_3})\(^T\)<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 176660  -->
+  <question type="formulas">
+    <name>
+      <text>A3 - Cauchy, system 2DOF, var C</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<b> Je dána Cauchyova úloha pro soustavu obyčejných diferenciálních rovnic</b>
+\[ y’_1&nbsp; =&nbsp;{a12} y_2 - {a11} y_1 + x (y_2 - {b1} y_1), \qquad y_1({x0}) = {y01} \]
+\[&nbsp; y’_2 = {a21} y_1 -&nbsp; {a22} y_2&nbsp; + x (y_1  -  {b2} y_2) \qquad y_2({x0}) = {y02} \]]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>x0 = {0, 1, 2};
+h = {0.2, 0.4, 0.6, 0.3};
+
+a11 = {4, 2, 6};  
+a12 = {2, 0.7, 0.5, 0.2};
+
+a21 = {0.8, 0.6, 0.4, 0.1};
+a22 = {2, 3, 4};
+ 
+b1 = {1,2,3,4};
+b2 = {1,2,3,4};
+
+y01 = {1, 0.5, 2};
+y02 = {1, 2, 3};
+
+kmet = {0, 1, 2, 3, 4};
+ansord=shuffle([0:5]);
+ktaylor={0,1,2};</text>
+</varsrandom>
+<varsglobal><text><![CDATA[aa="";
+bb="";
+hhh = h / 2;
+metodanazvy=["explicitni Eulerova metoda", "Collatzova metoda", "dvoustupňová metoda Runge-Kutty", "třístupňová metoda Runge-Kutty", "čtyřstupňová metoda Runge-Kutty"];
+rad = [ 1, 2, 2, 3, 4 ];
+VOLMETODA=metodanazvy[kmet];
+Ohp=rad[kmet];
+prirustek  = ["\\( \\Phi(x,y,h) = f(x,y) \\)", "\\( \\Phi(x,y,h) = f(x + h, y + h  f(x,y))\\)",  "\\( \\Phi(x,y,h) = f(x + h / 2, y + 1 /2  f(x,y) )\\)", "\\( \\Phi(x,y,h) = f(x + h / 2, y + h /2  f(x,y) )\\)",  "\\( \\Phi(x,y,h) = h f(x + h / 2, y + h /2 f(x,y) ) \\)" ];
+ans_prirustek=sublist(prirustek, ansord);
+ans_inv   = inv(ansord);
+priok = ans_inv[0]; 
+
+#########################################
+# Euler
+y1 = y01;
+y2 = y02;
+x   = x0;
+
+# {aa} y’_1 + {a11} y_1 - {a12} y_2 = x (y_2 - {b1} y_1)
+# {bb} y’_2 - {a21} y_1 + {a22} y_2 =x (y_1  -  {b2} y_2)
+kk_1 = (-a11 * y1   + a12 * y2 + x * (y2 - b1 * y1) ) ;
+kk_2 = ( a21 * y1   -  a22 * y2 + x * (y1 - b2 * y2) );
+yE1  = y1 +  hhh * kk_1;
+yE2  = y2 +  hhh * kk_2;
+xE    = x0 + hhh;
+
+#########################################
+# Collatz
+
+y1 = y01;
+y2 = y02;
+x   = x0;
+
+k1_1 = (-a11 * y1   + a12 * y2 + x * (y2 - b1 * y1) );
+k1_2 = ( a21 * y1   -  a22 * y2 + x * (y1 - b2 * y2) );
+
+ypom1 = y1 + h / 2 * k1_1;
+ypom2 = y2 + h / 2 * k1_2;
+xpom   = x   + h / 2;
+
+y1 = ypom1;
+y2 = ypom2;
+x    = xpom;
+
+k2_1 = (-a11 * y1   + a12 * y2 + x * (y2 - b1 * y1) );
+k2_2 = ( a21 * y1   -  a22 * y2 + x * (y1 - b2 * y2) );
+
+x1    = x0   + h;
+yC1 = y01 + h * k2_1;
+yC2 = y02 + h * k2_2;
+
+poptaylor=["\\varphi(x + h) + \\varphi(x - h)", "\\varphi(x + h) - \\varphi(x - h)",  "\\varphi(x + h/2) + \\varphi(x - h/2)", "\\varphi(x + h/2) - \\varphi(x - h/2)"];
+popisekTaylor=poptaylor[ktaylor];
+mult0   = [ 2.,    0,          2,          0 ];
+mult1   = [ 0,      2,          0,     1/2 ];
+mult2   = [ 1,      0,   1. / 4.,         0 ];
+mult3   = [ 0,  1./3.,        0,     1/24 ];
+coefs=[mult0[ktaylor], mult1[ktaylor], mult2[ktaylor], mult3[ktaylor]];
+popshort=["\\varphi(x \\pm h)", "\\varphi(x \\pm h)",  "\\varphi(x \\pm h/2)", "\\varphi(x \\pm h/2)"];
+popisekShort = popshort[ktaylor];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>yE1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>a) </b> Volte \(h = {hhh} \) a určete hodnotu aproximace řešení v bodě \(x = \) {xE} užitím<b> explicitní Eulerovy metody</b><br>
+\( y_1({xE}) \doteq \) {_0}]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>yE2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>\( y_2({xE}) \doteq \) {_0}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2.5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>yC1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>b)</b> Volte \( h = {h} \) a určete hodnotu aproximace řešení v bodě \(x =\) {x1} užitím Collatzovy metody <br>
+\( y_1({x1}) \doteq \) {_0}]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2.5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>yC2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>\( y_2({x1}) \doteq \) {_0}</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2.5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[k1_1,k1_2]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>V postupu řešení uveďte vzorce pro výpočet včetně vzorců pro mezivýsledky obvykle označované jako \( \boldsymbol{k}_1, \boldsymbol{k}_2\). Tyto mezivýsledky zde také uveďte</p><p>\(\boldsymbol{k}_1=\) ({_0}, {_1})\(^T\)<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2.5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[k2_1,k2_2]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[\(\boldsymbol{k}_2=\) ({_0}, {_1})\(^T\)<br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>6</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>coefs</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>c) Doplňte správné hodnoty tak aby daná rovnost platila. Užijte koeficienty Taylorova polynomu 3. stupně pro funkce </b>\( {popisekShort} \) proměnné \( h \) v bodě \( h = 0 \) a příslušné tvary zbytku. 
+ <table><tbody><tr><td>\( {popisekTaylor} = \) </td>
+<td align="left"> ({_0})\( \varphi(x) + \)</td>
+<td> ({_1}) \( \varphi^\prime(x) h + \) </td>
+<td> ({_2}) \( \varphi^{\prime\prime}(x) h^2 + \)  </td>
+</tr>
+<tr>
+<td></td>
+<td align="left">({_3}) \( \varphi^{\prime\prime\prime}(x) h^3 + \)</td>
+<td>\( O(h^4)&nbsp; \)</td>
+<td> </td></tr></tbody></table><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 174566  -->
+  <question type="formulas">
+    <name>
+      <text>A3 - rovnice 3. řád převod</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Je dána Cauchyova úloha</b> <br></p><p>\[ y^{\prime\prime\prime}={a}y^{\prime\prime}-{b}y^\prime+{c}y,\qquad&nbsp;
+y({x0})={Y0[0]},y^\prime({x0})={Y0[1]},\ y^{\prime\prime}({x0})={Y0[2]} \] </p><p></p><p><b>Danou r</b><b>ovnici</b> <b>převeďte na soustavu</b> tří rovnic 1. řádu. 
+Postup převodu a soustavu rovnic zapište do odevzdávaného textu řešení.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>h={ 0.1, 0.2, 0.4, 0.5, 0.6};
+x0 = {-4:4};
+yx= {-4:4}; yy ={-4:4};  yz={-4:4};
+a={2:6};b={2:6};c={2:6};
+nasobek={2, 3, 4, 5};</text>
+</varsrandom>
+<varsglobal><text>chybapodil= 1/(nasobek*nasobek);
+
+x0h=x0+h/2; x1 = x0+h; x1h = x1+h/2; x2 = x1+h; hpul=h/2;
+Y0 = [yx,yy,yz];
+
+k11 = [Y0[1], Y0[2],a*Y0[2]-b*Y0[1] +c*Y0[0]];
+Ypom1 = [Y0[0] +( h/2*k11[0]), Y0[1] + (h/2*k11[1]), Y0[2] +( h/2*k11[2]) ];
+k21 = [Ypom1[1], Ypom1[2], a*Ypom1[2]-b*Ypom1[1] +c*Ypom1[0]];
+Y2E = [Ypom1[0] + (hpul*k21[0]), Ypom1[1] + (hpul*k21[1]), Ypom1[2]+(hpul*k21[2])];
+Y1 = [Y0[0] + (h*k21[0]), Y0[1] + (h*k21[1]), Y0[2]+(h*k21[2])];
+#k12 = [Y1[1], Y1[2],a*Y1[2]-b*Y1[1] +c*Y1[0]];
+#Ypom2 = [Y1[0] + (h/2*k12[0]), Y1[1] + (h/2*k12[1]), Y1[2]+ (h/2*k12[2])];
+#k22 = [Ypom2[1], Ypom2[2],a*Ypom2[2]-b*Ypom2[1] +c*Ypom2[0]];
+#Y2 = [Y1[0] + (h*k22[0]), Y1[1] + (h*k22[1]) , Y1[2]  +(h*k22[2] )];</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>Ypom1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>a) </b>Volte krok \(h = \) {hpul} a určete přibližné hodnoty \(y({x0h}), y^\prime({x0h}),&nbsp;y^{\prime\prime}({x0h})\) <b> Eulerovou explicitní metodou</b><br>
+\( y({x0h}) \doteq \) {_0} <br>
+\( y^\prime({x0h}) \doteq \) {_1}<br>
+\( y^{\prime\prime}({x0h}) \doteq \){_2}]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>ok<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2.5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[k11[0], k11[1], k11[2]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>b) Volte krok \(h=\){h} a určete přibližné hodnoty </b> \(y({x1}), y^\prime({x1}), y^{\prime\prime}({x1})\) <b>Collatzovou metodou</b>.
+ V postupu řešení uveďte vzorce pro výpočet včetně vzorců pro 
+mezivýsledky obvykle označované jako \(\boldsymbol{k}_1, \boldsymbol{k}_2\). Tyto mezivýsledky zde
+ také uveďte <br> \( \boldsymbol{k}_1=\) ({_0}, {_1}, {_2})\(^T\)]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>ok<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2.5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ k21[0],k21[1],k21[2]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>\( \boldsymbol{k}_2=\) ({_0}, {_1}, {_2})\(^T\)</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>ok<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>Y1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[\( y({x1}) \doteq \) {_0} <br>
+\( y^\prime({x1}) \doteq \) {_1}<br>
+\( y^{\prime\prime}({x1}) \doteq \){_2}]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>chybapodil</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>c) Uvažujme Cauchyovu úlohu zapsanou ve tvaru </b>
+\[ y^\prime = f(x,y), \qquad y(x_0) = y_0. \] 
+<br>
+ Volme krok \( h &gt; 0 \) a označme označme \( Y_k \) hodnotu aproximace v bodě \( x = x_k = x_0 + k h \) získané 
+<b> Collatzovou metodou </b> s krokem \( h \). <br> Dále volme krok \( \tilde h = h \, / \, {nasobek} \) a označme \( \tilde{Y}_{{nasobek} k} \)  hodnotu aproximace ve (stejném) bodě \( x = x_0 + {nasobek} k \tilde h \) získané <b> Collatzovou metodou </b> tentokrát s krokem \( \tilde h \). <br>
+Označme \( y(x) \)&nbsp; přesné řešení dané úlohy a symbolem \( e_k = Y_k - y(x_k) \) chybu Collatzovy metody s krokem \( h \) v bodě \( x \) a 
+symbolem \( \tilde{e}_{{nasobek} k} = \tilde{Y}_{{nasobek} k} - y(x_k) \) chybu Collatzovy metody s krokem \( \tilde h \) ve stejném bodě 
+ \( x = x_0 + k h \). <br> Odhadněte velikost podílu \( |\tilde{e}_{{nasobek} k}| &nbsp; / &nbsp; |e_k| \approx \) {_0}.]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text><![CDATA[<p>--<br></p>]]></text>
+    </hint>
+    <hint format="html">
+      <text><![CDATA[<p>--<br></p>]]></text>
+    </hint>
+  </question>
+
+<!-- question: 176657  -->
+  <question type="formulas">
+    <name>
+      <text>A3 - rovnice 3. řád převod, varianta B</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Je dána Cauchyova úloha</b> <br></p><p>\[ {c} y^{\prime\prime\prime} + {a} y \, y^{\prime\prime} + {b} - y^3 = 0, \qquad&nbsp;
+y({x0})={Y0[0]},y^\prime({x0})={Y0[1]},\ y^{\prime\prime}({x0})={Y0[2]} \] </p><p></p><p><b>Určete oblast, kde je zaručena existence a jednoznačnost řešení dané úlohy. Danou r</b><b>ovnici</b> <b>převeďte na soustavu</b> tří rovnic 1. řádu. 
+Postup převodu a soustavu rovnic zapište do odevzdávaného textu řešení.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>h   = { 0.2, 0.4, 0.8, 0.6};
+x0 = {0, 1, 2, -1};
+a   = {1, 4, 2};
+b   = {1, 2, 3, 4};
+c   = {1, 2, 4};
+
+nasobek = {2, 3, 4, 5};
+kmetoda = {0, 1, 2, 3};
+
+y01 = {0.5, 1, 2, -1, -2, -0.5, 0};
+y02 = {1.5, 1, 2, -1, -2, -1.5, 0};
+y03 = {1.5, 1, 2, -1, -2, -1.5, 0};
+</text>
+</varsrandom>
+<varsglobal><text><![CDATA[nazvymetod=[ "explicitní Eulerovou metodou", "Collatzovou metodou", "(optimální) třístupňovou metodou Runge-Kutta", "(optimální) čtyřstupňovou metodou Runge-Kutta"];
+
+seznammetod=[ "explicitní Eulerovy metody", "Collatzovy metody", "(optimální) třístupňové metody Runge-Kutta", "(optimální) čtyřstupňové metody Runge-Kutta"];
+
+metodanazev = nazvymetod[kmetoda];
+
+tetometody = seznammetod[kmetoda];
+
+chybapodil= 1 / nasobek;
+chybapodil= (kmetoda > 0) ? chybapodil / nasobek : chybapodil;
+chybapodil= (kmetoda > 1) ? chybapodil / nasobek : chybapodil;
+chybapodil= (kmetoda > 2) ? chybapodil / nasobek : chybapodil;
+
+x0h  = x0 + h / 2; 
+x1    = x0 + h; 
+hpul =  h / 2;
+Y0 = [y01, y02, y03];
+
+k1          = [Y0[1], Y0[2],   - a / c * Y0[0] *Y0[2] - b / c + Y0[0] * Y0[0] * Y0[0] / c];
+Ypom    = [Y0[0] + (h / 2 * k1[0]), Y0[1] + (h / 2 * k1[1]), Y0[2] + ( h / 2 * k1[2]) ];
+k2          = [Ypom[1], Ypom[2],   - a / c * Ypom[0] *Ypom[2] - b / c + Ypom[0] * Ypom[0] * Ypom[0] / c];
+Y1         = [Y0[0] + (h * k2[0]), Y0[1] + (h * k2[1]), Y0[2] + (h * k2[2]) ];
+
+]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>Ypom</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>a) </b>Volte krok \(h = \) {hpul} a určete přibližné hodnoty \(y({x0h}), y^\prime({x0h}),&nbsp;y^{\prime\prime}({x0h})\)&nbsp;<b> Eulerovou explicitní metodou</b><b>.<br></b><p></p><p>\(y({x0h}) \doteq\)&nbsp;&nbsp; {_0} <br>\(y^\prime({x0h})\doteq\) {_1}<br></p><p>\(y^{\prime\prime}({x0h}) \doteq\){_2}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>ok<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2.5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[k1[0], k1[1], k1[2]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>b) Volte krok \(h=\){h} a určete přibližné hodnoty </b> \(y({x1}), y^\prime({x1}), y^{\prime\prime}({x1})\) <b>Collatzovou metodou</b>.
+ V postupu řešení uveďte vzorce pro výpočet včetně vzorců pro 
+mezivýsledky obvykle označované jako \(\boldsymbol{k}_1, \boldsymbol{k}_2\). Tyto mezivýsledky zde
+ také uveďte <br> \(\boldsymbol{k}_1=\) ({_0}, {_1}, {_2})\(^T\)]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>ok<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2.5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[ k2[0],k2[1],k2[2]]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text>\(\boldsymbol{k}_2=\) ({_0}, {_1}, {_2})\(^T\)</text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>ok<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně<br></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>Y1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<br><p>\(y({x1}) \doteq\)&nbsp; {_0} <br></p><p>\(y^\prime({x1})\doteq\) {_1}<br></p><p>\(y^{\prime\prime}({x1}) \doteq\){_2}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>chybapodil</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>c) Uvažujme Cauchyovu úlohu zapsanou ve tvaru </b>
+\[ y^\prime = f(x,y), \qquad y(x_0) = y_0. \] 
+<br>
+ Volme krok \( h &gt; 0 \) a označme označme \( Y_k \) hodnotu aproximace v bodě \( x = x_k = x_0 + k h \) získané 
+<b> {metodanazev} </b> s krokem \( h \). <br> Volme krok \( \tilde h = h \, / \, {nasobek} \) a označme \( \tilde{Y}_{{nasobek} k} \)  hodnotu aproximace ve (stejném) bodě \( x = x_0 + {nasobek} k \tilde h \) získané <b> {metodanazev}</b> s krokem \( \tilde h \). <br><br>
+Označme \( y(x) \) přesné řešení dané úlohy a symbolem \( e_k = Y_k - y(x_k) \) chybu s krokem \( h \) v bodě \( x \) a 
+symbolem \( \tilde{e}_{{nasobek} k} = \tilde{Y}_{{nasobek} k} - y(x_k) \) chybu s krokem \( \tilde h \) ve stejném bodě 
+ \( x = x_0 + k h \). <br><br> <b>Odhadněte velikost podílu</b> \( |\tilde{e}_{{nasobek} k}| \,  / \, |e_k| \approx \) {_0}.]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text><![CDATA[<p>--<br></p>]]></text>
+    </hint>
+    <hint format="html">
+      <text><![CDATA[<p>--<br></p>]]></text>
+    </hint>
+  </question>
+
+</quiz>

@@ -1,0 +1,2331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "Matematika III".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM/ODR</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika III/OM/ODR/lineární 2. řádu</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 202283  -->
+  <question type="formulas">
+    <name>
+      <text>2.ř. lineární 0 (18.6.)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A2</b><br></p><p>Je dána diferenciální rovnice \(\ddot {x}\,+\,2\dot {x}\,-\,3x\,=\, f(t)\). <br><b>a)</b>
+ Určete kořeny charakteristické rovnice (\(\lambda_1, \lambda_2\)).&nbsp; Je-li reálná 
+nebo imaginární část rovna nule, zapište nulu!{#koreny}</p><p><b>b)</b> Určete fundamentální systém řešení \(\{\varphi_1(t),\ \varphi_2(t)\}\) zadané diferenciální rovnice. Zadejte funkci \(\varphi_1(t)\) tak, aby odpovídala kořenu charakteristické rovnice, který má v absolutní hodnotě menší reálnou část. {#fsr1}{#fsr2}</p><p><b>c)</b> Pro \(f(t)= 10\sin(t)\) 
+určete odpovídající partikulární řešení. V odevzdávaném řešení zapište 
+postup.{#partikularni}</p><p><b>d)</b> Z následujícího seznamu 
+označte všechny možnosti \(f(t)\) při nichž by došlo k rezonanci. V případě, že dojde k rezonanci, zadejte 1, nedojde-li k rezonanci, zadejte 0.{#rezonance}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>25.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>#ans_order=shuffle([0:7]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[lambda1=-3;lambda2=1;
+#ans_inv=inv(ans_order);
+answers=["\\(\\ f(t)=2\\)", "\\(\\ f(t)=e^t \\)" , "\\(\\ f(t)=e^{2t}\\)", "\\(\\ f(t)=e^{-2t}\\)",
+"\\(\\ f(t)=e^{-3t}\\)", "\\(\\ f(t)=e^{-t}\\cos(2t)\\)", "\\(\\ e^{-t}\\sin(2t)+f(t)=e^t\\)"];
+#ans_permuted=sublist(answers,ans_order);
+spravne=[0,1,0,0,1,0,1];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#koreny</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[lambda1,0, lambda2,0]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=((abs(_0-lambda1)<=0.015) || (abs(_0-lambda2)<=0.015))&& (_1==0);
+Criterion2=((abs(_2-lambda1)<=0.015)|| (abs(_2-lambda2)<=0.015))&& (_3==0);
+Criterion3= ( _0 !=_2) && (_1==0)&& (_3==0);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2+Criterion3+Criterion3)/4</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\lambda_1 = \){_0}+{_1}\(i\), <br>\(\lambda_2 = \){_2}+{_3}\(i\).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#fsr1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-3:3:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\varphi_1(t) =\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#fsr2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(-3 t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\varphi_2(t) =\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni</text>
+ </placeholder>
+ <answermark>
+  <text>12</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-10:10:0.2};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["-2 sin(t) - cos(t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(y_P = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#rezonance</text>
+ </placeholder>
+ <answermark>
+  <text>7</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>7</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>spravne</text>
+ </answer>
+ <vars2>
+  <text>c0=spravne[0]==_0;c1=spravne[1]==_1;c2=spravne[2]==_2;c3=spravne[3]==_3;
+c4=spravne[4]==_4;c5=spravne[5]==_5;c6=spravne[6]==_6;</text>
+ </vars2>
+ <correctness>
+  <text>(c0+c1+c2+c3+c4+c5+c6)/7</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+<tbody>
+<tr><td width="NaNpx" valign="top">{_0}</td><td>{answers[0]}</td></tr>
+<tr><td>{_1}</td><td>{answers[1]}</td></tr>
+<tr><td>{_2}</td><td>{answers[2]}</td></tr>
+<tr><td>{_3}</td><td>{answers[3]}</td></tr>
+<tr><td>{_4}</td><td>{answers[4]}</td></tr>
+<tr><td>{_5}</td><td>{answers[5]}</td></tr>
+<tr><td>{_6}</td><td>{answers[6]}</td></tr>
+</tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 202288  -->
+  <question type="formulas">
+    <name>
+      <text>2.ř. lineární 1 (18.6.)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A2</b><br></p><p>Je dána diferenciální rovnice \(\ddot {x}\,+\,3\dot{x}\,=\, f(t)\). <br><b>a)</b>
+ Určete kořeny charakteristické rovnice (\(\lambda_1, \lambda_2\)).&nbsp; Je-li reálná 
+nebo imaginární část rovna nule, zapište nulu!{#koreny}</p><p><b>b)</b> Určete fundamentální systém řešení \(\{\varphi_1(t),\ \varphi_2(t)\}\) zadané diferenciální rovnice. Zadejte funkci \(\varphi_1(t)\) tak, aby odpovídala kořenu charakteristické rovnice, který má v absolutní hodnotě menší reálnou část. Funkce \(\varphi_1(t),\ \varphi_2(t)\) zapište v nejjednodušším tvaru. {#fsr1}{#fsr2}</p><p><b>c)</b> Pro \(f_1(t)= -10\cos(t)\) 
+určete odpovídající partikulární řešení. V odevzdávaném řešení zapište 
+postup.{#partikularni1}</p><p><b>d)</b> Pro \(f_2(t)= 3{\rm e}^{-3t}\) 
+určete odpovídající partikulární řešení. V odevzdávaném řešení zapište 
+postup.{#partikularni2}</p><p><b>e) </b>Zapište obecné řešení pro \(f(t) = 3{\rm e}^{-3t}-10\cos(t)\). Použijete-li v zápisu řešení konstanty, označte je C1, C2.{#obecne}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>23.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>#ans_order=shuffle([0:7]);</text>
+</varsrandom>
+<varsglobal><text>lambda1=0;lambda2=-3;
+C1=1; C2=1; C=1; c=1; c1=1; c2=1;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#koreny</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[lambda1,0, lambda2,0]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=((abs(_0-lambda1)<=0.015) || (abs(_0-lambda2)<=0.015))&& (_1==0);
+Criterion2=((abs(_2-lambda1)<=0.015)|| (abs(_2-lambda2)<=0.015))&& (_3==0);
+Criterion3= ( _0 !=_2) && (_1==0)&& (_3==0);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2+Criterion3+Criterion3)/4</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\lambda_1 = \){_0}+{_1}\(i\), <br>\(\lambda_2 = \){_2}+{_3}\(i\).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#fsr1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-3:3:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["1"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\varphi_1(t) =\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#fsr2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(-3 t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\varphi_2(t) =\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni1</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-10:10:0.2};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["-3 sin(t) + cos(t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_{P1} = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni2</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["-1*t*exp(-3 t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err<=0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_{P2} = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#obecne</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["C1 +C2 exp(-3 t)+cos(t) -3 sin(t) -t exp(-3 t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x=\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201906  -->
+  <question type="formulas">
+    <name>
+      <text>2.ř. lineární 1 (25.8.)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A2</b><br></p><p>Je dána diferenciální rovnice \(\ddot {x} +4\dot x + 29x=f(t)\). <br><b>a)</b>
+ Určete kořeny charakteristické rovnice (\(\lambda_1, \lambda_2\)).&nbsp; Je-li reálná 
+nebo imaginární část rovna nule, zapište nulu!{#koreny}</p><p><b>b)</b> Určete fundamentální systém řešení \(\{\varphi_1(t),\ \varphi_2(t)\}\) zadané diferenciální rovnice. Funkce \(\varphi_1(t),\ \varphi_2(t)\) zapište  v nejjednodušším tvaru.<b> Zapište součet</b>&nbsp; \(\varphi_1(t) + \varphi_2(t)\).{#fsr}</p><p><b>c)</b> Pro \(f(t)= 25e^{-2t} \) 
+určete odpovídající partikulární řešení. V odevzdávaném řešení zapište 
+postup.{#partikularni1}</p><p><b>d) </b>Zapište obecné řešení 
+pro \(f(t) = 25e^{-2t}\). Použijete-li v zápisu řešení 
+konstanty, označte je C1, C2.{#obecne}</p><p><b>e) </b>Zapište řešení 
+Cauchyovy úlohy pro zadanou diferenciální rovnici a \(f(t) = 25e^{-2t}\), které splňuje počáteční podmínky \(x(0) = 1, \dot x(0)=3\).{#maximalni}<br></p><p><b></b></p><b>f)</b> Z následujícího seznamu 
+označte všechny možnosti \(f(t)\) při nichž by došlo k rezonanci. V 
+případě, že dojde k rezonanci, zadejte 1, nedojde-li k rezonanci, 
+zadejte 0.{#rezonance}<p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>25.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[lambdar=-2;lambdai=5;
+C1=1; C2=1; C=1; c=1; c1=1; c2=1;
+#ans_inv=inv(ans_order);
+answers=["\\(\\ f(t)=e^{-2t}\\sin(5t)\\)", "\\(\\ f(t)=e^{-2t}\\cos(t) \\)","\\(\\ f(t)=\\sin(5t)\\)", "\\(\\ f(t)=e^{-2t}\\cos(5t) \\)" , "\\(\\ f(t)=e^{-2t}\\)", "\\(\\ f(t)=\\cos(5t)\\)",
+ "\\(\\ f(t)=\\cos(t)+\\sin(t)\\)"];
+#ans_permuted=sublist(answers,ans_order);
+spravne=[1,0,0,1,0,0,0];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#koreny</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[lambdar, lambdai, lambdar,-lambdai]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=((abs(_1-lambdai)<=0.015) || (abs(_1+lambdai)<=0.015))&& (abs(_0 - lambdar)<0.015);
+Criterion2=((abs(_3-lambdai)<=0.015)|| (abs(_3+lambdai)<=0.015))&&(abs(_2 - lambdar)<0.015)]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\lambda_1 = \){_0}+{_1}\(i\), <br>\(\lambda_2 = \){_2}+{_3}\(i\).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#fsr</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-3:3:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp((-2) t)(sin(5 t) + cos(5 t))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\varphi_1(t) + \varphi_2(t)=\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni1</text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-10:10:0.2};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp((-2) t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_{P}(t) = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#obecne</text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp((-2) t)(C1 sin(5 t) + C2 cos(5 t)) + exp((-2) t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_{ob}(t)=\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#maximalni</text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-10:10:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp((-2) t) (sin(5 t) + 1)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<ul><li>\(x(t) = \){_0}<br></li></ul>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#rezonance</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>7</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text>spravne</text>
+ </answer>
+ <vars2>
+  <text>c0=spravne[0]==_0;c1=spravne[1]==_1;c2=spravne[2]==_2;c3=spravne[3]==_3;
+c4=spravne[4]==_4;c5=spravne[5]==_5;c6=spravne[6]==_6;</text>
+ </vars2>
+ <correctness>
+  <text>(c0+c1+c2+c3+c4+c5+c6)/7</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+<tbody>
+<tr><td width="NaNpx" valign="top">{_0}</td><td>{answers[0]}</td></tr>
+<tr><td>{_1}</td><td>{answers[1]}</td></tr>
+<tr><td>{_2}</td><td>{answers[2]}</td></tr>
+<tr><td>{_3}</td><td>{answers[3]}</td></tr>
+<tr><td>{_4}</td><td>{answers[4]}</td></tr>
+<tr><td>{_5}</td><td>{answers[5]}</td></tr>
+<tr><td>{_6}</td><td>{answers[6]}</td></tr>
+</tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 202289  -->
+  <question type="formulas">
+    <name>
+      <text>2.ř. lineární 2 (18.6.)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A2</b><br></p><p>Je dána diferenciální rovnice \(\ddot {x}\,-\,\dot{x}\,-2x\,=\,f(t)\). <br><b>a)</b>
+ Určete kořeny charakteristické rovnice (\(\lambda_1, \lambda_2\)).&nbsp; Je-li reálná 
+nebo imaginární část rovna nule, zapište nulu!{#koreny}</p><p><b>b)</b> Určete fundamentální systém řešení \(\{\varphi_1(t),\ \varphi_2(t)\}\) zadané diferenciální rovnice. Zadejte funkci \(\varphi_1(t)\) tak, aby odpovídala kořenu charakteristické rovnice, který má v absolutní hodnotě menší reálnou část. Funkce \(\varphi_1(t),\ \varphi_2(t)\) zapište v nejjednodušším tvaru. {#fsr1}{#fsr2}</p><p><b>c)</b> Pro \(f_1(t)= 20\cos(2t)\) 
+určete odpovídající partikulární řešení. V odevzdávaném řešení zapište 
+postup.{#partikularni1}</p><p><b>d)</b> Pro \(f_2(t)= -6{\rm e}^{-t}\) 
+určete odpovídající partikulární řešení. V odevzdávaném řešení zapište 
+postup.{#partikularni2}</p><p><b>e) </b>Zapište obecné řešení pro \(f(t) = 20\cos(t)-6{\rm e}^{-3t}\). Použijete-li v tomto zápisu řešení konstanty, označte je C1, C2.{#obecne}<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>25.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text>lambda1=-1;lambda2=2;
+C1=1; C2=1; C=1; c=1; c1=1; c2=1;</text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#koreny</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[lambda1,0, lambda2,0]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=((abs(_0-lambda1)<=0.015) || (abs(_0-lambda2)<=0.015))&& (_1==0);
+Criterion2=((abs(_2-lambda1)<=0.015)|| (abs(_2-lambda2)<=0.015))&& (_3==0);
+Criterion3= ( _0 !=_2) && (_1==0)&& (_3==0);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2+Criterion3+Criterion3)/4</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\lambda_1 = \){_0}+{_1}\(i\), <br>\(\lambda_2 = \){_2}+{_3}\(i\).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#fsr1</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-3:3:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(-t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\varphi_1(t) =\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#fsr2</text>
+ </placeholder>
+ <answermark>
+  <text>1</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp(2 t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\varphi_2(t) =\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni1</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-10:10:0.2};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["-3 cos(2 t) - sin(2 t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_{P1} = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni2</text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["2*t*exp(-t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err<=0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_{P2} = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#obecne</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["C1 exp(2 t) +C2 exp(-t)-6 cos(t)-2 sin(t) -0.6 exp(-3 t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x=\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 201907  -->
+  <question type="formulas">
+    <name>
+      <text>2.ř. lineární 2 (25.8.)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A2</b><br></p><p>Je dána diferenciální rovnice \(\ddot {x} +2\dot x + 5x=f(t)\). <br><b>a)</b>
+ Určete kořeny charakteristické rovnice (\(\lambda_1, \lambda_2\)).&nbsp; Je-li reálná 
+nebo imaginární část rovna nule, zapište nulu!{#koreny}</p><p><b>b)</b> Určete fundamentální systém řešení \(\{\varphi_1(t),\ \varphi_2(t)\}\) zadané diferenciální rovnice. Funkce \(\varphi_1(t),\ \varphi_2(t)\) zapište  v nejjednodušším tvaru.<b> Zapište součet</b>&nbsp; \(\varphi_1(t) + \varphi_2(t)\).{#fsr}</p><p><b>c)</b> Pro \(f(t)= 4e^{-t} \) 
+určete odpovídající partikulární řešení. V odevzdávaném řešení zapište 
+postup.{#partikularni1}</p><p><b>d) </b>Zapište obecné řešení 
+pro \(f(t) =4e^{-t}\). Použijete-li v zápisu řešení 
+konstanty, označte je C1, C2.{#obecne}</p><p><b>e) </b>Zapište řešení 
+Cauchyovy úlohy pro zadanou diferenciální rovnici a \(f(t) = 4e^{-t}\), které splňuje počáteční podmínky \(x(0) = 1, \dot x(0)=3\).{#maximalni}<br></p><p><b></b></p><b>f)</b> Z následujícího seznamu 
+označte všechny možnosti \(f(t)\) při nichž by došlo k rezonanci. V 
+případě, že dojde k rezonanci, zadejte 1, nedojde-li k rezonanci, 
+zadejte 0.{#rezonance}<p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>25.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[lambdar=-1;lambdai=2;
+C1=1; C2=1; C=1; c=1; c1=1; c2=1;
+#ans_inv=inv(ans_order);
+answers=["\\(\\ f(t)=e^{-t}\\sin(2t)\\)", "\\(\\ f(t)=e^{-t}\\cos(2t) \\)","\\(\\ f(t)=\\sin(2t)\\)", "\\(\\ f(t)=e^{-2t}\\cos(2t) \\)" , "\\(\\ f(t)=e^{-t}\\)", "\\(\\ f(t)=\\cos(t)\\)",
+ "\\(\\ f(t)=\\cos(t)+\\sin(t)\\)"];
+#ans_permuted=sublist(answers,ans_order);
+spravne=[1,1,0,0,0,0,0];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#koreny</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[lambdar, lambdai, lambdar,-lambdai]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=((abs(_1-lambdai)<=0.015) || (abs(_1+lambdai)<=0.015))&& (abs(_0 - lambdar)<0.015);
+Criterion2=((abs(_3-lambdai)<=0.015)|| (abs(_3+lambdai)<=0.015))&&(abs(_2 - lambdar)<0.015)]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2)/2</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\lambda_1 = \){_0}+{_1}\(i\), <br>\(\lambda_2 = \){_2}+{_3}\(i\).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#fsr</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-3:3:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp((-1) t)(sin(2 t) + cos(2 t))"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\varphi_1(t) + \varphi_2(t)=\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni1</text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-10:10:0.2};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp((-1) t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_{P}(t) = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#obecne</text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp((-1) t)(C1 sin(2 t) + C2 cos(2 t)) + exp((-1) t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_{ob}(t)=\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#maximalni</text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-10:10:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["exp((-1) t) (2 sin(2 t) + 1)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<ul><li>\(x(t) = \){_0}<br></li></ul>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#rezonance</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>7</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text>spravne</text>
+ </answer>
+ <vars2>
+  <text>c0=spravne[0]==_0;c1=spravne[1]==_1;c2=spravne[2]==_2;c3=spravne[3]==_3;
+c4=spravne[4]==_4;c5=spravne[5]==_5;c6=spravne[6]==_6;</text>
+ </vars2>
+ <correctness>
+  <text>(c0+c1+c2+c3+c4+c5+c6)/7</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+<tbody>
+<tr><td width="NaNpx" valign="top">{_0}</td><td>{answers[0]}</td></tr>
+<tr><td>{_1}</td><td>{answers[1]}</td></tr>
+<tr><td>{_2}</td><td>{answers[2]}</td></tr>
+<tr><td>{_3}</td><td>{answers[3]}</td></tr>
+<tr><td>{_4}</td><td>{answers[4]}</td></tr>
+<tr><td>{_5}</td><td>{answers[5]}</td></tr>
+<tr><td>{_6}</td><td>{answers[6]}</td></tr>
+</tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 202290  -->
+  <question type="formulas">
+    <name>
+      <text>2.ř. lineární 3 (18.6.)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>A2</b><br></p><p>Je dána diferenciální rovnice \(\ddot {x}\,+\,9x\,=\,f(t)\). <br><b>a)</b>
+ Určete kořeny charakteristické rovnice (\(\lambda_1, \lambda_2\)).&nbsp; Je-li reálná 
+nebo imaginární část rovna nule, zapište nulu!{#koreny}</p><p><b>b)</b> Určete fundamentální systém řešení \(\{\varphi_1(t),\ \varphi_2(t)\}\) zadané diferenciální rovnice. Funkce \(\varphi_1(t),\ \varphi_2(t)\) zapište  v nejjednodušším tvaru.<b> Zapište součet</b>&nbsp; \(\varphi_1(t) + \varphi_2(t)\).{#fsr}</p><p><b>c)</b> Pro \(f(t)= 10\cos(2t)\) 
+určete odpovídající partikulární řešení. V odevzdávaném řešení zapište 
+postup.{#partikularni1}</p><p><b>d) </b>Zapište obecné řešení 
+pro \(f(t) = 10\cos(2t)\). Použijete-li v zápisu řešení 
+konstanty, označte je C1, C2.{#obecne}</p><p><b>e) </b>Zapište řešení 
+Cauchyovy úlohy pro zadanou diferenciální rovnici a \(f(t) = 10\cos(2t)\), které splňuje počáteční podmínky \(x(0) = 4, \dot x(0)=-6\).{#maximalni}<br></p><p><b></b></p><b>f)</b> Z následujícího seznamu 
+označte všechny možnosti \(f(t)\) při nichž by došlo k rezonanci. V 
+případě, že dojde k rezonanci, zadejte 1, nedojde-li k rezonanci, 
+zadejte 0.{#rezonance}<p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>25.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text></text>
+</varsrandom>
+<varsglobal><text><![CDATA[lambda1=-3;lambda2=3;
+C1=1; C2=1; C=1; c=1; c1=1; c2=1;
+#ans_inv=inv(ans_order);
+answers=["\\(\\ f(t)=3\\)", "\\(\\ f(t)=e^{2t} \\)" , "\\(\\ f(t)=e^{-3t}\\)", "\\(\\ f(t)=\\sin(3t)e^{-4t}\\)",
+"\\(\\ f(t)=\\cos(3t)\\)", "\\(\\ f(t)=\\sin(3t)\\)", "\\(\\ f(t)=\\cos(3t)+\\sin(3t)\\)"];
+#ans_permuted=sublist(answers,ans_order);
+spravne=[0,0,0,0,1,1,1];]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text>#koreny</text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0, lambda1, 0,lambda2]</text>
+ </answer>
+ <vars2>
+  <text><![CDATA[Criterion1=((abs(_1-lambda1)<=0.015) || (abs(_1-lambda2)<=0.015))&& (_0==0);
+Criterion2=((abs(_3-lambda1)<=0.015)|| (abs(_3-lambda2)<=0.015))&& (_2==0);
+Criterion3= ( _1 !=_2) && (_0==0)&& (_2==0);]]></text>
+ </vars2>
+ <correctness>
+  <text>(Criterion1+Criterion2+Criterion3+Criterion3)/4</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\lambda_1 = \){_0}+{_1}\(i\), <br>\(\lambda_2 = \){_2}+{_3}\(i\).</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text>#fsr</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-3:3:0.1};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["cos(3 t) + sin(3 t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(\varphi_1(t) + \varphi_2(t)=\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text>#partikularni1</text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-10:10:0.2};</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["2 cos(2 t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_{P}(t) = \){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text>#obecne</text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["C1 cos(3 t) +C2 sin(3 t) +2 cos(2 t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>\(x_{ob}(t)=\){_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text>#maximalni</text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>1000</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text>t={-10:10:0.1}</text>
+ </vars1>
+ <answer>
+  <text><![CDATA["2 cos(3 t) - 2 sin(3 t) + 2 cos(2 t)"]]></text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<ul><li>\(x(t) = \){_0}<br></li></ul>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>5</text>
+ </partindex>
+ <placeholder>
+  <text>#rezonance</text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>7</text>
+ </numbox>
+ <vars1>
+  <text>t={-1:1:0.1}</text>
+ </vars1>
+ <answer>
+  <text>spravne</text>
+ </answer>
+ <vars2>
+  <text>c0=spravne[0]==_0;c1=spravne[1]==_1;c2=spravne[2]==_2;c3=spravne[3]==_3;
+c4=spravne[4]==_4;c5=spravne[5]==_5;c6=spravne[6]==_6;</text>
+ </vars2>
+ <correctness>
+  <text>(c0+c1+c2+c3+c4+c5+c6)/7</text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<table width="10px" border="0">
+<tbody>
+<tr><td width="NaNpx" valign="top">{_0}</td><td>{answers[0]}</td></tr>
+<tr><td>{_1}</td><td>{answers[1]}</td></tr>
+<tr><td>{_2}</td><td>{answers[2]}</td></tr>
+<tr><td>{_3}</td><td>{answers[3]}</td></tr>
+<tr><td>{_4}</td><td>{answers[4]}</td></tr>
+<tr><td>{_5}</td><td>{answers[5]}</td></tr>
+<tr><td>{_6}</td><td>{answers[6]}</td></tr>
+</tbody>
+</table>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>

@@ -1,0 +1,1692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Zkouska NMA ALFA/A1</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 158234  -->
+  <question type="formulas">
+    <name>
+      <text>A1 - GS - SPD</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava rovnic \( \mathbb A \boldsymbol{x} = \boldsymbol{b} \), kde<br></p><p>\[ \mathbb A =&nbsp; \left( \begin{array}{rrr} {a11} &amp; {a12} &amp; {a13} \\ {a21} &amp; {a22} &amp; {a23} \\ {a31} &amp; {a32} &amp; {a33} \end{array} \right) , \qquad&nbsp; \boldsymbol{b} = \left( \begin{array}{r} {b1} \\&nbsp; {b2} \\&nbsp; {b3} \end{array} \right) \]</p><p><br></p><p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text><![CDATA[a12 = { 0.5, -0.5, -1, -1.5, -2, -2.5,  1, 1.5, 2, 2.5}; 
+a23 = { -0.5, 0.5, 1, -1, 1.5 };
+naznor = { "řádková", "sloupcová", "Frobeniova"};
+
+X01 = { -2, -1, 1, 2 } ;
+X02 = { -1, 2, 3, 1 } ;
+X03 = {  -1, 1, 1, 2 } ;
+
+XS = { -4:4:0.5};
+XS1 = { -4:4:0.5};
+XS3 = { -6:7:0.5};
+
+sort1=shuffle([0:5]);]]></text>
+</varsrandom>
+<varsglobal><text><![CDATA[a11 = 4;
+a13 = a11 - abs(a12);
+a22= ceil(abs(a12) + abs(a23)); 
+a33= 1 + ceil(4-abs(a12) + abs(a23)); 
+
+a21 = a12;
+a31 = a13;
+a32 = a23;
+
+det = a11 * a22 * a33 + a12 * a23 * a31 + a13 * a21 * a32 - a13 * a22 * a31 - a11 * a23 * a32 -a12 * a21 * a33;
+
+b1 = a11 * XS + a12 * X02 +  a13 * X03;
+b2 = a21 * XS + a22 * XS1 +  a23 * X03;
+b3 = a31 * XS + a32 * XS1 +  a33 * XS3;
+
+answers0=["je konvergentní", "není konvergentní"];
+answers=[  "matice A je symetrická a pozitivně definitní",  "z jiného důvodu (důvod uveďte)",  "matice A je ostře diagonálně dominantní v řádcích", "matice A je ostře diagonálně dominantní ve sloupcích", "matice A má spektrální poloměr menší než 1"];
+answersOLD=[ "je konvergentní (matice je symetrická a pozitivně definitní) ", 
+"je konvergentní (matice je ostře diagonálně dominantní v řádcích)",
+"je konvergentní (matice je ostře diagonálně dominantní ve sloupcích)",
+"není konvergentní",
+"je konvergentní (přesto, že matice není ani symetrická pozitivně definitní, ani ostře diagonálně dominantní)"];
+otazky1=sublist(answers,sort1);
+invsort1=inv(sort1);
+ans1 = invsort1[0];
+
+XGS1 = (b1 - a12 * X02    - a13 * X03) / a11;
+XGS2 = (b2 - a21 * XGS1 - a23 * X03) / a22;
+XGS3 = (b3 - a31 * XGS1 - a32 * XGS2) / a33;
+
+X2GS1 = (b1 - a12 * XGS2  - a13 * XGS3) / a11;
+X2GS2 = (b2 - a21 * X2GS1 - a23 * XGS3) / a22;
+X2GS3 = (b3 - a31 * X2GS1 - a32 * X2GS2) / a33;
+
+
+XJ1 = (b1 - a12 * X02    - a13 * X03) / a11;
+XJ2 = (b2 - a21 * X01 - a23 * X03) / a22;
+XJ3 = (b3 - a31 * X01 - a32 * X02) / a33;
+
+theory1=["\\( \\rho(\\mathbb B) < \\| \\mathbb B\\| \\)", "\\( \\rho(\\mathbb B) = \\| \\mathbb B\\| \\)", "\\( \\rho(\\mathbb B) > \\| \\mathbb B\\| \\)", "\\( \\rho(\\mathbb B) \\ge \\| \\mathbb B\\| \\)", "\\( \\rho(\\mathbb B) \\le \\| \\mathbb B \\| \\)"];
+
+
+]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0,ans1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><b>a) </b>Určete, zda pro danou soustavu rovnic je Gaussova-Seidelova iterační metoda konvergentní:</p><p> Gauss-Seidelova metoda {_0:answers0:MCE} neboť {_1:otazky1:MCE}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[XGS1,XGS2,XGS3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>b)</b> Volte \( X^{(0)} = ( {X01}, {X02}, {X03})^T\) a určete první iteraci pomocí Gauss-Seidelovy iterační metody <br>
+\( X^{(1)} = ( \) {_0} , {_1}, {_2} \( )^T \).]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>6</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[X2GS1,X2GS2,X2GS3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>c)</b> Volte \( X^{(0)} = ({X01}, {X02}, {X03})^T \) a určete druhou iteraci pomocí Gauss-Seidelovy iterační metody<br>
+\( X^{(2)} = ( \){_0},  {_1}, {_2} \( )^T \).]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>4</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><b>d) </b>Uveďte jak je definován pojem&nbsp; spektrální poloměr matice \(\mathbb B \) a pojem {naznor} norma matice \(\mathbb B \). Označme spektrální poloměr matice \( \mathbb B \) symbolem \( \rho (\mathbb B) \) a normu symbolem \( \| \mathbb B \| \). Rozhodněte které z následující tvrzení je pravdivé:</p><p>{_0:theory1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 175320  -->
+  <question type="formulas">
+    <name>
+      <text>A1 - GS metoda, nutná a postačující podmínka</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava rovnic \( \mathbb A \boldsymbol{x} = \boldsymbol{b} \), kde <br></p><p>\[ \mathbb A = \left(\begin{array}{rrr} {a11} &amp; {a12} &amp; {a13} \\ {a21} &amp; {a22} &amp; {a23} \\ {a31} &amp; {a32} &amp; {a33} \end{array}\right),\qquad \boldsymbol b = \left(\begin{array}{r} {b1}&nbsp; \\ 
+{b2}&nbsp; \\ {b3} 
+\end{array}\right), \]</p><p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<br><p><br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+<varsrandom><text>a12 = {-3, 3, -2, -1,-0.5, -0.4, 0.4, 0.5, 1, 2}; 
+a13 = {3, -3, -2, -1,-0.5, 0.5, 1, 2, 1.5}; 
+a23 ={-2, -1,-0.5, 1.5, 0.5, 1, 2, 1.5, -1.5}; 
+
+X01 = { -10:10 } ;
+X02 = { -10:10 } ;
+X03 = { -10:10 } ;
+
+XS1 = { -4:4:0.5};
+XS2 = { -4:4:0.5};
+XS3 = { -8:8:0.5};
+
+sort1 = shuffle([0:5]);
+sort2 = shuffle([0:5]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[answers0=["je konvergentní", "není konvergentní"];
+answers=[ "z jiného důvodu (důvod uveďte)",   "matice A je symetrická a pozitivně definitní",  "matice A je ostře diagonálně dominantní v řádcích", "matice A je ostře diagonálně dominantní ve sloupcích", "matice A má spektrální poloměr menší než 1"];
+otazky1=sublist(answers,sort1);
+invsort1=inv(sort1);
+ans1 = invsort1[0];
+
+answers2=[   "\\( U_{GS} = -(L + D)^{-1} R \\)",
+                        "\\( U_{GS} = -D^{-1} (L + R) \\)",
+                       "\\( U_{GS} = (L + D)^{-1} R \\)",
+                        "\\( U_{GS} = -(L + R)^{-1} D \\)",
+                        "\\( U_{GS} = -(R + D)^{-1} L \\)"];
+
+answersAlt=[  "Je-li matice \\( \\mathbb A \\) ostře diagonálně dominantní v řádcích, pak řádková norma matice \\( \\mathbb U_J \\)  je ostře menší než jedna.",
+    "Pokud konverguje Gauss-Seidelova iterační metoda,  konverguje také Jacobiho iterační metoda.", 
+    "Pokud konverguje Jacobiho iterační metoda,  konverguje také Gauss-Seidelova iterační metoda.",
+    "Jacobiho iterační metoda konverguje právě když konverguje Gauss-Seidelova iterační metoda.",
+    "Je-li matice \\( \\mathbb A \\) ostře diagonálně dominantní ve sloupcích pak Euklidovská norma matice \\( \\mathbb U_J \\)  je ostře menší než jedna."];
+otazky2=sublist(answers2, sort2);
+invsort2=inv(sort2);
+ans2 = invsort2[0];
+
+
+
+a21 =  a12;  a31 = -a13;  a32 = a23;
+
+a11 = abs(a12) + abs(a13);
+a22 = abs(a21) + abs(a23);
+a33 = abs(a31) + abs(a32);
+
+aaa = a11 * a22 * a33; 
+bbb = a21 * a32 * a13 - a13 * a22 * a31 - a23 * a32 * a11 - a12 * a21 * a33; 
+ccc = a31 * a12* a23;
+
+ddd = bbb*bbb - 4*aaa*ccc;
+
+rhoGS =(ddd>0 ? round(max(abs((sqrt(ddd)-bbb)/(2*aaa)), abs((sqrt(ddd)+bbb)/(2*aaa))),4) : round(sqrt(bbb*bbb+ abs(ddd))/abs(2*aaa) , 4));
+
+b1 = a11 * X01 + a12 * XS2 +  a13 * XS3;
+b2 = a21 * X01 + a22 * X02  +  a23 * XS3;
+b3 = a31 * X01 + a32 * X02 +  a33 * X03;
+
+XGS1 = (b1 - a12 * XS2 - a13 * XS3) / a11;
+XGS2 = (b2 - a21 * XGS1 - a23 * XS3) / a22;
+XGS3 = (b3 - a31 * XGS1 - a32 * XGS2) / a33;
+
+X2GS1 = (b1 - a12 * XGS2 - a13 * XGS3) / a11;
+X2GS2 = (b2 - a21 * X2GS1 - a23 * XGS3) / a22;
+X2GS3 = (b3 - a31 * X2GS1 - a32 * X2GS2) / a33;
+
+]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0,ans1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><b>a) Rozhodněte, zda pro danou soustavu rovnic je Gaussova-Seidelova metoda konvergentní. Zdůvodněte!</b> <br>
+Gauss-Seidelova metoda {_0:answers0:MCE} neboť&nbsp; {_1:otazky1:MCE}.<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text><![CDATA[<p></p><p><br></p><br><p></p>]]></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně;</p><p>Spektrální poloměr Jacobiho iterační matice ( \(\rho(U_J) \) ) určíme z matice&nbsp; ( \(\mathbf{A}\) ).</p><p>Nejprve určíme \(\lambda_1, \lambda_2, \lambda_3 \) pro které platí</p><p>det
+ \( \left( \begin{array}{rrr}{a11} \lambda &amp; {a12} &amp;{a13}\\ 
+{a21}&amp; {a22}&nbsp;\lambda &amp;{a23} \\{a31}&amp;{a32}&amp; {a33} 
+\lambda\end{array}\right) = 0\)</p><p>\(\rho(U_J) = \max \{ | \lambda_1|, |\lambda_2|, |\lambda_3| \}&nbsp; \) </p><br><p></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>rhoGS</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><b>b) Určete spektrální poloměr Gauss-Seidlovy iterační matice</b> \( U_{GS} \). <br></p><p>\(\rho(U_{GS}) \) = {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[XGS1,XGS2,XGS3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><b>c) </b>Volte \( X^{(0)} = ( {XS1} ,  {XS2}, {XS3} )^T \) a určete první iteraci pomocí Gauss-Seidlovy iterační metody <br>
+\( X^{(1)} = ( \) {_0}, {_1}, {_2} \( )^T \).<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[X2GS1,X2GS2,X2GS3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete druhou iteraci pomocí Gauss-Seidelovy iterační metody:</p><p>\( X^{(2)} = ( \) {_0}, {_1}, {_2} \( )^T \).<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><b>d) Nechť (obecná) matice </b> \( \mathbb A \) je zapsaná jako součet
+\[\mathbb A   = L  + D + R\]
+kde \( D \) je diagonální matice ,  \( L \)&nbsp; je ostře dolní trojúhelníková matice   
+a \( R \) je ostře horní trojúhelníková matice. Matice \( \mathbb U_{GS} \) je iterační matice Gauss-Seidelovy metody, tedy<br></p>{_0:otazky2}<p><br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <clearwrong/>
+    </hint>
+  </question>
+
+<!-- question: 158293  -->
+  <question type="formulas">
+    <name>
+      <text>A1 - GS/Jacobi - ODD radky</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava rovnic \( \mathbb A \boldsymbol{x} = \boldsymbol{b} \), kde<br></p><p>\[ \mathbb A =&nbsp; \left( \begin{array}{rrr} {a11} &amp; {a12} &amp; {a13} \\ {a21} &amp; {a22} &amp; {a23} \\ {a31} &amp; {a32} &amp; {a33} \end{array} \right) , \qquad&nbsp; \boldsymbol{b} = \left( \begin{array}{r} {b1} \\&nbsp; {b2} \\&nbsp; {b3} \end{array} \right) \]<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text><![CDATA[a12 = { -1, 1, 2, -2, 3, -3 };
+a21 = { 1, 0, -1, -2, 2, 3, -3 };
+a13 = { -1, 1, 0.5, -0.5}; 
+a23 = { -1, 1, 2, -2, 3, -3 };
+a31 = { 0, -1.5, 1.5, 2, -2, 2.5, -2.5}; 
+naznor = { "řádková", "sloupcová", "Frobeniova"};
+
+X01 = { -10:10 } ;
+X02 = { -10:10 } ;
+X03 = { -10:10 } ;
+
+XS = { -4:4:0.5};
+XS1 = { -4:4:0.5};
+XS3 = { -6:7:0.25};
+
+bS3 = { -2:2:0.5};]]></text>
+</varsrandom>
+<varsglobal><text><![CDATA[a11=ceil(abs(a12)+abs(a13)+0.1);
+a22=-ceil(abs(a21) + abs(a23) + 0.1);
+a32 = abs(a22) - abs(a12);
+a33=ceil(abs(a31) + abs(a32) + 0.05);
+
+b1 = a11 * XS + a12 * X02 +  a13 * X03;
+b2 = a21 * XS + a22 * XS1 +  a23 * X03;
+b3 = a31 * XS + a32 * XS1 +  a33 * XS3;
+
+answers=[ "Obě metody jsou konvergentní", "Jacobiho metoda je konvergentní,  Gauss-Seidelova metoda není konvergentní", "Jacobiho metoda není konvergentní, Gauss-Seidelova metoda je konvergentní", "Ani jedna z metod není konvergentní"];
+ans = 0;
+
+XGS1 = (b1 - a12 * X02    - a13 * X03) / a11;
+XGS2 = (b2 - a21 * XGS1 - a23 * X03) / a22;
+XGS3 = (b3 - a31 * XGS1 - a32 * XGS2) / a33;
+
+
+XJ1 = (b1 - a12 * X02    - a13 * X03) / a11;
+XJ2 = (b2 - a21 * X01 - a23 * X03) / a22;
+XJ3 = (b3 - a31 * X01 - a32 * X02) / a33;
+
+theory1=["\\( \\rho(\\mathbb B) < \\| \\mathbb B\\| \\)", "\\( \\rho(\\mathbb B) = \\| \\mathbb B\\| \\)", "\\( \\rho(\\mathbb B) > \\| \\mathbb B\\| \\)", "\\( \\rho(\\mathbb B) \\ge \\| \\mathbb B\\| \\)", "\\( \\rho(\\mathbb B) \\le \\| \\mathbb B \\| \\)"];
+
+
+]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>a) Rozhodněte, zda pro danou soustavu rovnic jsou Jacobiho a Gaussova-Seidelova metoda konvergentní. Zdůvodněte!</b> <br>
+{_0:answers}]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[XGS1,XGS2,XGS3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>b) </b>Volte \( X^{(0)} = ({X01}, {X02}, {X03})^T\) a určete první iteraci pomocí Gauss-Seidelovy iterační metody <br>
+\( X^{(1)} = ( \) {_0}, {_1}, {_2} \( )^T \).]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[XJ1,XJ2,XJ3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>c)</b>Volte \( X^{(0)} = ( {X01} ,  {X02}, {X03} )^T \) a určete první iteraci pomocí Jacobiho iterační metody <br>
+\( X^{(1)} = ( \) {_0}, {_1}, {_2} \( )^T \).]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>4</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>d)</b> Uveďte jak je definován pojem spektrální poloměr matice \(\mathbb B \) a pojem {naznor} norma matice \(\mathbb B \). Rozhodněte které z následující tvrzení je pravdivé:<br>
+{_0:theory1}]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 158233  -->
+  <question type="formulas">
+    <name>
+      <text>A1 - GS/Jacobi - ODD sloupce</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava rovnic \( \mathbb A x = \boldsymbol{b} \), kde<br></p><p>\[ \mathbb A =&nbsp; \left( \begin{array}{rrr} {a11} &amp; {a12} &amp; {a13} \\ {a21} &amp; {a22} &amp; {a23} \\ {a31} &amp; {a32} &amp; {a33} \end{array} \right) , \qquad&nbsp; \boldsymbol{b} = \left( \begin{array}{r} {b1} \\&nbsp; {b2} \\&nbsp; {b3} \end{array} \right) \]<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text><![CDATA[a12 = { -1, 1, 2, -2, 3, -3 };
+a21 = { 1, 0, -1, -2, 2, 3, -3 };
+a13 = { -1, 1, 0.5, -0.5}; 
+a23 = { -1, 1, 2, -2, 3, -3 };
+a31 = { 0, -1.5, 1.5, 2, -2, 2.5, -2.5}; 
+naznor = { "řádková", "sloupcová", "Frobeniova"};
+
+X01 = { -10:10 } ;
+X02 = { -10:10 } ;
+X03 = { -10:10 } ;
+
+XS = { -4:4:0.5};
+XS1 = { -4:4:0.5};
+XS3 = { -6:7:0.25};
+]]></text>
+</varsrandom>
+<varsglobal><text><![CDATA[a11=ceil(abs(a21)+abs(a31)+0.1);
+a33=ceil(abs(a13) + abs(a23) + 0.05);
+a32 = abs(a33) - abs(a13);
+a22=-ceil(abs(a12) + abs(a32) + 0.1);
+
+b1 = a11 * XS + a12 * X02 +  a13 * X03;
+b2 = a21 * XS + a22 * XS1 +  a23 * X03;
+b3 = a31 * XS + a32 * XS1 +  a33 * XS3;
+
+answers=[ "Obě metody jsou konvergentní", "Jacobiho metoda je konvergentní,  Gauss-Seidelova metoda není konvergentní", "Jacobiho metoda není konvergentní, Gauss-Seidelova metoda je konvergentní", "Ani jedna z metod není konvergentní"];
+ans = 0;
+
+XGS1 = (b1 - a12 * X02    - a13 * X03) / a11;
+XGS2 = (b2 - a21 * XGS1 - a23 * X03) / a22;
+XGS3 = (b3 - a31 * XGS1 - a32 * XGS2) / a33;
+
+
+XJ1 = (b1 - a12 * X02    - a13 * X03) / a11;
+XJ2 = (b2 - a21 * X01 - a23 * X03) / a22;
+XJ3 = (b3 - a31 * X01 - a32 * X02) / a33;
+
+theory1=["\\( \\rho(\\mathbb B) < \\| \\mathbb B\\| \\)", "\\( \\rho(\\mathbb B) = \\| \\mathbb B\\| \\)", "\\( \\rho(\\mathbb B) > \\| \\mathbb B\\| \\)", "\\( \\rho(\\mathbb B) \\ge \\| \\mathbb B\\| \\)", "\\( \\rho(\\mathbb B) \\le \\| \\mathbb B \\| \\)"];
+
+
+]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><b>a)</b> Určete, zda pro danou soustavu rovnic jsou Jacobiho a Gaussova-Seidelova metoda konvergentní:<br>
+{_0:answers}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[XGS1,XGS2,XGS3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<b>b)</b> Volte \( X^{(0)} = ( {X01}, {X02}, {X03})^T \)a určete první iteraci pomocí Gauss-Seidelovy iterační metody <br>
+\( X^{(1)} = ( \) {_0}, {_1}, {_2}\( )^T \).]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[XJ1,XJ2,XJ3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p><b>c) </b>Volte \( X^{(0)} = (&nbsp;&nbsp; {X01}&nbsp;&nbsp; ,&nbsp;&nbsp; {X02}&nbsp; , &nbsp; &nbsp; {X03}&nbsp;&nbsp; )^T \)a určete první iteraci pomocí Jacobiho iterační metody <br></p><p>\( X^{(1)} = ( \)&nbsp; {_0},&nbsp;&nbsp; {_1}, &nbsp; {_2}&nbsp; \( )^T \).</p><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>4</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><b>d) </b>Uveďte jak je definován pojem&nbsp; \(\rho(\mathbb B)\) spektrální poloměr matice \(\mathbb B \) a pojem {naznor} norma matice \(\mathbb B \). Rozhodněte které z následující tvrzení je pravdivé:</p><p>{_0:theory1}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 175210  -->
+  <question type="formulas">
+    <name>
+      <text>A1 - Jacobiho metoda, nutná a postačující podmínka</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Je dána soustava rovnic \( \mathbb A \boldsymbol{x} = \boldsymbol{b} \), kde <br></p><p>\[ \mathbb A = \left(\begin{array}{rrr} {a11} &amp; {a12} &amp; {a13} \\ {a21} &amp; {a22} &amp; {a23} \\ {a31} &amp; {a32} &amp; {a33} \end{array}\right),\qquad \boldsymbol b = \left(\begin{array}{r} {b1}&nbsp; \\ 
+{b2}&nbsp; \\ {b3} 
+\end{array}\right), \]</p><p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<br><p><br></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>17.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+<varsrandom><text>a12 = {-2, -1,-0.5, -0.4, 0.4, 0.5, 1, 2}; 
+a13 = {-2, -1,-0.5, 0.5, 1, 2, 1.5}; 
+a23 ={-2, -1,-0.5, 1.5, 0.5, 1, 2}; 
+
+X01 = { -10:10 } ;
+X02 = { -10:10 } ;
+X03 = { -10:10 } ;
+
+XS1 = { -4:4:0.5};
+XS2 = { -4:4:0.5};
+XS3 = { -8:8:0.5};
+
+sort1 = shuffle([0:5]);
+sort2 = shuffle([0:5]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[answers0=["je konvergentní", "není konvergentní"];
+answers=[ "z jiného důvodu (důvod uveďte)",   "matice A je symetrická a pozitivně definitní",  "matice A je ostře diagonálně dominantní v řádcích", "matice A je ostře diagonálně dominantní ve sloupcích", "matice A má spektrální poloměr menší než 1"];
+otazky1=sublist(answers,sort1);
+invsort1=inv(sort1);
+ans1 = invsort1[0];
+
+answersGS=[  "Je-li matice \\( \\mathbb A \\) ostře diagonálně dominantní v řádcích, pak řádková norma matice \\( \\mathbb U_J \\)  je ostře menší než jedna.",
+    "Pokud konverguje Gauss-Seidelova iterační metoda,  konverguje také Jacobiho iterační metoda.", 
+    "Pokud konverguje Jacobiho iterační metoda,  konverguje také Gauss-Seidelova iterační metoda.",
+    "Jacobiho iterační metoda konverguje právě když konverguje Gauss-Seidelova iterační metoda.",
+    "Je-li matice \\( \\mathbb A \\) ostře diagonálně dominantní ve sloupcích pak Euklidovská norma matice \\( \\mathbb U_J \\)  je ostře menší než jedna."];
+
+answers2=[   "\\( U_J = -D^{-1} (L + R) \\)",
+                        "\\( U_J = -(L + D)^{-1} R \\)",
+                       "\\( U_J = D^{-1} (L + R) \\)",
+                        "\\( U_J = -(L + R)^{-1} D \\)",
+                        "\\( U_J = -(R + D)^{-1} L \\)"];
+
+otazky2=sublist(answers2, sort2);
+invsort2=inv(sort2);
+ans2 = invsort2[0];
+
+
+a21 =  a12;  a31 = -a13;  a32 = a23;
+
+a11 = abs(a12) + abs(a13);
+a22 = abs(a21) + abs(a23);
+a33 = abs(a31) + abs(a32);
+
+rhoJ = round(sqrt(abs( (a13*a22*a31 + a23*a32*a11 +a33*a21*a12 )/ (a11 * a22 * a33) ) ),4);
+
+b1 = a11 * X01 + a12 * XS2 +  a13 * XS3;
+b2 = a21 * XS1 + a22 * X02  +  a23 * XS3;
+b3 = a31 * XS1 + a32 * XS2 +  a33 * X03;
+
+XJ1 = (b1 - a12 * XS2 - a13 * XS3) / a11;
+XJ2 = (b2 - a21 * XS1 - a23 * XS3) / a22;
+XJ3 = (b3 - a31 * XS1 - a32 * XS2) / a33;
+
+X2J1 = (b1 - a12 * XJ2    - a13 * XJ3) / a11;
+X2J2 = (b2 - a21 * XJ1 - a23 * XJ3) / a22;
+X2J3 = (b3 - a31 * XJ1 - a32 * XJ2) / a33;]]></text>
+</varsglobal>
+<answernumbering><text>abc</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[0,ans1]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_err < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><b>a) Rozhodněte, zda pro danou soustavu rovnic je Jacobiho iterační metoda konvergentní. Zdůvodněte!</b> 
+<br>Jacobiho metoda {_0:answers0:MCE} neboť {_1:otazky1:MCE}. <br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text><![CDATA[<p></p><p><br></p><br><p></p>]]></text>
+ </feedback>
+ <correctfeedback format="html">
+<text><![CDATA[<p>správně<br></p>]]></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text><![CDATA[<p>chybně;</p><p>Spektrální poloměr Jacobiho iterační matice ( \(\rho(U_J) \) ) určíme z matice&nbsp; ( \(\mathbf{A}\) ).</p><p>Nejprve určíme \(\lambda_1, \lambda_2, \lambda_3 \) pro které platí</p><p>det
+ \( \left( \begin{array}{rrr}{a11} \lambda &amp; {a12} &amp;{a13}\\ 
+{a21}&amp; {a22}&nbsp;\lambda &amp;{a23} \\{a31}&amp;{a32}&amp; {a33} 
+\lambda\end{array}\right) = 0\)</p><p>\(\rho(U_J) = \max \{ | \lambda_1|, |\lambda_2|, |\lambda_3| \}&nbsp; \) </p><br><p></p>]]></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>3</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>rhoJ</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><b>b) Určete spektrální poloměr Jacobiho iterační matice</b> \( U_J \). <br></p><p>\(\rho(U_J) \) = {_0}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[XJ1,XJ2,XJ3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><b>c) </b>Volte \( X^0 = ( {XS1} ,  {XS2}, {XS3} )^T \) a určete první iteraci pomocí Jacobiho iterační metody <br>
+\( X^{1} = ( \) {_0}, {_1}, {_2} \( )^T \).<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>100</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>[X2J1,X2J2,X2J3]</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Určete druhou iteraci pomocí Jacobiho iterační metody:</p><p>\( X^{2} = ( \) {_0}, {_1}, {_2} \( )^T \).<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ans2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><b>d) Nechť (obecná) matice </b> \( \mathbb A \) je zapsaná jako součet
+\[\mathbb A   = L  + D + R\]
+kde \( D \) je diagonální matice ,  \( L \)&nbsp; je ostře dolní trojúhelníková matice   
+a \( R \) je ostře horní trojúhelníková matice. Jacobiho iterační matice \( {U}_J \) je dána vzorcem<br>{_0:otazky2}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+    <hint format="html">
+      <text></text>
+      <clearwrong/>
+    </hint>
+  </question>
+
+</quiz>

@@ -1,0 +1,1986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text><![CDATA[Výchozí kategorie pro úlohy sdílené v kontextu "Matematika I".]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I/Zkoušky (19//20)</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Výchozí v Matematika I/Zkoušky (19//20)/Zkouška (formulas)</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 200928  -->
+  <question type="formulas">
+    <name>
+      <text>DP_B_3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p><b><b>Číselné hodnoty zadávejte pouze v desetinném tvaru s desetinnou tečkou na dvě desetinná místa.&nbsp;</b>Jako symbol pro nekonečno používejte +9999 nebo -9999. Podobně pro neexistující hodnotu zadejte 9999.</b><br></p><p><br></p><br>Je dána funkce \(f(x)=\frac{\sqrt{x}}{x-a}\), &nbsp;kde \(a={aa}\).<p></p><p>__________________________________________________________________________________________________________________________<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>22.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:8}; b={0,1}; c={1:5};
+ans_order=shuffle([0:7]);
+ans_order1=shuffle([0:4]);
+ans_order2=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[aa=(b==0)?-a: a;
+d=3;
+r=2*(1-aa)*(1-aa);
+kt=-(aa+1)/r;  qt=(3-aa)/r;
+kn=-1/kt; qn=1/(1-a)+kn; 
+ans_inv=inv(ans_order);
+answers=["[0, a) ⋃ (a, +∞)",
+"množina nezáporných reálných čísel",
+"celá množina reálných čísel",
+"(-a, a)",
+"celá množina reálných čísel kromě čísla a",
+"(-∞, -a) ⋃ (a, +∞)",
+"(0, a) ⋃ (a, +∞)]"];
+ans_permuted=sublist(answers,ans_order);
+ans_inv1=inv(ans_order1);
+answers1=["funkce má jedno lokální maximum, lokální minimum nemá",
+"funkce má jedno lokální maximum a jedno lokální minimum",
+"funkce nemá lokální extrémy",
+"funkce má pouze jedno lokální minimum, lokální maximum nemá"];
+ans_permuted1=sublist(answers1,ans_order1);
+ans_inv2=inv(ans_order2);
+answers2=["funkce nemá globální extrémy",
+"funkce má oba globální extrémy",
+"funkce má pouze globální maximum",
+"funkce má pouze globální minimum"];
+ans_permuted2=sublist(answers2,ans_order2);
+ansPart1 = (b==1)?ans_inv[0]: ans_inv[1];
+ansPart2 = [0,0];
+ansPart3 = [kt,qt,kn,qn];
+ansPart4 = (b==1)?ans_inv1[0]: ans_inv1[1];
+ansPart5 = (b==1)?ans_inv2[0]: ans_inv2[1];]]></text>
+</varsglobal>
+<answernumbering><text>none</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>a) Určete definiční obor funkce \(f(x)\)&nbsp;<span style="font-size: 0.9375rem;">(vyberte správné tvrzení):</span></p><p>{_0:ans_permuted}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Najděte průsečíky grafu funkce \(f\) s osami \(x\) a \(y\)&nbsp;</p><p><span style="font-size: 0.9375rem;">Souřadnice průsečíku s osou \(x\): {_0}, &nbsp; &nbsp; &nbsp;souřadnice průsečíku s osou \(y\): {_1}.</span><br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>6</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p>__________________________________________________________________________________________________________________________<br></p><p>b) Spočtěte první derivaci zadané funkce v bodě \(x_0=1\). Napište rovnici tečny a normály ke grafu funkce \(f\) v bodě \([x_0,\, f(x_0)]\) pro \(x_0=1\).</p><p>Rovnice tečny: &nbsp;\(y=\) &nbsp;{_0}\(x &nbsp;+\) {_1},</p><p>Rovnice normály: &nbsp; \(y=\) {_2}\(x &nbsp;+\) {_3}.</p><p></p><p><br></p><p><br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart4</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p>__________________________________________________________________________________________________________________________<br></p><p>c) Najděte lokální a globální extrémy zadané funkce na celém jejím definičním oboru. Vyberte správná tvrzení:</p><p>{_0:ans_permuted1}<br></p><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>4</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart5</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>{_0:ans_permuted2}<br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200929  -->
+  <question type="formulas">
+    <name>
+      <text>DP_B_4</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b><u>Důležité upozornění:</u>&nbsp;Hodnoty zapisujte postupně zleva podle velikosti, zaokrouhlené na dvě desetinná místa a používejte desetinnou tečku! Pro nekonečno použijte hodnotu 9999 s příslušným znaménkem.</b></p><p>__________________________________________________________________________________________________________________________<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>16.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a={2:5}; b={-1,0,1}; c={2:5}; d={1:4};
+g={-4,-3,-2,2,3,4}; h={-4,-3,-2,2,3,4}; 
+ans_order=shuffle([0:3]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[bb=a*c+b;
+lll=2*a/c;
+ll1=-b*9999;
+ll=(b==0)? lll: ll1;
+ch=c/h; 
+sg=(h<0)? -1: 1;
+x1=(g<0)? -9999*sg: ch;
+x2=(g<0)? ch: 9999*sg; 
+ans_inv=inv(ans_order);
+answers=["ano, je omezená",
+"ne, není omezená",
+"nelze zjistit"];
+ans_permuted=sublist(answers,ans_order);
+ansPart1 = ll;
+ansPart2 =  (b == 0) ? ans_inv[0]:ans_inv[1];
+ansPart3 = [x1,x2];]]></text>
+</varsglobal>
+<answernumbering><text>none</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>6</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>a) Spočtěte limitu posloupnosti &nbsp;\(a_n={a}n-\frac{{bb}n^2}{{c}n+2}, \ \ n=1,2,\dots\):&nbsp;</p><p>\(\lim_{n\to -\infty}a_n =\) &nbsp;{_0}</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Je tato posloupnost omezená? Vybetre správnou odpověď.</p><p>{_0:ans_permuted}<br></p><p>(Ve výpočtu na papíře to zdůvodněte.)</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>__________________________________________________________________________________________________________________________<br></p><p>b) Spočtěte limity funkce \(f(x)=\frac{e^{{g}x}+{c}x}{{h}x+1}\):</p><p>\(\lim_{x\to-\infty}f(x) =\) {_0},</p><p></p><p>\(\lim_{x\to+\infty}f(x) =\) {_1},</p><br>Zapište podrobný postup výpočtu s komentářem.<br>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200930  -->
+  <question type="formulas">
+    <name>
+      <text>IP_B_5</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Spočtěte následující integrály. Podrobný popis výpočtu uveďte na papír s řešením, který odešlete po skončení testu ve formátu pdf (scan, fotokopii). Zde uveďte požadované mezivýsledky.&nbsp;</p><p><b><b>Číselné hodnoty zadávejte pouze v desetinném tvaru s desetinnou tečkou na dvě desetinná místa.&nbsp;</b>Jako symbol pro nekonečno používejte +9999 nebo -9999.</b><br></p><p><span>__________________________________________________________________________________________________________________________</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>16.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>k={0:3}; l={0,1};
+ll0={0:3}; dl={1:3};
+a={2:8}; b={1:5}; c={1:5};
+ans_order=shuffle([0:5]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[txt=["\cos^3(x)","\sin(x)\cos^2(x)","\cos(x)\sin^3(x)","\cos(x)\sin^2(x)"];
+txt1=["e^","\ln("]; txt2=["",")"];
+integral1=txt[k]; integral2=txt1[l]; integral3=txt2[l];
+v=[0,0.667,0,0];
+x0=1;
+f1=-(a*x0*x0-c)*x0*2.718281828;
+f2=-(a*x0*x0/9+b*x0/4-c)*x0;
+result=[f1,f2];
+ans_inv=inv(ans_order);
+answers=["nelze určit",
+"1/3",
+"0",
+"2/3",
+"0,25"];
+ans_permuted=sublist(answers,ans_order);
+ansPart1 = ans_inv[0];
+ansPart2 =v[k];
+ansPart3 =result[l];]]></text>
+</varsglobal>
+<answernumbering><text>none</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>a) &nbsp;Najděte neurčitý integrál &nbsp;\(\int&nbsp;{integral1} dx\).&nbsp;</p><p>U<span style="font-size: 0.9375rem;">rčete jeho hodnotu v bodě \(x=\pi/2\):</span></p><p><br></p><p><span style="font-size: 0.9375rem;">{_0:ans_permuted}</span></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>6</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Vypočítejte (užití Newtonovy-Leibnitzovy formule) hodnotu&nbsp;\(\int_0^{\pi} {integral1} dx\): {_0}&nbsp;</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>__________________________________________________________________________________________________________________________<br></p><p>b) &nbsp;Najděte takovou primitivní funkci \(F(x)\) k funkci \(f(x)=({a}x^2+{b}x-{c}) {integral2}{x}{integral3}\), aby pro \(x_0={x0}\) byla její hodnota rovna nule. Tedy najděte aditivní konstantu \(C\) tak, aby \(F({x0})=0\). Zadejte hodnotu této konstanty \(C=\) {_0}.&nbsp;</p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200931  -->
+  <question type="formulas">
+    <name>
+      <text>IP_B_6</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b style="font-size: 0.9375rem;">Pokud je ve výrazu " \(0x\) " nebo " \(0x^2\) " značí to nulu a výraz ignorujte, "\(1x=x, 1x^2=x^2\)" &nbsp;a pro dvojice znamének platí "\(+-=-"\) a \("--=+\)".</b><span style="font-size: 0.9375rem;">&nbsp;</span><br></p><p><b><b>Číselné hodnoty zadávejte pouze v desetinném tvaru s desetinnou tečkou na dvě desetinná místa.&nbsp;</b>Jako symbol pro nekonečno používejte +9999 nebo -9999.</b></p><p><b></b></p><p>__________________________________________________________________________________________________________________________<br></p><p>a) Rozložte racionální funkci \(f(x)=\frac{{a}x^2+{bb}x+{cc}}{x^2-{dd}x+{ee}}\) na parciální zlomky.&nbsp;</p><b><br></b><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>16.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>v={[5,3,1],[2,3,-2],[3,-1,2],[-3,2,4]}; 
+ra={1,3,4,5}; rb={-5:5}; rc={-4:4};
+ans_order=shuffle([0:5]);
+ans_order1=shuffle([0:3]);
+ans_order2=shuffle([0:8]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a=v[0]; b=v[1]; c=v[2]; alfa=ra; 
+bb=b+c-a*alfa-2*a;
+cc=2*a*alfa-2*b-c*alfa;
+dd=alfa+2; ee=2*alfa; 
+ansPart1=[a,c,b,alfa];
+aa=(ra==0)?ra+1:ra; d=(rb==0)?rb-1:rb;  e=d+ra; 
+va=d+e; vb=d*e; vc=a/(d-e);
+x1=max(-d,-e)+1; x2=x1+ra;
+z=abs((x2+e)*(x1+d)/((x2+d)*(x1+e)));
+area=vc*log(z);
+ans_inv=inv(ans_order);
+answers=["celá množina reálných čísel R",
+"(-c, c)",
+"[-c, c]",
+"(-∞, -c) ⋃ (c, +∞)",
+"(-∞, -c] ⋃ [c, +∞)"];
+ans_permuted=sublist(answers,ans_order);
+ans_inv1=inv(ans_order1);
+answers1=["funkce není ani sudá ani lichá",
+"funkce je lichá",
+"funkce je sudá"];
+ans_permuted1=sublist(answers1,ans_order1);
+ans_inv2=inv(ans_order2);
+answers2=["Existují dva stacionární body x1 < x2. Funkce f je klesající nalevo od x1, je rostoucí mezi x1 a x2 a je opět klesající od x2 do nekonečna.",
+"Existují dva stacionární body x1 < x2. Funkce f je rostoucí nalevo od x1, je klesající mezi x1 a x2 a je opět rostoucí od x2 do nekonečna.",
+"Existují dva stacionární body x1 < x2. Funkce f je rostoucí mezi x1 a x2 a je klesající na doplňku tohoto intervalu.",
+"Existují dva stacionární body x1 < x2. Funkce f je klesající mezi x1 a x2 a je rostoucí na doplňku tohoto intervalu.",
+"Existuje jeden stacionární bod x0. Funkce f je rostoucí nalevo od x0 a je klesající od x0 napravo.",
+"Existuje jeden stacionární bod x0. Funkce f je klesající nalevo od x0 a je rostoucí od x0 napravo.",
+"Funkce je na celém svém definičním oboru klesající.",
+"Funkce je na celém svém definičním oboru rostoucí."];
+ans_permuted2=sublist(answers2,ans_order2);
+ansPart2 = ans_inv1[0];
+ansPart3 = ra;
+ansPart4 =  (b>=0) ? ans_inv2[0] :ans_inv2[1];
+ansPart5 = [0,0];]]></text>
+</varsglobal>
+<answernumbering><text>none</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>6</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>4</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Dplňte hodnoty konstant v rozkladu \(f(x)=A +\frac{B}{x-2} + \frac{C}{x-D}\):</p><p>A= {_0}; &nbsp; &nbsp;B= {_1} ; &nbsp; &nbsp;C= {_2} ; &nbsp; &nbsp;D= {_3} ; <span style="font-size: 0.9375rem;">&nbsp;</span></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>10</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>area</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p>__________________________________________________________________________________________________________________________<br></p><p>b) Spočtěte obsah S obrazce ohraničeného grafem funkce \(f(x)=\frac{{a}}{x^2+{va}x+{vb}}\) a osou \(x\) pro \(x\in(\){x1},{x2}\()\).&nbsp;</p><p>Tento obsah je S = {_0}</p><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200932  -->
+  <question type="formulas">
+    <name>
+      <text>LA_A_1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b><b>Celá čísla zadávejte bez desetinné tečky. Ostatní číselné hodnoty zadávejte pouze v desetinném tvaru s desetinnou tečkou na dvě desetinná místa. Hodnoty zadané jako zlomek (například "3/4") budou vyhodnoceny jako chybná odpověď. &nbsp;</b></b></p><p>__________________________________________________________________________________________________________________________<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>16.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>v1 = { [1,2,3],[1,0,1],[1,1,1]};         #bude vybírán jeden ze zadaných vektorů
+vx={-6:6}; vy={1:6}; vz={-6:6}; #náhodný výběr slože vektoru mezi -6 .. 6
+a={-3:3}; b={-4:4}; c={1:4};       #náhodný výběr koeficientů pro lin.kombinaci
+z={0,1};                                        #porušení LNZ
+ans_order=shuffle([0:3]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[v2=[vx,vy,vz];
+v3=[a*v1[0]+b*v2[0], a*v1[1]+b*v2[1], a*v1[2]+b*v2[2]+z];
+v4=[a*v1[0]+c*v2[0]+b*v3[0], a*v1[1]+c*v2[1]+b*v3[1], a*v1[2]+c*v2[2]+b*v3[2]];
+det=v1[0]*v2[1]*v4[2]+v1[1]*v2[2]*v4[0]+v1[2]*v2[0]*v4[1]-v1[0]*v2[2]*v4[1]-v1[2]*v2[1]*v4[0]-v1[1]*v2[0]*v4[2];
+ans_inv=inv(ans_order);
+answers=["Skupina vektorů je lineárně nezávislá",
+"Skupina vektorů je lineárně závislá",
+"O lineární závislosti/nezávislosti nelze rozhodnout"];
+ans_permuted=sublist(answers,ans_order);
+ansPart1 = (z==0) ? ans_inv[1] :ans_inv[0];
+ansPart2 = [a,c,b];
+ansPart3 = (det == 0) ? 2: 3;]]></text>
+</varsglobal>
+<answernumbering><text>none</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>a) Pro skupinu vektorů&nbsp;<span style="font-size: 0.9375rem;">&nbsp;\(\vec a=({v1[0]};{v1[1]};{v1[2]}), \ \vec b=({v2[0]};{v2[1]};{v2[2]}), \ \vec c=({v3[0]};{v3[1]};{v3[2]}) \) vyberte správné tvrzení:</span></p><p><span style="font-size: 0.9375rem;">{_0:ans_permuted}</span><br></p><p><span style="font-size: 0.9375rem;">Tuto volbu zdůvodněte výpočtem!</span></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p>__________________________________________________________________________________________________________________________<br></p><p>b)&nbsp;Určete hodnost matice, jejíž sloupce budou tvořit vektory&nbsp;\(\vec a\)&nbsp;<span>, &nbsp;\(\vec b\) a \(\vec d =&nbsp;({v4[0]},{v4[1]},{v4[2]})\) : {_0}</span></p><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>__________________________________________________________________________________________________________________________<br></p><p>c)&nbsp;<span style="font-size: 0.9375rem;">Pokud to lze, vyjádřete vektor \(\vec d \) z části úlohy b) jako lineární kombinaci vektorů&nbsp;\(\vec a, \ \vec b\) a \(\vec c\) z části úlohy a), tedy ve tvaru &nbsp;\(\vec d=\alpha\,\vec a + \beta\,\vec b + \gamma\,\vec c\).&nbsp;</span></p><p>Pokud existují, napište koeficienty této lineární kombinace: \(\alpha=\){_0}, \(\beta=\) {_1}, \(\gamma=\){_2}. V opačném případě zadejte samé nuly.</p><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200933  -->
+  <question type="formulas">
+    <name>
+      <text>LA_A_2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p><b><b>Pozor: číselné hodnoty zadávejte pouze v desetinném tvaru s desetinnou tečkou na dvě desetinná místa. Pouze celá čísla zadávejte bez desetinné tečky.</b></b><br></p><p></p>__________________________________________________________________________________________________________________________<br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>16.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>a = { [1,-2,3],[-2,3,2],[2,-1,4]}; 
+c = {0,1};  d={-5:5}; e={-5:5};
+ans_order=shuffle([0:5]);
+ans_order_c=shuffle([0:4]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[a11=a[0]; a12=a[1]; a13=(c==0)? 0: d;
+a21=a[0]; a22=a[1]; a23=(c==0)? 0: e;
+a31=(c==0)? d: 0; a32=(c==0)? e: 0; a33=a[2];
+ab= a[0]+a[1] ; 
+vj=(c==0)? (d+e)/(ab-a[2]): 0;
+ans_inv=inv(ans_order);
+answers=["je rovno součtu prvků na diagonále","je hodnota det(𝐀−𝜆𝐄)","je libovolný kořen rovnice det(𝐀−𝜆𝐄)=1","je libovolný kořen rovnice det(𝐀−𝜆𝐄)=0","je takové 𝜆∈ℂ, že pro ně existuje vektor 𝑥⃗ splňující 𝐀𝑥⃗=𝜆𝑥⃗"];
+ans_permuted=sublist(answers,ans_order);
+ans_inv_c=inv(ans_order_c);
+answers_c=["𝐀𝜆=𝜆𝑥⃗", "det(𝐀-𝜆𝑥⃗)=0", "𝐀𝑥⃗=𝜆𝑥⃗", "𝐀=𝜆𝑥⃗"];
+ans_permuted_c=sublist(answers_c,ans_order_c);
+ansPart1 = [0,ab,a[2]];
+ansPart2 = ans_inv[3];
+ansPart3 = ans_inv_c[2];
+ansPart4 = [1,vj];]]></text>
+</varsglobal>
+<answernumbering><text>none</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>a) &nbsp;<span style="font-size: 0.9375rem;">Výpočtem určete všechna vlastní čísla matice&nbsp;</span><strong style="font-size: 0.9375rem;">A</strong><span style="font-size: 0.9375rem;">=</span><span style="font-size: 0.9375rem;">\(\left(\array{{a11}&amp;{a12}&amp;{a13}\cr {a21}&amp;{a22}&amp;{a23}\cr {a31}&amp;{a32}&amp;{a33}}\right)\)</span><span style="font-size: 0.9375rem;">.&nbsp;</span></p><p></p><p>Zadejte vlastní čísla ve vzrůstajícím pořadí podle absolutní hodnoty (označte je tak aby&nbsp;\(|\lambda_1| &lt;&nbsp;|\lambda_2| &lt;&nbsp;|\lambda_3| \)):</p><p><span style="font-size: 0.9375rem;">\(\lambda_1=\){_0}&nbsp;</span></p><p><p><span>\(\lambda_2=\){_1}&nbsp;</span></p>\(\lambda_3=\){_2}&nbsp;<br></p><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.02]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p></p><p>__________________________________________________________________________________________________________________________<br></p><p><span style="font-size: 0.9375rem;">b) Pro vlastní číslo \(\lambda\) matice<span>&nbsp;</span><strong>A</strong> platí, že (vyberte správné tvrzení):</span></p><p><span style="font-size: 0.9375rem;">{_0:ans_permuted}<br></span></p><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p><span style="font-size: 0.9375rem;">__________________________________________________________________________________________________________________________</span><br></p><p></p><p>c) Pro vlastní vektor \(\vec x\) a jemu odpovídající vlatní číslo \(\lambda\) matice&nbsp;<strong style="font-size: 0.9375rem;">A </strong><span style="font-size: 0.9375rem;">platí jedno z následujících tvrzení. Vyberte jej.&nbsp;</span></p><p>{_0:ans_permuted_c}</p><p></p><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart4</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>Spočtěte vlastní vektor pro prostřední vlastní číslo z úlohy a) a napište jej:</p><p><span style="font-size: 0.9375rem;">pro \(\lambda_2\) je vlastní vektor \(\vec v_2 = \) = ({_0}, 1 ,{_1})</span><br></p><p><br></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200934  -->
+  <question type="formulas">
+    <name>
+      <text>LA_B_1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b><b>Celá čísla zadávejte bez desetinné tečky. Ostatní číselné hodnoty zadávejte pouze v desetinném tvaru s desetinnou tečkou na dvě desetinná místa. Hodnoty zadané jako zlomek (například "3/4") budou vyhodnoceny jako chybná odpověď. &nbsp;</b></b></p><p>__________________________________________________________________________________________________________________________<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>16.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>v1 = { [1,2,3],[1,0,1],[1,1,1]};         #bude vybírán jeden ze zadaných vektorů
+vx={-6:6}; vy={1:6}; vz={-6:6}; #náhodný výběr slože vektoru mezi -6 .. 6
+a={-3:3}; b={-4:4}; c={1:4};       #náhodný výběr koeficientů pro lin.kombinaci
+z={0,1};                                        #porušení LNZ
+ans_order=shuffle([0:3]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[v2=[vx,vy,vz];
+v3=[a*v1[0]+b*v2[0], a*v1[1]+b*v2[1], a*v1[2]+b*v2[2]+z];
+v4=[a*v1[0]+c*v2[0]+b*v3[0], a*v1[1]+c*v2[1]+b*v3[1], a*v1[2]+c*v2[2]+b*v3[2]];
+det=v1[0]*v2[1]*v4[2]+v1[1]*v2[2]*v4[0]+v1[2]*v2[0]*v4[1]-v1[0]*v2[2]*v4[1]-v1[2]*v2[1]*v4[0]-v1[1]*v2[0]*v4[2];
+ans_inv=inv(ans_order);
+answers=["Skupina vektorů je lineárně nezávislá",
+"Skupina vektorů je lineárně závislá",
+"O lineární závislosti/nezávislosti nelze rozhodnout"];
+ans_permuted=sublist(answers,ans_order);
+ansPart1 = (z==0) ? ans_inv[1] :ans_inv[0];
+ansPart2 = [a,c,b];
+ansPart3 = (det == 0) ? 2: 3;]]></text>
+</varsglobal>
+<answernumbering><text>none</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>a) Pro skupinu vektorů&nbsp;<span style="font-size: 0.9375rem;">&nbsp;\(\vec a=({v1[0]};{v1[1]};{v1[2]}), \ \vec b=({v2[0]};{v2[1]};{v2[2]}), \ \vec c=({v3[0]};{v3[1]};{v3[2]}) \) vyberte správné tvrzení:</span></p><p><span style="font-size: 0.9375rem;">{_0:ans_permuted}</span><br></p><p><span style="font-size: 0.9375rem;">Tuto volbu zdůvodněte výpočtem!</span></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>8</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p>__________________________________________________________________________________________________________________________<br></p><p>b)&nbsp;Určete hodnost matice, jejíž sloupce budou tvořit vektory&nbsp;\(\vec a\)&nbsp;<span>, &nbsp;\(\vec b\) a \(\vec d =&nbsp;({v4[0]},{v4[1]},{v4[2]})\) : {_0}</span></p><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>3</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>__________________________________________________________________________________________________________________________<br></p><p>c)&nbsp;<span style="font-size: 0.9375rem;">Pokud to lze, vyjádřete vektor \(\vec d \) z části úlohy b) jako lineární kombinaci vektorů&nbsp;\(\vec a, \ \vec b\) a \(\vec c\) z části úlohy a), tedy ve tvaru &nbsp;\(\vec d=\alpha\,\vec a + \beta\,\vec b + \gamma\,\vec c\).&nbsp;</span></p><p>Pokud existují, napište koeficienty této lineární kombinace: \(\alpha=\){_0}, \(\beta=\) {_1}, \(\gamma=\){_2}. V opačném případě zadejte samé nuly.</p><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+<!-- question: 200935  -->
+  <question type="formulas">
+    <name>
+      <text>LA_B_2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p><b><b>Pozor: číselné hodnoty zadávejte pouze v desetinném tvaru s desetinnou tečkou na dvě desetinná místa. Pouze celá čísla zadávejte bez desetinné tečky.</b></b><br></p><p></p>__________________________________________________________________________________________________________________________<br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>16.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <correctfeedback format="html">
+      <text>Vaše odpověď je správná.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Vaše odpověď je částečně správná.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Vaše odpověď je chybná.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+<varsrandom><text>v1 = { [1,2,3],[1,0,1],[1,1,1]};               #bude vybírán první řádek matice B
+v2 = { [0,-1,2],[2,1,0],[3,-2,1]};         #bude vybírán druhý řádek matice B
+a={-6:6}; b={1:6}; c={-6:6}; d={-6:6};  #náhodný výběr složek matic A a C
+k={-3,-2,2,3}; z={0,1}; l={1:3};          #
+ans_order=shuffle([0:7]);</text>
+</varsrandom>
+<varsglobal><text><![CDATA[v3=[a,b];
+v4=[k*v3[0]+z*l, k*v3[1]];
+v5=[c,d];
+v6=[l*v5[0]+(1-z)*k, l*v5[1]];
+dia0=(z==1)?(v3[0]+v4[1])/(v3[0]*v4[1]-v3[1]*v4[0]): (v5[0]+v6[1])/(v5[0]*v6[1]-v5[1]*v6[0]);
+m=a+k*b; n2=m*m+4*b*z*l; n=sqrt(n2);
+lambda1=min((m+n), (m-n))/2; lambda2=max((m-n),(m+n))/2; 
+det= (v1[0]*v1[0]+v1[1]*v1[1]+v1[2]*v1[2])*(v2[0]*v2[0]+v2[1]*v2[1]+v2[2]*v2[2])-(v1[0]*v2[0]+v1[1]*v2[1]+v1[2]*v2[2])*(v1[0]*v2[0]+v1[1]*v2[1]+v1[2]*v2[2]);
+ans_inv=inv(ans_order);
+answers=["jen k matici <b>A</b>","jen k matici <b>B</b>","jen k matici <b>C</b>","k matici  <b>A</b> a k matici <b>B</b>","k matici <b>A</b> a k matici <b>C</b>","k matici <b>B</b> a k matici <b>C</b>","ke všem třem maticím"];
+ans_permuted=sublist(answers,ans_order);
+ansPart1 = (z==0) ? ans_inv[2] :ans_inv[0];
+ansPart2 = [lambda1,lambda2];
+ansPart3 = det;
+ansPart4 = dia0;]]></text>
+</varsglobal>
+<answernumbering><text>none</text>
+</answernumbering>
+<answers>
+ <partindex>
+  <text>0</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>2</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>2</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart2</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p>a) &nbsp;<span style="font-size: 0.9375rem;">Výpočtem určete vlastní čísla matice&nbsp;</span><strong style="font-size: 0.9375rem;">A</strong><span style="font-size: 0.9375rem;">=</span><span style="font-size: 0.9375rem;">\(\left(\array{{v3[0]}&amp;{v3[1]}\cr {v4[0]}&amp;{v4[1]}}\right)\)</span><span style="font-size: 0.9375rem;">.&nbsp;</span></p><p></p><p>Zadejte hodnotu <u>menšího</u> vlastního čísla \(\lambda_1=\){_0}&nbsp;</p><p>a hodnotu <u>většího</u> vlastního čísla &nbsp;\(\lambda_2=\){_1}&nbsp;</p><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>1</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>0</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart3</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.02]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p></p><p>__________________________________________________________________________________________________________________________<br></p><p><span style="font-size: 0.9375rem;">b) Pro matici <b>B</b>=&nbsp;\(\left(\array{{v1[0]}&amp;{v1[1]}&amp;{v1[2]}\cr {v2[0]}&amp;{v2[1]}&amp;{v2[2]}}\right)\) spočtěte matici <span>&nbsp;</span><b>Y</b>=&nbsp;<b>B</b>\(\cdot\)<b>B</b>\(^T\).&nbsp;</span></p><p><span style="font-size: 0.9375rem;">Dále spočtěte determinant matice&nbsp;</span><b style="font-size: 0.9375rem;">Y</b><span style="font-size: 0.9375rem;">&nbsp;a jeho hodnotu napište: {_0}</span></p><p></p><p><br></p><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>2</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>5</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart1</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p></p><p><span style="font-size: 0.9375rem;">__________________________________________________________________________________________________________________________</span><br></p><p></p><p>c) Uvažujme ještě matici&nbsp;&nbsp;<strong>C</strong>=&nbsp;\(\left(\array{{v5[0]}&amp;{v6[0]}\cr {v5[1]}&amp;{v6[1]}}\right)\).</p><p>&nbsp;Ke které z matic <strong>A</strong>, <strong>B</strong> a <strong>C</strong> existuje matice inverzní?&nbsp;</p><p>{_0:ans_permuted}</p><p></p><br><p></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+<answers>
+ <partindex>
+  <text>3</text>
+ </partindex>
+ <placeholder>
+  <text></text>
+ </placeholder>
+ <answermark>
+  <text>4</text>
+ </answermark>
+ <answertype>
+  <text>10</text>
+ </answertype>
+ <numbox>
+  <text>1</text>
+ </numbox>
+ <vars1>
+  <text></text>
+ </vars1>
+ <answer>
+  <text>ansPart4</text>
+ </answer>
+ <vars2>
+  <text></text>
+ </vars2>
+ <correctness>
+  <text><![CDATA[_relerr < 0.01]]></text>
+ </correctness>
+ <unitpenalty>
+  <text>1</text>
+ </unitpenalty>
+ <postunit>
+  <text></text>
+ </postunit>
+ <ruleid>
+  <text>1</text>
+ </ruleid>
+ <otherrule>
+  <text></text>
+ </otherrule>
+ <subqtext format="html">
+<text><![CDATA[<p><span style="font-size: 0.9375rem;">Pro jednu z matic, pro kterou to lze, vypočítejte inverzní matici a proveďte zkoušku (z definice). Detailní postup výpočtu i zkoušky zapište do odevzdávaného řešení.&nbsp;</span><span style="font-size: 0.9375rem;">Zde zadejte součet prvků na hlavní diagonále této inverzní matice: {_0}</span></p>]]></text>
+ </subqtext>
+ <feedback format="html">
+<text></text>
+ </feedback>
+ <correctfeedback format="html">
+<text></text>
+ </correctfeedback>
+ <partiallycorrectfeedback format="html">
+<text></text>
+ </partiallycorrectfeedback>
+ <incorrectfeedback format="html">
+<text></text>
+ </incorrectfeedback>
+</answers>
+  </question>
+
+</quiz>
